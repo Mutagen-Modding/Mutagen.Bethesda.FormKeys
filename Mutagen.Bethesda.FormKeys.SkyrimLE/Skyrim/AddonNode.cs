@@ -1,0 +1,99 @@
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+{
+    public static partial class Skyrim
+    {
+        public static class AddonNode
+        {
+            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
+            public static FormKey MPSFrostMistSpiral => ModKey.MakeFormKey(0x10fbef);
+            public static FormKey MPSClearSkyFogOverHead => ModKey.MakeFormKey(0x10e43f);
+            public static FormKey MPSClearSkyLODFog => ModKey.MakeFormKey(0x102d69);
+            public static FormKey MPSPoisonSpraySplash => ModKey.MakeFormKey(0xfff4d);
+            public static FormKey MPSPoisonSpray01 => ModKey.MakeFormKey(0xfff4c);
+            public static FormKey MPSBloodSprayBigMist => ModKey.MakeFormKey(0xf44c2);
+            public static FormKey MPSBloodSprayBigDrops => ModKey.MakeFormKey(0xf44c1);
+            public static FormKey MPSWaterBoilSteamBig => ModKey.MakeFormKey(0xf3a93);
+            public static FormKey MPSWaterBoilBubbles => ModKey.MakeFormKey(0xf3a91);
+            public static FormKey MPSWaterSplash => ModKey.MakeFormKey(0xf3a90);
+            public static FormKey MPSWaterSplashDrops => ModKey.MakeFormKey(0xf3a8f);
+            public static FormKey MPSDrainGreenImpact => ModKey.MakeFormKey(0xf1d02);
+            public static FormKey MPSDrainBlueImpact => ModKey.MakeFormKey(0xf1d00);
+            public static FormKey MPSActorDustSpray01 => ModKey.MakeFormKey(0xf0eab);
+            public static FormKey MPSFireBallSmokeTrailBig => ModKey.MakeFormKey(0xee9ed);
+            public static FormKey MPSIceShards => ModKey.MakeFormKey(0xed39f);
+            public static FormKey MPSShockImpacts02 => ModKey.MakeFormKey(0xeafe2);
+            public static FormKey MPSDragonFireWave => ModKey.MakeFormKey(0xe1532);
+            public static FormKey MPSLargeFrostTail => ModKey.MakeFormKey(0xdd608);
+            public static FormKey MPSDragonFrostShoutImpact => ModKey.MakeFormKey(0xd7864);
+            public static FormKey MPSFireLg02 => ModKey.MakeFormKey(0xcd822);
+            public static FormKey MPSClearSkyFogFX512 => ModKey.MakeFormKey(0x85fa9);
+            public static FormKey MPSFrostShardStorm01 => ModKey.MakeFormKey(0x68bd3);
+            public static FormKey MPSFrostWaveProjectile => ModKey.MakeFormKey(0x68bcf);
+            public static FormKey MPSFireWaveFlames => ModKey.MakeFormKey(0x647bc);
+            public static FormKey MPSGuideParticles => ModKey.MakeFormKey(0x3bf7b);
+            public static FormKey MPSBaneUndead01 => ModKey.MakeFormKey(0xe7558);
+            public static FormKey MPSAshPile01 => ModKey.MakeFormKey(0xe7556);
+            public static FormKey MPSReanimateProjectile => ModKey.MakeFormKey(0xcd152);
+            public static FormKey MPSMotesForest01 => ModKey.MakeFormKey(0x6002e);
+            public static FormKey MPSMistStreet01 => ModKey.MakeFormKey(0x6002d);
+            public static FormKey MPSSmokeChimney02 => ModKey.MakeFormKey(0x6002c);
+            public static FormKey MPSSmokeChimney01 => ModKey.MakeFormKey(0x6002b);
+            public static FormKey MPSChaurusSpit => ModKey.MakeFormKey(0x51d78);
+            public static FormKey MPSMetalSparkImpactBlunt => ModKey.MakeFormKey(0x4b776);
+            public static FormKey MPSMetalSparkImpactSlice => ModKey.MakeFormKey(0x4b775);
+            public static FormKey MPSMetalSparkImpact => ModKey.MakeFormKey(0x48787);
+            public static FormKey MPSIllusionAreaGreen => ModKey.MakeFormKey(0x2518d);
+            public static FormKey MPSIllusionAreaRed => ModKey.MakeFormKey(0x2239e);
+            public static FormKey MPSCandleFlame01 => ModKey.MakeFormKey(0xb9fc5);
+            public static FormKey MPSDartSmoke02 => ModKey.MakeFormKey(0xb878d);
+            public static FormKey MPSAuraWhisperProjectile => ModKey.MakeFormKey(0xad390);
+            public static FormKey MPSTorchFire01 => ModKey.MakeFormKey(0x8fc1b);
+            public static FormKey MPSFireStormAreaFlames => ModKey.MakeFormKey(0x5a661);
+            public static FormKey MPSFireOilBlue01 => ModKey.MakeFormKey(0x303fe);
+            public static FormKey MPSFallingDustEffect => ModKey.MakeFormKey(0x88303);
+            public static FormKey MPSBloodSprayTiny03 => ModKey.MakeFormKey(0x7b6be);
+            public static FormKey MPSBloodSplatImpact02 => ModKey.MakeFormKey(0x7b6bd);
+            public static FormKey FXDragonScalesIndividualMPS => ModKey.MakeFormKey(0x6cd15);
+            public static FormKey FXDragonScalesGroupMPS => ModKey.MakeFormKey(0x6cd14);
+            public static FormKey FXDragonMagicLeakMPS => ModKey.MakeFormKey(0x6cd13);
+            public static FormKey MPSFlameTrapGlow => ModKey.MakeFormKey(0x56e43);
+            public static FormKey MPSFlameTrapFire => ModKey.MakeFormKey(0x56e3b);
+            public static FormKey MPSFireBoltFire01 => ModKey.MakeFormKey(0x3ac2c);
+            public static FormKey MPSFlamesFire => ModKey.MakeFormKey(0x3ac18);
+            public static FormKey MPSShockImpacts01 => ModKey.MakeFormKey(0x58e9a);
+            public static FormKey MPSTurnUndeadProjectile => ModKey.MakeFormKey(0x4d3f5);
+            public static FormKey MPSSpiderSpitSplash => ModKey.MakeFormKey(0x4bb6a);
+            public static FormKey MPSSpiderSpitSpray => ModKey.MakeFormKey(0x4bb41);
+            public static FormKey MPSSpiderSpitLines => ModKey.MakeFormKey(0x4bb40);
+            public static FormKey MPSDragonSnowBounce01 => ModKey.MakeFormKey(0x3f9d8);
+            public static FormKey MPSDragonRockBounce => ModKey.MakeFormKey(0x3f9d7);
+            public static FormKey MPSDragonTakeoffSnow => ModKey.MakeFormKey(0x3f1b7);
+            public static FormKey MPSDragonTakeoffDust => ModKey.MakeFormKey(0x3ee1d);
+            public static FormKey MPSFrostHazard => ModKey.MakeFormKey(0x3e07a);
+            public static FormKey MPSFireSmSmoke01 => ModKey.MakeFormKey(0x3e072);
+            public static FormKey MPSFireLg01 => ModKey.MakeFormKey(0x3e071);
+            public static FormKey MPSFireLgSmoke01 => ModKey.MakeFormKey(0x3e070);
+            public static FormKey MPSPushGrass01 => ModKey.MakeFormKey(0x19522);
+            public static FormKey MPSPushDirtDebris01 => ModKey.MakeFormKey(0x19520);
+            public static FormKey MPSPushDust01 => ModKey.MakeFormKey(0x1951f);
+            public static FormKey MPSFrostMAGIceSpray => ModKey.MakeFormKey(0x37e88);
+            public static FormKey MPSdustTrailDart => ModKey.MakeFormKey(0x330c9);
+            public static FormKey MPSdustPuffSm => ModKey.MakeFormKey(0x33010);
+            public static FormKey MPSFrostMistTrail01 => ModKey.MakeFormKey(0x32da9);
+            public static FormKey MPSFrostMist01 => ModKey.MakeFormKey(0x32da8);
+            public static FormKey MPSDragonSteam => ModKey.MakeFormKey(0x247ba);
+            public static FormKey MPSDragonSmoke => ModKey.MakeFormKey(0x211d4);
+            public static FormKey MPSFrostShardsImpact01 => ModKey.MakeFormKey(0x1a2ac);
+            public static FormKey MPSFrostImpact01 => ModKey.MakeFormKey(0x1a133);
+            public static FormKey MPSFireBoltImpact01 => ModKey.MakeFormKey(0x2b95b);
+            public static FormKey MPSTorchEmbers01 => ModKey.MakeFormKey(0x1d634);
+            public static FormKey MPSFireBallSparkTrail => ModKey.MakeFormKey(0x1cbb2);
+            public static FormKey MPSFireBallSmokeTrail => ModKey.MakeFormKey(0x1cbb1);
+            public static FormKey MPSFireWallSparks => ModKey.MakeFormKey(0x1c2b1);
+            public static FormKey MPSFireWallBase => ModKey.MakeFormKey(0x1c2b0);
+            public static FormKey MPSBloodSprayImpact01 => ModKey.MakeFormKey(0x1bfee);
+            public static FormKey MPSPushParticles => ModKey.MakeFormKey(0x1a720);
+            public static FormKey MPSFireSmall01 => ModKey.MakeFormKey(0x1a71d);
+        }
+    }
+}

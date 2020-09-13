@@ -1,0 +1,99 @@
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+{
+    public static partial class Dragonborn
+    {
+        public static class Container
+        {
+            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
+            public static FormKey DLC2dunBloodskalTreasChestLure => ModKey.MakeFormKey(0x3d2a1);
+            public static FormKey DLC2fcTernGO => ModKey.MakeFormKey(0x3cd8d);
+            public static FormKey BarrelFish01_NoRespawn => ModKey.MakeFormKey(0x3c366);
+            public static FormKey BarrelMeat01_NoRespawn => ModKey.MakeFormKey(0x3c365);
+            public static FormKey DLC2DarkElfUrn01Food_NoRespawn => ModKey.MakeFormKey(0x3c364);
+            public static FormKey DLC2DarkElfUrn01Ingredients_NoRespawn => ModKey.MakeFormKey(0x3c363);
+            public static FormKey PersonalChestSmall_NoRespawn => ModKey.MakeFormKey(0x3c361);
+            public static FormKey DLC2FrosselSafewithLock => ModKey.MakeFormKey(0x3c250);
+            public static FormKey DLC2MQ06BookPuzzleChest => ModKey.MakeFormKey(0x3b016);
+            public static FormKey DLC2TGCacheBarrel => ModKey.MakeFormKey(0x3abe4);
+            public static FormKey DLC2GloverLootChest => ModKey.MakeFormKey(0x3abe1);
+            public static FormKey DLC2DarkElfUrn01Ingredients => ModKey.MakeFormKey(0x3ab51);
+            public static FormKey DLC2DarkElfUrn01AshYams => ModKey.MakeFormKey(0x3ab50);
+            public static FormKey DLC2DarkElfUrn01Food => ModKey.MakeFormKey(0x3a609);
+            public static FormKey DLC2WhiteRidgeKnapsack => ModKey.MakeFormKey(0x3a4d6);
+            public static FormKey DLC2dunKolbjornTreasDraugrChestBoss => ModKey.MakeFormKey(0x3a2b6);
+            public static FormKey TreasKnapsackEmpty => ModKey.MakeFormKey(0x39f87);
+            public static FormKey DLC2dunFrostmoonTreasChest => ModKey.MakeFormKey(0x35e25);
+            public static FormKey DLC2ElmusVendorChest => ModKey.MakeFormKey(0x3572e);
+            public static FormKey DLC2TreasRieklingChestSnow => ModKey.MakeFormKey(0x34b39);
+            public static FormKey DLC2WB01JournalChest => ModKey.MakeFormKey(0x34022);
+            public static FormKey dlc2MerchMerchantsChest => ModKey.MakeFormKey(0x31db4);
+            public static FormKey DLC2MaximianPack => ModKey.MakeFormKey(0x30ca0);
+            public static FormKey DLC2TreasAlchemySatchelUncommon => ModKey.MakeFormKey(0x2c467);
+            public static FormKey DLC2TreasAlchemySatchelRare => ModKey.MakeFormKey(0x2c466);
+            public static FormKey DLC2TreasAlchemySatchelCommon => ModKey.MakeFormKey(0x2c465);
+            public static FormKey DLC2TreasStrongBox => ModKey.MakeFormKey(0x2c464);
+            public static FormKey DLC2TreasExplorerLootChestSnow => ModKey.MakeFormKey(0x2c463);
+            public static FormKey DLC2TreasExplorerLootChest => ModKey.MakeFormKey(0x2c462);
+            public static FormKey DLC2TreasApocryphaChestBoss => ModKey.MakeFormKey(0x2c461);
+            public static FormKey DLC2TreasApocryphaChest => ModKey.MakeFormKey(0x2c460);
+            public static FormKey DLC2TreasWerebearChestBoss => ModKey.MakeFormKey(0x2c45f);
+            public static FormKey DLC2TreasWerebearChest => ModKey.MakeFormKey(0x2c45e);
+            public static FormKey DLC2TreasWerewolfChestBoss => ModKey.MakeFormKey(0x2c45a);
+            public static FormKey DLC2TreasWerewolfChest => ModKey.MakeFormKey(0x2c458);
+            public static FormKey DLC2TreasWarlockChestBoss => ModKey.MakeFormKey(0x2c456);
+            public static FormKey DLC2TreasWarlockChest => ModKey.MakeFormKey(0x2c455);
+            public static FormKey DLC2RR03GratianSatchel => ModKey.MakeFormKey(0x2b113);
+            public static FormKey DLC2TreasDraugrChestBoss => ModKey.MakeFormKey(0x2aac2);
+            public static FormKey DLC2TreasDraugrChest => ModKey.MakeFormKey(0x2aac1);
+            public static FormKey DLC2TreasBanditChestSnow => ModKey.MakeFormKey(0x2aac0);
+            public static FormKey DLC2TreasBanditChestBoss => ModKey.MakeFormKey(0x2aabf);
+            public static FormKey DLC2TreasBanditChest => ModKey.MakeFormKey(0x2aabe);
+            public static FormKey DLC2TreasDwarvenJewelryBox => ModKey.MakeFormKey(0x2aabd);
+            public static FormKey DLC2TreasDwarvenChestSmall => ModKey.MakeFormKey(0x2aabc);
+            public static FormKey DLC2TreasDwarvenChestLarge => ModKey.MakeFormKey(0x2aabb);
+            public static FormKey DLC2TreasDwarvenChestBoss => ModKey.MakeFormKey(0x2aaba);
+            public static FormKey DLC2RR02BossChest => ModKey.MakeFormKey(0x292a6);
+            public static FormKey DLC2ExpSpiderEggAlbino => ModKey.MakeFormKey(0x28ea8);
+            public static FormKey TreasRieklingChestEMPTY => ModKey.MakeFormKey(0x28211);
+            public static FormKey DLC2SV02AncarionChest => ModKey.MakeFormKey(0x27e09);
+            public static FormKey DLC2ThirskBlacksmithChest => ModKey.MakeFormKey(0x27108);
+            public static FormKey DLC02QASpellTomeContainer => ModKey.MakeFormKey(0x26b69);
+            public static FormKey DLC02QAScrollContainer => ModKey.MakeFormKey(0x26b68);
+            public static FormKey DLC02QABooksContainer => ModKey.MakeFormKey(0x26b67);
+            public static FormKey DLC02QAMiscItemContainer => ModKey.MakeFormKey(0x26b66);
+            public static FormKey DLC02QAPotionContainer => ModKey.MakeFormKey(0x26b65);
+            public static FormKey DLC02QAIngredientContainer => ModKey.MakeFormKey(0x26b64);
+            public static FormKey DLC02QAArmorContainer => ModKey.MakeFormKey(0x26b63);
+            public static FormKey DLC02QAAmmoContainer => ModKey.MakeFormKey(0x26b62);
+            public static FormKey DLC02QAWeaponContainer => ModKey.MakeFormKey(0x26b61);
+            public static FormKey DLC2TreasRieklingChest => ModKey.MakeFormKey(0x25e48);
+            public static FormKey DLC2TreasRieklingChestBoss => ModKey.MakeFormKey(0x25e46);
+            public static FormKey DLC2RRFethisVendorChest => ModKey.MakeFormKey(0x25020);
+            public static FormKey DLC2RRGarynVendorChest => ModKey.MakeFormKey(0x2501f);
+            public static FormKey DLC2RRGeldisVendorChest => ModKey.MakeFormKey(0x2501e);
+            public static FormKey DLC2RRGloverVendorChest => ModKey.MakeFormKey(0x2501d);
+            public static FormKey DLC2RRMiloreVendorChest => ModKey.MakeFormKey(0x2501c);
+            public static FormKey DLC2RRF05Strongbox => ModKey.MakeFormKey(0x24fa5);
+            public static FormKey DLC2RRF01Barrel => ModKey.MakeFormKey(0x24de2);
+            public static FormKey DLC02QAKeyContainer => ModKey.MakeFormKey(0x248b8);
+            public static FormKey DLC2dunHaknirChest => ModKey.MakeFormKey(0x24027);
+            public static FormKey DLC2RRHoldingSafe => ModKey.MakeFormKey(0x20a41);
+            public static FormKey DLC2SkaalBlacksmithChest => ModKey.MakeFormKey(0x1f897);
+            public static FormKey DLC2SkaalMerchantChest => ModKey.MakeFormKey(0x1f88d);
+            public static FormKey DLC2RR02Safe => ModKey.MakeFormKey(0x1f31c);
+            public static FormKey DLC2MerchantDremoraChest => ModKey.MakeFormKey(0x1eec0);
+            public static FormKey DLC2dunFrostmoonVendorChest => ModKey.MakeFormKey(0x1dc65);
+            public static FormKey DLC2ExpSpiderCraftingBooksContainer => ModKey.MakeFormKey(0x1da1e);
+            public static FormKey testPhilSlotMachineSlot => ModKey.MakeFormKey(0x18cd2);
+            public static FormKey testPhilArcaneConverterOutput => ModKey.MakeFormKey(0x18cb9);
+            public static FormKey testPhilArcaneConverterInput => ModKey.MakeFormKey(0x18cb8);
+            public static FormKey DLC2TreasDraugrAmbushCorpseWrapped01EMPTY => ModKey.MakeFormKey(0x18c3b);
+            public static FormKey DLC2RieklingTent01 => ModKey.MakeFormKey(0x18427);
+            public static FormKey DLC2MerchantTelMithrynNelothChest => ModKey.MakeFormKey(0x177c1);
+            public static FormKey DLC2MerchantTelMithrynTalvasChest => ModKey.MakeFormKey(0x177c0);
+            public static FormKey DLC2MerchantTelMithrynElyneasChest => ModKey.MakeFormKey(0x177be);
+            public static FormKey DLC2dunNchardakCubeChest => ModKey.MakeFormKey(0x173bd);
+            public static FormKey DLC2ExpSpiderCraftingChest => ModKey.MakeFormKey(0x1705c);
+        }
+    }
+}

@@ -1,0 +1,104 @@
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+{
+    public static partial class Dawnguard
+    {
+        public static class PlacedNpc
+        {
+            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
+            public static FormKey DLC1FlorentiusRef => ModKey.MakeFormKey(0x3476);
+            public static FormKey DLC1IsranRef => ModKey.MakeFormKey(0x3478);
+            public static FormKey DLC1GunmarRef => ModKey.MakeFormKey(0x3477);
+            public static FormKey DLC1SorineRef => ModKey.MakeFormKey(0x3475);
+            public static FormKey DLC1VigilantTolanRef => ModKey.MakeFormKey(0x3532);
+            public static FormKey DLC1IngjardRef => ModKey.MakeFormKey(0x15c17);
+            public static FormKey DLC1DurakRef => ModKey.MakeFormKey(0x15c16);
+            public static FormKey DLC1CelannRef => ModKey.MakeFormKey(0x15c15);
+            public static FormKey DLC1BelevalRef => ModKey.MakeFormKey(0x15c14);
+            public static FormKey DLC1AgmaerRef => ModKey.MakeFormKey(0x3474);
+            public static FormKey KatriaRef => ModKey.MakeFormKey(0x6754);
+            public static FormKey KatriaCorpseRef => ModKey.MakeFormKey(0x1bb6);
+            public static FormKey DLC1VCTableThrall2 => ModKey.MakeFormKey(0x1a964);
+            public static FormKey DLC1VCTableThrall1 => ModKey.MakeFormKey(0x1a961);
+            public static FormKey DLC1HarkonRef => ModKey.MakeFormKey(0x3ba8);
+            public static FormKey DLC1OrthjolfRef => ModKey.MakeFormKey(0x33ad);
+            public static FormKey DLC1VingalmoRef => ModKey.MakeFormKey(0x33b3);
+            public static FormKey DLC1FuraRef => ModKey.MakeFormKey(0x33b2);
+            public static FormKey DLC1GaranRef => ModKey.MakeFormKey(0x33ab);
+            public static FormKey DLC1FeranRef => ModKey.MakeFormKey(0x33aa);
+            public static FormKey DLC1NamasurRef => ModKey.MakeFormKey(0x11e54);
+            public static FormKey DLC1ModhnaRef => ModKey.MakeFormKey(0x11e53);
+            public static FormKey DLC1StalfRef => ModKey.MakeFormKey(0x33b1);
+            public static FormKey DLC1SaloniaRef => ModKey.MakeFormKey(0x33b0);
+            public static FormKey DLC1RonthilRef => ModKey.MakeFormKey(0x33af);
+            public static FormKey DLC1RargalRef => ModKey.MakeFormKey(0x33ae);
+            public static FormKey DLC1HestlaRef => ModKey.MakeFormKey(0x33ac);
+            public static FormKey DLC1GeleborRef => ModKey.MakeFormKey(0xa878);
+            public static FormKey DLC1HarkonMagicRef => ModKey.MakeFormKey(0xec8b);
+            public static FormKey DLC1HarkonMeleeRef => ModKey.MakeFormKey(0xec1b);
+            public static FormKey DLC1HarkonFontRef => ModKey.MakeFormKey(0xd1b7);
+            public static FormKey ForgemasterRef => ModKey.MakeFormKey(0x15c5f);
+            public static FormKey DLC1FrostGiant05REF => ModKey.MakeFormKey(0x12631);
+            public static FormKey DLC1SurgeonRef => ModKey.MakeFormKey(0x6979);
+            public static FormKey DLC1VQ01PuzzleRoomVampire2 => ModKey.MakeFormKey(0xfbf9);
+            public static FormKey DLC1VQ01PuzzleRoomVampire1 => ModKey.MakeFormKey(0xfbf6);
+            public static FormKey DLC1VQ01PuzzleRoomVampireBoss => ModKey.MakeFormKey(0xfbf5);
+            public static FormKey DLC1SeranaRef => ModKey.MakeFormKey(0x2b74);
+            public static FormKey DLC1VQ01LvLVampire1 => ModKey.MakeFormKey(0x2f6d);
+            public static FormKey DLC1VQ01LvLVampire2 => ModKey.MakeFormKey(0x2f6c);
+            public static FormKey DLC1VampireCastleGuardRef => ModKey.MakeFormKey(0x1a683);
+            public static FormKey DLC1LD_D4Corpse => ModKey.MakeFormKey(0xb631);
+            public static FormKey DLC1VQ03hunterSoldierCorpse1 => ModKey.MakeFormKey(0x6bb8);
+            public static FormKey DLC1VQ03hunterSoldierCorpse2 => ModKey.MakeFormKey(0x6bbb);
+            public static FormKey DLC1FrostGiant03Ref => ModKey.MakeFormKey(0x18d42);
+            public static FormKey DLC1FalmerForestBossREF => ModKey.MakeFormKey(0x18170);
+            public static FormKey DLC1FrostGiant04REF => ModKey.MakeFormKey(0xf7a4);
+            public static FormKey DLC1FrostGiant02Ref => ModKey.MakeFormKey(0xe216);
+            public static FormKey DLC1FrostGiant01REF => ModKey.MakeFormKey(0xc0ef);
+            public static FormKey DLC1FalmerValleyDragon02REF => ModKey.MakeFormKey(0x19dc0);
+            public static FormKey DLC1FalmerValleyDragon01REF => ModKey.MakeFormKey(0x38f0);
+            public static FormKey DLC1VyrthurRef => ModKey.MakeFormKey(0x6c13);
+            public static FormKey DLC1VQ07Prelate01Ref => ModKey.MakeFormKey(0xa8af);
+            public static FormKey DLC1VQ07Prelate02Ref => ModKey.MakeFormKey(0xa8b8);
+            public static FormKey DLC1VQ07Prelate03Ref => ModKey.MakeFormKey(0xa8bb);
+            public static FormKey DLC1VQ07Prelate04Ref => ModKey.MakeFormKey(0xa8bf);
+            public static FormKey DLCHorseQuestNecro04 => ModKey.MakeFormKey(0x15d6c);
+            public static FormKey DLCHorseQuestNecro03 => ModKey.MakeFormKey(0x15d6a);
+            public static FormKey DLCHorseQuestNecro01 => ModKey.MakeFormKey(0x15d67);
+            public static FormKey DLCHorseQuestNecro02 => ModKey.MakeFormKey(0x15d63);
+            public static FormKey DLCHorseQuestMistman04 => ModKey.MakeFormKey(0x2b26);
+            public static FormKey DLCHorseQuestMistman03 => ModKey.MakeFormKey(0x2b25);
+            public static FormKey DLCHorseQuestMistman02 => ModKey.MakeFormKey(0x2b24);
+            public static FormKey DLCHorseQuestMistman01 => ModKey.MakeFormKey(0x2b23);
+            public static FormKey DLC01SoulCairnHorse00 => ModKey.MakeFormKey(0xbdd6);
+            public static FormKey DLC1SoulCairnKeeper03Ref => ModKey.MakeFormKey(0x71ec);
+            public static FormKey DLC1SoulCairnKeeper02Ref => ModKey.MakeFormKey(0x71eb);
+            public static FormKey DLC1SoulCairnKeeper01Ref => ModKey.MakeFormKey(0x64ab);
+            public static FormKey DLC1ValericaRef => ModKey.MakeFormKey(0x3b8e);
+            public static FormKey DLC1JiubRef => ModKey.MakeFormKey(0x1401a);
+            public static FormKey DLC01MorvenRef => ModKey.MakeFormKey(0x71f0);
+            public static FormKey DLC1HunterBaseIntroVigilant2Ref => ModKey.MakeFormKey(0x1a3d0);
+            public static FormKey DLC1HunterBaseIntroVigilant1Ref => ModKey.MakeFormKey(0x1a3cf);
+            public static FormKey DLC1DawnguardExterior01Ref => ModKey.MakeFormKey(0x10de8);
+            public static FormKey DLC1DawnguardExterior02Ref => ModKey.MakeFormKey(0x10de9);
+            public static FormKey DLC1RefgueeSernRef => ModKey.MakeFormKey(0x198f8);
+            public static FormKey DLC1RefugeeJayriRef => ModKey.MakeFormKey(0x198b9);
+            public static FormKey DLC1RefugeeAlvideRef => ModKey.MakeFormKey(0x198b7);
+            public static FormKey DLC1RefugeeBarknarRef => ModKey.MakeFormKey(0x198b5);
+            public static FormKey DLC1DawnguardExterior03Ref => ModKey.MakeFormKey(0x10dea);
+            public static FormKey DLC1VQ03VampireMalkusCorpseRef => ModKey.MakeFormKey(0x3d7c);
+            public static FormKey DLC1VanikRef => ModKey.MakeFormKey(0x7b89);
+            public static FormKey DLC1DexionReference => ModKey.MakeFormKey(0x7b88);
+            public static FormKey DLC1VQ03DawnguardLieutenant => ModKey.MakeFormKey(0x7b87);
+            public static FormKey DLC1VQ03VigilantEscort02 => ModKey.MakeFormKey(0x7b86);
+            public static FormKey DLC1VQ03VampireThrall1 => ModKey.MakeFormKey(0x6dc0);
+            public static FormKey DLC1MalkusRef => ModKey.MakeFormKey(0x6d15);
+            public static FormKey DLC1VQ03VampireLeutenant => ModKey.MakeFormKey(0x6ce9);
+            public static FormKey DLC1VQ03VigilantEscort010 => ModKey.MakeFormKey(0x3c55);
+            public static FormKey DLC1VQ03VampireEscort010 => ModKey.MakeFormKey(0x3c40);
+            public static FormKey DLC1VQ03VampireEscort008 => ModKey.MakeFormKey(0x3c3c);
+            public static FormKey DLC1VQ03VigilantEscort009 => ModKey.MakeFormKey(0x3c39);
+            public static FormKey DLC1Prelate00Ref => ModKey.MakeFormKey(0x2b48);
+            public static FormKey DLC1DurnehviirRef => ModKey.MakeFormKey(0x7a31);
+        }
+    }
+}

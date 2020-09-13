@@ -1,0 +1,101 @@
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+{
+    public static partial class Dawnguard
+    {
+        public static class ConstructibleObject
+        {
+            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
+            public static FormKey DLC1TemperArmorDawnguardBootsHeavy => ModKey.MakeFormKey(0x14cc9);
+            public static FormKey DLC1TemperArmorDawnguardGauntletsHeavy => ModKey.MakeFormKey(0x14cc8);
+            public static FormKey DLC1RecipeLeatherValeDeerHide => ModKey.MakeFormKey(0x14637);
+            public static FormKey DLC1RecipeLeatherValeSabreCatHide => ModKey.MakeFormKey(0x14636);
+            public static FormKey DLC1RecipeArmorShellbugHelmet => ModKey.MakeFormKey(0x145c2);
+            public static FormKey DLC1TemperArmorDawnguardHelmetLight => ModKey.MakeFormKey(0x13e03);
+            public static FormKey DLC1TemperArmorDawnguardHelmetHeavy => ModKey.MakeFormKey(0x13e02);
+            public static FormKey DLC1TemperArmorShellbugHelmet => ModKey.MakeFormKey(0x12f58);
+            public static FormKey DLC1TemperArmorFalmerHardenedHelmet => ModKey.MakeFormKey(0x128ac);
+            public static FormKey DLC1TemperArmorFalmerHardenedGauntlets => ModKey.MakeFormKey(0x128ab);
+            public static FormKey DLC1TemperArmorFalmerHardenedCuirass => ModKey.MakeFormKey(0x128aa);
+            public static FormKey DLC1TemperArmorFalmerHardenedBoots => ModKey.MakeFormKey(0x128a9);
+            public static FormKey DLC1TemperArmorIvoryGauntlets => ModKey.MakeFormKey(0x11f0f);
+            public static FormKey DLC1TemperArmorVampireBoots => ModKey.MakeFormKey(0x11cf9);
+            public static FormKey DLC1TemperArmorIvoryCuirass => ModKey.MakeFormKey(0x11cdc);
+            public static FormKey DLC1TemperArmorIvoryCrown => ModKey.MakeFormKey(0x11cdb);
+            public static FormKey DLC1TemperArmorIvoryBoots => ModKey.MakeFormKey(0x11cda);
+            public static FormKey DLC1RecipeBoneHawkAmulet => ModKey.MakeFormKey(0x10d87);
+            public static FormKey DLC1TemperWeaponKatriasBow => ModKey.MakeFormKey(0xf37e);
+            public static FormKey DLC1TemperArmorVampireGauntlets => ModKey.MakeFormKey(0xe8f5);
+            public static FormKey DLC1TemperArmorVampireCuirassRoyalRed => ModKey.MakeFormKey(0xe8f4);
+            public static FormKey DLC1TemperArmorVampireCuirassGrayLight => ModKey.MakeFormKey(0xe8f3);
+            public static FormKey DLC1TemperArmorVampireCuirassGray => ModKey.MakeFormKey(0xe8f2);
+            public static FormKey DLC1TemperArmorVampireCuirassRed => ModKey.MakeFormKey(0xe8f1);
+            public static FormKey DLC1TemperWeaponVampireSword => ModKey.MakeFormKey(0xe8f0);
+            public static FormKey DLC1TemperArmorAurielsShield => ModKey.MakeFormKey(0xe8d8);
+            public static FormKey DLC1RecipeArrowDragonbone => ModKey.MakeFormKey(0x6928);
+            public static FormKey DLC1RecipeArrowDaedric => ModKey.MakeFormKey(0x3987);
+            public static FormKey DLC1RecipeWeaponDragonboneWarhammer => ModKey.MakeFormKey(0x1982a);
+            public static FormKey DLC1RecipeWeaponDragonboneWarAxe => ModKey.MakeFormKey(0x19829);
+            public static FormKey DLC1RecipeWeaponDragonboneSword => ModKey.MakeFormKey(0x19828);
+            public static FormKey DLC1RecipeWeaponDragonboneMace => ModKey.MakeFormKey(0x19827);
+            public static FormKey DLC1RecipeWeaponDragonboneGreatsword => ModKey.MakeFormKey(0x19826);
+            public static FormKey DLC1RecipeWeaponDragonboneDagger => ModKey.MakeFormKey(0x19825);
+            public static FormKey DLC1RecipeWeaponDragonboneBow => ModKey.MakeFormKey(0x19824);
+            public static FormKey DLC1RecipeWeaponDragonboneBattleaxe => ModKey.MakeFormKey(0x19823);
+            public static FormKey DLC1TemperArmorDawnguardRuneShield => ModKey.MakeFormKey(0x17ec1);
+            public static FormKey DLC1TemperArmorFalmerHeavyHelmet => ModKey.MakeFormKey(0x17ec0);
+            public static FormKey DLC1TemperArmorFalmerHeavyGauntlets => ModKey.MakeFormKey(0x17ebf);
+            public static FormKey DLC1TemperArmorFalmerHeavyCuirass => ModKey.MakeFormKey(0x17ebe);
+            public static FormKey DLC1TemperArmorFalmerHeavyBoots => ModKey.MakeFormKey(0x17ebd);
+            public static FormKey DLC1TemperArmorDawnguardShield => ModKey.MakeFormKey(0x17ebc);
+            public static FormKey DLC1TemperArmorDawnguardGauntletsLight => ModKey.MakeFormKey(0x17ebb);
+            public static FormKey DLC1TemperArmorDawnguardBootsLight => ModKey.MakeFormKey(0x17eba);
+            public static FormKey DLC1TemperArmorDawnguardCuirass5 => ModKey.MakeFormKey(0x17eb9);
+            public static FormKey DLC1TemperArmorDawnguardCuirass4 => ModKey.MakeFormKey(0x17eb8);
+            public static FormKey DLC1TemperArmorDawnguardCuirass3 => ModKey.MakeFormKey(0x17eb7);
+            public static FormKey DLC1TemperArmorDawnguardCuirass2 => ModKey.MakeFormKey(0x17eb6);
+            public static FormKey DLC1TemperArmorDawnguardCuirass1 => ModKey.MakeFormKey(0x17eb5);
+            public static FormKey DLC1TemperWeaponDawnguardRuneHammer => ModKey.MakeFormKey(0x17eb4);
+            public static FormKey DLC1TemperWeaponDawnguardRuneAxe => ModKey.MakeFormKey(0x17eb3);
+            public static FormKey DLC1TemperWeaponDawnguardHammer => ModKey.MakeFormKey(0x17eb2);
+            public static FormKey DLC1TemperWeaponDawnguardAxe => ModKey.MakeFormKey(0x17eb1);
+            public static FormKey DLC1TemperWeaponCrossbowDwarvenEnhanced => ModKey.MakeFormKey(0x17eb0);
+            public static FormKey DLC1TemperWeaponCrossbowDwarven => ModKey.MakeFormKey(0x17eaf);
+            public static FormKey DLC1TemperWeaponDragonboneWarhammer => ModKey.MakeFormKey(0x17ead);
+            public static FormKey DLC1TemperWeaponDragonboneWarAxe => ModKey.MakeFormKey(0x17ea8);
+            public static FormKey DLC1TemperWeaponDragonboneSword => ModKey.MakeFormKey(0x17ea7);
+            public static FormKey DLC1TemperWeaponDragonboneMace => ModKey.MakeFormKey(0x17ea6);
+            public static FormKey DLC1TemperWeaponDragonboneGreatsword => ModKey.MakeFormKey(0x17ea5);
+            public static FormKey DLC1TemperWeaponDragonboneDagger => ModKey.MakeFormKey(0x17ea4);
+            public static FormKey DLC1TemperWeaponDragonboneBow => ModKey.MakeFormKey(0x17ea3);
+            public static FormKey DLC1TemperWeaponDragonboneBattleaxe => ModKey.MakeFormKey(0x17ea2);
+            public static FormKey DLC1TemperWeaponCrossbowEnhanced => ModKey.MakeFormKey(0x17ea1);
+            public static FormKey DLC1TemperWeaponCrossbow => ModKey.MakeFormKey(0x17ea0);
+            public static FormKey DLC1TemperWeaponAurielsBow => ModKey.MakeFormKey(0x17e9f);
+            public static FormKey DLC1LD_TemperArmorKatria => ModKey.MakeFormKey(0x14c08);
+            public static FormKey DLC1LD_TemperArmorAetherialCrown => ModKey.MakeFormKey(0x142b4);
+            public static FormKey DLC1RecipeTechBoltDwarven => ModKey.MakeFormKey(0xf814);
+            public static FormKey DLC1RecipeTechBoltSteel => ModKey.MakeFormKey(0xf813);
+            public static FormKey DLC1RecipeTechDwarvenCrossbow => ModKey.MakeFormKey(0xf810);
+            public static FormKey DLC1RecipeTechDwarvenCrossbowEnhanced => ModKey.MakeFormKey(0xf80f);
+            public static FormKey DLC1RecipeTechSteelCrossbow => ModKey.MakeFormKey(0xf80e);
+            public static FormKey DLC1RecipeTechSteelCrossbowEnhanced => ModKey.MakeFormKey(0xf80d);
+            public static FormKey DLC1RecipeTechBoltDwarvenExplodingShock => ModKey.MakeFormKey(0xf80c);
+            public static FormKey DLC1RecipeTechBoltDwarvenExplodingIce => ModKey.MakeFormKey(0xf80b);
+            public static FormKey DLC1RecipeTechBoltDwarvenExplodingFire => ModKey.MakeFormKey(0xf80a);
+            public static FormKey DLC1RecipeTechBoltSteelExplodingShock => ModKey.MakeFormKey(0xf809);
+            public static FormKey DLC1RecipeTechBoltSteelExplodingIce => ModKey.MakeFormKey(0xf808);
+            public static FormKey DLC1RecipeTechBoltSteelExplodingFire => ModKey.MakeFormKey(0xf807);
+            public static FormKey DLC1LD_TemperArmorAetherialShield => ModKey.MakeFormKey(0xcfbe);
+            public static FormKey DLC1RecipeArrowElven => ModKey.MakeFormKey(0xb655);
+            public static FormKey DLC1RecipeArrowOrcish => ModKey.MakeFormKey(0xb654);
+            public static FormKey DLC1RecipeArrowGlass => ModKey.MakeFormKey(0xb653);
+            public static FormKey DLC1RecipeArrowDwarven => ModKey.MakeFormKey(0xb652);
+            public static FormKey DLC1RecipeArrowEbony => ModKey.MakeFormKey(0xb651);
+            public static FormKey DLC1RecipeArrowSteel => ModKey.MakeFormKey(0xb650);
+            public static FormKey DLC1RecipeArrowIron => ModKey.MakeFormKey(0xb64f);
+            public static FormKey DLC1LD_RecipeAetherialCrown => ModKey.MakeFormKey(0x5763);
+            public static FormKey DLC1LD_RecipeAetherialStaff => ModKey.MakeFormKey(0x5762);
+            public static FormKey DLC1LD_RecipeAetherialShield => ModKey.MakeFormKey(0x5761);
+        }
+    }
+}

@@ -1,0 +1,99 @@
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+{
+    public static partial class Dawnguard
+    {
+        public static class Message
+        {
+            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
+            public static FormKey DLC1ReflexesReadyMessage => ModKey.MakeFormKey(0x14cf4);
+            public static FormKey DLC1ReflexesWaitMessage => ModKey.MakeFormKey(0x14cf3);
+            public static FormKey DLC1MistformWaitMessage => ModKey.MakeFormKey(0x14cb6);
+            public static FormKey DLC1MistformReadyMessage => ModKey.MakeFormKey(0x14cb5);
+            public static FormKey DLC1VampireTutorialRevert => ModKey.MakeFormKey(0x14756);
+            public static FormKey PortalGemPlaceMessageToParagonPlatform => ModKey.MakeFormKey(0x12fe2);
+            public static FormKey PortalGemPlaceMessageToInnerSanctum => ModKey.MakeFormKey(0x12fe1);
+            public static FormKey PortalGemPlaceMessageToForgottenValeOverlook => ModKey.MakeFormKey(0x12fe0);
+            public static FormKey PortalGemPlaceMessageToForgottenValeForest => ModKey.MakeFormKey(0x12fdf);
+            public static FormKey PortalGemPlaceMessageToDarkfallGrotto => ModKey.MakeFormKey(0x12fde);
+            public static FormKey PortalGemPlaceMessageToGlacialCrevice => ModKey.MakeFormKey(0x12fdd);
+            public static FormKey DLC1VQ07BasinCombatMessage => ModKey.MakeFormKey(0x12913);
+            public static FormKey DLC1_BF_TravelToNameMessage => ModKey.MakeFormKey(0x12448);
+            public static FormKey DLC1VampTutorialRecapPerks => ModKey.MakeFormKey(0x11ee1);
+            public static FormKey DLC1VampTutorialRecapLand => ModKey.MakeFormKey(0x11ee0);
+            public static FormKey DLC1VampireTutorialPerks => ModKey.MakeFormKey(0x11edf);
+            public static FormKey DLC1PortalMessageWSValleyStart => ModKey.MakeFormKey(0x11aa2);
+            public static FormKey DLC1PortalMessageWSDarkfallCave => ModKey.MakeFormKey(0x11aa1);
+            public static FormKey DLC1PortalMessageWSDarkfallPassage => ModKey.MakeFormKey(0x11aa0);
+            public static FormKey DLC1PortalMessageWSTemple => ModKey.MakeFormKey(0x11a9f);
+            public static FormKey DLC1PortalMessageWS00 => ModKey.MakeFormKey(0x11a9e);
+            public static FormKey DLC1PortalMessageWS04 => ModKey.MakeFormKey(0x11a9d);
+            public static FormKey DLC1PortalMessageWS03 => ModKey.MakeFormKey(0x11a9c);
+            public static FormKey DLC1PortalMessageWS02 => ModKey.MakeFormKey(0x11a9b);
+            public static FormKey DLC1PortalMessageWS01 => ModKey.MakeFormKey(0x11a9a);
+            public static FormKey DLC1BatsReadyMessage => ModKey.MakeFormKey(0x119ea);
+            public static FormKey DLC1BatsWaitMessage => ModKey.MakeFormKey(0x119b0);
+            public static FormKey DLC1AltarAurielMsg => ModKey.MakeFormKey(0x1139d);
+            public static FormKey DLC1VampireTutorialFavorites => ModKey.MakeFormKey(0x10f8c);
+            public static FormKey HelpVampirism => ModKey.MakeFormKey(0x10d83);
+            public static FormKey DLC1TrapCrossbowNeededMessage => ModKey.MakeFormKey(0x10d82);
+            public static FormKey DLC1VQ01PuzzleRoomVampireBossName => ModKey.MakeFormKey(0xfc10);
+            public static FormKey DLC1NoNameAlias => ModKey.MakeFormKey(0xd653);
+            public static FormKey DLC1RadiantVampireLordTxtReplace => ModKey.MakeFormKey(0x420b);
+            public static FormKey DLC1VQ03BarrierMessage => ModKey.MakeFormKey(0x3d7e);
+            public static FormKey DLC01lightningRodPromptBox => ModKey.MakeFormKey(0x2924);
+            public static FormKey DLC01SoulCairnFissureMessageFailure => ModKey.MakeFormKey(0x2846);
+            public static FormKey DLC01SoulCairnFissureMessageSuccess => ModKey.MakeFormKey(0x2845);
+            public static FormKey DLC1LD_BthalftForgeFailMessage02 => ModKey.MakeFormKey(0x1aa21);
+            public static FormKey DLC1LD_BthalftForgeFailMessage01 => ModKey.MakeFormKey(0x1aa20);
+            public static FormKey DLC1VampireTutorialLand => ModKey.MakeFormKey(0x1a41a);
+            public static FormKey DLC1VampireTutorialTransform => ModKey.MakeFormKey(0x1a419);
+            public static FormKey PortalGemPlaceMessageToUnknown => ModKey.MakeFormKey(0x19ad4);
+            public static FormKey PortalGemPlaceMessageDENIED => ModKey.MakeFormKey(0x19ac0);
+            public static FormKey PortalGemPlaceMessage => ModKey.MakeFormKey(0x19abf);
+            public static FormKey DLC1_WESC_VigilantVampireHunterNameDUPLICATE001 => ModKey.MakeFormKey(0x1993f);
+            public static FormKey DLC1VampLordMeleeMode => ModKey.MakeFormKey(0x191eb);
+            public static FormKey DLC1VampLordTransform => ModKey.MakeFormKey(0x191ea);
+            public static FormKey CharGenJumpDUPLICATE001 => ModKey.MakeFormKey(0x191e9);
+            public static FormKey DLC1TrollFollowerDismissedMsg => ModKey.MakeFormKey(0x1881a);
+            public static FormKey dlc1VQ01nothingHappenedMSG => ModKey.MakeFormKey(0x17771);
+            public static FormKey DLC1dunRedwaterDenCageVampireName1 => ModKey.MakeFormKey(0x16364);
+            public static FormKey DLC1WerewolfPerkEarned => ModKey.MakeFormKey(0x1571d);
+            public static FormKey DLC1VampirePerkEarned => ModKey.MakeFormKey(0x1571c);
+            public static FormKey DLC1LD_BthalftValveFailMessage => ModKey.MakeFormKey(0x15404);
+            public static FormKey DLC1LD_PedestalFailCombatMessage => ModKey.MakeFormKey(0x14f1e);
+            public static FormKey DLC1dunRedwaterDenBossName => ModKey.MakeFormKey(0x14c82);
+            public static FormKey DLC1dunRedwaterDenVHQBloodMessage => ModKey.MakeFormKey(0x149ac);
+            public static FormKey DLC1dunRedwaterDenTaintedBloodMessage => ModKey.MakeFormKey(0x149ab);
+            public static FormKey DLC1VCMoondialNoTileMessage => ModKey.MakeFormKey(0x1171c);
+            public static FormKey DLC1VQ01WontBudge => ModKey.MakeFormKey(0xf7f1);
+            public static FormKey DLC1VQ04BowlNotRightMessage => ModKey.MakeFormKey(0xd3f1);
+            public static FormKey DLC1VQ04IngredientTooMuchMessage => ModKey.MakeFormKey(0xd3f0);
+            public static FormKey DLC1VCBalcony2 => ModKey.MakeFormKey(0xd168);
+            public static FormKey DLC1VCBalcony1 => ModKey.MakeFormKey(0xd167);
+            public static FormKey DLC1LD_PedestalFailMessage => ModKey.MakeFormKey(0xd00c);
+            public static FormKey DLC1VCShip2 => ModKey.MakeFormKey(0xbde0);
+            public static FormKey DLC1VCShip1 => ModKey.MakeFormKey(0xbddf);
+            public static FormKey DLC1ShovelFailureMessage => ModKey.MakeFormKey(0xb699);
+            public static FormKey DLC1SeranaCloakingMessage => ModKey.MakeFormKey(0xb67d);
+            public static FormKey DLC1LD_ShardName => ModKey.MakeFormKey(0xb643);
+            public static FormKey DLC1FeedPointsMsg => ModKey.MakeFormKey(0xa26f);
+            public static FormKey DLC1BloodPointsMsg => ModKey.MakeFormKey(0xa26d);
+            public static FormKey DLC1dunRedwaterDenLookoutName => ModKey.MakeFormKey(0x98e7);
+            public static FormKey DLC1dunRedwaterDenAttendantName2 => ModKey.MakeFormKey(0x98dd);
+            public static FormKey DLC1dunRedwaterDenAttendantName1 => ModKey.MakeFormKey(0x98dc);
+            public static FormKey DLC1dunRedwaterDenBouncerName => ModKey.MakeFormKey(0x98db);
+            public static FormKey DLC1NightPowerShrineMessage => ModKey.MakeFormKey(0x9407);
+            public static FormKey DLC1BloodMagicShrineMessage => ModKey.MakeFormKey(0x9406);
+            public static FormKey DLC1VQ06TreeMessage => ModKey.MakeFormKey(0x905a);
+            public static FormKey DLC1VQ06KnifeMessage => ModKey.MakeFormKey(0x9059);
+            public static FormKey DLC1VQ06TempMessage => ModKey.MakeFormKey(0x9052);
+            public static FormKey DLC1VampireSleepMsg => ModKey.MakeFormKey(0x8e3c);
+            public static FormKey DLC1PlayerVampireFeedMessage => ModKey.MakeFormKey(0x71d4);
+            public static FormKey DLC1PlayerVampireExpirationWarning => ModKey.MakeFormKey(0x71d1);
+            public static FormKey DLC1VQ04DoorBounceMessage => ModKey.MakeFormKey(0x3c5d);
+            public static FormKey DLC1VQ04BowlFullMessage => ModKey.MakeFormKey(0x3c58);
+            public static FormKey DLC1_WESC06_NonDawnguardName => ModKey.MakeFormKey(0x350a);
+            public static FormKey DLC1_WESC02_VigilantName => ModKey.MakeFormKey(0x34f4);
+        }
+    }
+}

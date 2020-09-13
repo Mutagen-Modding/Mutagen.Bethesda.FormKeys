@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mutagen.Bethesda.FormKeys.Generator", "Mutagen.Bethesda.FormKeys.Generator\Mutagen.Bethesda.FormKeys.Generator.csproj", "{9A0FE98B-A8FB-46D7-8E8D-8D7DB119B299}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mutagen.Bethesda.FormKeys.SkyrimSE", "Mutagen.Bethesda.FormKeys.SkyrimSE\Mutagen.Bethesda.FormKeys.SkyrimSE.csproj", "{9807033E-C19E-46C1-B6EE-AA4ABD64587C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mutagen.Bethesda.FormKeys.SkyrimLE", "Mutagen.Bethesda.FormKeys.SkyrimLE\Mutagen.Bethesda.FormKeys.SkyrimLE.csproj", "{1EB73CA0-70B4-43E0-9DEE-FEDAD4C3F73B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A0FE98B-A8FB-46D7-8E8D-8D7DB119B299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0FE98B-A8FB-46D7-8E8D-8D7DB119B299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0FE98B-A8FB-46D7-8E8D-8D7DB119B299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0FE98B-A8FB-46D7-8E8D-8D7DB119B299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9807033E-C19E-46C1-B6EE-AA4ABD64587C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9807033E-C19E-46C1-B6EE-AA4ABD64587C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9807033E-C19E-46C1-B6EE-AA4ABD64587C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9807033E-C19E-46C1-B6EE-AA4ABD64587C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB73CA0-70B4-43E0-9DEE-FEDAD4C3F73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB73CA0-70B4-43E0-9DEE-FEDAD4C3F73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB73CA0-70B4-43E0-9DEE-FEDAD4C3F73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB73CA0-70B4-43E0-9DEE-FEDAD4C3F73B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58AF855E-11E4-4491-AD57-CCFE9FF084E9}
+	EndGlobalSection
+EndGlobal

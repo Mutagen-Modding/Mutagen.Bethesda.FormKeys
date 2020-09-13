@@ -1,0 +1,107 @@
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+{
+    public static partial class Skyrim
+    {
+        public static class LightingTemplate
+        {
+            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
+            public static FormKey GreenCaveCloseDark => ModKey.MakeFormKey(0x10acd3);
+            public static FormKey GreenCaveSuperFarDark => ModKey.MakeFormKey(0x10acd2);
+            public static FormKey ThalmorInterior => ModKey.MakeFormKey(0xfedb4);
+            public static FormKey KagrenzelFalmerTemplateFar => ModKey.MakeFormKey(0xf9b2b);
+            public static FormKey CaveSuperFarFog => ModKey.MakeFormKey(0xef2c5);
+            public static FormKey WaterCaveTemplateFar => ModKey.MakeFormKey(0xef2c3);
+            public static FormKey DraugrPriestCloser => ModKey.MakeFormKey(0xedb13);
+            public static FormKey DraugrPriestMedium => ModKey.MakeFormKey(0xeda92);
+            public static FormKey DraugrPriestClose => ModKey.MakeFormKey(0xeda91);
+            public static FormKey WaterCaveTemplate => ModKey.MakeFormKey(0xed010);
+            public static FormKey SovngardeLightingTemplateTest => ModKey.MakeFormKey(0xe9d91);
+            public static FormKey DwarvenLightingCloseWarm => ModKey.MakeFormKey(0xc684a);
+            public static FormKey DwarvenLightingFarSkyhole => ModKey.MakeFormKey(0xc6528);
+            public static FormKey FalmerTemplateFar => ModKey.MakeFormKey(0xc1301);
+            public static FormKey FalmerTemplateMedium => ModKey.MakeFormKey(0xc1300);
+            public static FormKey EastEmpireTemplate => ModKey.MakeFormKey(0x8a8c9);
+            public static FormKey ElderGleamTemplateAlt => ModKey.MakeFormKey(0x4c9b1);
+            public static FormKey FrostmereCryptWolrdspaceTemplate => ModKey.MakeFormKey(0x1560d);
+            public static FormKey MineTemplateFar => ModKey.MakeFormKey(0xe7c5f);
+            public static FormKey MineTemplateMedium => ModKey.MakeFormKey(0xe7c5e);
+            public static FormKey MineTemplateClose => ModKey.MakeFormKey(0xe7c5d);
+            public static FormKey ElderGleamTemplate => ModKey.MakeFormKey(0xe6598);
+            public static FormKey SolitudeInteriorsNEW => ModKey.MakeFormKey(0xe301f);
+            public static FormKey AzurasStarTemplate => ModKey.MakeFormKey(0xe2167);
+            public static FormKey ShadowGreenTemplate => ModKey.MakeFormKey(0xe20f6);
+            public static FormKey GreenCaveSuperFar => ModKey.MakeFormKey(0xe2022);
+            public static FormKey RannveigsFarTemplate => ModKey.MakeFormKey(0xe2016);
+            public static FormKey RannveigsMediumTemplate => ModKey.MakeFormKey(0xe2015);
+            public static FormKey RannveigsCloseTemplate => ModKey.MakeFormKey(0xe2014);
+            public static FormKey MarkarthLightingTemplate => ModKey.MakeFormKey(0xd7b14);
+            public static FormKey SovngardeLightingTemplate => ModKey.MakeFormKey(0xcabc9);
+            public static FormKey IceCaveOutside => ModKey.MakeFormKey(0xc5cd5);
+            public static FormKey WindhelmInteriorTemplate03 => ModKey.MakeFormKey(0xc3d39);
+            public static FormKey BlindCliffTemplate => ModKey.MakeFormKey(0xc1cba);
+            public static FormKey WindhelmInteriorTemplate02 => ModKey.MakeFormKey(0xc0c76);
+            public static FormKey WindhelmInteriorTemplate => ModKey.MakeFormKey(0xc0c75);
+            public static FormKey NightCallerDreamTemplate => ModKey.MakeFormKey(0xa2682);
+            public static FormKey NightCallerTemplate => ModKey.MakeFormKey(0xa2680);
+            public static FormKey EastEmpireCaveFar => ModKey.MakeFormKey(0x231d0);
+            public static FormKey IceCaveClose => ModKey.MakeFormKey(0x195d3);
+            public static FormKey IceCaveFar => ModKey.MakeFormKey(0x195d2);
+            public static FormKey IceCaveMedium => ModKey.MakeFormKey(0x1952f);
+            public static FormKey GreenCaveClose => ModKey.MakeFormKey(0x345a4);
+            public static FormKey GreenCaveFar => ModKey.MakeFormKey(0x345a2);
+            public static FormKey GreenCaveMedium => ModKey.MakeFormKey(0x34566);
+            public static FormKey UstengravLargeTest => ModKey.MakeFormKey(0x7545e);
+            public static FormKey ImperialFortCloseTemplate => ModKey.MakeFormKey(0x6909b);
+            public static FormKey BorderWallTransTemplate => ModKey.MakeFormKey(0x68ec9);
+            public static FormKey BorderWallFarDarkTemplate => ModKey.MakeFormKey(0x68ec8);
+            public static FormKey DarklightTowerTemplate => ModKey.MakeFormKey(0x68b3e);
+            public static FormKey WhiteRunIntMedLightingTemplate => ModKey.MakeFormKey(0x660a3);
+            public static FormKey KarthspireSuperFarTemplate => ModKey.MakeFormKey(0x5eae9);
+            public static FormKey KarthspireMediumTemplate => ModKey.MakeFormKey(0x5eae8);
+            public static FormKey KarthspireFarTemplate => ModKey.MakeFormKey(0x5ead5);
+            public static FormKey RiftenRatwayMed => ModKey.MakeFormKey(0x5c735);
+            public static FormKey RiftenRatwayClose => ModKey.MakeFormKey(0x5c734);
+            public static FormKey BlackreachTemplate => ModKey.MakeFormKey(0x487e6);
+            public static FormKey UstengravLarge => ModKey.MakeFormKey(0x361ec);
+            public static FormKey UstengravHalls => ModKey.MakeFormKey(0x359cc);
+            public static FormKey UstengravEntrance => ModKey.MakeFormKey(0x3534d);
+            public static FormKey NchuandZelMedium => ModKey.MakeFormKey(0x1fb68);
+            public static FormKey NchuandZelTrans => ModKey.MakeFormKey(0x1f933);
+            public static FormKey NchuandZelFar => ModKey.MakeFormKey(0x1f932);
+            public static FormKey NchuandZelClose => ModKey.MakeFormKey(0x1ee51);
+            public static FormKey FalmerTemplateDesat => ModKey.MakeFormKey(0xb9f59);
+            public static FormKey FalmerTemplateInitial => ModKey.MakeFormKey(0xb9ef5);
+            public static FormKey FalmerTemplateClose => ModKey.MakeFormKey(0xb9e23);
+            public static FormKey HelgenKeepSunlightTemplate => ModKey.MakeFormKey(0xb7db8);
+            public static FormKey HelgenKeepClose => ModKey.MakeFormKey(0xb6bc7);
+            public static FormKey Korvanjund => ModKey.MakeFormKey(0xb6468);
+            public static FormKey SolitudeInteriorFarms => ModKey.MakeFormKey(0xb37b0);
+            public static FormKey RiftenInteriors => ModKey.MakeFormKey(0xb2157);
+            public static FormKey FarmLightingTemplate => ModKey.MakeFormKey(0xa1196);
+            public static FormKey HHFar => ModKey.MakeFormKey(0xa0f40);
+            public static FormKey MarkarthLightingClose => ModKey.MakeFormKey(0x9f281);
+            public static FormKey CidhnaMine_LightingTemplateClose => ModKey.MakeFormKey(0x98b91);
+            public static FormKey AlikrBaseLightingTemplateNear => ModKey.MakeFormKey(0x98853);
+            public static FormKey AlikrBaseLightingTemplate => ModKey.MakeFormKey(0x94e50);
+            public static FormKey CidhnaMine_LightingTemplate => ModKey.MakeFormKey(0x91937);
+            public static FormKey IlinaltasDeep_LightingTemplateNear => ModKey.MakeFormKey(0x91931);
+            public static FormKey IlinaltasDeep_LightingTemplateFar => ModKey.MakeFormKey(0x91930);
+            public static FormKey IceCave_HobsFall_LightingTemplateFar => ModKey.MakeFormKey(0x906cd);
+            public static FormKey IceCave_HobsFall_LightingTemplateNear => ModKey.MakeFormKey(0x906cc);
+            public static FormKey IceCave_HobsFall_LightingTemplate => ModKey.MakeFormKey(0x8e78e);
+            public static FormKey IlinaltasDeep_LightingTemplate => ModKey.MakeFormKey(0x8cdda);
+            public static FormKey DwarvenLightingClose => ModKey.MakeFormKey(0x8810c);
+            public static FormKey DwarvenLightingFar => ModKey.MakeFormKey(0x8810b);
+            public static FormKey DwarvenLightingMedium => ModKey.MakeFormKey(0x8810a);
+            public static FormKey DwarvenLightingTemplate => ModKey.MakeFormKey(0x87999);
+            public static FormKey WindhelmLightingTemplate => ModKey.MakeFormKey(0x7ba87);
+            public static FormKey SolitudeInteriors => ModKey.MakeFormKey(0x6ab01);
+            public static FormKey SolitudeInteriorShops => ModKey.MakeFormKey(0x6256a);
+            public static FormKey WhiteRunIntLightingTemplate => ModKey.MakeFormKey(0x6175d);
+            public static FormKey BleakFallsBarrowFar => ModKey.MakeFormKey(0x3128d);
+            public static FormKey BleakFallsBarrowMedium => ModKey.MakeFormKey(0x3128c);
+            public static FormKey BleakFallsBarrowClose => ModKey.MakeFormKey(0x3128b);
+            public static FormKey DefaultLightingTemplate => ModKey.MakeFormKey(0x300e2);
+        }
+    }
+}

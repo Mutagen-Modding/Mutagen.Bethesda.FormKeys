@@ -1,0 +1,104 @@
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+{
+    public static partial class Dragonborn
+    {
+        public static class Location
+        {
+            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
+            public static FormKey DLC2HoldingCellBardLocation => ModKey.MakeFormKey(0x3a4a1);
+            public static FormKey DLC2ColdcinderCaveLocation => ModKey.MakeFormKey(0x3a42f);
+            public static FormKey DLC2ApocrypaMiraaksTowerLocation => ModKey.MakeFormKey(0x3a1e7);
+            public static FormKey DLC2BloodskalBarrowBanditLocation => ModKey.MakeFormKey(0x3a07f);
+            public static FormKey DLC2HeadwatersOfHarstradLocation => ModKey.MakeFormKey(0x39f98);
+            public static FormKey DLC2ApoIslandALocation => ModKey.MakeFormKey(0x382f5);
+            public static FormKey DLC2POIFallForest28Location => ModKey.MakeFormKey(0x35bf3);
+            public static FormKey DLC2RamshackleTradingPostLocation => ModKey.MakeFormKey(0x34ee6);
+            public static FormKey DLC2BristlebackCaveLocation => ModKey.MakeFormKey(0x32892);
+            public static FormKey DLC2DamphallMineLocation => ModKey.MakeFormKey(0x296da);
+            public static FormKey DLC2ThroatoftheWorldPath => ModKey.MakeFormKey(0x2659f);
+            public static FormKey DLC2RRTempleTombLocation => ModKey.MakeFormKey(0x24dfd);
+            public static FormKey DLC2SnowcladRuinsLocation => ModKey.MakeFormKey(0x247c6);
+            public static FormKey DLC2DremoraShopLocation => ModKey.MakeFormKey(0x1ff28);
+            public static FormKey DLC2Book02DungeonLocationNEW => ModKey.MakeFormKey(0x1ee08);
+            public static FormKey DLC2Book06DungeonLocation => ModKey.MakeFormKey(0x1ee07);
+            public static FormKey DLC2Book04DungeonLocation => ModKey.MakeFormKey(0x1ee06);
+            public static FormKey DLC2POI8Location => ModKey.MakeFormKey(0x1e8c6);
+            public static FormKey DLC2RegionGlacierLocation => ModKey.MakeFormKey(0x1e7dd);
+            public static FormKey DLC2RegionNorthLocation => ModKey.MakeFormKey(0x1e7dc);
+            public static FormKey DLC2RegionAshlandLocation => ModKey.MakeFormKey(0x1e7db);
+            public static FormKey DLC2SVWulfsHouseLocation => ModKey.MakeFormKey(0x1d93a);
+            public static FormKey DLC2SVEdlasHouseLocation => ModKey.MakeFormKey(0x1d938);
+            public static FormKey DLC2SVShamansHutLocation => ModKey.MakeFormKey(0x1d936);
+            public static FormKey DLC2SVOslafsHouseLocation => ModKey.MakeFormKey(0x1d934);
+            public static FormKey DLC2SVMorwensHouseLocation => ModKey.MakeFormKey(0x1d932);
+            public static FormKey DLC2SVDeorsHouseLocation => ModKey.MakeFormKey(0x1d930);
+            public static FormKey DLC2SVBaldorsHouseLocation => ModKey.MakeFormKey(0x1d92e);
+            public static FormKey DLC2SVGreathallLocation => ModKey.MakeFormKey(0x1d92c);
+            public static FormKey DLC2TelMithrynStewardLocation => ModKey.MakeFormKey(0x1cded);
+            public static FormKey DLC2TelMithrynKitchenLocation => ModKey.MakeFormKey(0x1cdec);
+            public static FormKey DLC2TelMithrynApothecaryLocation => ModKey.MakeFormKey(0x1cdeb);
+            public static FormKey DLC2TelMithrynTowerLocation => ModKey.MakeFormKey(0x1cdea);
+            public static FormKey DLC2RR01AttiusFarmLocation => ModKey.MakeFormKey(0x1bfe4);
+            public static FormKey DLC2RR01AmbushCellLocation => ModKey.MakeFormKey(0x1b912);
+            public static FormKey DLC2ThirskUnifyingDummyLocation => ModKey.MakeFormKey(0x1a513);
+            public static FormKey DLC2SaeringsWatchLocation => ModKey.MakeFormKey(0x19d2b);
+            public static FormKey DLC2RRBulwarkJailLocation => ModKey.MakeFormKey(0x19a26);
+            public static FormKey DLC2RRBulwarkLocation => ModKey.MakeFormKey(0x19a25);
+            public static FormKey DLC2RRRetchingNetchLocation => ModKey.MakeFormKey(0x19a24);
+            public static FormKey DLC2RRAlorHouseLocation => ModKey.MakeFormKey(0x19a23);
+            public static FormKey DLC2RRGloverMalloryHouseLocation => ModKey.MakeFormKey(0x19a22);
+            public static FormKey DLC2RRTempleLocation => ModKey.MakeFormKey(0x19a21);
+            public static FormKey DLC2RRSeverinManorLocation => ModKey.MakeFormKey(0x19a20);
+            public static FormKey DLC2RRIenthFarmLocation => ModKey.MakeFormKey(0x19a1f);
+            public static FormKey DLC2RRCresciusHouseLocation => ModKey.MakeFormKey(0x19a1e);
+            public static FormKey DLC2RRAbandonedBuildingLocation => ModKey.MakeFormKey(0x19a1d);
+            public static FormKey DLC2RRMorvaynManorLocation => ModKey.MakeFormKey(0x19a1c);
+            public static FormKey DLC2HighpointTowerLocation => ModKey.MakeFormKey(0x184fc);
+            public static FormKey DLC2HrothmundsBarrowLocation => ModKey.MakeFormKey(0x17bad);
+            public static FormKey DLC2ThirskMeadHallInteriorLocation => ModKey.MakeFormKey(0x16ffe);
+            public static FormKey DLC2ApocryphaLocation => ModKey.MakeFormKey(0x16e2b);
+            public static FormKey DLC2SolstheimLocation => ModKey.MakeFormKey(0x16e2a);
+            public static FormKey DLC2TelMithrynLocation => ModKey.MakeFormKey(0x143bc);
+            public static FormKey DLC2SkaalVillageLocation => ModKey.MakeFormKey(0x143bb);
+            public static FormKey DLC2ThirskMeadHallLocation => ModKey.MakeFormKey(0x143ba);
+            public static FormKey DLC2RavenRockLocation => ModKey.MakeFormKey(0x143b9);
+            public static FormKey DLC2StoneWindLocation => ModKey.MakeFormKey(0x142df);
+            public static FormKey DLC2StoneWaterLocation => ModKey.MakeFormKey(0x142de);
+            public static FormKey DLC2StoneSunLocation => ModKey.MakeFormKey(0x142dc);
+            public static FormKey DLC2MoesringPassLocation => ModKey.MakeFormKey(0x142da);
+            public static FormKey DLC2POI13Location => ModKey.MakeFormKey(0x142cc);
+            public static FormKey DLC2FrostmoonCragLocation => ModKey.MakeFormKey(0x142cb);
+            public static FormKey DLC2BujoldsRetreatLocation => ModKey.MakeFormKey(0x142ca);
+            public static FormKey DLC2StridentSquallLocation => ModKey.MakeFormKey(0x142c9);
+            public static FormKey DLC2NorthshoreLandingLocation => ModKey.MakeFormKey(0x142c7);
+            public static FormKey DLC2AshfallowLocation => ModKey.MakeFormKey(0x142c5);
+            public static FormKey DLC2GlacialCaveLocation => ModKey.MakeFormKey(0x142c4);
+            public static FormKey DLC2HrodulfsHouseLocation => ModKey.MakeFormKey(0x142c3);
+            public static FormKey DLC2HaknirsShoalLocation => ModKey.MakeFormKey(0x142c2);
+            public static FormKey DLC2BrokenTuskMineLocation => ModKey.MakeFormKey(0x142c1);
+            public static FormKey DLC2AbandonedLodgeLocation => ModKey.MakeFormKey(0x142c0);
+            public static FormKey DLC2WhiteRidgeBarrowLocation => ModKey.MakeFormKey(0x142bc);
+            public static FormKey DLC2KolbjornBarrowLocation => ModKey.MakeFormKey(0x142bb);
+            public static FormKey DLC2VahloksTombLocation => ModKey.MakeFormKey(0x142ba);
+            public static FormKey DLC2TempleOfMiraakLocation => ModKey.MakeFormKey(0x142b6);
+            public static FormKey DLC2NchardakLocation => ModKey.MakeFormKey(0x142b4);
+            public static FormKey DLC2Book01DungeonLocation => ModKey.MakeFormKey(0x142b0);
+            public static FormKey DLC2Book03DungeonLocation => ModKey.MakeFormKey(0x142af);
+            public static FormKey DLC2Book07DungeonLocationNEW => ModKey.MakeFormKey(0x142ae);
+            public static FormKey DLC2Book05DungeonLocation => ModKey.MakeFormKey(0x142ac);
+            public static FormKey DLC2HorkerIslandLocation => ModKey.MakeFormKey(0x142aa);
+            public static FormKey DLC2GyldenhulBarrowLocation => ModKey.MakeFormKey(0x142a8);
+            public static FormKey DLC2FrosselLocation => ModKey.MakeFormKey(0x142a6);
+            public static FormKey DLC2StoneEarthLocation => ModKey.MakeFormKey(0x142a4);
+            public static FormKey DLC2KagrumezLocation => ModKey.MakeFormKey(0x142a2);
+            public static FormKey DLC2FahlbtharzLocation => ModKey.MakeFormKey(0x142a0);
+            public static FormKey DLC2CastleKarstaagRuinsLocation => ModKey.MakeFormKey(0x1429e);
+            public static FormKey DLC2BrodirGroveLocation => ModKey.MakeFormKey(0x1429c);
+            public static FormKey DLC2RavenRockMineLocation => ModKey.MakeFormKey(0x1429a);
+            public static FormKey DLC2BenkongerikeLocation => ModKey.MakeFormKey(0x14298);
+            public static FormKey DLC2StoneBeastLocation => ModKey.MakeFormKey(0x14296);
+            public static FormKey DLC2AltarofThrondLocation => ModKey.MakeFormKey(0x14294);
+            public static FormKey DLC2FortFrostmothLocation => ModKey.MakeFormKey(0x14293);
+        }
+    }
+}
