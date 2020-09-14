@@ -1,0 +1,101 @@
+namespace Mutagen.Bethesda.FormKeys.Oblivion
+{
+    public static partial class MehrunesRazor
+    {
+        public static class PlacedObject
+        {
+            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCMehrunesRazor.esp");
+            public static FormKey DL9VillageReinforcementsMarker => ModKey.MakeFormKey(0x1334);
+            public static FormKey DL902PatrolTrainingRoomMarker => ModKey.MakeFormKey(0x1b33);
+            public static FormKey DL9TrainingMarker01 => ModKey.MakeFormKey(0x14d2);
+            public static FormKey DL9TrainingMarker02 => ModKey.MakeFormKey(0x14d5);
+            public static FormKey DL9TrainingMarker03 => ModKey.MakeFormKey(0x14d6);
+            public static FormKey DL9InstructingMarker => ModKey.MakeFormKey(0x14d4);
+            public static FormKey DL902PatrolFireMarker => ModKey.MakeFormKey(0x1585);
+            public static FormKey DL902PatrolMineMarker => ModKey.MakeFormKey(0x1586);
+            public static FormKey DL902PatrolStairMarker => ModKey.MakeFormKey(0x1584);
+            public static FormKey DL902PatrolOverlookMarker => ModKey.MakeFormKey(0x1587);
+            public static FormKey DL9c08VampireMiddle01REF => ModKey.MakeFormKey(0x64fe);
+            public static FormKey DL9c08VampireBossREF => ModKey.MakeFormKey(0x5564);
+            public static FormKey DL9QuickDeath01MarkerREF => ModKey.MakeFormKey(0x27f2);
+            public static FormKey DL9c08CampfireSpawnerREF => ModKey.MakeFormKey(0x2021);
+            public static FormKey DL9c08DisableCollision03REF => ModKey.MakeFormKey(0x5569);
+            public static FormKey DL9c08Collision03REF => ModKey.MakeFormKey(0x5567);
+            public static FormKey DL9c08battle03REF => ModKey.MakeFormKey(0x5566);
+            public static FormKey DL9c08TrigDisableCollision02REF => ModKey.MakeFormKey(0x553e);
+            public static FormKey DL9c08Battle02CollisionREF => ModKey.MakeFormKey(0x5538);
+            public static FormKey DL9c08Battle02SpawnMarkerREF => ModKey.MakeFormKey(0x5537);
+            public static FormKey DL9c08TrigDisableCollision01REF => ModKey.MakeFormKey(0x500c);
+            public static FormKey DL9c08CollisionBox01REF => ModKey.MakeFormKey(0x5003);
+            public static FormKey DL9c08battle01REF => ModKey.MakeFormKey(0x500d);
+            public static FormKey DL9c08MainEntranceREF => ModKey.MakeFormKey(0x13f3);
+            public static FormKey DL9c08Collision04REF => ModKey.MakeFormKey(0x5568);
+            public static FormKey DL9testguy01REF => ModKey.MakeFormKey(0x5533);
+            public static FormKey DL9Patrol07goalMarker => ModKey.MakeFormKey(0x1b96);
+            public static FormKey DL9Patrol07homeMarker => ModKey.MakeFormKey(0x1b95);
+            public static FormKey DL9Cell1to2 => ModKey.MakeFormKey(0xe0b);
+            public static FormKey DL9Patrol05FirepitMarker => ModKey.MakeFormKey(0xd90);
+            public static FormKey DL9Patrol05TopMarker => ModKey.MakeFormKey(0xd8f);
+            public static FormKey DL9ActorBackstageMarker => ModKey.MakeFormKey(0x2d11);
+            public static FormKey DL9HeartChestREF => ModKey.MakeFormKey(0x1af0);
+            public static FormKey RazorLightREF => ModKey.MakeFormKey(0x1979);
+            public static FormKey DL9RakeRazorREF => ModKey.MakeFormKey(0x1ab1);
+            public static FormKey DL9ChampionCollBoxesMarker => ModKey.MakeFormKey(0x1b0b);
+            public static FormKey DL9FrathenDrothanMarker => ModKey.MakeFormKey(0x13dc);
+            public static FormKey DL9RazorBeamREF => ModKey.MakeFormKey(0x197a);
+            public static FormKey DL9ChampHeadingREF => ModKey.MakeFormKey(0x13c5);
+            public static FormKey DL9ChampionCoffin => ModKey.MakeFormKey(0x1a2b);
+            public static FormKey DL9RazorGateREF => ModKey.MakeFormKey(0x197e);
+            public static FormKey DL9MoragCellREF => ModKey.MakeFormKey(0x1a88);
+            public static FormKey DL9Patrol06marker => ModKey.MakeFormKey(0x1b91);
+            public static FormKey DL9Patrol06HomeMarker => ModKey.MakeFormKey(0x1b90);
+            public static FormKey DL9c05BossSpawner01REF => ModKey.MakeFormKey(0xee5);
+            public static FormKey DL9c05PatrolMarker01b => ModKey.MakeFormKey(0x3502);
+            public static FormKey DL9c05PatrolMarker01a => ModKey.MakeFormKey(0x3501);
+            public static FormKey DL9c05PatrolMarker02b => ModKey.MakeFormKey(0x3506);
+            public static FormKey DL9c05PatrolMarker02a => ModKey.MakeFormKey(0x3507);
+            public static FormKey DL9c05PatrolMarker03b => ModKey.MakeFormKey(0x32c0);
+            public static FormKey DL9c05PatrolMarker03a => ModKey.MakeFormKey(0x350b);
+            public static FormKey DL9c05PatrolMarker04b => ModKey.MakeFormKey(0x3514);
+            public static FormKey DL9c05PatrolMarker04a => ModKey.MakeFormKey(0x3515);
+            public static FormKey DL9c05PatrolMarker05b => ModKey.MakeFormKey(0x3533);
+            public static FormKey DL9c05PatrolMarker05a => ModKey.MakeFormKey(0x3534);
+            public static FormKey DL9RearDoor => ModKey.MakeFormKey(0x3436);
+            public static FormKey DL9CommanderBezoarREF => ModKey.MakeFormKey(0x1a15);
+            public static FormKey DL9BezoarCommMarkerREF => ModKey.MakeFormKey(0xa18e);
+            public static FormKey DL9CommanderMarker => ModKey.MakeFormKey(0x1a06);
+            public static FormKey DL9CommanderEatMarker => ModKey.MakeFormKey(0x1a0b);
+            public static FormKey DL9c06SecretBlack05REF => ModKey.MakeFormKey(0x3f24);
+            public static FormKey DL9c06SecretBlack04REF => ModKey.MakeFormKey(0x3f37);
+            public static FormKey DL9c06SecretBlack02REF => ModKey.MakeFormKey(0x3f33);
+            public static FormKey DL9c06SecretBlack03REF => ModKey.MakeFormKey(0x3f2e);
+            public static FormKey DL9c06SecretBlack01REF => ModKey.MakeFormKey(0x3f36);
+            public static FormKey DL9c06ForgeEnemySpawnerREF => ModKey.MakeFormKey(0x5aab);
+            public static FormKey DL9c06PatrolMarker01b => ModKey.MakeFormKey(0x3543);
+            public static FormKey DL9c06PatrolMarker01a => ModKey.MakeFormKey(0x3544);
+            public static FormKey DL9c06PatrolMarker02b => ModKey.MakeFormKey(0x3545);
+            public static FormKey DL9c06PatrolMarker02a => ModKey.MakeFormKey(0x3546);
+            public static FormKey DL9ForgeMasterBezoarREF => ModKey.MakeFormKey(0x5674);
+            public static FormKey DL9BezoarFMstrMarkerREF => ModKey.MakeFormKey(0xa18f);
+            public static FormKey DL9ForgeBezoarMarker => ModKey.MakeFormKey(0xee6);
+            public static FormKey DL9ShantyBedsmarker => ModKey.MakeFormKey(0x1374);
+            public static FormKey DL9ArcheryMarker => ModKey.MakeFormKey(0x1505);
+            public static FormKey DL9BezoarDoorMarker => ModKey.MakeFormKey(0x2524);
+            public static FormKey DL9BezoarLight01 => ModKey.MakeFormKey(0x2036);
+            public static FormKey DL9BezoarLight02 => ModKey.MakeFormKey(0x2535);
+            public static FormKey DL9Cell3to2Upper => ModKey.MakeFormKey(0x1578);
+            public static FormKey DL9Bezoar01REF => ModKey.MakeFormKey(0x202e);
+            public static FormKey DL9Bezoar02REF => ModKey.MakeFormKey(0x253e);
+            public static FormKey DL9gardenMarker => ModKey.MakeFormKey(0xd6b);
+            public static FormKey DL9PatioMarker => ModKey.MakeFormKey(0xd6f);
+            public static FormKey DL9WatchPostMarker => ModKey.MakeFormKey(0xd6d);
+            public static FormKey DL9foodStoreMarker => ModKey.MakeFormKey(0xd6e);
+            public static FormKey DL9LowPassMarker => ModKey.MakeFormKey(0xd6c);
+            public static FormKey DL9GardenTendingMarker => ModKey.MakeFormKey(0xd1f);
+            public static FormKey DL9Cell3to2lower => ModKey.MakeFormKey(0x1576);
+            public static FormKey DL09Door => ModKey.MakeFormKey(0x206a);
+            public static FormKey DL09MapMarker => ModKey.MakeFormKey(0x206b);
+            public static FormKey DL09Exterior02DoorREF => ModKey.MakeFormKey(0x2093);
+        }
+    }
+}

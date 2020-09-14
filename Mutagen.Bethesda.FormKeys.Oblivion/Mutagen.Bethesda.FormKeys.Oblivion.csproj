@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Noggog</Authors>
+    <Company>Mutagen</Company>
+    <Product>Mutagen</Product>
+    <Description>A registry of FormKeys from common Oblivion base game files.</Description>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Noggog/Mutagen.Bethesda.FormKeys</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Noggog/Mutagen.Bethesda.FormKeys</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mutagen.Bethesda" Version="0.15.2" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="RD /S /Q &quot;%25USERPROFILE%25\.nuget\packages\mutagen.bethesda.formkeys.oblivion&quot;" />
+  </Target>
+
+</Project>

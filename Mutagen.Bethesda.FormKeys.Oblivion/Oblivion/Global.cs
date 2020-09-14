@@ -1,0 +1,104 @@
+namespace Mutagen.Bethesda.FormKeys.Oblivion
+{
+    public static partial class Oblivion
+    {
+        public static class Global
+        {
+            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
+            public static FormKey SEKnightSpawnTime => ModKey.MakeFormKey(0x8d9da);
+            public static FormKey SESwordDuskfangEquip => ModKey.MakeFormKey(0x7d7ef);
+            public static FormKey SESwordDawnfangEquip => ModKey.MakeFormKey(0x7d7ee);
+            public static FormKey SESwordDuskfangKills => ModKey.MakeFormKey(0x7d434);
+            public static FormKey SESwordDawnfangKills => ModKey.MakeFormKey(0x7d433);
+            public static FormKey SE07GreenmoteFlag => ModKey.MakeFormKey(0x6a7e7);
+            public static FormKey SE07GreenmoteEffect => ModKey.MakeFormKey(0x55fe9);
+            public static FormKey SEGatekeeperDebugNoLeash => ModKey.MakeFormKey(0x5572d);
+            public static FormKey SECrimeGold => ModKey.MakeFormKey(0x459cb);
+            public static FormKey SE09CagedVictims => ModKey.MakeFormKey(0x44c3b);
+            public static FormKey SE30PiecesMaceAxe => ModKey.MakeFormKey(0x1f3ea);
+            public static FormKey SEFringeOrdered => ModKey.MakeFormKey(0x1b037);
+            public static FormKey SEObeliskMaxHearts => ModKey.MakeFormKey(0x1a802);
+            public static FormKey SEGatekeeperLeashTimer => ModKey.MakeFormKey(0x19d50);
+            public static FormKey SEGatekeeperPerimeterLength => ModKey.MakeFormKey(0x19d4f);
+            public static FormKey SE30PiecesSword => ModKey.MakeFormKey(0x16c89);
+            public static FormKey SE30PiecesHammerClaymore => ModKey.MakeFormKey(0x16c88);
+            public static FormKey SE30PiecesBow => ModKey.MakeFormKey(0x16c87);
+            public static FormKey SE30PiecesArrows => ModKey.MakeFormKey(0x16c86);
+            public static FormKey SE30PiecesShield => ModKey.MakeFormKey(0x16bf6);
+            public static FormKey SE30PiecesHelmet => ModKey.MakeFormKey(0x16bf5);
+            public static FormKey SE30PiecesGreaves => ModKey.MakeFormKey(0x16bf4);
+            public static FormKey SE30PiecesGauntlets => ModKey.MakeFormKey(0x16bf3);
+            public static FormKey SE30PiecesCuirass => ModKey.MakeFormKey(0x16bf2);
+            public static FormKey SE30PiecesBoots => ModKey.MakeFormKey(0x16bf1);
+            public static FormKey SEKnightRespawnDelay => ModKey.MakeFormKey(0x13548);
+            public static FormKey SEOrderPriestResurrectTimer => ModKey.MakeFormKey(0x134d2);
+            public static FormKey SEKnightRespawn => ModKey.MakeFormKey(0x134d1);
+            public static FormKey HasGrace => ModKey.MakeFormKey(0x14d24);
+            public static FormKey UmbacanoCount => ModKey.MakeFormKey(0xc509b);
+            public static FormKey HighwaymanGotMoney => ModKey.MakeFormKey(0xc506f);
+            public static FormKey MQEndDayWeek => ModKey.MakeFormKey(0xaf06d);
+            public static FormKey FameJulianos => ModKey.MakeFormKey(0x177212);
+            public static FormKey FameKynareth => ModKey.MakeFormKey(0x177211);
+            public static FormKey FameZenithar => ModKey.MakeFormKey(0x177210);
+            public static FormKey FameTiberSeptim => ModKey.MakeFormKey(0x17720f);
+            public static FormKey FameAkatosh => ModKey.MakeFormKey(0x17720e);
+            public static FormKey FameDibella => ModKey.MakeFormKey(0x17720d);
+            public static FormKey FameArkay => ModKey.MakeFormKey(0x17720c);
+            public static FormKey FameStendarr => ModKey.MakeFormKey(0x17720b);
+            public static FormKey FameMara => ModKey.MakeFormKey(0x177200);
+            public static FormKey RentNewlandsLodge => ModKey.MakeFormKey(0xbb9d8);
+            public static FormKey RentRoxeyInn => ModKey.MakeFormKey(0xbb9d7);
+            public static FormKey RentImperialBridge => ModKey.MakeFormKey(0xbb9d6);
+            public static FormKey RentFaregyl => ModKey.MakeFormKey(0xbb9d4);
+            public static FormKey RentBrinaCross => ModKey.MakeFormKey(0xbb9d2);
+            public static FormKey RentWawnetInn => ModKey.MakeFormKey(0xbb9ce);
+            public static FormKey RentGottshawInn => ModKey.MakeFormKey(0xb985d);
+            public static FormKey RentICBloatedFloat => ModKey.MakeFormKey(0xb985b);
+            public static FormKey RentICAllSaintsInn => ModKey.MakeFormKey(0xb9859);
+            public static FormKey RentICTiberSeptimHotel => ModKey.MakeFormKey(0xb9857);
+            public static FormKey RentICLuthorBroad => ModKey.MakeFormKey(0xb9855);
+            public static FormKey RentICKingandQueen => ModKey.MakeFormKey(0xb9853);
+            public static FormKey RentICMerchantsInn => ModKey.MakeFormKey(0xb9851);
+            public static FormKey RentLeyawiinThreeSisters => ModKey.MakeFormKey(0xb6c26);
+            public static FormKey RentLeyawiinFiveClaws => ModKey.MakeFormKey(0xb6c25);
+            public static FormKey RentCheydinhalBridgeInn => ModKey.MakeFormKey(0xb6c21);
+            public static FormKey RentCheydinhalNewlandsLodge => ModKey.MakeFormKey(0xb6c20);
+            public static FormKey RentBrumaJerallView => ModKey.MakeFormKey(0xb129c);
+            public static FormKey RentBrumaOlavs => ModKey.MakeFormKey(0xb129b);
+            public static FormKey RentBravilSilverhome => ModKey.MakeFormKey(0xb1259);
+            public static FormKey RentBravilLonelySuitor => ModKey.MakeFormKey(0xb1257);
+            public static FormKey RentAnvilCountsArms => ModKey.MakeFormKey(0xb1251);
+            public static FormKey RentBorderWatchInn => ModKey.MakeFormKey(0xb1247);
+            public static FormKey RentDrunkenDragon => ModKey.MakeFormKey(0x27dee);
+            public static FormKey RentIllOmen => ModKey.MakeFormKey(0x279f1);
+            public static FormKey MS22DealGold => ModKey.MakeFormKey(0xa495f);
+            public static FormKey MS22RewardGold => ModKey.MakeFormKey(0xa495e);
+            public static FormKey RentHackdirtMoslinsInn => ModKey.MakeFormKey(0x9ea92);
+            public static FormKey TGPayoffCrimeGold => ModKey.MakeFormKey(0x982e5);
+            public static FormKey RentAnvilFlowingBowl => ModKey.MakeFormKey(0x98126);
+            public static FormKey MQ05RavenPace => ModKey.MakeFormKey(0x976fe);
+            public static FormKey CrimeForceJail => ModKey.MakeFormKey(0x4cad5);
+            public static FormKey RentSkingradWestWealdInn => ModKey.MakeFormKey(0x3b357);
+            public static FormKey RentSkingradTwoSistersLodge => ModKey.MakeFormKey(0x3b354);
+            public static FormKey RentChorrolGreyMare => ModKey.MakeFormKey(0x3ab5b);
+            public static FormKey RentChorrolOakandCrosier => ModKey.MakeFormKey(0x3ab55);
+            public static FormKey OblivionCrisis => ModKey.MakeFormKey(0x32d45);
+            public static FormKey TGPriceSteal => ModKey.MakeFormKey(0x1e85f);
+            public static FormKey TGPriceAttack => ModKey.MakeFormKey(0x1e85e);
+            public static FormKey KvatchDestroyed => ModKey.MakeFormKey(0x1e6a4);
+            public static FormKey TGPricePerKill => ModKey.MakeFormKey(0x1cf20);
+            public static FormKey MS05InProgress => ModKey.MakeFormKey(0x2cf32);
+            public static FormKey EmfridBittneld => ModKey.MakeFormKey(0x2a38e);
+            public static FormKey PCVampire => ModKey.MakeFormKey(0x24161);
+            public static FormKey MS38LastContact => ModKey.MakeFormKey(0x223e3);
+            public static FormKey Fame => ModKey.MakeFormKey(0x223c5);
+            public static FormKey Sleep => ModKey.MakeFormKey(0x223b1);
+            public static FormKey GameYear => ModKey.MakeFormKey(0x35);
+            public static FormKey GameMonth => ModKey.MakeFormKey(0x36);
+            public static FormKey GameDay => ModKey.MakeFormKey(0x37);
+            public static FormKey GameHour => ModKey.MakeFormKey(0x38);
+            public static FormKey GameDaysPassed => ModKey.MakeFormKey(0x39);
+            public static FormKey TimeScale => ModKey.MakeFormKey(0x3a);
+        }
+    }
+}
