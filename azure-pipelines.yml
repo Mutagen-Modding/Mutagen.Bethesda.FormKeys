@@ -36,6 +36,15 @@ steps:
     projects: '**/*UnitTests.csproj'
 
 - task: DotNetCoreCLI@2
+  displayName: "Publish"
+  inputs:
+    command: publish 
+    arguments: -r win-x64 -p:PublishSingleFile=True --self-contained false -o $(Build.ArtifactStagingDirectory) --configuration Release
+    projects: '**/Mutagen.Bethesda.FormKeys.Generator.csproj'
+    publishWebProjects: false
+  enabled: true
+
+- task: DotNetCoreCLI@2
   displayName: "Pack"
   inputs:
       command: pack
