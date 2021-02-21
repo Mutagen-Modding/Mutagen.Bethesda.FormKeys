@@ -11,6 +11,8 @@
     <PackageProjectUrl>https://github.com/Noggog/Mutagen.Bethesda.FormKeys</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Noggog/Mutagen.Bethesda.FormKeys</RepositoryUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
