@@ -125,7 +125,9 @@ namespace Mutagen.Bethesda.FormKeys.Generator
                     }
                 }
 
-                fg.Generate(Path.Combine("Output", gen.Release.ToString(), modName, $"{recGroup.Key}.cs"));
+                var path = Path.Combine("Output", gen.Release.ToString(), modName, $"{recGroup.Key}.cs");
+                fg.Generate(path);
+                System.Console.WriteLine($"Exported: {path}");
             }
         }
     }
