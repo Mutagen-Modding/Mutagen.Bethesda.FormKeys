@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class HearthFires
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class ArmorAddon
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey ChildTorso05AA => ModKey.MakeFormKey(0xc741);
-            public static FormKey ChildTorso04AA => ModKey.MakeFormKey(0xc73f);
+            private static FormLink<IArmorAddonGetter> Construct(uint id) => new FormLink<IArmorAddonGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IArmorAddonGetter> ChildTorso05AA => Construct(0xc741);
+            public static FormLink<IArmorAddonGetter> ChildTorso04AA => Construct(0xc73f);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Dragonborn
@@ -5,17 +7,18 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Ingredient
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
-            public static FormKey DLC2TernFeathers => ModKey.MakeFormKey(0x3cd8e);
-            public static FormKey DLC2HangingMoss => ModKey.MakeFormKey(0x1ff75);
-            public static FormKey DLC2AshCreepCluster => ModKey.MakeFormKey(0x1cd74);
-            public static FormKey DLC2NetchJelly => ModKey.MakeFormKey(0x1cd72);
-            public static FormKey DLC2AshHopperJelly => ModKey.MakeFormKey(0x1cd71);
-            public static FormKey DLC2BoarTusk => ModKey.MakeFormKey(0x1cd6f);
-            public static FormKey DLC2BurntSprigganWood => ModKey.MakeFormKey(0x1cd6e);
-            public static FormKey DLC2GhoulAsh => ModKey.MakeFormKey(0x1cd6d);
-            public static FormKey DLC2Scathecraw01 => ModKey.MakeFormKey(0x17e97);
-            public static FormKey DLC2TramaRoot01 => ModKey.MakeFormKey(0x17008);
-            public static FormKey DLC2SpikyGrassAsh01 => ModKey.MakeFormKey(0x16e26);
+            private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IIngredientGetter> DLC2TernFeathers => Construct(0x3cd8e);
+            public static FormLink<IIngredientGetter> DLC2HangingMoss => Construct(0x1ff75);
+            public static FormLink<IIngredientGetter> DLC2AshCreepCluster => Construct(0x1cd74);
+            public static FormLink<IIngredientGetter> DLC2NetchJelly => Construct(0x1cd72);
+            public static FormLink<IIngredientGetter> DLC2AshHopperJelly => Construct(0x1cd71);
+            public static FormLink<IIngredientGetter> DLC2BoarTusk => Construct(0x1cd6f);
+            public static FormLink<IIngredientGetter> DLC2BurntSprigganWood => Construct(0x1cd6e);
+            public static FormLink<IIngredientGetter> DLC2GhoulAsh => Construct(0x1cd6d);
+            public static FormLink<IIngredientGetter> DLC2Scathecraw01 => Construct(0x17e97);
+            public static FormLink<IIngredientGetter> DLC2TramaRoot01 => Construct(0x17008);
+            public static FormLink<IIngredientGetter> DLC2SpikyGrassAsh01 => Construct(0x16e26);
         }
     }
 }

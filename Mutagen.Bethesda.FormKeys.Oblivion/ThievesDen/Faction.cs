@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class ThievesDen
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Faction
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCThievesDen.esp");
-            public static FormKey DLC06DunbarrowPirateFaction => ModKey.MakeFormKey(0x3edb);
-            public static FormKey DLC06DunbarrowFaction => ModKey.MakeFormKey(0x3edc);
+            private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IFactionGetter> DLC06DunbarrowPirateFaction => Construct(0x3edb);
+            public static FormLink<IFactionGetter> DLC06DunbarrowFaction => Construct(0x3edc);
         }
     }
 }

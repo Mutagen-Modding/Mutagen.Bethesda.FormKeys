@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Dawnguard
@@ -5,32 +7,33 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class ObjectEffect
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey DLC1DawnguardRuneHammerEnchant => ModKey.MakeFormKey(0x14556);
-            public static FormKey DLC1HarkonsSwordAbsorbHMS => ModKey.MakeFormKey(0x11ee9);
-            public static FormKey TrapPoisonBloomGasEnch06 => ModKey.MakeFormKey(0xf3cc);
-            public static FormKey TrapPoisonBloomGasEnch05 => ModKey.MakeFormKey(0xf3cb);
-            public static FormKey TrapPoisonBloomGasEnch04 => ModKey.MakeFormKey(0xf3ca);
-            public static FormKey TrapPoisonBloomGasEnch03 => ModKey.MakeFormKey(0xf3c9);
-            public static FormKey TrapPoisonBloomGasEnch02 => ModKey.MakeFormKey(0xf3c8);
-            public static FormKey TrapPoisonBloomGasEnch01 => ModKey.MakeFormKey(0xf3c7);
-            public static FormKey DLC1nVampireBloodMagicRingEruditeEnch => ModKey.MakeFormKey(0xe802);
-            public static FormKey DLC1nVampireBloodMagicRingBeastEnch => ModKey.MakeFormKey(0xe801);
-            public static FormKey DLC1nVampireMagicaDrainClawsENCH => ModKey.MakeFormKey(0xe7ea);
-            public static FormKey DLC1nVampireBloodPlagueENCH => ModKey.MakeFormKey(0xe7b5);
-            public static FormKey DLC1DawnguardRuneVisualsEnchantment => ModKey.MakeFormKey(0x6923);
-            public static FormKey DLC1VampBatsAmulet => ModKey.MakeFormKey(0x68af);
-            public static FormKey DLC1EnchArmorJiubNecklace => ModKey.MakeFormKey(0x1951a);
-            public static FormKey DLC1DawnguardRuneAxeExtraDamage => ModKey.MakeFormKey(0x1668f);
-            public static FormKey DLCEnchAurielsBowBlessed => ModKey.MakeFormKey(0x15718);
-            public static FormKey DLC1LD_SteamEnch => ModKey.MakeFormKey(0x1533e);
-            public static FormKey DLC1LD_LavaEnch => ModKey.MakeFormKey(0x1533d);
-            public static FormKey DLC1LD_AetherialStaffEnch => ModKey.MakeFormKey(0x142b1);
-            public static FormKey DLC1LD_EnchKatriaBow => ModKey.MakeFormKey(0x142aa);
-            public static FormKey DLC1LD_EnchAetherialArmorNull => ModKey.MakeFormKey(0xcfa9);
-            public static FormKey DLCEnchAurielsBow => ModKey.MakeFormKey(0x71df);
-            public static FormKey DLC1SoulCairnCrystalEnch01 => ModKey.MakeFormKey(0x69c5);
-            public static FormKey DLC1EnchArmorReflectingShield => ModKey.MakeFormKey(0x488b);
-            public static FormKey TestEnchAxeFX => ModKey.MakeFormKey(0x427c);
+            private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IObjectEffectGetter> DLC1DawnguardRuneHammerEnchant => Construct(0x14556);
+            public static FormLink<IObjectEffectGetter> DLC1HarkonsSwordAbsorbHMS => Construct(0x11ee9);
+            public static FormLink<IObjectEffectGetter> TrapPoisonBloomGasEnch06 => Construct(0xf3cc);
+            public static FormLink<IObjectEffectGetter> TrapPoisonBloomGasEnch05 => Construct(0xf3cb);
+            public static FormLink<IObjectEffectGetter> TrapPoisonBloomGasEnch04 => Construct(0xf3ca);
+            public static FormLink<IObjectEffectGetter> TrapPoisonBloomGasEnch03 => Construct(0xf3c9);
+            public static FormLink<IObjectEffectGetter> TrapPoisonBloomGasEnch02 => Construct(0xf3c8);
+            public static FormLink<IObjectEffectGetter> TrapPoisonBloomGasEnch01 => Construct(0xf3c7);
+            public static FormLink<IObjectEffectGetter> DLC1nVampireBloodMagicRingEruditeEnch => Construct(0xe802);
+            public static FormLink<IObjectEffectGetter> DLC1nVampireBloodMagicRingBeastEnch => Construct(0xe801);
+            public static FormLink<IObjectEffectGetter> DLC1nVampireMagicaDrainClawsENCH => Construct(0xe7ea);
+            public static FormLink<IObjectEffectGetter> DLC1nVampireBloodPlagueENCH => Construct(0xe7b5);
+            public static FormLink<IObjectEffectGetter> DLC1DawnguardRuneVisualsEnchantment => Construct(0x6923);
+            public static FormLink<IObjectEffectGetter> DLC1VampBatsAmulet => Construct(0x68af);
+            public static FormLink<IObjectEffectGetter> DLC1EnchArmorJiubNecklace => Construct(0x1951a);
+            public static FormLink<IObjectEffectGetter> DLC1DawnguardRuneAxeExtraDamage => Construct(0x1668f);
+            public static FormLink<IObjectEffectGetter> DLCEnchAurielsBowBlessed => Construct(0x15718);
+            public static FormLink<IObjectEffectGetter> DLC1LD_SteamEnch => Construct(0x1533e);
+            public static FormLink<IObjectEffectGetter> DLC1LD_LavaEnch => Construct(0x1533d);
+            public static FormLink<IObjectEffectGetter> DLC1LD_AetherialStaffEnch => Construct(0x142b1);
+            public static FormLink<IObjectEffectGetter> DLC1LD_EnchKatriaBow => Construct(0x142aa);
+            public static FormLink<IObjectEffectGetter> DLC1LD_EnchAetherialArmorNull => Construct(0xcfa9);
+            public static FormLink<IObjectEffectGetter> DLCEnchAurielsBow => Construct(0x71df);
+            public static FormLink<IObjectEffectGetter> DLC1SoulCairnCrystalEnch01 => Construct(0x69c5);
+            public static FormLink<IObjectEffectGetter> DLC1EnchArmorReflectingShield => Construct(0x488b);
+            public static FormLink<IObjectEffectGetter> TestEnchAxeFX => Construct(0x427c);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class SpellTomes
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Container
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCSpellTomes.esp");
-            public static FormKey TestQASpellTomes => ModKey.MakeFormKey(0x4fa3);
+            private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IContainerGetter> TestQASpellTomes => Construct(0x4fa3);
         }
     }
 }

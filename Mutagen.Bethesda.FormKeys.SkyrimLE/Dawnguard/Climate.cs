@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dawnguard
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class Climate
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey SoulCairnClimate => ModKey.MakeFormKey(0x1409);
+            private static FormLink<IClimateGetter> Construct(uint id) => new FormLink<IClimateGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IClimateGetter> SoulCairnClimate => Construct(0x1409);
         }
     }
 }

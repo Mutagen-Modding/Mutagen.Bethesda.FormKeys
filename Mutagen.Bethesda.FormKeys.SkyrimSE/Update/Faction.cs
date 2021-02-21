@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Faction
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey PetFramework_PetFollowingFaction => ModKey.MakeFormKey(0x2f1d);
-            public static FormKey PetFramework_PetFaction => ModKey.MakeFormKey(0x2f1b);
-            public static FormKey CR08ExclusionFaction => ModKey.MakeFormKey(0x944);
+            private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IFactionGetter> PetFramework_PetFollowingFaction => Construct(0x2f1d);
+            public static FormLink<IFactionGetter> PetFramework_PetFaction => Construct(0x2f1b);
+            public static FormLink<IFactionGetter> CR08ExclusionFaction => Construct(0x944);
         }
     }
 }

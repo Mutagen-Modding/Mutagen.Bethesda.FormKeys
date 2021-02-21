@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Knights
@@ -5,23 +7,24 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Quest
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Knights.esp");
-            public static FormKey ND10FIN => ModKey.MakeFormKey(0x2d32);
-            public static FormKey NDKnightsConvSystem => ModKey.MakeFormKey(0x2d33);
-            public static FormKey NDGreetings => ModKey.MakeFormKey(0x2d34);
-            public static FormKey NDStartingRumors => ModKey.MakeFormKey(0x2d35);
-            public static FormKey NDConversations => ModKey.MakeFormKey(0x2d36);
-            public static FormKey ND10 => ModKey.MakeFormKey(0x2d37);
-            public static FormKey ND09 => ModKey.MakeFormKey(0x2d38);
-            public static FormKey ND08 => ModKey.MakeFormKey(0x2d39);
-            public static FormKey ND07 => ModKey.MakeFormKey(0x2d3a);
-            public static FormKey ND06 => ModKey.MakeFormKey(0x2d3b);
-            public static FormKey ND05 => ModKey.MakeFormKey(0x2d3c);
-            public static FormKey ND04 => ModKey.MakeFormKey(0x2d3d);
-            public static FormKey ND03 => ModKey.MakeFormKey(0x2d3e);
-            public static FormKey ND02 => ModKey.MakeFormKey(0x2d3f);
-            public static FormKey ND01 => ModKey.MakeFormKey(0x2d40);
-            public static FormKey NDPilgrim => ModKey.MakeFormKey(0x2d41);
-            public static FormKey ND00 => ModKey.MakeFormKey(0x2d42);
+            private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IQuestGetter> ND10FIN => Construct(0x2d32);
+            public static FormLink<IQuestGetter> NDKnightsConvSystem => Construct(0x2d33);
+            public static FormLink<IQuestGetter> NDGreetings => Construct(0x2d34);
+            public static FormLink<IQuestGetter> NDStartingRumors => Construct(0x2d35);
+            public static FormLink<IQuestGetter> NDConversations => Construct(0x2d36);
+            public static FormLink<IQuestGetter> ND10 => Construct(0x2d37);
+            public static FormLink<IQuestGetter> ND09 => Construct(0x2d38);
+            public static FormLink<IQuestGetter> ND08 => Construct(0x2d39);
+            public static FormLink<IQuestGetter> ND07 => Construct(0x2d3a);
+            public static FormLink<IQuestGetter> ND06 => Construct(0x2d3b);
+            public static FormLink<IQuestGetter> ND05 => Construct(0x2d3c);
+            public static FormLink<IQuestGetter> ND04 => Construct(0x2d3d);
+            public static FormLink<IQuestGetter> ND03 => Construct(0x2d3e);
+            public static FormLink<IQuestGetter> ND02 => Construct(0x2d3f);
+            public static FormLink<IQuestGetter> ND01 => Construct(0x2d40);
+            public static FormLink<IQuestGetter> NDPilgrim => Construct(0x2d41);
+            public static FormLink<IQuestGetter> ND00 => Construct(0x2d42);
         }
     }
 }

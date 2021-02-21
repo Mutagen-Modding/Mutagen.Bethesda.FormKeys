@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class HearthFires
@@ -5,24 +7,25 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class LeveledItem
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHLItemInnRuralDrinkNewWines => ModKey.MakeFormKey(0xbbf);
-            public static FormKey BYOHLItemFoodFlourSmall => ModKey.MakeFormKey(0xbb3);
-            public static FormKey BYOHLItemFoodFlour75 => ModKey.MakeFormKey(0xbb2);
-            public static FormKey BYOHLItemFoodFlour => ModKey.MakeFormKey(0xbb1);
-            public static FormKey BYOHRelationshipAdoptionLItemChildrensClothesAny75 => ModKey.MakeFormKey(0x916);
-            public static FormKey BYOHLItemKhajiitCaravans => ModKey.MakeFormKey(0x915);
-            public static FormKey BYOHLItemStraw75 => ModKey.MakeFormKey(0x80d);
-            public static FormKey BYOHLItemGlass75 => ModKey.MakeFormKey(0x80c);
-            public static FormKey BYOHRelationshipAdoptionLItemChildrensClothesAny100 => ModKey.MakeFormKey(0xd82a);
-            public static FormKey BYOHRelationshipAdoptionLItemChildrensClothes05 => ModKey.MakeFormKey(0xd829);
-            public static FormKey BYOHRelationshipAdoptionLItemChildrensClothes04 => ModKey.MakeFormKey(0xd828);
-            public static FormKey BYOHRelationshipAdoptionLItemChildrensClothes03 => ModKey.MakeFormKey(0xd827);
-            public static FormKey BYOHRelationshipAdoptionLItemChildrensClothes02 => ModKey.MakeFormKey(0xd826);
-            public static FormKey BYOHRelationshipAdoptionLItemChildrensClothes01 => ModKey.MakeFormKey(0xd825);
-            public static FormKey BYOHHouseTestItems => ModKey.MakeFormKey(0xd17e);
-            public static FormKey BYOHLItemHornGoat50 => ModKey.MakeFormKey(0x9567);
-            public static FormKey BYOHAdoptionUrchinsSofieFlowersCommon => ModKey.MakeFormKey(0x4036);
-            public static FormKey BYOHAdoptionUrchinsSofieFlowersRare => ModKey.MakeFormKey(0x4035);
+            private static FormLink<ILeveledItemGetter> Construct(uint id) => new FormLink<ILeveledItemGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ILeveledItemGetter> BYOHLItemInnRuralDrinkNewWines => Construct(0xbbf);
+            public static FormLink<ILeveledItemGetter> BYOHLItemFoodFlourSmall => Construct(0xbb3);
+            public static FormLink<ILeveledItemGetter> BYOHLItemFoodFlour75 => Construct(0xbb2);
+            public static FormLink<ILeveledItemGetter> BYOHLItemFoodFlour => Construct(0xbb1);
+            public static FormLink<ILeveledItemGetter> BYOHRelationshipAdoptionLItemChildrensClothesAny75 => Construct(0x916);
+            public static FormLink<ILeveledItemGetter> BYOHLItemKhajiitCaravans => Construct(0x915);
+            public static FormLink<ILeveledItemGetter> BYOHLItemStraw75 => Construct(0x80d);
+            public static FormLink<ILeveledItemGetter> BYOHLItemGlass75 => Construct(0x80c);
+            public static FormLink<ILeveledItemGetter> BYOHRelationshipAdoptionLItemChildrensClothesAny100 => Construct(0xd82a);
+            public static FormLink<ILeveledItemGetter> BYOHRelationshipAdoptionLItemChildrensClothes05 => Construct(0xd829);
+            public static FormLink<ILeveledItemGetter> BYOHRelationshipAdoptionLItemChildrensClothes04 => Construct(0xd828);
+            public static FormLink<ILeveledItemGetter> BYOHRelationshipAdoptionLItemChildrensClothes03 => Construct(0xd827);
+            public static FormLink<ILeveledItemGetter> BYOHRelationshipAdoptionLItemChildrensClothes02 => Construct(0xd826);
+            public static FormLink<ILeveledItemGetter> BYOHRelationshipAdoptionLItemChildrensClothes01 => Construct(0xd825);
+            public static FormLink<ILeveledItemGetter> BYOHHouseTestItems => Construct(0xd17e);
+            public static FormLink<ILeveledItemGetter> BYOHLItemHornGoat50 => Construct(0x9567);
+            public static FormLink<ILeveledItemGetter> BYOHAdoptionUrchinsSofieFlowersCommon => Construct(0x4036);
+            public static FormLink<ILeveledItemGetter> BYOHAdoptionUrchinsSofieFlowersRare => Construct(0x4035);
         }
     }
 }

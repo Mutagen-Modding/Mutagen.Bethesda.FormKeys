@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class ThievesDen
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Quest
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCThievesDen.esp");
-            public static FormKey DLC06ThievesDen => ModKey.MakeFormKey(0x3e84);
+            private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IQuestGetter> DLC06ThievesDen => Construct(0x3e84);
         }
     }
 }

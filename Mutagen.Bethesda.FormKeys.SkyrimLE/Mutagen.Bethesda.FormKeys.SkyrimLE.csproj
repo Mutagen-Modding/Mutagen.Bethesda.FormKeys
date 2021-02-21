@@ -13,7 +13,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mutagen.Bethesda" Version="0.17.0" />
+    <PackageReference Include="Mutagen.Bethesda.Core" Version="0.26.0" />
+    <PackageReference Include="Mutagen.Bethesda.Skyrim" Version="0.26.0" />
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

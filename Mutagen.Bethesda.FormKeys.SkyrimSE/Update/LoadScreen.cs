@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class LoadScreen
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey CharacterSkillILegendary => ModKey.MakeFormKey(0x9da);
+            private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ILoadScreenGetter> CharacterSkillILegendary => Construct(0x9da);
         }
     }
 }

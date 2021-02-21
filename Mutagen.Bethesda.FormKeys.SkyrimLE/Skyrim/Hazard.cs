@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Skyrim
@@ -5,50 +7,51 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class Hazard
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
-            public static FormKey TrapFirePlateFXHaz06 => ModKey.MakeFormKey(0x109ce5);
-            public static FormKey TrapFirePlateFXHaz05 => ModKey.MakeFormKey(0x109ce4);
-            public static FormKey TrapFirePlateFXHaz04 => ModKey.MakeFormKey(0x109ce3);
-            public static FormKey TrapFirePlateFXHaz03 => ModKey.MakeFormKey(0x109ce2);
-            public static FormKey TrapFirePlateFXHaz02 => ModKey.MakeFormKey(0x109ce1);
-            public static FormKey DA13PustuleGasCloud => ModKey.MakeFormKey(0x106380);
-            public static FormKey MQClearSkyFogHazard => ModKey.MakeFormKey(0x106375);
-            public static FormKey BlizzardThroatOfTheWorldHazard => ModKey.MakeFormKey(0x105374);
-            public static FormKey FireLgPlacedHazardInvisible => ModKey.MakeFormKey(0x10387e);
-            public static FormKey MS06PotemaShockBarrierHazardDrop => ModKey.MakeFormKey(0x1034c1);
-            public static FormKey MS06PotemaShockBarrierHazard => ModKey.MakeFormKey(0x1034bd);
-            public static FormKey GuardianCircleTurnHazard => ModKey.MakeFormKey(0xfead3);
-            public static FormKey AtronachFlamelHazard => ModKey.MakeFormKey(0xf71d9);
-            public static FormKey FireBarrierHazardDropCatapult => ModKey.MakeFormKey(0xee9f5);
-            public static FormKey GuardianCircleHazard => ModKey.MakeFormKey(0xe0cd3);
-            public static FormKey FXHavokRockHazard => ModKey.MakeFormKey(0xd07bc);
-            public static FormKey TGControlLocationFXHazard => ModKey.MakeFormKey(0xce275);
-            public static FormKey ClairvoyanceHazard => ModKey.MakeFormKey(0x2113e);
-            public static FormKey CallStormHazardAlduinDeath => ModKey.MakeFormKey(0x154bc);
-            public static FormKey CallStormHazard01 => ModKey.MakeFormKey(0xe4cb3);
-            public static FormKey SummonFXLightHazard => ModKey.MakeFormKey(0x95457);
-            public static FormKey ShockBarrierHazardDrop => ModKey.MakeFormKey(0x592d1);
-            public static FormKey ShockBarrierHazard => ModKey.MakeFormKey(0x591a5);
-            public static FormKey FrostBarrierHazard01Drop => ModKey.MakeFormKey(0x590fc);
-            public static FormKey FireBarrierHazardDrop => ModKey.MakeFormKey(0x590fb);
-            public static FormKey FrostBlizzardSpellHazard03 => ModKey.MakeFormKey(0xb7a04);
-            public static FormKey FrostBlizzardSpellHazard02 => ModKey.MakeFormKey(0xb7a03);
-            public static FormKey FrostBlizzardSpellHazard01 => ModKey.MakeFormKey(0xb79f9);
-            public static FormKey CircleVitalityHazard => ModKey.MakeFormKey(0xb62ea);
-            public static FormKey FrostBarrierHazard01 => ModKey.MakeFormKey(0x8f3f4);
-            public static FormKey FireBarrierHazard => ModKey.MakeFormKey(0x8f3ee);
-            public static FormKey TrapOilLampHazard => ModKey.MakeFormKey(0x80e1f);
-            public static FormKey TrapOilHazard01 => ModKey.MakeFormKey(0x303ff);
-            public static FormKey TrapFirePlateFXHaz01 => ModKey.MakeFormKey(0x5a1a3);
-            public static FormKey FireLgPlacedHazard => ModKey.MakeFormKey(0x57a8c);
-            public static FormKey CircleOfProtectionHazard => ModKey.MakeFormKey(0x4e80c);
-            public static FormKey TestLightHazard => ModKey.MakeFormKey(0x3fa51);
-            public static FormKey FireLgShortHazard => ModKey.MakeFormKey(0x3e076);
-            public static FormKey FireLgLongHazard => ModKey.MakeFormKey(0x3e075);
-            public static FormKey FireSmLongHazard => ModKey.MakeFormKey(0x3e074);
-            public static FormKey FireSmShortHazard => ModKey.MakeFormKey(0x3e073);
-            public static FormKey FireSpellHazard => ModKey.MakeFormKey(0x153bf);
-            public static FormKey IceHazard01 => ModKey.MakeFormKey(0x130f5);
-            public static FormKey FireDragonHazard => ModKey.MakeFormKey(0x3172a);
+            private static FormLink<IHazardGetter> Construct(uint id) => new FormLink<IHazardGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IHazardGetter> TrapFirePlateFXHaz06 => Construct(0x109ce5);
+            public static FormLink<IHazardGetter> TrapFirePlateFXHaz05 => Construct(0x109ce4);
+            public static FormLink<IHazardGetter> TrapFirePlateFXHaz04 => Construct(0x109ce3);
+            public static FormLink<IHazardGetter> TrapFirePlateFXHaz03 => Construct(0x109ce2);
+            public static FormLink<IHazardGetter> TrapFirePlateFXHaz02 => Construct(0x109ce1);
+            public static FormLink<IHazardGetter> DA13PustuleGasCloud => Construct(0x106380);
+            public static FormLink<IHazardGetter> MQClearSkyFogHazard => Construct(0x106375);
+            public static FormLink<IHazardGetter> BlizzardThroatOfTheWorldHazard => Construct(0x105374);
+            public static FormLink<IHazardGetter> FireLgPlacedHazardInvisible => Construct(0x10387e);
+            public static FormLink<IHazardGetter> MS06PotemaShockBarrierHazardDrop => Construct(0x1034c1);
+            public static FormLink<IHazardGetter> MS06PotemaShockBarrierHazard => Construct(0x1034bd);
+            public static FormLink<IHazardGetter> GuardianCircleTurnHazard => Construct(0xfead3);
+            public static FormLink<IHazardGetter> AtronachFlamelHazard => Construct(0xf71d9);
+            public static FormLink<IHazardGetter> FireBarrierHazardDropCatapult => Construct(0xee9f5);
+            public static FormLink<IHazardGetter> GuardianCircleHazard => Construct(0xe0cd3);
+            public static FormLink<IHazardGetter> FXHavokRockHazard => Construct(0xd07bc);
+            public static FormLink<IHazardGetter> TGControlLocationFXHazard => Construct(0xce275);
+            public static FormLink<IHazardGetter> ClairvoyanceHazard => Construct(0x2113e);
+            public static FormLink<IHazardGetter> CallStormHazardAlduinDeath => Construct(0x154bc);
+            public static FormLink<IHazardGetter> CallStormHazard01 => Construct(0xe4cb3);
+            public static FormLink<IHazardGetter> SummonFXLightHazard => Construct(0x95457);
+            public static FormLink<IHazardGetter> ShockBarrierHazardDrop => Construct(0x592d1);
+            public static FormLink<IHazardGetter> ShockBarrierHazard => Construct(0x591a5);
+            public static FormLink<IHazardGetter> FrostBarrierHazard01Drop => Construct(0x590fc);
+            public static FormLink<IHazardGetter> FireBarrierHazardDrop => Construct(0x590fb);
+            public static FormLink<IHazardGetter> FrostBlizzardSpellHazard03 => Construct(0xb7a04);
+            public static FormLink<IHazardGetter> FrostBlizzardSpellHazard02 => Construct(0xb7a03);
+            public static FormLink<IHazardGetter> FrostBlizzardSpellHazard01 => Construct(0xb79f9);
+            public static FormLink<IHazardGetter> CircleVitalityHazard => Construct(0xb62ea);
+            public static FormLink<IHazardGetter> FrostBarrierHazard01 => Construct(0x8f3f4);
+            public static FormLink<IHazardGetter> FireBarrierHazard => Construct(0x8f3ee);
+            public static FormLink<IHazardGetter> TrapOilLampHazard => Construct(0x80e1f);
+            public static FormLink<IHazardGetter> TrapOilHazard01 => Construct(0x303ff);
+            public static FormLink<IHazardGetter> TrapFirePlateFXHaz01 => Construct(0x5a1a3);
+            public static FormLink<IHazardGetter> FireLgPlacedHazard => Construct(0x57a8c);
+            public static FormLink<IHazardGetter> CircleOfProtectionHazard => Construct(0x4e80c);
+            public static FormLink<IHazardGetter> TestLightHazard => Construct(0x3fa51);
+            public static FormLink<IHazardGetter> FireLgShortHazard => Construct(0x3e076);
+            public static FormLink<IHazardGetter> FireLgLongHazard => Construct(0x3e075);
+            public static FormLink<IHazardGetter> FireSmLongHazard => Construct(0x3e074);
+            public static FormLink<IHazardGetter> FireSmShortHazard => Construct(0x3e073);
+            public static FormLink<IHazardGetter> FireSpellHazard => Construct(0x153bf);
+            public static FormLink<IHazardGetter> IceHazard01 => Construct(0x130f5);
+            public static FormLink<IHazardGetter> FireDragonHazard => Construct(0x3172a);
         }
     }
 }

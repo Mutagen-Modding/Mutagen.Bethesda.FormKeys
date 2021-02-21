@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class VileLair
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Quest
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
-            public static FormKey DLCDeepscorn => ModKey.MakeFormKey(0x41c4);
+            private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IQuestGetter> DLCDeepscorn => Construct(0x41c4);
         }
     }
 }

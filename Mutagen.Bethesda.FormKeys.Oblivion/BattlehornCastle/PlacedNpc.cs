@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class BattlehornCastle
@@ -5,17 +7,18 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class PlacedNpc
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCBattlehornCastle.esp");
-            public static FormKey DLCBhornKnightRef => ModKey.MakeFormKey(0xca2c);
-            public static FormKey DLCBattlehornKnight2REF => ModKey.MakeFormKey(0xca3f);
-            public static FormKey NilphasOmellianRef => ModKey.MakeFormKey(0xb094);
-            public static FormKey ShagrolgroUzugREF => ModKey.MakeFormKey(0xc008);
-            public static FormKey TalanRef => ModKey.MakeFormKey(0xb0b0);
-            public static FormKey NielsREF => ModKey.MakeFormKey(0xc517);
-            public static FormKey MelisiDarenRef => ModKey.MakeFormKey(0xb0b3);
-            public static FormKey DLCBattlehornLordKelvynREF => ModKey.MakeFormKey(0x1341b);
-            public static FormKey DLCBattlehornMarauderMissileREF => ModKey.MakeFormKey(0x13425);
-            public static FormKey DLCBattlehornMarauderMeleeREF => ModKey.MakeFormKey(0x13424);
-            public static FormKey DLCBattlehornMarauderBossREF => ModKey.MakeFormKey(0x13423);
+            private static FormLink<IPlacedNpcGetter> Construct(uint id) => new FormLink<IPlacedNpcGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IPlacedNpcGetter> DLCBhornKnightRef => Construct(0xca2c);
+            public static FormLink<IPlacedNpcGetter> DLCBattlehornKnight2REF => Construct(0xca3f);
+            public static FormLink<IPlacedNpcGetter> NilphasOmellianRef => Construct(0xb094);
+            public static FormLink<IPlacedNpcGetter> ShagrolgroUzugREF => Construct(0xc008);
+            public static FormLink<IPlacedNpcGetter> TalanRef => Construct(0xb0b0);
+            public static FormLink<IPlacedNpcGetter> NielsREF => Construct(0xc517);
+            public static FormLink<IPlacedNpcGetter> MelisiDarenRef => Construct(0xb0b3);
+            public static FormLink<IPlacedNpcGetter> DLCBattlehornLordKelvynREF => Construct(0x1341b);
+            public static FormLink<IPlacedNpcGetter> DLCBattlehornMarauderMissileREF => Construct(0x13425);
+            public static FormLink<IPlacedNpcGetter> DLCBattlehornMarauderMeleeREF => Construct(0x13424);
+            public static FormLink<IPlacedNpcGetter> DLCBattlehornMarauderBossREF => Construct(0x13423);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dawnguard
@@ -5,29 +7,30 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class LightingTemplate
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey DLC1VCCourtyardLightingTemplate => ModKey.MakeFormKey(0x14646);
-            public static FormKey RuunvaldLightingTemplateDarkClose => ModKey.MakeFormKey(0x14517);
-            public static FormKey RuunvaldLightingTemplateDark => ModKey.MakeFormKey(0x14516);
-            public static FormKey DLC1AncestorGladeCaveLightingTemplate => ModKey.MakeFormKey(0x144f3);
-            public static FormKey DLC1ArkngthamzMed => ModKey.MakeFormKey(0x14110);
-            public static FormKey DLC1ArkngthamzFar => ModKey.MakeFormKey(0x13f90);
-            public static FormKey DLC1BthalftForgeLT => ModKey.MakeFormKey(0x12ff6);
-            public static FormKey DLC1DarkDungeonFarWater => ModKey.MakeFormKey(0xe6c6);
-            public static FormKey DLC1DarkDungeonFarDarkfallEnd => ModKey.MakeFormKey(0xe66e);
-            public static FormKey DLC1AncestorGladeLightingTemplate => ModKey.MakeFormKey(0xd99e);
-            public static FormKey DLC1DarkDungeonMediumShrineAmbient => ModKey.MakeFormKey(0xd6fc);
-            public static FormKey ForebearsHideoutFar => ModKey.MakeFormKey(0x2fde);
-            public static FormKey DLC1VolkhairCastleCloseDarkLT => ModKey.MakeFormKey(0x19c6c);
-            public static FormKey DLC1VolkhairCastleCloseLT => ModKey.MakeFormKey(0x17940);
-            public static FormKey DLC1VolkhairCastleBlueLT => ModKey.MakeFormKey(0x1793f);
-            public static FormKey DLC1VolkhairCastleLT => ModKey.MakeFormKey(0x17776);
-            public static FormKey DLC1DarkDungeonCloseBrighterAmbient => ModKey.MakeFormKey(0x16075);
-            public static FormKey DLC1DarkDungeonMediumBrighterAmbient => ModKey.MakeFormKey(0x16073);
-            public static FormKey DLC1DarkDungeonMedium => ModKey.MakeFormKey(0x6aea);
-            public static FormKey DLC1DarkDungeonFar => ModKey.MakeFormKey(0x6ae9);
-            public static FormKey DLC1DarkDungeonClose => ModKey.MakeFormKey(0x6ae8);
-            public static FormKey IceCaveDarkFar => ModKey.MakeFormKey(0x4eea);
-            public static FormKey IceCaveDark => ModKey.MakeFormKey(0x2f7e);
+            private static FormLink<ILightingTemplateGetter> Construct(uint id) => new FormLink<ILightingTemplateGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ILightingTemplateGetter> DLC1VCCourtyardLightingTemplate => Construct(0x14646);
+            public static FormLink<ILightingTemplateGetter> RuunvaldLightingTemplateDarkClose => Construct(0x14517);
+            public static FormLink<ILightingTemplateGetter> RuunvaldLightingTemplateDark => Construct(0x14516);
+            public static FormLink<ILightingTemplateGetter> DLC1AncestorGladeCaveLightingTemplate => Construct(0x144f3);
+            public static FormLink<ILightingTemplateGetter> DLC1ArkngthamzMed => Construct(0x14110);
+            public static FormLink<ILightingTemplateGetter> DLC1ArkngthamzFar => Construct(0x13f90);
+            public static FormLink<ILightingTemplateGetter> DLC1BthalftForgeLT => Construct(0x12ff6);
+            public static FormLink<ILightingTemplateGetter> DLC1DarkDungeonFarWater => Construct(0xe6c6);
+            public static FormLink<ILightingTemplateGetter> DLC1DarkDungeonFarDarkfallEnd => Construct(0xe66e);
+            public static FormLink<ILightingTemplateGetter> DLC1AncestorGladeLightingTemplate => Construct(0xd99e);
+            public static FormLink<ILightingTemplateGetter> DLC1DarkDungeonMediumShrineAmbient => Construct(0xd6fc);
+            public static FormLink<ILightingTemplateGetter> ForebearsHideoutFar => Construct(0x2fde);
+            public static FormLink<ILightingTemplateGetter> DLC1VolkhairCastleCloseDarkLT => Construct(0x19c6c);
+            public static FormLink<ILightingTemplateGetter> DLC1VolkhairCastleCloseLT => Construct(0x17940);
+            public static FormLink<ILightingTemplateGetter> DLC1VolkhairCastleBlueLT => Construct(0x1793f);
+            public static FormLink<ILightingTemplateGetter> DLC1VolkhairCastleLT => Construct(0x17776);
+            public static FormLink<ILightingTemplateGetter> DLC1DarkDungeonCloseBrighterAmbient => Construct(0x16075);
+            public static FormLink<ILightingTemplateGetter> DLC1DarkDungeonMediumBrighterAmbient => Construct(0x16073);
+            public static FormLink<ILightingTemplateGetter> DLC1DarkDungeonMedium => Construct(0x6aea);
+            public static FormLink<ILightingTemplateGetter> DLC1DarkDungeonFar => Construct(0x6ae9);
+            public static FormLink<ILightingTemplateGetter> DLC1DarkDungeonClose => Construct(0x6ae8);
+            public static FormLink<ILightingTemplateGetter> IceCaveDarkFar => Construct(0x4eea);
+            public static FormLink<ILightingTemplateGetter> IceCaveDark => Construct(0x2f7e);
         }
     }
 }

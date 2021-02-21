@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dawnguard
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class ColorRecord
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey HairColor16AlbinoWhite => ModKey.MakeFormKey(0x378e);
+            private static FormLink<IColorRecordGetter> Construct(uint id) => new FormLink<IColorRecordGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IColorRecordGetter> HairColor16AlbinoWhite => Construct(0x378e);
         }
     }
 }

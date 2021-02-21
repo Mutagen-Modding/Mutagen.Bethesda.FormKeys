@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Impact
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey WPNWoodSwordBluntGenericImpact => ModKey.MakeFormKey(0x14c29);
-            public static FormKey WPNWoodSwordvsDummyImpact => ModKey.MakeFormKey(0x8992);
+            private static FormLink<IImpactGetter> Construct(uint id) => new FormLink<IImpactGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IImpactGetter> WPNWoodSwordBluntGenericImpact => Construct(0x14c29);
+            public static FormLink<IImpactGetter> WPNWoodSwordvsDummyImpact => Construct(0x8992);
         }
     }
 }

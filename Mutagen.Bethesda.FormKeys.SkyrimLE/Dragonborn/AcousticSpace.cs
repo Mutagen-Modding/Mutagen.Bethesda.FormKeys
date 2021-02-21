@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dragonborn
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class AcousticSpace
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
-            public static FormKey IntDLC2ApocryphaBookPOI => ModKey.MakeFormKey(0x39e50);
-            public static FormKey IntDLC2TelMithrynDry => ModKey.MakeFormKey(0x39751);
-            public static FormKey IntDLC2TelMithryn => ModKey.MakeFormKey(0x3974d);
+            private static FormLink<IAcousticSpaceGetter> Construct(uint id) => new FormLink<IAcousticSpaceGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IAcousticSpaceGetter> IntDLC2ApocryphaBookPOI => Construct(0x39e50);
+            public static FormLink<IAcousticSpaceGetter> IntDLC2TelMithrynDry => Construct(0x39751);
+            public static FormLink<IAcousticSpaceGetter> IntDLC2TelMithryn => Construct(0x3974d);
         }
     }
 }

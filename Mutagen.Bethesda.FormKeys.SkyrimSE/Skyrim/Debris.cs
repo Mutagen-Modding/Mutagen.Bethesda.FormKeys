@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Skyrim
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Debris
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
-            public static FormKey IceFormDebris14 => ModKey.MakeFormKey(0xdedc9);
-            public static FormKey IceFormDebris => ModKey.MakeFormKey(0xdc20b);
-            public static FormKey IceWraithDebris => ModKey.MakeFormKey(0x5e98e);
+            private static FormLink<IDebrisGetter> Construct(uint id) => new FormLink<IDebrisGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IDebrisGetter> IceFormDebris14 => Construct(0xdedc9);
+            public static FormLink<IDebrisGetter> IceFormDebris => Construct(0xdc20b);
+            public static FormLink<IDebrisGetter> IceWraithDebris => Construct(0x5e98e);
         }
     }
 }

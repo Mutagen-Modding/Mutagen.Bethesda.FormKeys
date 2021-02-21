@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Weapon
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHWoodenSword => ModKey.MakeFormKey(0x4d91);
+            private static FormLink<IWeaponGetter> Construct(uint id) => new FormLink<IWeaponGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IWeaponGetter> BYOHWoodenSword => Construct(0x4d91);
         }
     }
 }

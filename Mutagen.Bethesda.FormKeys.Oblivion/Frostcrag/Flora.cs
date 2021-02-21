@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Frostcrag
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Flora
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCFrostcrag.esp");
-            public static FormKey HarradaUpRightAttackPLANTDomesticated => ModKey.MakeFormKey(0x8525);
-            public static FormKey SpiddalStickPLANTDomesticated => ModKey.MakeFormKey(0x8518);
-            public static FormKey HarradaGroundAttackPLANTDomesticated => ModKey.MakeFormKey(0x8520);
+            private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IFloraGetter> HarradaUpRightAttackPLANTDomesticated => Construct(0x8525);
+            public static FormLink<IFloraGetter> SpiddalStickPLANTDomesticated => Construct(0x8518);
+            public static FormLink<IFloraGetter> HarradaGroundAttackPLANTDomesticated => Construct(0x8520);
         }
     }
 }

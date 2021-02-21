@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Dawnguard
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class BodyPartData
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey GargoyleBodyPartData => ModKey.MakeFormKey(0xa2c7);
-            public static FormKey ChaurusFlyerBodyPartData => ModKey.MakeFormKey(0x5205);
+            private static FormLink<IBodyPartDataGetter> Construct(uint id) => new FormLink<IBodyPartDataGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IBodyPartDataGetter> GargoyleBodyPartData => Construct(0xa2c7);
+            public static FormLink<IBodyPartDataGetter> ChaurusFlyerBodyPartData => Construct(0x5205);
         }
     }
 }

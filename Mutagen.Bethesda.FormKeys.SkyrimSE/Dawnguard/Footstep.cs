@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Dawnguard
@@ -5,42 +7,43 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Footstep
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey NPCVampireLordFootRunRFootstep => ModKey.MakeFormKey(0x1377b);
-            public static FormKey NPCVampireLordFootRunLFootstep => ModKey.MakeFormKey(0x1377a);
-            public static FormKey NPCVampireLordFootWalkRFootstep => ModKey.MakeFormKey(0x13779);
-            public static FormKey NPCVampireLordFootWalkLFootstep => ModKey.MakeFormKey(0x13778);
-            public static FormKey NPCDogAggroWarningFootstep => ModKey.MakeFormKey(0x118f2);
-            public static FormKey NPCDogIdleWhineFootstep => ModKey.MakeFormKey(0x118f1);
-            public static FormKey NPCDogIdleShakeFootstep => ModKey.MakeFormKey(0x11861);
-            public static FormKey NPCDogIdleScratchBFootstep => ModKey.MakeFormKey(0x11852);
-            public static FormKey NPCDogIdleScratchAFootstep => ModKey.MakeFormKey(0x1184e);
-            public static FormKey NPCDogAttackPowerFootstep => ModKey.MakeFormKey(0x1184d);
-            public static FormKey NPCDogAttackFootstep => ModKey.MakeFormKey(0x1184c);
-            public static FormKey NPCDogBarkDistantFootstep => ModKey.MakeFormKey(0x11849);
-            public static FormKey NPCDogHuskyIdleWhineFootstep => ModKey.MakeFormKey(0x117fc);
-            public static FormKey NPCDogHuskyIdleShakeFootstep => ModKey.MakeFormKey(0x117fb);
-            public static FormKey NPCDogHuskyIdleScratchBFootstep => ModKey.MakeFormKey(0x117fa);
-            public static FormKey NPCDogHuskyIdleScratchAFootstep => ModKey.MakeFormKey(0x117f9);
-            public static FormKey NPCDogHuskyBarkDistantFootstep => ModKey.MakeFormKey(0x117f8);
-            public static FormKey NPCDogHuskyBarkFootstep => ModKey.MakeFormKey(0x117f7);
-            public static FormKey NPCDogHuskyAttackPowerFootstep => ModKey.MakeFormKey(0x117f6);
-            public static FormKey NPCDogHuskyAggroWarningFootstep => ModKey.MakeFormKey(0x117dd);
-            public static FormKey NPCDogHuskyAttackFootstep => ModKey.MakeFormKey(0x1178f);
-            public static FormKey NPCDogDeathHoundAttackPowerShortFootstep => ModKey.MakeFormKey(0x1178e);
-            public static FormKey NPCDogDeathHoundAttackPowerFootstep => ModKey.MakeFormKey(0x1178d);
-            public static FormKey NPCDogDeathHoundAttackBFootstep => ModKey.MakeFormKey(0x1178c);
-            public static FormKey NPCDogDeathHoundAttackAFootstep => ModKey.MakeFormKey(0x11779);
-            public static FormKey NPCDogDeathHoundBreatheRunFootstep => ModKey.MakeFormKey(0x11778);
-            public static FormKey NPCDogDeathHoundBarkFootstep => ModKey.MakeFormKey(0x11776);
-            public static FormKey NPCDogDeathHoundBreatheFootstep => ModKey.MakeFormKey(0x115ec);
-            public static FormKey NPCArmoredTrollFootFrontWalkFootstep => ModKey.MakeFormKey(0x39a6);
-            public static FormKey NPCArmoredTrollFootBackWalkFootstep => ModKey.MakeFormKey(0x39a5);
-            public static FormKey NPCGargoyleFootWalkRFootstep => ModKey.MakeFormKey(0xf8ac);
-            public static FormKey NPCGargoyleFootWalkLFootstep => ModKey.MakeFormKey(0xf8ab);
-            public static FormKey NPCHorseSkeletonFootSprintBackFootstep => ModKey.MakeFormKey(0xefb1);
-            public static FormKey NPCHorseSkeletonFootSprintFrontFootstep => ModKey.MakeFormKey(0xefb0);
-            public static FormKey NPCHorseSkeletonFootWalkBackFootstep => ModKey.MakeFormKey(0xefaf);
-            public static FormKey NPCHorseSkeletonFootWalkFrontFootstep => ModKey.MakeFormKey(0xefae);
+            private static FormLink<IFootstepGetter> Construct(uint id) => new FormLink<IFootstepGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IFootstepGetter> NPCVampireLordFootRunRFootstep => Construct(0x1377b);
+            public static FormLink<IFootstepGetter> NPCVampireLordFootRunLFootstep => Construct(0x1377a);
+            public static FormLink<IFootstepGetter> NPCVampireLordFootWalkRFootstep => Construct(0x13779);
+            public static FormLink<IFootstepGetter> NPCVampireLordFootWalkLFootstep => Construct(0x13778);
+            public static FormLink<IFootstepGetter> NPCDogAggroWarningFootstep => Construct(0x118f2);
+            public static FormLink<IFootstepGetter> NPCDogIdleWhineFootstep => Construct(0x118f1);
+            public static FormLink<IFootstepGetter> NPCDogIdleShakeFootstep => Construct(0x11861);
+            public static FormLink<IFootstepGetter> NPCDogIdleScratchBFootstep => Construct(0x11852);
+            public static FormLink<IFootstepGetter> NPCDogIdleScratchAFootstep => Construct(0x1184e);
+            public static FormLink<IFootstepGetter> NPCDogAttackPowerFootstep => Construct(0x1184d);
+            public static FormLink<IFootstepGetter> NPCDogAttackFootstep => Construct(0x1184c);
+            public static FormLink<IFootstepGetter> NPCDogBarkDistantFootstep => Construct(0x11849);
+            public static FormLink<IFootstepGetter> NPCDogHuskyIdleWhineFootstep => Construct(0x117fc);
+            public static FormLink<IFootstepGetter> NPCDogHuskyIdleShakeFootstep => Construct(0x117fb);
+            public static FormLink<IFootstepGetter> NPCDogHuskyIdleScratchBFootstep => Construct(0x117fa);
+            public static FormLink<IFootstepGetter> NPCDogHuskyIdleScratchAFootstep => Construct(0x117f9);
+            public static FormLink<IFootstepGetter> NPCDogHuskyBarkDistantFootstep => Construct(0x117f8);
+            public static FormLink<IFootstepGetter> NPCDogHuskyBarkFootstep => Construct(0x117f7);
+            public static FormLink<IFootstepGetter> NPCDogHuskyAttackPowerFootstep => Construct(0x117f6);
+            public static FormLink<IFootstepGetter> NPCDogHuskyAggroWarningFootstep => Construct(0x117dd);
+            public static FormLink<IFootstepGetter> NPCDogHuskyAttackFootstep => Construct(0x1178f);
+            public static FormLink<IFootstepGetter> NPCDogDeathHoundAttackPowerShortFootstep => Construct(0x1178e);
+            public static FormLink<IFootstepGetter> NPCDogDeathHoundAttackPowerFootstep => Construct(0x1178d);
+            public static FormLink<IFootstepGetter> NPCDogDeathHoundAttackBFootstep => Construct(0x1178c);
+            public static FormLink<IFootstepGetter> NPCDogDeathHoundAttackAFootstep => Construct(0x11779);
+            public static FormLink<IFootstepGetter> NPCDogDeathHoundBreatheRunFootstep => Construct(0x11778);
+            public static FormLink<IFootstepGetter> NPCDogDeathHoundBarkFootstep => Construct(0x11776);
+            public static FormLink<IFootstepGetter> NPCDogDeathHoundBreatheFootstep => Construct(0x115ec);
+            public static FormLink<IFootstepGetter> NPCArmoredTrollFootFrontWalkFootstep => Construct(0x39a6);
+            public static FormLink<IFootstepGetter> NPCArmoredTrollFootBackWalkFootstep => Construct(0x39a5);
+            public static FormLink<IFootstepGetter> NPCGargoyleFootWalkRFootstep => Construct(0xf8ac);
+            public static FormLink<IFootstepGetter> NPCGargoyleFootWalkLFootstep => Construct(0xf8ab);
+            public static FormLink<IFootstepGetter> NPCHorseSkeletonFootSprintBackFootstep => Construct(0xefb1);
+            public static FormLink<IFootstepGetter> NPCHorseSkeletonFootSprintFrontFootstep => Construct(0xefb0);
+            public static FormLink<IFootstepGetter> NPCHorseSkeletonFootWalkBackFootstep => Construct(0xefaf);
+            public static FormLink<IFootstepGetter> NPCHorseSkeletonFootWalkFrontFootstep => Construct(0xefae);
         }
     }
 }

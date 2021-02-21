@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Frostcrag
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Enchantment
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCFrostcrag.esp");
-            public static FormKey FrostcragEnAppRingEnch => ModKey.MakeFormKey(0x5e37);
+            private static FormLink<IEnchantmentGetter> Construct(uint id) => new FormLink<IEnchantmentGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IEnchantmentGetter> FrostcragEnAppRingEnch => Construct(0x5e37);
         }
     }
 }

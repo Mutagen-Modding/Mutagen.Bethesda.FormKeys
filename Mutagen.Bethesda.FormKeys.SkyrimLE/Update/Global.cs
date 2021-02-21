@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Update
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class Global
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey OghmaInfiniumBookHasBeenRead => ModKey.MakeFormKey(0x9de);
-            public static FormKey RiftenUngrienGlobal => ModKey.MakeFormKey(0x9db);
-            public static FormKey WEDL06LetrushKilled => ModKey.MakeFormKey(0x99c);
+            private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IGlobalGetter> OghmaInfiniumBookHasBeenRead => Construct(0x9de);
+            public static FormLink<IGlobalGetter> RiftenUngrienGlobal => Construct(0x9db);
+            public static FormLink<IGlobalGetter> WEDL06LetrushKilled => Construct(0x99c);
         }
     }
 }

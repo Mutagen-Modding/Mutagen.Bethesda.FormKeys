@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dawnguard
@@ -5,24 +7,25 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class EncounterZone
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey DLC1FalmerValleyTempleZone => ModKey.MakeFormKey(0x1379d);
-            public static FormKey DLC1FalmerValleyZone => ModKey.MakeFormKey(0x12f42);
-            public static FormKey DLC1_SoulCairnZone => ModKey.MakeFormKey(0x643c);
-            public static FormKey DLC1MolderingRuinsZone => ModKey.MakeFormKey(0x3cfc);
-            public static FormKey DLC1zFalmerValley03Zone => ModKey.MakeFormKey(0x162b5);
-            public static FormKey DLC1zFalmerValley02Zone => ModKey.MakeFormKey(0x162b3);
-            public static FormKey DLC1zFalmerValley01Zone => ModKey.MakeFormKey(0x162b1);
-            public static FormKey DLC1GlacialCreviceZone => ModKey.MakeFormKey(0x162ae);
-            public static FormKey DLC1DarkfallPassageZone => ModKey.MakeFormKey(0x162ad);
-            public static FormKey DLC1DarkfallCaveZone => ModKey.MakeFormKey(0xa879);
-            public static FormKey DLC1RuunvaldZone => ModKey.MakeFormKey(0x7b22);
-            public static FormKey DLC1RedwaterDenZone => ModKey.MakeFormKey(0x7779);
-            public static FormKey DLC1LDBthalftAetheriumForgeZone => ModKey.MakeFormKey(0x5825);
-            public static FormKey DLC1ArkngthamzZone => ModKey.MakeFormKey(0x5824);
-            public static FormKey DLC1DimhollowCryptZone => ModKey.MakeFormKey(0x4ee7);
-            public static FormKey DLC1_AncestorsGladeZone => ModKey.MakeFormKey(0x3582);
-            public static FormKey DLC1ForebearsHoldoutZone => ModKey.MakeFormKey(0x3581);
-            public static FormKey DLC1_VCDungeonZone => ModKey.MakeFormKey(0x3580);
+            private static FormLink<IEncounterZoneGetter> Construct(uint id) => new FormLink<IEncounterZoneGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IEncounterZoneGetter> DLC1FalmerValleyTempleZone => Construct(0x1379d);
+            public static FormLink<IEncounterZoneGetter> DLC1FalmerValleyZone => Construct(0x12f42);
+            public static FormLink<IEncounterZoneGetter> DLC1_SoulCairnZone => Construct(0x643c);
+            public static FormLink<IEncounterZoneGetter> DLC1MolderingRuinsZone => Construct(0x3cfc);
+            public static FormLink<IEncounterZoneGetter> DLC1zFalmerValley03Zone => Construct(0x162b5);
+            public static FormLink<IEncounterZoneGetter> DLC1zFalmerValley02Zone => Construct(0x162b3);
+            public static FormLink<IEncounterZoneGetter> DLC1zFalmerValley01Zone => Construct(0x162b1);
+            public static FormLink<IEncounterZoneGetter> DLC1GlacialCreviceZone => Construct(0x162ae);
+            public static FormLink<IEncounterZoneGetter> DLC1DarkfallPassageZone => Construct(0x162ad);
+            public static FormLink<IEncounterZoneGetter> DLC1DarkfallCaveZone => Construct(0xa879);
+            public static FormLink<IEncounterZoneGetter> DLC1RuunvaldZone => Construct(0x7b22);
+            public static FormLink<IEncounterZoneGetter> DLC1RedwaterDenZone => Construct(0x7779);
+            public static FormLink<IEncounterZoneGetter> DLC1LDBthalftAetheriumForgeZone => Construct(0x5825);
+            public static FormLink<IEncounterZoneGetter> DLC1ArkngthamzZone => Construct(0x5824);
+            public static FormLink<IEncounterZoneGetter> DLC1DimhollowCryptZone => Construct(0x4ee7);
+            public static FormLink<IEncounterZoneGetter> DLC1_AncestorsGladeZone => Construct(0x3582);
+            public static FormLink<IEncounterZoneGetter> DLC1ForebearsHoldoutZone => Construct(0x3581);
+            public static FormLink<IEncounterZoneGetter> DLC1_VCDungeonZone => Construct(0x3580);
         }
     }
 }

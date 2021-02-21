@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class MehrunesRazor
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Quest
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCMehrunesRazor.esp");
-            public static FormKey DL9MehrunesQuest => ModKey.MakeFormKey(0xed9);
+            private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IQuestGetter> DL9MehrunesQuest => Construct(0xed9);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,12 +7,13 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class AnimatedObject
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey AnimObjectDoll => ModKey.MakeFormKey(0x16a4f);
-            public static FormKey AnimObjectWoodScrap => ModKey.MakeFormKey(0x14352);
-            public static FormKey AnimObjectDrawBlade => ModKey.MakeFormKey(0xa256);
-            public static FormKey AnimObjectBreadPeel => ModKey.MakeFormKey(0x2843);
-            public static FormKey AnimObjectDumplingRight => ModKey.MakeFormKey(0x2842);
-            public static FormKey AnimObjectDumplingLeft => ModKey.MakeFormKey(0x2841);
+            private static FormLink<IAnimatedObjectGetter> Construct(uint id) => new FormLink<IAnimatedObjectGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IAnimatedObjectGetter> AnimObjectDoll => Construct(0x16a4f);
+            public static FormLink<IAnimatedObjectGetter> AnimObjectWoodScrap => Construct(0x14352);
+            public static FormLink<IAnimatedObjectGetter> AnimObjectDrawBlade => Construct(0xa256);
+            public static FormLink<IAnimatedObjectGetter> AnimObjectBreadPeel => Construct(0x2843);
+            public static FormLink<IAnimatedObjectGetter> AnimObjectDumplingRight => Construct(0x2842);
+            public static FormLink<IAnimatedObjectGetter> AnimObjectDumplingLeft => Construct(0x2841);
         }
     }
 }

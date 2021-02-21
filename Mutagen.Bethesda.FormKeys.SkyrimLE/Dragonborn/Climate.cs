@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dragonborn
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class Climate
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
-            public static FormKey DLC2ApocryphaClimateNew => ModKey.MakeFormKey(0x34cfc);
-            public static FormKey DLC2ApocryphaClimate => ModKey.MakeFormKey(0x1c48e);
+            private static FormLink<IClimateGetter> Construct(uint id) => new FormLink<IClimateGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IClimateGetter> DLC2ApocryphaClimateNew => Construct(0x34cfc);
+            public static FormLink<IClimateGetter> DLC2ApocryphaClimate => Construct(0x1c48e);
         }
     }
 }

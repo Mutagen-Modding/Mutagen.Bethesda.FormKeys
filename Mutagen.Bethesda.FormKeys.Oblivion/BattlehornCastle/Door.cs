@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class BattlehornCastle
@@ -5,17 +7,18 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Door
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCBattlehornCastle.esp");
-            public static FormKey BattlehornCastleFortAgedNDoor01WineCeller => ModKey.MakeFormKey(0x4334);
-            public static FormKey BattlehornCastleDoor01Tax => ModKey.MakeFormKey(0x432b);
-            public static FormKey BattlehornCastleDoor01Vintner => ModKey.MakeFormKey(0x5a96);
-            public static FormKey BattlehornCastleDoor02Master => ModKey.MakeFormKey(0x432c);
-            public static FormKey BattlehornCastleDoor01MenAtArms => ModKey.MakeFormKey(0x432d);
-            public static FormKey BattlehornCastleDoor01Storage => ModKey.MakeFormKey(0x432e);
-            public static FormKey BattlehornCastleDoor01SleepingQuarters => ModKey.MakeFormKey(0x432f);
-            public static FormKey BattlehornCastleTrapDoor01 => ModKey.MakeFormKey(0x16f55);
-            public static FormKey BattlehornCastleDoorMinimalUse => ModKey.MakeFormKey(0x1743d);
-            public static FormKey BattlehornCastleDoor01Kitchen => ModKey.MakeFormKey(0x4330);
-            public static FormKey BattlehornCastleDoor01TrainingRoom => ModKey.MakeFormKey(0x4331);
+            private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IDoorGetter> BattlehornCastleFortAgedNDoor01WineCeller => Construct(0x4334);
+            public static FormLink<IDoorGetter> BattlehornCastleDoor01Tax => Construct(0x432b);
+            public static FormLink<IDoorGetter> BattlehornCastleDoor01Vintner => Construct(0x5a96);
+            public static FormLink<IDoorGetter> BattlehornCastleDoor02Master => Construct(0x432c);
+            public static FormLink<IDoorGetter> BattlehornCastleDoor01MenAtArms => Construct(0x432d);
+            public static FormLink<IDoorGetter> BattlehornCastleDoor01Storage => Construct(0x432e);
+            public static FormLink<IDoorGetter> BattlehornCastleDoor01SleepingQuarters => Construct(0x432f);
+            public static FormLink<IDoorGetter> BattlehornCastleTrapDoor01 => Construct(0x16f55);
+            public static FormLink<IDoorGetter> BattlehornCastleDoorMinimalUse => Construct(0x1743d);
+            public static FormLink<IDoorGetter> BattlehornCastleDoor01Kitchen => Construct(0x4330);
+            public static FormLink<IDoorGetter> BattlehornCastleDoor01TrainingRoom => Construct(0x4331);
         }
     }
 }

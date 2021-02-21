@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Update
@@ -5,21 +7,22 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class GameSetting
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey sLegendaryResetConfirm => ModKey.MakeFormKey(0x9d9);
-            public static FormKey sLegendaryResetSecondConfirm => ModKey.MakeFormKey(0x9d8);
-            public static FormKey fDiffMultHPToPCL => ModKey.MakeFormKey(0x9d5);
-            public static FormKey fMountedMaxLookingDown => ModKey.MakeFormKey(0x953);
-            public static FormKey sKinectNotCalibrated => ModKey.MakeFormKey(0x951);
-            public static FormKey sKinectCantInit => ModKey.MakeFormKey(0x950);
-            public static FormKey sKinectAllyTooFarToTrade => ModKey.MakeFormKey(0x94f);
-            public static FormKey fTemperingSkillUseItemValConst => ModKey.MakeFormKey(0x949);
-            public static FormKey fTemperingSkillUseItemValExp => ModKey.MakeFormKey(0x948);
-            public static FormKey fTemperingSkillUseItemValMult => ModKey.MakeFormKey(0x947);
-            public static FormKey iUpdateESMVersion => ModKey.MakeFormKey(0x945);
-            public static FormKey fConstructibleSkillUseConst => ModKey.MakeFormKey(0x943);
-            public static FormKey fConstructibleSkilluseExp => ModKey.MakeFormKey(0x942);
-            public static FormKey fConstructibleSkillUseMult => ModKey.MakeFormKey(0x941);
-            public static FormKey sInvalidTagString => ModKey.MakeFormKey(0x83e);
+            private static FormLink<IGameSettingGetter> Construct(uint id) => new FormLink<IGameSettingGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IGameSettingGetter> sLegendaryResetConfirm => Construct(0x9d9);
+            public static FormLink<IGameSettingGetter> sLegendaryResetSecondConfirm => Construct(0x9d8);
+            public static FormLink<IGameSettingGetter> fDiffMultHPToPCL => Construct(0x9d5);
+            public static FormLink<IGameSettingGetter> fMountedMaxLookingDown => Construct(0x953);
+            public static FormLink<IGameSettingGetter> sKinectNotCalibrated => Construct(0x951);
+            public static FormLink<IGameSettingGetter> sKinectCantInit => Construct(0x950);
+            public static FormLink<IGameSettingGetter> sKinectAllyTooFarToTrade => Construct(0x94f);
+            public static FormLink<IGameSettingGetter> fTemperingSkillUseItemValConst => Construct(0x949);
+            public static FormLink<IGameSettingGetter> fTemperingSkillUseItemValExp => Construct(0x948);
+            public static FormLink<IGameSettingGetter> fTemperingSkillUseItemValMult => Construct(0x947);
+            public static FormLink<IGameSettingGetter> iUpdateESMVersion => Construct(0x945);
+            public static FormLink<IGameSettingGetter> fConstructibleSkillUseConst => Construct(0x943);
+            public static FormLink<IGameSettingGetter> fConstructibleSkilluseExp => Construct(0x942);
+            public static FormLink<IGameSettingGetter> fConstructibleSkillUseMult => Construct(0x941);
+            public static FormLink<IGameSettingGetter> sInvalidTagString => Construct(0x83e);
         }
     }
 }

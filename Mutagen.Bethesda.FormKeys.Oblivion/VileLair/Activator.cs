@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class VileLair
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Activator
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
-            public static FormKey LairVileAltarBasin => ModKey.MakeFormKey(0x1378);
-            public static FormKey LairVileFontofRenewal => ModKey.MakeFormKey(0x30e7);
+            private static FormLink<IActivatorGetter> Construct(uint id) => new FormLink<IActivatorGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IActivatorGetter> LairVileAltarBasin => Construct(0x1378);
+            public static FormLink<IActivatorGetter> LairVileFontofRenewal => Construct(0x30e7);
         }
     }
 }

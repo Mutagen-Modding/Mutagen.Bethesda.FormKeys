@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class VileLair
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Flora
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
-            public static FormKey LairVileEvilPlant => ModKey.MakeFormKey(0x60a7);
+            private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IFloraGetter> LairVileEvilPlant => Construct(0x60a7);
         }
     }
 }

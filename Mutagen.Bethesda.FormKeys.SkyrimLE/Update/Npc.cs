@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Update
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class Npc
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey dunBluePalaceWingEncGoatDomestic => ModKey.MakeFormKey(0x804);
+            private static FormLink<INpcGetter> Construct(uint id) => new FormLink<INpcGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<INpcGetter> dunBluePalaceWingEncGoatDomestic => Construct(0x804);
         }
     }
 }

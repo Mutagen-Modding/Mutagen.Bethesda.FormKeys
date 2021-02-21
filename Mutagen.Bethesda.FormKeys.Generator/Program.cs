@@ -1,4 +1,4 @@
-﻿using CommandLine;
+using CommandLine;
 using Loqui;
 using Loqui.Generation;
 using Mutagen.Bethesda.Binary;
@@ -85,22 +85,27 @@ namespace Mutagen.Bethesda.FormKeys.Generator
         public static void Generate(GenerateFromMod gen)
         {
             var mod = ModInstantiator.Importer(gen.Path, gen.Release);
-            var list = new List<(FormKey FormKey, string Edid, string TypeName)>();
+            var list = new List<(FormKey FormKey, string Edid, ILoquiRegistration Regis)>();
             foreach (var rec in mod.EnumerateMajorRecords())
             {
                 if (!rec.EditorID.TryGet(out var edid)) continue;
                 var formKey = rec.FormKey;
                 // Only register FormKeys originating from the mod itself
                 if (formKey.ModKey != mod.ModKey) continue;
-                list.Add((formKey, edid, GetMajorRecord(rec.Registration).Name));
+                var regis = GetMajorRecord(rec.Registration);
+                list.Add((formKey, edid, regis));
             }
 
             var namespaceStr = $"Mutagen.Bethesda.FormKeys.{gen.Release}";
+            var importStr = $"Mutagen.Bethesda.{gen.Release.ToCategory()}";
             var modName = mod.ModKey.Name.TrimStart("DLC");
 
-            foreach (var recGroup in list.GroupBy(x => x.TypeName))
+            foreach (var regis in list.GroupBy(x => x.Regis))
             {
                 FileGeneration fg = new FileGeneration();
+                fg.AppendLine($"using {importStr};");
+                fg.AppendLine();
+
                 using (new NamespaceWrapper(fg, namespaceStr))
                 {
                     using (var c = new ClassWrapper(fg, modName))
@@ -110,22 +115,23 @@ namespace Mutagen.Bethesda.FormKeys.Generator
                     }
                     using (new BraceWrapper(fg))
                     {
-                        using (var c = new ClassWrapper(fg, recGroup.Key))
+                        using (var c = new ClassWrapper(fg, regis.Key.Name))
                         {
                             c.Static = true;
                         }
                         using (new BraceWrapper(fg))
                         {
                             fg.AppendLine($"private readonly static ModKey ModKey = ModKey.{nameof(ModKey.FromNameAndExtension)}(\"{mod.ModKey}\");");
-                            foreach (var rec in recGroup)
+                            fg.AppendLine($"private static FormLink<{regis.Key.GetterType.Name}> Construct(uint id) => new FormLink<{regis.Key.GetterType.Name}>(ModKey.{nameof(ModKeyExt.MakeFormKey)}(id));");
+                            foreach (var rec in regis)
                             {
-                                fg.AppendLine($"public static FormKey {CleanName(rec.Edid, recGroup.Key)} => ModKey.{nameof(ModKeyExt.MakeFormKey)}(0x{rec.FormKey.ID:x});");
+                                fg.AppendLine($"public static FormLink<{regis.Key.GetterType.Name}> {CleanName(rec.Edid, regis.Key.Name)} => Construct(0x{rec.FormKey.ID:x});");
                             }
                         }
                     }
                 }
 
-                var path = Path.Combine("Output", gen.Release.ToString(), modName, $"{recGroup.Key}.cs");
+                var path = Path.Combine("Output", gen.Release.ToString(), modName, $"{regis.Key.Name}.cs");
                 fg.Generate(path);
                 System.Console.WriteLine($"Exported: {path}");
             }

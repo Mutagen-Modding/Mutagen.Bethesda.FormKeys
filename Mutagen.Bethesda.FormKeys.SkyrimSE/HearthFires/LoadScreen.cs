@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,10 +7,11 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class LoadScreen
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHAdoption03 => ModKey.MakeFormKey(0x15fba);
-            public static FormKey BYOHAdoption02 => ModKey.MakeFormKey(0x15fb9);
-            public static FormKey BYOHAdoption01 => ModKey.MakeFormKey(0xf838);
-            public static FormKey BYOHBuildYourOwnHouse => ModKey.MakeFormKey(0xf837);
+            private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ILoadScreenGetter> BYOHAdoption03 => Construct(0x15fba);
+            public static FormLink<ILoadScreenGetter> BYOHAdoption02 => Construct(0x15fb9);
+            public static FormLink<ILoadScreenGetter> BYOHAdoption01 => Construct(0xf838);
+            public static FormLink<ILoadScreenGetter> BYOHBuildYourOwnHouse => Construct(0xf837);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Race
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey ccBGSSSE036_BoneWolfCompanionRace => ModKey.MakeFormKey(0x2f93);
-            public static FormKey ccBGSSSE035_NixHoundCompanionRace => ModKey.MakeFormKey(0x2f74);
+            private static FormLink<IRaceGetter> Construct(uint id) => new FormLink<IRaceGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IRaceGetter> ccBGSSSE036_BoneWolfCompanionRace => Construct(0x2f93);
+            public static FormLink<IRaceGetter> ccBGSSSE035_NixHoundCompanionRace => Construct(0x2f74);
         }
     }
 }

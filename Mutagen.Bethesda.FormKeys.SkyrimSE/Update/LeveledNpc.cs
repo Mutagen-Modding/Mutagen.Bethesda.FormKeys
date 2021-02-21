@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class LeveledNpc
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey ccBGSSSE003_LCharUndeadList => ModKey.MakeFormKey(0x3024);
+            private static FormLink<ILeveledNpcGetter> Construct(uint id) => new FormLink<ILeveledNpcGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ILeveledNpcGetter> ccBGSSSE003_LCharUndeadList => Construct(0x3024);
         }
     }
 }

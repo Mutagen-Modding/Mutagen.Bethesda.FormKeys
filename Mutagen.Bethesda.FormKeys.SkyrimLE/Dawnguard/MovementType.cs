@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dawnguard
@@ -5,12 +7,13 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class MovementType
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey GargoyleDefault_MT => ModKey.MakeFormKey(0xd036);
-            public static FormKey GargoyleCombatRun_MT => ModKey.MakeFormKey(0xd035);
-            public static FormKey GargoyleCombatWalk_MT => ModKey.MakeFormKey(0xa2ca);
-            public static FormKey ChaurusFlyer_Default_MT => ModKey.MakeFormKey(0x51fc);
-            public static FormKey VampireLordSprint_MT => ModKey.MakeFormKey(0x240d);
-            public static FormKey VampireLordDefault_MT => ModKey.MakeFormKey(0x240c);
+            private static FormLink<IMovementTypeGetter> Construct(uint id) => new FormLink<IMovementTypeGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IMovementTypeGetter> GargoyleDefault_MT => Construct(0xd036);
+            public static FormLink<IMovementTypeGetter> GargoyleCombatRun_MT => Construct(0xd035);
+            public static FormLink<IMovementTypeGetter> GargoyleCombatWalk_MT => Construct(0xa2ca);
+            public static FormLink<IMovementTypeGetter> ChaurusFlyer_Default_MT => Construct(0x51fc);
+            public static FormLink<IMovementTypeGetter> VampireLordSprint_MT => Construct(0x240d);
+            public static FormLink<IMovementTypeGetter> VampireLordDefault_MT => Construct(0x240c);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dawnguard
@@ -5,12 +7,13 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class FootstepSet
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey NPCVampireLordFootstepSet => ModKey.MakeFormKey(0x1377c);
-            public static FormKey NPCDogHuskyFootWalkFootstepSet => ModKey.MakeFormKey(0x117fd);
-            public static FormKey NPCDogDeathHoundFootWalkFootstepSet => ModKey.MakeFormKey(0x115cd);
-            public static FormKey NPCArmoredTrollFootWalkFootstepSet => ModKey.MakeFormKey(0x39a7);
-            public static FormKey NPCGargoyleFootWalkFootstepSet => ModKey.MakeFormKey(0xf8ad);
-            public static FormKey NPCHorseSkeletonFootFootstepSet => ModKey.MakeFormKey(0xefb2);
+            private static FormLink<IFootstepSetGetter> Construct(uint id) => new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IFootstepSetGetter> NPCVampireLordFootstepSet => Construct(0x1377c);
+            public static FormLink<IFootstepSetGetter> NPCDogHuskyFootWalkFootstepSet => Construct(0x117fd);
+            public static FormLink<IFootstepSetGetter> NPCDogDeathHoundFootWalkFootstepSet => Construct(0x115cd);
+            public static FormLink<IFootstepSetGetter> NPCArmoredTrollFootWalkFootstepSet => Construct(0x39a7);
+            public static FormLink<IFootstepSetGetter> NPCGargoyleFootWalkFootstepSet => Construct(0xf8ad);
+            public static FormLink<IFootstepSetGetter> NPCHorseSkeletonFootFootstepSet => Construct(0xefb2);
         }
     }
 }

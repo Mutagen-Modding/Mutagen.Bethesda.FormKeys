@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class VileLair
@@ -5,32 +7,33 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class PlacedObject
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
-            public static FormKey LairVileMinionPrayerMarker => ModKey.MakeFormKey(0x5bb0);
-            public static FormKey LairVileDoor4to3 => ModKey.MakeFormKey(0x5b54);
-            public static FormKey LairVileMinionUseChest => ModKey.MakeFormKey(0x147f4);
-            public static FormKey LairVileMinionChestRef => ModKey.MakeFormKey(0x1430d);
-            public static FormKey DeepscornHollowJournalRef => ModKey.MakeFormKey(0x5098);
-            public static FormKey LairVileMinionBed => ModKey.MakeFormKey(0xd78);
-            public static FormKey LairVileMinionStockMarker => ModKey.MakeFormKey(0xe2e);
-            public static FormKey LairVileBoxingMarker => ModKey.MakeFormKey(0xe1d);
-            public static FormKey LairVileTendingMarker => ModKey.MakeFormKey(0xe1e);
-            public static FormKey LairVileTallSack => ModKey.MakeFormKey(0x1452);
-            public static FormKey LairVileMinionLeavesMarker => ModKey.MakeFormKey(0x9216);
-            public static FormKey LairVileD2to3 => ModKey.MakeFormKey(0x21bb);
-            public static FormKey LairVile2to1 => ModKey.MakeFormKey(0x15fb);
-            public static FormKey LairVilePrisonMarker => ModKey.MakeFormKey(0x15ed);
-            public static FormKey LairVileExitLadderRef => ModKey.MakeFormKey(0x920a);
-            public static FormKey LairVileMinionReturnsMarker => ModKey.MakeFormKey(0x9215);
-            public static FormKey LairVileStudy => ModKey.MakeFormKey(0x21b5);
-            public static FormKey LairVileDiningArea => ModKey.MakeFormKey(0x21b6);
-            public static FormKey LairVileBedroomMarker => ModKey.MakeFormKey(0x21c2);
-            public static FormKey LairVileArmoireREF => ModKey.MakeFormKey(0x60b2);
-            public static FormKey LairVileTarisStool => ModKey.MakeFormKey(0x3285);
-            public static FormKey LairVileTarisHangoutMarker => ModKey.MakeFormKey(0x3289);
-            public static FormKey DeepscornAddonsRef => ModKey.MakeFormKey(0x65b0);
-            public static FormKey DeepscornHollowMapMarker => ModKey.MakeFormKey(0x1342);
-            public static FormKey LairVileOutdoorHangout => ModKey.MakeFormKey(0x379e);
-            public static FormKey LairVileSurfaceDoorRef => ModKey.MakeFormKey(0x9213);
+            private static FormLink<IPlacedObjectGetter> Construct(uint id) => new FormLink<IPlacedObjectGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IPlacedObjectGetter> LairVileMinionPrayerMarker => Construct(0x5bb0);
+            public static FormLink<IPlacedObjectGetter> LairVileDoor4to3 => Construct(0x5b54);
+            public static FormLink<IPlacedObjectGetter> LairVileMinionUseChest => Construct(0x147f4);
+            public static FormLink<IPlacedObjectGetter> LairVileMinionChestRef => Construct(0x1430d);
+            public static FormLink<IPlacedObjectGetter> DeepscornHollowJournalRef => Construct(0x5098);
+            public static FormLink<IPlacedObjectGetter> LairVileMinionBed => Construct(0xd78);
+            public static FormLink<IPlacedObjectGetter> LairVileMinionStockMarker => Construct(0xe2e);
+            public static FormLink<IPlacedObjectGetter> LairVileBoxingMarker => Construct(0xe1d);
+            public static FormLink<IPlacedObjectGetter> LairVileTendingMarker => Construct(0xe1e);
+            public static FormLink<IPlacedObjectGetter> LairVileTallSack => Construct(0x1452);
+            public static FormLink<IPlacedObjectGetter> LairVileMinionLeavesMarker => Construct(0x9216);
+            public static FormLink<IPlacedObjectGetter> LairVileD2to3 => Construct(0x21bb);
+            public static FormLink<IPlacedObjectGetter> LairVile2to1 => Construct(0x15fb);
+            public static FormLink<IPlacedObjectGetter> LairVilePrisonMarker => Construct(0x15ed);
+            public static FormLink<IPlacedObjectGetter> LairVileExitLadderRef => Construct(0x920a);
+            public static FormLink<IPlacedObjectGetter> LairVileMinionReturnsMarker => Construct(0x9215);
+            public static FormLink<IPlacedObjectGetter> LairVileStudy => Construct(0x21b5);
+            public static FormLink<IPlacedObjectGetter> LairVileDiningArea => Construct(0x21b6);
+            public static FormLink<IPlacedObjectGetter> LairVileBedroomMarker => Construct(0x21c2);
+            public static FormLink<IPlacedObjectGetter> LairVileArmoireREF => Construct(0x60b2);
+            public static FormLink<IPlacedObjectGetter> LairVileTarisStool => Construct(0x3285);
+            public static FormLink<IPlacedObjectGetter> LairVileTarisHangoutMarker => Construct(0x3289);
+            public static FormLink<IPlacedObjectGetter> DeepscornAddonsRef => Construct(0x65b0);
+            public static FormLink<IPlacedObjectGetter> DeepscornHollowMapMarker => Construct(0x1342);
+            public static FormLink<IPlacedObjectGetter> LairVileOutdoorHangout => Construct(0x379e);
+            public static FormLink<IPlacedObjectGetter> LairVileSurfaceDoorRef => Construct(0x9213);
         }
     }
 }

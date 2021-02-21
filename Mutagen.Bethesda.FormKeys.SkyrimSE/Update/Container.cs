@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Container
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey ccBGS_RootHollowedStump => ModKey.MakeFormKey(0x3079);
+            private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IContainerGetter> ccBGS_RootHollowedStump => Construct(0x3079);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class HorseArmor
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Place
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCHorseArmor.esp");
-            public static FormKey DLCHorseArmorDummyCell => ModKey.MakeFormKey(0x1bb0);
+            private static FormLink<IPlaceGetter> Construct(uint id) => new FormLink<IPlaceGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IPlaceGetter> DLCHorseArmorDummyCell => Construct(0x1bb0);
         }
     }
 }

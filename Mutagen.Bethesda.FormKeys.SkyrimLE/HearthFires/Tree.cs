@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class HearthFires
@@ -5,39 +7,40 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class Tree
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHHouseIngrdWheat01 => ModKey.MakeFormKey(0x110cd);
-            public static FormKey BYOHHouseIngrdThistle01 => ModKey.MakeFormKey(0x110cc);
-            public static FormKey BYOHHouseIngrdSpikyGrass01 => ModKey.MakeFormKey(0x110cb);
-            public static FormKey BYOHHouseIngrdSnowberry01 => ModKey.MakeFormKey(0x110ca);
-            public static FormKey BYOHHouseIngrdScalyPBits01 => ModKey.MakeFormKey(0x110c9);
-            public static FormKey BYOHHouseIngrdNirnroot01 => ModKey.MakeFormKey(0x110c8);
-            public static FormKey BYOHHouseIngrdMushroom06 => ModKey.MakeFormKey(0x110c7);
-            public static FormKey BYOHHouseIngrdMushroom05 => ModKey.MakeFormKey(0x110c6);
-            public static FormKey BYOHHouseIngrdMushroom04 => ModKey.MakeFormKey(0x110c5);
-            public static FormKey BYOHHouseIngrdMushroom03 => ModKey.MakeFormKey(0x110c4);
-            public static FormKey BYOHHouseIngrdMushroom02 => ModKey.MakeFormKey(0x110c3);
-            public static FormKey BYOHHouseIngrdMushroom01 => ModKey.MakeFormKey(0x110c2);
-            public static FormKey BYOHHouseIngrdMtFlRed01 => ModKey.MakeFormKey(0x110c1);
-            public static FormKey BYOHHouseIngrdMtFlPurple01 => ModKey.MakeFormKey(0x110c0);
-            public static FormKey BYOHHouseIngrdMtFlBlue01 => ModKey.MakeFormKey(0x110bf);
-            public static FormKey BYOHHouseIngrdMoraTap01 => ModKey.MakeFormKey(0x110be);
-            public static FormKey BYOHHouseIngrdFungalPod01 => ModKey.MakeFormKey(0x110bd);
-            public static FormKey BYOHHouseIngrdCreepCluster01 => ModKey.MakeFormKey(0x110bc);
-            public static FormKey BYOHHouseIngrdCotton01 => ModKey.MakeFormKey(0x110bb);
-            public static FormKey BYOHHouseFloraPotato01 => ModKey.MakeFormKey(0x110ba);
-            public static FormKey BYOHHouseFloraCarrots01 => ModKey.MakeFormKey(0x110b9);
-            public static FormKey BYOHHouseIngrdNightshade01 => ModKey.MakeFormKey(0x10469);
-            public static FormKey BYOHHouseIngrdLavender01 => ModKey.MakeFormKey(0x10468);
-            public static FormKey BYOHHouseIngrdJuniper01 => ModKey.MakeFormKey(0x10467);
-            public static FormKey BYOHHouseIngrdJazbay01 => ModKey.MakeFormKey(0x10466);
-            public static FormKey BYOHHouseIngrdGlowMushrm01 => ModKey.MakeFormKey(0x10465);
-            public static FormKey BYOHHouseIngrdGiantLichen01 => ModKey.MakeFormKey(0x10464);
-            public static FormKey BYOHHouseIngrdDragonTongue01 => ModKey.MakeFormKey(0x10463);
-            public static FormKey BYOHHouseIngrdDeathbell01 => ModKey.MakeFormKey(0x10462);
-            public static FormKey BYOHHouseIngrdCanisRoot01 => ModKey.MakeFormKey(0x10461);
-            public static FormKey BYOHHouseFloraLeek01 => ModKey.MakeFormKey(0x10460);
-            public static FormKey BYOHHouseFloraGourd01 => ModKey.MakeFormKey(0x1045f);
-            public static FormKey BYOHHouseFloraCabbage01 => ModKey.MakeFormKey(0x1045e);
+            private static FormLink<ITreeGetter> Construct(uint id) => new FormLink<ITreeGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ITreeGetter> BYOHHouseIngrdWheat01 => Construct(0x110cd);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdThistle01 => Construct(0x110cc);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdSpikyGrass01 => Construct(0x110cb);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdSnowberry01 => Construct(0x110ca);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdScalyPBits01 => Construct(0x110c9);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdNirnroot01 => Construct(0x110c8);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMushroom06 => Construct(0x110c7);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMushroom05 => Construct(0x110c6);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMushroom04 => Construct(0x110c5);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMushroom03 => Construct(0x110c4);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMushroom02 => Construct(0x110c3);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMushroom01 => Construct(0x110c2);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMtFlRed01 => Construct(0x110c1);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMtFlPurple01 => Construct(0x110c0);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMtFlBlue01 => Construct(0x110bf);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdMoraTap01 => Construct(0x110be);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdFungalPod01 => Construct(0x110bd);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdCreepCluster01 => Construct(0x110bc);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdCotton01 => Construct(0x110bb);
+            public static FormLink<ITreeGetter> BYOHHouseFloraPotato01 => Construct(0x110ba);
+            public static FormLink<ITreeGetter> BYOHHouseFloraCarrots01 => Construct(0x110b9);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdNightshade01 => Construct(0x10469);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdLavender01 => Construct(0x10468);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdJuniper01 => Construct(0x10467);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdJazbay01 => Construct(0x10466);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdGlowMushrm01 => Construct(0x10465);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdGiantLichen01 => Construct(0x10464);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdDragonTongue01 => Construct(0x10463);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdDeathbell01 => Construct(0x10462);
+            public static FormLink<ITreeGetter> BYOHHouseIngrdCanisRoot01 => Construct(0x10461);
+            public static FormLink<ITreeGetter> BYOHHouseFloraLeek01 => Construct(0x10460);
+            public static FormLink<ITreeGetter> BYOHHouseFloraGourd01 => Construct(0x1045f);
+            public static FormLink<ITreeGetter> BYOHHouseFloraCabbage01 => Construct(0x1045e);
         }
     }
 }

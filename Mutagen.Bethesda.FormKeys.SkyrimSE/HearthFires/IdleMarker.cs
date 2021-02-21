@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,10 +7,11 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class IdleMarker
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey IdleChildPlayDirtMarker => ModKey.MakeFormKey(0xd835);
-            public static FormKey IdleChildPlayDollMarker => ModKey.MakeFormKey(0xd82d);
-            public static FormKey BYOHUrchin_AlesanChickenFeedingMarker => ModKey.MakeFormKey(0x3f64);
-            public static FormKey SweepPatrolMarker => ModKey.MakeFormKey(0x3f31);
+            private static FormLink<IIdleMarkerGetter> Construct(uint id) => new FormLink<IIdleMarkerGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IIdleMarkerGetter> IdleChildPlayDirtMarker => Construct(0xd835);
+            public static FormLink<IIdleMarkerGetter> IdleChildPlayDollMarker => Construct(0xd82d);
+            public static FormLink<IIdleMarkerGetter> BYOHUrchin_AlesanChickenFeedingMarker => Construct(0x3f64);
+            public static FormLink<IIdleMarkerGetter> SweepPatrolMarker => Construct(0x3f31);
         }
     }
 }

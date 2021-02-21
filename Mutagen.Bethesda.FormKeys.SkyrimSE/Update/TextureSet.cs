@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,11 +7,12 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class TextureSet
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey LandscapeMountainSlab02Mask => ModKey.MakeFormKey(0x2e34);
-            public static FormKey LandscapeMountainSlab01Mask => ModKey.MakeFormKey(0x2e33);
-            public static FormKey LandscapeDirtCliffs01Mask => ModKey.MakeFormKey(0x2e32);
-            public static FormKey LandscapeSnow02Landscape => ModKey.MakeFormKey(0x2ca1);
-            public static FormKey LandscapeSnow01Landscape => ModKey.MakeFormKey(0x2ca0);
+            private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ITextureSetGetter> LandscapeMountainSlab02Mask => Construct(0x2e34);
+            public static FormLink<ITextureSetGetter> LandscapeMountainSlab01Mask => Construct(0x2e33);
+            public static FormLink<ITextureSetGetter> LandscapeDirtCliffs01Mask => Construct(0x2e32);
+            public static FormLink<ITextureSetGetter> LandscapeSnow02Landscape => Construct(0x2ca1);
+            public static FormLink<ITextureSetGetter> LandscapeSnow01Landscape => Construct(0x2ca0);
         }
     }
 }

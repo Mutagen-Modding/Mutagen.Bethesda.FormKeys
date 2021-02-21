@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class VileLair
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Door
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
-            public static FormKey LairVileSurfaceDoor => ModKey.MakeFormKey(0x9716);
-            public static FormKey DunCellDoorWide => ModKey.MakeFormKey(0x134e);
-            public static FormKey LairVileMinionExitLadder => ModKey.MakeFormKey(0x9715);
+            private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IDoorGetter> LairVileSurfaceDoor => Construct(0x9716);
+            public static FormLink<IDoorGetter> DunCellDoorWide => Construct(0x134e);
+            public static FormLink<IDoorGetter> LairVileMinionExitLadder => Construct(0x9715);
         }
     }
 }

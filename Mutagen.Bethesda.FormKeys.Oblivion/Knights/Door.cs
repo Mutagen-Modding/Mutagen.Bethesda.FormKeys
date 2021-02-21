@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Knights
@@ -5,14 +7,15 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Door
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Knights.esp");
-            public static FormKey NDRF1xDoorRight => ModKey.MakeFormKey(0xef1);
-            public static FormKey NDRF1xDoorLeft => ModKey.MakeFormKey(0xef2);
-            public static FormKey ND10Door => ModKey.MakeFormKey(0xef3);
-            public static FormKey NDPrioryUndercroftGate01 => ModKey.MakeFormKey(0xef4);
-            public static FormKey ND02Door => ModKey.MakeFormKey(0xef5);
-            public static FormKey ND02PrioryDoorTEMP => ModKey.MakeFormKey(0xef6);
-            public static FormKey ND03StoneDoor => ModKey.MakeFormKey(0xef7);
-            public static FormKey ND02PrioryTrapdoor => ModKey.MakeFormKey(0xef8);
+            private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IDoorGetter> NDRF1xDoorRight => Construct(0xef1);
+            public static FormLink<IDoorGetter> NDRF1xDoorLeft => Construct(0xef2);
+            public static FormLink<IDoorGetter> ND10Door => Construct(0xef3);
+            public static FormLink<IDoorGetter> NDPrioryUndercroftGate01 => Construct(0xef4);
+            public static FormLink<IDoorGetter> ND02Door => Construct(0xef5);
+            public static FormLink<IDoorGetter> ND02PrioryDoorTEMP => Construct(0xef6);
+            public static FormLink<IDoorGetter> ND03StoneDoor => Construct(0xef7);
+            public static FormLink<IDoorGetter> ND02PrioryTrapdoor => Construct(0xef8);
         }
     }
 }

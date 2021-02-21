@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Frostcrag
@@ -5,21 +7,22 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class AItem
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCFrostcrag.esp");
-            public static FormKey FrostcragLibraryAreaReceipt => ModKey.MakeFormKey(0xd5e);
-            public static FormKey FrostcragApparatusReceipt => ModKey.MakeFormKey(0xd5f);
-            public static FormKey FrostcragSpireMemoirs => ModKey.MakeFormKey(0xd56);
-            public static FormKey FrostcragSpireDeed => ModKey.MakeFormKey(0xd52);
-            public static FormKey FrostcragBedroomAreaReceipt => ModKey.MakeFormKey(0xd5a);
-            public static FormKey FrostcragVaultAreaReceipt => ModKey.MakeFormKey(0xd5d);
-            public static FormKey FrostcragRing => ModKey.MakeFormKey(0x5e36);
-            public static FormKey FortRuins1YellowCommonWhite512 => ModKey.MakeFormKey(0x2b1e);
-            public static FormKey FrostCragIceCave900 => ModKey.MakeFormKey(0x8c07);
-            public static FormKey ObvRedBright400FrostCrag => ModKey.MakeFormKey(0x8531);
-            public static FormKey FCWarm512 => ModKey.MakeFormKey(0x2147);
-            public static FormKey FCWarm750 => ModKey.MakeFormKey(0x6c23);
-            public static FormKey FrostcragMagetallowCandle => ModKey.MakeFormKey(0xd44);
-            public static FormKey FrostcragSpireKey => ModKey.MakeFormKey(0xd50);
-            public static FormKey DaedricLavaWhiskey01 => ModKey.MakeFormKey(0x8c37);
+            private static FormLink<IAItemGetter> Construct(uint id) => new FormLink<IAItemGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IAItemGetter> FrostcragLibraryAreaReceipt => Construct(0xd5e);
+            public static FormLink<IAItemGetter> FrostcragApparatusReceipt => Construct(0xd5f);
+            public static FormLink<IAItemGetter> FrostcragSpireMemoirs => Construct(0xd56);
+            public static FormLink<IAItemGetter> FrostcragSpireDeed => Construct(0xd52);
+            public static FormLink<IAItemGetter> FrostcragBedroomAreaReceipt => Construct(0xd5a);
+            public static FormLink<IAItemGetter> FrostcragVaultAreaReceipt => Construct(0xd5d);
+            public static FormLink<IAItemGetter> FrostcragRing => Construct(0x5e36);
+            public static FormLink<IAItemGetter> FortRuins1YellowCommonWhite512 => Construct(0x2b1e);
+            public static FormLink<IAItemGetter> FrostCragIceCave900 => Construct(0x8c07);
+            public static FormLink<IAItemGetter> ObvRedBright400FrostCrag => Construct(0x8531);
+            public static FormLink<IAItemGetter> FCWarm512 => Construct(0x2147);
+            public static FormLink<IAItemGetter> FCWarm750 => Construct(0x6c23);
+            public static FormLink<IAItemGetter> FrostcragMagetallowCandle => Construct(0xd44);
+            public static FormLink<IAItemGetter> FrostcragSpireKey => Construct(0xd50);
+            public static FormLink<IAItemGetter> DaedricLavaWhiskey01 => Construct(0x8c37);
         }
     }
 }

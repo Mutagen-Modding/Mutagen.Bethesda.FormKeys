@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Region
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey SurvivalForelhost => ModKey.MakeFormKey(0x2ee8);
-            public static FormKey SurvivalArcwindPoint => ModKey.MakeFormKey(0x2ee7);
+            private static FormLink<IRegionGetter> Construct(uint id) => new FormLink<IRegionGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IRegionGetter> SurvivalForelhost => Construct(0x2ee8);
+            public static FormLink<IRegionGetter> SurvivalArcwindPoint => Construct(0x2ee7);
         }
     }
 }

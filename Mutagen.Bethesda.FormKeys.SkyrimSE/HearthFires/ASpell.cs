@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class ASpell
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHVampireSleepRested => ModKey.MakeFormKey(0xc35);
-            public static FormKey BYOHAdoptionSleepAbilityMale => ModKey.MakeFormKey(0x2f54);
-            public static FormKey BYOHAdoptionSleepAbilityFemale => ModKey.MakeFormKey(0x4292);
+            private static FormLink<IASpellGetter> Construct(uint id) => new FormLink<IASpellGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IASpellGetter> BYOHVampireSleepRested => Construct(0xc35);
+            public static FormLink<IASpellGetter> BYOHAdoptionSleepAbilityMale => Construct(0x2f54);
+            public static FormLink<IASpellGetter> BYOHAdoptionSleepAbilityFemale => Construct(0x4292);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Dawnguard
@@ -5,11 +7,12 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Key
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey DLC1RuunvaldKey01 => ModKey.MakeFormKey(0x13833);
-            public static FormKey DLC1RedwaterDenKey2 => ModKey.MakeFormKey(0x8e20);
-            public static FormKey DLC1RedwaterDenKey1 => ModKey.MakeFormKey(0x8e1f);
-            public static FormKey DLC1VQ05BoneyardKey => ModKey.MakeFormKey(0x4bd5);
-            public static FormKey DLC1_WESC_DawnguardCacheKey => ModKey.MakeFormKey(0x34fb);
+            private static FormLink<IKeyGetter> Construct(uint id) => new FormLink<IKeyGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IKeyGetter> DLC1RuunvaldKey01 => Construct(0x13833);
+            public static FormLink<IKeyGetter> DLC1RedwaterDenKey2 => Construct(0x8e20);
+            public static FormLink<IKeyGetter> DLC1RedwaterDenKey1 => Construct(0x8e1f);
+            public static FormLink<IKeyGetter> DLC1VQ05BoneyardKey => Construct(0x4bd5);
+            public static FormLink<IKeyGetter> DLC1_WESC_DawnguardCacheKey => Construct(0x34fb);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Outfit
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey ChildOutfit05 => ModKey.MakeFormKey(0xc4d);
-            public static FormKey ChildOutfit04 => ModKey.MakeFormKey(0xc4c);
-            public static FormKey BYOHPlayerHousecarlOutfitFalkreath => ModKey.MakeFormKey(0x5214);
+            private static FormLink<IOutfitGetter> Construct(uint id) => new FormLink<IOutfitGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IOutfitGetter> ChildOutfit05 => Construct(0xc4d);
+            public static FormLink<IOutfitGetter> ChildOutfit04 => Construct(0xc4c);
+            public static FormLink<IOutfitGetter> BYOHPlayerHousecarlOutfitFalkreath => Construct(0x5214);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Update
@@ -5,17 +7,18 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class Keyword
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey ArmorMaterialBlades => ModKey.MakeFormKey(0x9c0);
-            public static FormKey ArmorMaterialThievesGuildLeader => ModKey.MakeFormKey(0x9bf);
-            public static FormKey ArmorMaterialBearStormcloak => ModKey.MakeFormKey(0x9be);
-            public static FormKey ArmorMaterialFalmer => ModKey.MakeFormKey(0x9bd);
-            public static FormKey ArmorMaterialThievesGuild => ModKey.MakeFormKey(0x9bc);
-            public static FormKey ArmorMaterialPenitus => ModKey.MakeFormKey(0x9bb);
-            public static FormKey ArmorMaterialMS02Forsworn => ModKey.MakeFormKey(0x9ba);
-            public static FormKey ArmorMaterialForsworn => ModKey.MakeFormKey(0x9b9);
-            public static FormKey ImmuneDragonPairedKill => ModKey.MakeFormKey(0x9a2);
-            public static FormKey WEDL06Letrush => ModKey.MakeFormKey(0x99f);
-            public static FormKey DA15WabbajackExcludedKeyword => ModKey.MakeFormKey(0x997);
+            private static FormLink<IKeywordGetter> Construct(uint id) => new FormLink<IKeywordGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IKeywordGetter> ArmorMaterialBlades => Construct(0x9c0);
+            public static FormLink<IKeywordGetter> ArmorMaterialThievesGuildLeader => Construct(0x9bf);
+            public static FormLink<IKeywordGetter> ArmorMaterialBearStormcloak => Construct(0x9be);
+            public static FormLink<IKeywordGetter> ArmorMaterialFalmer => Construct(0x9bd);
+            public static FormLink<IKeywordGetter> ArmorMaterialThievesGuild => Construct(0x9bc);
+            public static FormLink<IKeywordGetter> ArmorMaterialPenitus => Construct(0x9bb);
+            public static FormLink<IKeywordGetter> ArmorMaterialMS02Forsworn => Construct(0x9ba);
+            public static FormLink<IKeywordGetter> ArmorMaterialForsworn => Construct(0x9b9);
+            public static FormLink<IKeywordGetter> ImmuneDragonPairedKill => Construct(0x9a2);
+            public static FormLink<IKeywordGetter> WEDL06Letrush => Construct(0x99f);
+            public static FormLink<IKeywordGetter> DA15WabbajackExcludedKeyword => Construct(0x997);
         }
     }
 }

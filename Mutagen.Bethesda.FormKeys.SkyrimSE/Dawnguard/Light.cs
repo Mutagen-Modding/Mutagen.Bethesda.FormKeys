@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Dawnguard
@@ -5,35 +7,36 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Light
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey DLC1VCCourtyardNightLight => ModKey.MakeFormKey(0x14c52);
-            public static FormKey DLC1ForbearsBarrierLight => ModKey.MakeFormKey(0x12d71);
-            public static FormKey DLC1FXRedBossFountainLight => ModKey.MakeFormKey(0xf6a2);
-            public static FormKey FalmerDarkBlueLight01NS => ModKey.MakeFormKey(0xe6cf);
-            public static FormKey FXCandleLight2 => ModKey.MakeFormKey(0xd704);
-            public static FormKey DLC1MagicAurielSpellLight01 => ModKey.MakeFormKey(0xd665);
-            public static FormKey FXCandleLight => ModKey.MakeFormKey(0xd260);
-            public static FormKey DLC1SETempleDoor01NS => ModKey.MakeFormKey(0xd259);
-            public static FormKey DLC1PortalShadLight => ModKey.MakeFormKey(0x19965);
-            public static FormKey DLC1BFroomLight => ModKey.MakeFormKey(0x195a1);
-            public static FormKey FarmInteriorFireLight01NoShadow => ModKey.MakeFormKey(0x182ca);
-            public static FormKey DLC01SCPurpleDesatNS => ModKey.MakeFormKey(0x17650);
-            public static FormKey MagicLightDLC01SoulRendProjWeak => ModKey.MakeFormKey(0x16123);
-            public static FormKey EvernightSunlight => ModKey.MakeFormKey(0x1575d);
-            public static FormKey testSuperMageLight2 => ModKey.MakeFormKey(0x1540d);
-            public static FormKey testSuperMageLight1 => ModKey.MakeFormKey(0x1540c);
-            public static FormKey DLC1Torch => ModKey.MakeFormKey(0x15374);
-            public static FormKey DLC1dunRedwaterDenLightBrightRed => ModKey.MakeFormKey(0x147fd);
-            public static FormKey DawnGuardIntFireLight01 => ModKey.MakeFormKey(0x1036f);
-            public static FormKey DLC1MagicLightSunProjectile => ModKey.MakeFormKey(0xf64b);
-            public static FormKey DLC1FalmerPurple01NS => ModKey.MakeFormKey(0xefe3);
-            public static FormKey DLC01IdealMasterCrystalLight => ModKey.MakeFormKey(0xbf49);
-            public static FormKey DLC1WaterLight => ModKey.MakeFormKey(0xaeb7);
-            public static FormKey DLC1dunRedwaterDenLightBright => ModKey.MakeFormKey(0xa5ae);
-            public static FormKey DLC1MagicLightSunLightSpell01 => ModKey.MakeFormKey(0xa3ba);
-            public static FormKey DLC1dunRedwaterDenLight => ModKey.MakeFormKey(0x8cbd);
-            public static FormKey MagicLightDLC01SoulRendProj => ModKey.MakeFormKey(0x7cbd);
-            public static FormKey DLC01SCPurpleNS => ModKey.MakeFormKey(0x59c2);
-            public static FormKey DLC01SCPurple => ModKey.MakeFormKey(0x59c0);
+            private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ILightGetter> DLC1VCCourtyardNightLight => Construct(0x14c52);
+            public static FormLink<ILightGetter> DLC1ForbearsBarrierLight => Construct(0x12d71);
+            public static FormLink<ILightGetter> DLC1FXRedBossFountainLight => Construct(0xf6a2);
+            public static FormLink<ILightGetter> FalmerDarkBlueLight01NS => Construct(0xe6cf);
+            public static FormLink<ILightGetter> FXCandleLight2 => Construct(0xd704);
+            public static FormLink<ILightGetter> DLC1MagicAurielSpellLight01 => Construct(0xd665);
+            public static FormLink<ILightGetter> FXCandleLight => Construct(0xd260);
+            public static FormLink<ILightGetter> DLC1SETempleDoor01NS => Construct(0xd259);
+            public static FormLink<ILightGetter> DLC1PortalShadLight => Construct(0x19965);
+            public static FormLink<ILightGetter> DLC1BFroomLight => Construct(0x195a1);
+            public static FormLink<ILightGetter> FarmInteriorFireLight01NoShadow => Construct(0x182ca);
+            public static FormLink<ILightGetter> DLC01SCPurpleDesatNS => Construct(0x17650);
+            public static FormLink<ILightGetter> MagicLightDLC01SoulRendProjWeak => Construct(0x16123);
+            public static FormLink<ILightGetter> EvernightSunlight => Construct(0x1575d);
+            public static FormLink<ILightGetter> testSuperMageLight2 => Construct(0x1540d);
+            public static FormLink<ILightGetter> testSuperMageLight1 => Construct(0x1540c);
+            public static FormLink<ILightGetter> DLC1Torch => Construct(0x15374);
+            public static FormLink<ILightGetter> DLC1dunRedwaterDenLightBrightRed => Construct(0x147fd);
+            public static FormLink<ILightGetter> DawnGuardIntFireLight01 => Construct(0x1036f);
+            public static FormLink<ILightGetter> DLC1MagicLightSunProjectile => Construct(0xf64b);
+            public static FormLink<ILightGetter> DLC1FalmerPurple01NS => Construct(0xefe3);
+            public static FormLink<ILightGetter> DLC01IdealMasterCrystalLight => Construct(0xbf49);
+            public static FormLink<ILightGetter> DLC1WaterLight => Construct(0xaeb7);
+            public static FormLink<ILightGetter> DLC1dunRedwaterDenLightBright => Construct(0xa5ae);
+            public static FormLink<ILightGetter> DLC1MagicLightSunLightSpell01 => Construct(0xa3ba);
+            public static FormLink<ILightGetter> DLC1dunRedwaterDenLight => Construct(0x8cbd);
+            public static FormLink<ILightGetter> MagicLightDLC01SoulRendProj => Construct(0x7cbd);
+            public static FormLink<ILightGetter> DLC01SCPurpleNS => Construct(0x59c2);
+            public static FormLink<ILightGetter> DLC01SCPurple => Construct(0x59c0);
         }
     }
 }

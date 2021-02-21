@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Dawnguard
@@ -5,20 +7,21 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Ammunition
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey DLC1SoulCairnKeeperArrow => ModKey.MakeFormKey(0xff03);
-            public static FormKey DLC1ElderScrollBack => ModKey.MakeFormKey(0x1a958);
-            public static FormKey DLC1DragonboneArrow => ModKey.MakeFormKey(0x176f4);
-            public static FormKey DLC1BoltSteelExplodingShock => ModKey.MakeFormKey(0xf1bc);
-            public static FormKey DLC1BoltSteelExplodingIce => ModKey.MakeFormKey(0xf1bb);
-            public static FormKey DLC1BoltDwarvenExplodingShock => ModKey.MakeFormKey(0xf1b9);
-            public static FormKey DLC1BoltDwarvenExplodingIce => ModKey.MakeFormKey(0xf1b7);
-            public static FormKey DLC1BoltDwarvenExplodingFire => ModKey.MakeFormKey(0xf1b1);
-            public static FormKey DLC1BoltSteelExplodingFire => ModKey.MakeFormKey(0xf1a0);
-            public static FormKey DLC1BoltDwarven => ModKey.MakeFormKey(0xd099);
-            public static FormKey DLC1ElvenArrowBlessed => ModKey.MakeFormKey(0x98a1);
-            public static FormKey DLC1ElvenArrowBlood => ModKey.MakeFormKey(0x98a0);
-            public static FormKey TestDLC1Bolt => ModKey.MakeFormKey(0x590c);
-            public static FormKey DLC1BoltSteel => ModKey.MakeFormKey(0xbb3);
+            private static FormLink<IAmmunitionGetter> Construct(uint id) => new FormLink<IAmmunitionGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IAmmunitionGetter> DLC1SoulCairnKeeperArrow => Construct(0xff03);
+            public static FormLink<IAmmunitionGetter> DLC1ElderScrollBack => Construct(0x1a958);
+            public static FormLink<IAmmunitionGetter> DLC1DragonboneArrow => Construct(0x176f4);
+            public static FormLink<IAmmunitionGetter> DLC1BoltSteelExplodingShock => Construct(0xf1bc);
+            public static FormLink<IAmmunitionGetter> DLC1BoltSteelExplodingIce => Construct(0xf1bb);
+            public static FormLink<IAmmunitionGetter> DLC1BoltDwarvenExplodingShock => Construct(0xf1b9);
+            public static FormLink<IAmmunitionGetter> DLC1BoltDwarvenExplodingIce => Construct(0xf1b7);
+            public static FormLink<IAmmunitionGetter> DLC1BoltDwarvenExplodingFire => Construct(0xf1b1);
+            public static FormLink<IAmmunitionGetter> DLC1BoltSteelExplodingFire => Construct(0xf1a0);
+            public static FormLink<IAmmunitionGetter> DLC1BoltDwarven => Construct(0xd099);
+            public static FormLink<IAmmunitionGetter> DLC1ElvenArrowBlessed => Construct(0x98a1);
+            public static FormLink<IAmmunitionGetter> DLC1ElvenArrowBlood => Construct(0x98a0);
+            public static FormLink<IAmmunitionGetter> TestDLC1Bolt => Construct(0x590c);
+            public static FormLink<IAmmunitionGetter> DLC1BoltSteel => Construct(0xbb3);
         }
     }
 }

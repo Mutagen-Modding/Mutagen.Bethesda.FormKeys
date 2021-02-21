@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Flora
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHButterChurn => ModKey.MakeFormKey(0xbc0);
-            public static FormKey BYOHMeadBarrel => ModKey.MakeFormKey(0xf39b);
-            public static FormKey BYOHHawkNest => ModKey.MakeFormKey(0xf1ce);
+            private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IFloraGetter> BYOHButterChurn => Construct(0xbc0);
+            public static FormLink<IFloraGetter> BYOHMeadBarrel => Construct(0xf39b);
+            public static FormLink<IFloraGetter> BYOHHawkNest => Construct(0xf1ce);
         }
     }
 }

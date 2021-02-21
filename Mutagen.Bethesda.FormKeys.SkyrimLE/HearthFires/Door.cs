@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class HearthFires
@@ -5,13 +7,14 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class Door
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHWRDoorLoad01 => ModKey.MakeFormKey(0xb5e);
-            public static FormKey BYOHBYOHWRtowerRTrapDoor02 => ModKey.MakeFormKey(0x3b70);
-            public static FormKey BYOHBYOHWRtowerRTrapDoor01 => ModKey.MakeFormKey(0x3b6f);
-            public static FormKey BYOHBYOHWRtowerLTrapDoor02 => ModKey.MakeFormKey(0x3b6e);
-            public static FormKey BYOHBYOHWRtowerLTrapDoor01 => ModKey.MakeFormKey(0x3b6d);
-            public static FormKey BYOHBYOHWRtowerKTrapDoor02 => ModKey.MakeFormKey(0x3b6c);
-            public static FormKey BYOHBYOHWRtowerKTrapDoor01 => ModKey.MakeFormKey(0x3b6b);
+            private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IDoorGetter> BYOHWRDoorLoad01 => Construct(0xb5e);
+            public static FormLink<IDoorGetter> BYOHBYOHWRtowerRTrapDoor02 => Construct(0x3b70);
+            public static FormLink<IDoorGetter> BYOHBYOHWRtowerRTrapDoor01 => Construct(0x3b6f);
+            public static FormLink<IDoorGetter> BYOHBYOHWRtowerLTrapDoor02 => Construct(0x3b6e);
+            public static FormLink<IDoorGetter> BYOHBYOHWRtowerLTrapDoor01 => Construct(0x3b6d);
+            public static FormLink<IDoorGetter> BYOHBYOHWRtowerKTrapDoor02 => Construct(0x3b6c);
+            public static FormLink<IDoorGetter> BYOHBYOHWRtowerKTrapDoor01 => Construct(0x3b6b);
         }
     }
 }

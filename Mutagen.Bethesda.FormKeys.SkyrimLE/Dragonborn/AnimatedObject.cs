@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dragonborn
@@ -5,15 +7,16 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class AnimatedObject
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
-            public static FormKey DLC02AnimObjectPickAxeWall => ModKey.MakeFormKey(0x3a330);
-            public static FormKey DLC02AnimObjectBoat => ModKey.MakeFormKey(0x39ba6);
-            public static FormKey DLC02AnimObjectStone => ModKey.MakeFormKey(0x3663a);
-            public static FormKey DLC02AnimObjectChiselHammerRiekling => ModKey.MakeFormKey(0x2b10b);
-            public static FormKey DLC02AnimObjectChiselRiekling => ModKey.MakeFormKey(0x2b10a);
-            public static FormKey DLC02AnimObjectChiselHammer => ModKey.MakeFormKey(0x29d29);
-            public static FormKey DLC02AnimObjectChisel => ModKey.MakeFormKey(0x29d28);
-            public static FormKey AnimObjectSeekerBook => ModKey.MakeFormKey(0x261e3);
-            public static FormKey DLC02AnimObjectHeart => ModKey.MakeFormKey(0x24fcb);
+            private static FormLink<IAnimatedObjectGetter> Construct(uint id) => new FormLink<IAnimatedObjectGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectPickAxeWall => Construct(0x3a330);
+            public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectBoat => Construct(0x39ba6);
+            public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectStone => Construct(0x3663a);
+            public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectChiselHammerRiekling => Construct(0x2b10b);
+            public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectChiselRiekling => Construct(0x2b10a);
+            public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectChiselHammer => Construct(0x29d29);
+            public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectChisel => Construct(0x29d28);
+            public static FormLink<IAnimatedObjectGetter> AnimObjectSeekerBook => Construct(0x261e3);
+            public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectHeart => Construct(0x24fcb);
         }
     }
 }

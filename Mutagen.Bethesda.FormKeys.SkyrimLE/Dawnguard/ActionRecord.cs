@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dawnguard
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class ActionRecord
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey ActionReload => ModKey.MakeFormKey(0x590d);
-            public static FormKey ActionWaterwalkStart => ModKey.MakeFormKey(0x4344);
+            private static FormLink<IActionRecordGetter> Construct(uint id) => new FormLink<IActionRecordGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IActionRecordGetter> ActionReload => Construct(0x590d);
+            public static FormLink<IActionRecordGetter> ActionWaterwalkStart => Construct(0x4344);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Dawnguard
@@ -5,15 +7,16 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Worldspace
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey DLC01FalmerValley => ModKey.MakeFormKey(0xbb5);
-            public static FormKey DLC01SoulCairn => ModKey.MakeFormKey(0x1408);
-            public static FormKey DLC1HunterHQWorld => ModKey.MakeFormKey(0x1db8);
-            public static FormKey DLC1ForebearsHoldout => ModKey.MakeFormKey(0x2f64);
-            public static FormKey TestMeganWorld => ModKey.MakeFormKey(0x42c2);
-            public static FormKey DLC1AncestorsGladeWorld => ModKey.MakeFormKey(0x48c7);
-            public static FormKey DLC1DarkfallPassageWorld => ModKey.MakeFormKey(0x4bea);
-            public static FormKey DLC01Boneyard => ModKey.MakeFormKey(0x528d);
-            public static FormKey DLC1VampireCastleCourtyard => ModKey.MakeFormKey(0x7202);
+            private static FormLink<IWorldspaceGetter> Construct(uint id) => new FormLink<IWorldspaceGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IWorldspaceGetter> DLC01FalmerValley => Construct(0xbb5);
+            public static FormLink<IWorldspaceGetter> DLC01SoulCairn => Construct(0x1408);
+            public static FormLink<IWorldspaceGetter> DLC1HunterHQWorld => Construct(0x1db8);
+            public static FormLink<IWorldspaceGetter> DLC1ForebearsHoldout => Construct(0x2f64);
+            public static FormLink<IWorldspaceGetter> TestMeganWorld => Construct(0x42c2);
+            public static FormLink<IWorldspaceGetter> DLC1AncestorsGladeWorld => Construct(0x48c7);
+            public static FormLink<IWorldspaceGetter> DLC1DarkfallPassageWorld => Construct(0x4bea);
+            public static FormLink<IWorldspaceGetter> DLC01Boneyard => Construct(0x528d);
+            public static FormLink<IWorldspaceGetter> DLC1VampireCastleCourtyard => Construct(0x7202);
         }
     }
 }

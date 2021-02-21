@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,15 +7,16 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class AStoryManagerNode
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHHouseNode => ModKey.MakeFormKey(0x10a49);
-            public static FormKey BYOHHouseBanditPacifierNode => ModKey.MakeFormKey(0x8c5);
-            public static FormKey BYOHHouse3BasementNode => ModKey.MakeFormKey(0x10bf7);
-            public static FormKey BYOHHouse2BasementNode2 => ModKey.MakeFormKey(0x10a4b);
-            public static FormKey BYOHHouseBasementNode => ModKey.MakeFormKey(0x10a4a);
-            public static FormKey BYOHHouseQuestNode => ModKey.MakeFormKey(0x520c);
-            public static FormKey BYOHOrphanageNode => ModKey.MakeFormKey(0x427e);
-            public static FormKey BYOHAdoptionQuestNode => ModKey.MakeFormKey(0x3f7a);
-            public static FormKey BYOHHouseChangeLocationNode => ModKey.MakeFormKey(0x308c);
+            private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IAStoryManagerNodeGetter> BYOHHouseNode => Construct(0x10a49);
+            public static FormLink<IAStoryManagerNodeGetter> BYOHHouseBanditPacifierNode => Construct(0x8c5);
+            public static FormLink<IAStoryManagerNodeGetter> BYOHHouse3BasementNode => Construct(0x10bf7);
+            public static FormLink<IAStoryManagerNodeGetter> BYOHHouse2BasementNode2 => Construct(0x10a4b);
+            public static FormLink<IAStoryManagerNodeGetter> BYOHHouseBasementNode => Construct(0x10a4a);
+            public static FormLink<IAStoryManagerNodeGetter> BYOHHouseQuestNode => Construct(0x520c);
+            public static FormLink<IAStoryManagerNodeGetter> BYOHOrphanageNode => Construct(0x427e);
+            public static FormLink<IAStoryManagerNodeGetter> BYOHAdoptionQuestNode => Construct(0x3f7a);
+            public static FormLink<IAStoryManagerNodeGetter> BYOHHouseChangeLocationNode => Construct(0x308c);
         }
     }
 }

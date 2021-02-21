@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Light
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHHouseWarmLightNS => ModKey.MakeFormKey(0xbc6);
+            private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ILightGetter> BYOHHouseWarmLightNS => Construct(0xbc6);
         }
     }
 }

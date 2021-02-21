@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class VileLair
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class ANpcSpawn
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
-            public static FormKey LairVilePrisoner => ModKey.MakeFormKey(0xdb1);
-            public static FormKey RowleyEardwulf => ModKey.MakeFormKey(0x3286);
-            public static FormKey LairVileMinion => ModKey.MakeFormKey(0xe1b);
+            private static FormLink<IANpcSpawnGetter> Construct(uint id) => new FormLink<IANpcSpawnGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IANpcSpawnGetter> LairVilePrisoner => Construct(0xdb1);
+            public static FormLink<IANpcSpawnGetter> RowleyEardwulf => Construct(0x3286);
+            public static FormLink<IANpcSpawnGetter> LairVileMinion => Construct(0xe1b);
         }
     }
 }

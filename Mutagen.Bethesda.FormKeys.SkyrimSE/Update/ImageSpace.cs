@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,11 +7,12 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class ImageSpace
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey ISKarthspireFogNIGHT => ModKey.MakeFormKey(0x1bd1);
-            public static FormKey ISKarthspireFogDUSK => ModKey.MakeFormKey(0x1bd0);
-            public static FormKey ISKarthspireFogDAY => ModKey.MakeFormKey(0x1bcf);
-            public static FormKey ISKarthspireFogDAWN => ModKey.MakeFormKey(0x1bce);
-            public static FormKey UnderwaterImageSpace => ModKey.MakeFormKey(0x946);
+            private static FormLink<IImageSpaceGetter> Construct(uint id) => new FormLink<IImageSpaceGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IImageSpaceGetter> ISKarthspireFogNIGHT => Construct(0x1bd1);
+            public static FormLink<IImageSpaceGetter> ISKarthspireFogDUSK => Construct(0x1bd0);
+            public static FormLink<IImageSpaceGetter> ISKarthspireFogDAY => Construct(0x1bcf);
+            public static FormLink<IImageSpaceGetter> ISKarthspireFogDAWN => Construct(0x1bce);
+            public static FormLink<IImageSpaceGetter> UnderwaterImageSpace => Construct(0x946);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class ThievesDen
@@ -5,16 +7,17 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Container
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCThievesDen.esp");
-            public static FormKey DLC06SupplierChest => ModKey.MakeFormKey(0x74cd);
-            public static FormKey DLC06FletcherChest => ModKey.MakeFormKey(0x79c4);
-            public static FormKey DLC06SecurityChest => ModKey.MakeFormKey(0x79c6);
-            public static FormKey DLC06FenceChest => ModKey.MakeFormKey(0x74cf);
-            public static FormKey DLC06ChestCaptainsQuarters => ModKey.MakeFormKey(0xce30);
-            public static FormKey DLC06TrainerChest => ModKey.MakeFormKey(0x348d);
-            public static FormKey DLC06StealthChest => ModKey.MakeFormKey(0x8d8c);
-            public static FormKey DLC06FirstMateChest => ModKey.MakeFormKey(0x8d8e);
-            public static FormKey DLCChestOfDrawers => ModKey.MakeFormKey(0x1a4ef);
-            public static FormKey DLCCupboardFoodUpperDrinks => ModKey.MakeFormKey(0x1a4f0);
+            private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IContainerGetter> DLC06SupplierChest => Construct(0x74cd);
+            public static FormLink<IContainerGetter> DLC06FletcherChest => Construct(0x79c4);
+            public static FormLink<IContainerGetter> DLC06SecurityChest => Construct(0x79c6);
+            public static FormLink<IContainerGetter> DLC06FenceChest => Construct(0x74cf);
+            public static FormLink<IContainerGetter> DLC06ChestCaptainsQuarters => Construct(0xce30);
+            public static FormLink<IContainerGetter> DLC06TrainerChest => Construct(0x348d);
+            public static FormLink<IContainerGetter> DLC06StealthChest => Construct(0x8d8c);
+            public static FormLink<IContainerGetter> DLC06FirstMateChest => Construct(0x8d8e);
+            public static FormLink<IContainerGetter> DLCChestOfDrawers => Construct(0x1a4ef);
+            public static FormLink<IContainerGetter> DLCCupboardFoodUpperDrinks => Construct(0x1a4f0);
         }
     }
 }

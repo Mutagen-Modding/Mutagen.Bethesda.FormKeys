@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Dawnguard
@@ -5,58 +7,59 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class EffectShader
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey Dlc1DeathHound01 => ModKey.MakeFormKey(0x12d08);
-            public static FormKey DeathHoundDeathFXShader => ModKey.MakeFormKey(0x12d07);
-            public static FormKey DLC1VampBatsEatenByBatsSkinFXS => ModKey.MakeFormKey(0x12970);
-            public static FormKey DLC1BatsEatenBloodSplats => ModKey.MakeFormKey(0x1296f);
-            public static FormKey DLC1BatsEatenBloodDrops => ModKey.MakeFormKey(0x1296e);
-            public static FormKey DLC1VampireBatsEatenByBatsFXS => ModKey.MakeFormKey(0x1296c);
-            public static FormKey DLC1VampireChangeBack02FXS => ModKey.MakeFormKey(0x122b6);
-            public static FormKey DLC1VampireBleedHarkonFireFXS => ModKey.MakeFormKey(0x10f7f);
-            public static FormKey DLC1HarkonDisintegrate01FXS => ModKey.MakeFormKey(0x10e1a);
-            public static FormKey DLC1VampireBleedHarkonDeathFXS => ModKey.MakeFormKey(0x10e19);
-            public static FormKey DLC1VampireDeathBleedingShader => ModKey.MakeFormKey(0x10e13);
-            public static FormKey DLC1GargoyleStoneChipsFXS => ModKey.MakeFormKey(0x10d5c);
-            public static FormKey forgeMasterFXs => ModKey.MakeFormKey(0xf670);
-            public static FormKey DLC1nVampireGoreFXS => ModKey.MakeFormKey(0xe7b3);
-            public static FormKey DLC1VampireChangeBack01FXS => ModKey.MakeFormKey(0xd9ad);
-            public static FormKey DLC1DrainVital01FXS => ModKey.MakeFormKey(0xcbc1);
-            public static FormKey DLC1BonemanUnSummonFXS => ModKey.MakeFormKey(0xcad5);
-            public static FormKey DLC1BonemanSummonFXS => ModKey.MakeFormKey(0xcad4);
-            public static FormKey DLC1DragonUnSummonFXS => ModKey.MakeFormKey(0xca89);
-            public static FormKey DLC1DragonSummonFXS => ModKey.MakeFormKey(0xca86);
-            public static FormKey DLC1SoulCairnKeeperFXShader => ModKey.MakeFormKey(0x6869);
-            public static FormKey DLCGargoyleAbsorbHealthFXS => ModKey.MakeFormKey(0x5135);
-            public static FormKey DLC01scBlackOozeFXS => ModKey.MakeFormKey(0x38f8);
-            public static FormKey DLC1CharusFlyerEmergeFXS => ModKey.MakeFormKey(0x298f);
-            public static FormKey DLC1DrainVitalCasterFXS => ModKey.MakeFormKey(0x2947);
-            public static FormKey DLC1DeathHoundFXS => ModKey.MakeFormKey(0x28ee);
-            public static FormKey DLC1LifeDetectedEmpath => ModKey.MakeFormKey(0x1aa85);
-            public static FormKey DLC1VampireMistform02FXS => ModKey.MakeFormKey(0x1aa30);
-            public static FormKey DLC1VampireMistformEnd03FXS => ModKey.MakeFormKey(0x1aa2f);
-            public static FormKey DLC1VampireMistform01FXS => ModKey.MakeFormKey(0x1aa2e);
-            public static FormKey DLC1SunDamageImpactSmoke => ModKey.MakeFormKey(0x19c9e);
-            public static FormKey DLC1SunFireImpactFXShader => ModKey.MakeFormKey(0x19c9d);
-            public static FormKey DLC1SoulCairnGhostFXShader => ModKey.MakeFormKey(0x19ab3);
-            public static FormKey DLC1VampireBatsReformBATSFXS => ModKey.MakeFormKey(0x18ef2);
-            public static FormKey DLC1VampireBatsReformFXS => ModKey.MakeFormKey(0x18ef1);
-            public static FormKey DLC1VampireBatsFXS => ModKey.MakeFormKey(0x18ef0);
-            public static FormKey testDLC1AurielsBowFireFXShader => ModKey.MakeFormKey(0x154b9);
-            public static FormKey DLC1VampireChangeFXS => ModKey.MakeFormKey(0x15372);
-            public static FormKey DLC1CrystalAbsorbSoulCairnAbsorbFXS => ModKey.MakeFormKey(0x1159b);
-            public static FormKey DLC1testPhilSoulFormFXShader => ModKey.MakeFormKey(0x10ff1);
-            public static FormKey DLC1BFIceFormFXS => ModKey.MakeFormKey(0xd979);
-            public static FormKey DLC1AurielsBowFireFXShader => ModKey.MakeFormKey(0xaeb3);
-            public static FormKey DLC1SunFireCloakFXShader => ModKey.MakeFormKey(0xa3bc);
-            public static FormKey DLC1SunFireFXShader => ModKey.MakeFormKey(0xa3bb);
-            public static FormKey DLC01SoulDeathFXShader => ModKey.MakeFormKey(0x93a2);
-            public static FormKey DLC01SoulCairnFXShader => ModKey.MakeFormKey(0x939b);
-            public static FormKey DLC1SoulCairnSkeletonNecroDeathFXS => ModKey.MakeFormKey(0x6af9);
-            public static FormKey DLC1SoulCairnSkeletonNecroBirthFXS => ModKey.MakeFormKey(0x6af8);
-            public static FormKey DLC1DraugrEmergeFXS3_Specs => ModKey.MakeFormKey(0x42bb);
-            public static FormKey DLC1DraugrEmergeFXS2 => ModKey.MakeFormKey(0x42ba);
-            public static FormKey DLC1DraugrEmergeFXS1_Rocks => ModKey.MakeFormKey(0x42b9);
-            public static FormKey DLC1DraugrEmergeFXS => ModKey.MakeFormKey(0x42b8);
+            private static FormLink<IEffectShaderGetter> Construct(uint id) => new FormLink<IEffectShaderGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IEffectShaderGetter> Dlc1DeathHound01 => Construct(0x12d08);
+            public static FormLink<IEffectShaderGetter> DeathHoundDeathFXShader => Construct(0x12d07);
+            public static FormLink<IEffectShaderGetter> DLC1VampBatsEatenByBatsSkinFXS => Construct(0x12970);
+            public static FormLink<IEffectShaderGetter> DLC1BatsEatenBloodSplats => Construct(0x1296f);
+            public static FormLink<IEffectShaderGetter> DLC1BatsEatenBloodDrops => Construct(0x1296e);
+            public static FormLink<IEffectShaderGetter> DLC1VampireBatsEatenByBatsFXS => Construct(0x1296c);
+            public static FormLink<IEffectShaderGetter> DLC1VampireChangeBack02FXS => Construct(0x122b6);
+            public static FormLink<IEffectShaderGetter> DLC1VampireBleedHarkonFireFXS => Construct(0x10f7f);
+            public static FormLink<IEffectShaderGetter> DLC1HarkonDisintegrate01FXS => Construct(0x10e1a);
+            public static FormLink<IEffectShaderGetter> DLC1VampireBleedHarkonDeathFXS => Construct(0x10e19);
+            public static FormLink<IEffectShaderGetter> DLC1VampireDeathBleedingShader => Construct(0x10e13);
+            public static FormLink<IEffectShaderGetter> DLC1GargoyleStoneChipsFXS => Construct(0x10d5c);
+            public static FormLink<IEffectShaderGetter> forgeMasterFXs => Construct(0xf670);
+            public static FormLink<IEffectShaderGetter> DLC1nVampireGoreFXS => Construct(0xe7b3);
+            public static FormLink<IEffectShaderGetter> DLC1VampireChangeBack01FXS => Construct(0xd9ad);
+            public static FormLink<IEffectShaderGetter> DLC1DrainVital01FXS => Construct(0xcbc1);
+            public static FormLink<IEffectShaderGetter> DLC1BonemanUnSummonFXS => Construct(0xcad5);
+            public static FormLink<IEffectShaderGetter> DLC1BonemanSummonFXS => Construct(0xcad4);
+            public static FormLink<IEffectShaderGetter> DLC1DragonUnSummonFXS => Construct(0xca89);
+            public static FormLink<IEffectShaderGetter> DLC1DragonSummonFXS => Construct(0xca86);
+            public static FormLink<IEffectShaderGetter> DLC1SoulCairnKeeperFXShader => Construct(0x6869);
+            public static FormLink<IEffectShaderGetter> DLCGargoyleAbsorbHealthFXS => Construct(0x5135);
+            public static FormLink<IEffectShaderGetter> DLC01scBlackOozeFXS => Construct(0x38f8);
+            public static FormLink<IEffectShaderGetter> DLC1CharusFlyerEmergeFXS => Construct(0x298f);
+            public static FormLink<IEffectShaderGetter> DLC1DrainVitalCasterFXS => Construct(0x2947);
+            public static FormLink<IEffectShaderGetter> DLC1DeathHoundFXS => Construct(0x28ee);
+            public static FormLink<IEffectShaderGetter> DLC1LifeDetectedEmpath => Construct(0x1aa85);
+            public static FormLink<IEffectShaderGetter> DLC1VampireMistform02FXS => Construct(0x1aa30);
+            public static FormLink<IEffectShaderGetter> DLC1VampireMistformEnd03FXS => Construct(0x1aa2f);
+            public static FormLink<IEffectShaderGetter> DLC1VampireMistform01FXS => Construct(0x1aa2e);
+            public static FormLink<IEffectShaderGetter> DLC1SunDamageImpactSmoke => Construct(0x19c9e);
+            public static FormLink<IEffectShaderGetter> DLC1SunFireImpactFXShader => Construct(0x19c9d);
+            public static FormLink<IEffectShaderGetter> DLC1SoulCairnGhostFXShader => Construct(0x19ab3);
+            public static FormLink<IEffectShaderGetter> DLC1VampireBatsReformBATSFXS => Construct(0x18ef2);
+            public static FormLink<IEffectShaderGetter> DLC1VampireBatsReformFXS => Construct(0x18ef1);
+            public static FormLink<IEffectShaderGetter> DLC1VampireBatsFXS => Construct(0x18ef0);
+            public static FormLink<IEffectShaderGetter> testDLC1AurielsBowFireFXShader => Construct(0x154b9);
+            public static FormLink<IEffectShaderGetter> DLC1VampireChangeFXS => Construct(0x15372);
+            public static FormLink<IEffectShaderGetter> DLC1CrystalAbsorbSoulCairnAbsorbFXS => Construct(0x1159b);
+            public static FormLink<IEffectShaderGetter> DLC1testPhilSoulFormFXShader => Construct(0x10ff1);
+            public static FormLink<IEffectShaderGetter> DLC1BFIceFormFXS => Construct(0xd979);
+            public static FormLink<IEffectShaderGetter> DLC1AurielsBowFireFXShader => Construct(0xaeb3);
+            public static FormLink<IEffectShaderGetter> DLC1SunFireCloakFXShader => Construct(0xa3bc);
+            public static FormLink<IEffectShaderGetter> DLC1SunFireFXShader => Construct(0xa3bb);
+            public static FormLink<IEffectShaderGetter> DLC01SoulDeathFXShader => Construct(0x93a2);
+            public static FormLink<IEffectShaderGetter> DLC01SoulCairnFXShader => Construct(0x939b);
+            public static FormLink<IEffectShaderGetter> DLC1SoulCairnSkeletonNecroDeathFXS => Construct(0x6af9);
+            public static FormLink<IEffectShaderGetter> DLC1SoulCairnSkeletonNecroBirthFXS => Construct(0x6af8);
+            public static FormLink<IEffectShaderGetter> DLC1DraugrEmergeFXS3_Specs => Construct(0x42bb);
+            public static FormLink<IEffectShaderGetter> DLC1DraugrEmergeFXS2 => Construct(0x42ba);
+            public static FormLink<IEffectShaderGetter> DLC1DraugrEmergeFXS1_Rocks => Construct(0x42b9);
+            public static FormLink<IEffectShaderGetter> DLC1DraugrEmergeFXS => Construct(0x42b8);
         }
     }
 }

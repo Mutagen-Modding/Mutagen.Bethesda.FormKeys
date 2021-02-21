@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Orrery
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Static
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCOrrery.esp");
-            public static FormKey ArchitectureOrreryDoorFrame => ModKey.MakeFormKey(0x11eb57);
+            private static FormLink<IStaticGetter> Construct(uint id) => new FormLink<IStaticGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IStaticGetter> ArchitectureOrreryDoorFrame => Construct(0x11eb57);
         }
     }
 }

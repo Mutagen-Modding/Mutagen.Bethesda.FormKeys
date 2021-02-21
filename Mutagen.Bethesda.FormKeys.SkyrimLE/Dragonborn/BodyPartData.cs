@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dragonborn
@@ -5,14 +7,15 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class BodyPartData
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
-            public static FormKey DLC2MountedRieklingBodyPartData => ModKey.MakeFormKey(0x1e2a3);
-            public static FormKey DwarvenBallistaCenturionBodyPartData => ModKey.MakeFormKey(0x2b018);
-            public static FormKey BenthicLurkerBodyPartData => ModKey.MakeFormKey(0x28537);
-            public static FormKey DLC2NetchBodyPartData => ModKey.MakeFormKey(0x1feb9);
-            public static FormKey DLC2HMDaedraPartData => ModKey.MakeFormKey(0x1dcbc);
-            public static FormKey DLC2DragonBodyPartData => ModKey.MakeFormKey(0x1bc4a);
-            public static FormKey DLC2ScribBodyPartData => ModKey.MakeFormKey(0x19ad2);
-            public static FormKey DLC2RieklingBodyPartData => ModKey.MakeFormKey(0x17f53);
+            private static FormLink<IBodyPartDataGetter> Construct(uint id) => new FormLink<IBodyPartDataGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IBodyPartDataGetter> DLC2MountedRieklingBodyPartData => Construct(0x1e2a3);
+            public static FormLink<IBodyPartDataGetter> DwarvenBallistaCenturionBodyPartData => Construct(0x2b018);
+            public static FormLink<IBodyPartDataGetter> BenthicLurkerBodyPartData => Construct(0x28537);
+            public static FormLink<IBodyPartDataGetter> DLC2NetchBodyPartData => Construct(0x1feb9);
+            public static FormLink<IBodyPartDataGetter> DLC2HMDaedraPartData => Construct(0x1dcbc);
+            public static FormLink<IBodyPartDataGetter> DLC2DragonBodyPartData => Construct(0x1bc4a);
+            public static FormLink<IBodyPartDataGetter> DLC2ScribBodyPartData => Construct(0x19ad2);
+            public static FormLink<IBodyPartDataGetter> DLC2RieklingBodyPartData => Construct(0x17f53);
         }
     }
 }

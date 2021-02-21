@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Oblivion
@@ -5,21 +7,22 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Race
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
-            public static FormKey Sheogorath => ModKey.MakeFormKey(0x5308e);
-            public static FormKey GoldenSaint => ModKey.MakeFormKey(0x1208f);
-            public static FormKey DarkSeducer => ModKey.MakeFormKey(0x1208e);
-            public static FormKey VampireRace => ModKey.MakeFormKey(0x19);
-            public static FormKey Dremora => ModKey.MakeFormKey(0x38010);
-            public static FormKey Argonian => ModKey.MakeFormKey(0x23fe9);
-            public static FormKey Nord => ModKey.MakeFormKey(0x224fd);
-            public static FormKey Breton => ModKey.MakeFormKey(0x224fc);
-            public static FormKey WoodElf => ModKey.MakeFormKey(0x223c8);
-            public static FormKey Khajiit => ModKey.MakeFormKey(0x223c7);
-            public static FormKey DarkElf => ModKey.MakeFormKey(0x191c1);
-            public static FormKey Orc => ModKey.MakeFormKey(0x191c0);
-            public static FormKey HighElf => ModKey.MakeFormKey(0x19204);
-            public static FormKey Redguard => ModKey.MakeFormKey(0xd43);
-            public static FormKey Imperial => ModKey.MakeFormKey(0x907);
+            private static FormLink<IRaceGetter> Construct(uint id) => new FormLink<IRaceGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IRaceGetter> Sheogorath => Construct(0x5308e);
+            public static FormLink<IRaceGetter> GoldenSaint => Construct(0x1208f);
+            public static FormLink<IRaceGetter> DarkSeducer => Construct(0x1208e);
+            public static FormLink<IRaceGetter> VampireRace => Construct(0x19);
+            public static FormLink<IRaceGetter> Dremora => Construct(0x38010);
+            public static FormLink<IRaceGetter> Argonian => Construct(0x23fe9);
+            public static FormLink<IRaceGetter> Nord => Construct(0x224fd);
+            public static FormLink<IRaceGetter> Breton => Construct(0x224fc);
+            public static FormLink<IRaceGetter> WoodElf => Construct(0x223c8);
+            public static FormLink<IRaceGetter> Khajiit => Construct(0x223c7);
+            public static FormLink<IRaceGetter> DarkElf => Construct(0x191c1);
+            public static FormLink<IRaceGetter> Orc => Construct(0x191c0);
+            public static FormLink<IRaceGetter> HighElf => Construct(0x19204);
+            public static FormLink<IRaceGetter> Redguard => Construct(0xd43);
+            public static FormLink<IRaceGetter> Imperial => Construct(0x907);
         }
     }
 }

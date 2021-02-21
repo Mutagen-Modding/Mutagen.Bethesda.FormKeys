@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class VileLair
@@ -5,11 +7,12 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class ASpell
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
-            public static FormKey LairVileShrineBlessing01 => ModKey.MakeFormKey(0xa5d6);
-            public static FormKey LairVileShrineBlessing => ModKey.MakeFormKey(0x1379);
-            public static FormKey LairVileAbChokeberry => ModKey.MakeFormKey(0x9bff);
-            public static FormKey LairVileShrineBlessing03 => ModKey.MakeFormKey(0xa5d0);
-            public static FormKey LairVileShrineBlessing02 => ModKey.MakeFormKey(0xa5d4);
+            private static FormLink<IASpellGetter> Construct(uint id) => new FormLink<IASpellGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IASpellGetter> LairVileShrineBlessing01 => Construct(0xa5d6);
+            public static FormLink<IASpellGetter> LairVileShrineBlessing => Construct(0x1379);
+            public static FormLink<IASpellGetter> LairVileAbChokeberry => Construct(0x9bff);
+            public static FormLink<IASpellGetter> LairVileShrineBlessing03 => Construct(0xa5d0);
+            public static FormLink<IASpellGetter> LairVileShrineBlessing02 => Construct(0xa5d4);
         }
     }
 }

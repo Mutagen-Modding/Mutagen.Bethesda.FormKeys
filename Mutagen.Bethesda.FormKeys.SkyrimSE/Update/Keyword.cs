@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,31 +7,32 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Keyword
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey ccBGS_ActorTypeCustomPetResponse07_FollowfromWait => ModKey.MakeFormKey(0x3099);
-            public static FormKey ccBGS_ActorTypeCustomPetResponse06_Wait => ModKey.MakeFormKey(0x3098);
-            public static FormKey ccBGS_ActorTypeCustomPetResponse05_FollowfromDismissed => ModKey.MakeFormKey(0x3097);
-            public static FormKey ccBGS_ActorTypeCustomPetResponse04_Trade => ModKey.MakeFormKey(0x3096);
-            public static FormKey ccBGS_ActorTypeCustomPetResponse03_GoHome => ModKey.MakeFormKey(0x3095);
-            public static FormKey ccBGS_ActorTypeCustomPetResponse02_Wait => ModKey.MakeFormKey(0x3094);
-            public static FormKey ccBGS_ActorTypeCustomPetResponse01_Stay => ModKey.MakeFormKey(0x3093);
-            public static FormKey CommandedVoiceExcluded => ModKey.MakeFormKey(0x3054);
-            public static FormKey ccDisallowSaddleSwap => ModKey.MakeFormKey(0x2f95);
-            public static FormKey Survival_LocTypeFreeShrineUse => ModKey.MakeFormKey(0x2edc);
-            public static FormKey Survival_BodyAndHead => ModKey.MakeFormKey(0x2edb);
-            public static FormKey MagicFlameCloak => ModKey.MakeFormKey(0x2eda);
-            public static FormKey Survival_ArmorWarm => ModKey.MakeFormKey(0x2ed9);
-            public static FormKey Survival_ArmorCold => ModKey.MakeFormKey(0x2ed8);
-            public static FormKey ArmorMaterialBlades => ModKey.MakeFormKey(0x9c0);
-            public static FormKey ArmorMaterialThievesGuildLeader => ModKey.MakeFormKey(0x9bf);
-            public static FormKey ArmorMaterialBearStormcloak => ModKey.MakeFormKey(0x9be);
-            public static FormKey ArmorMaterialFalmer => ModKey.MakeFormKey(0x9bd);
-            public static FormKey ArmorMaterialThievesGuild => ModKey.MakeFormKey(0x9bc);
-            public static FormKey ArmorMaterialPenitus => ModKey.MakeFormKey(0x9bb);
-            public static FormKey ArmorMaterialMS02Forsworn => ModKey.MakeFormKey(0x9ba);
-            public static FormKey ArmorMaterialForsworn => ModKey.MakeFormKey(0x9b9);
-            public static FormKey ImmuneDragonPairedKill => ModKey.MakeFormKey(0x9a2);
-            public static FormKey WEDL06Letrush => ModKey.MakeFormKey(0x99f);
-            public static FormKey DA15WabbajackExcludedKeyword => ModKey.MakeFormKey(0x997);
+            private static FormLink<IKeywordGetter> Construct(uint id) => new FormLink<IKeywordGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IKeywordGetter> ccBGS_ActorTypeCustomPetResponse07_FollowfromWait => Construct(0x3099);
+            public static FormLink<IKeywordGetter> ccBGS_ActorTypeCustomPetResponse06_Wait => Construct(0x3098);
+            public static FormLink<IKeywordGetter> ccBGS_ActorTypeCustomPetResponse05_FollowfromDismissed => Construct(0x3097);
+            public static FormLink<IKeywordGetter> ccBGS_ActorTypeCustomPetResponse04_Trade => Construct(0x3096);
+            public static FormLink<IKeywordGetter> ccBGS_ActorTypeCustomPetResponse03_GoHome => Construct(0x3095);
+            public static FormLink<IKeywordGetter> ccBGS_ActorTypeCustomPetResponse02_Wait => Construct(0x3094);
+            public static FormLink<IKeywordGetter> ccBGS_ActorTypeCustomPetResponse01_Stay => Construct(0x3093);
+            public static FormLink<IKeywordGetter> CommandedVoiceExcluded => Construct(0x3054);
+            public static FormLink<IKeywordGetter> ccDisallowSaddleSwap => Construct(0x2f95);
+            public static FormLink<IKeywordGetter> Survival_LocTypeFreeShrineUse => Construct(0x2edc);
+            public static FormLink<IKeywordGetter> Survival_BodyAndHead => Construct(0x2edb);
+            public static FormLink<IKeywordGetter> MagicFlameCloak => Construct(0x2eda);
+            public static FormLink<IKeywordGetter> Survival_ArmorWarm => Construct(0x2ed9);
+            public static FormLink<IKeywordGetter> Survival_ArmorCold => Construct(0x2ed8);
+            public static FormLink<IKeywordGetter> ArmorMaterialBlades => Construct(0x9c0);
+            public static FormLink<IKeywordGetter> ArmorMaterialThievesGuildLeader => Construct(0x9bf);
+            public static FormLink<IKeywordGetter> ArmorMaterialBearStormcloak => Construct(0x9be);
+            public static FormLink<IKeywordGetter> ArmorMaterialFalmer => Construct(0x9bd);
+            public static FormLink<IKeywordGetter> ArmorMaterialThievesGuild => Construct(0x9bc);
+            public static FormLink<IKeywordGetter> ArmorMaterialPenitus => Construct(0x9bb);
+            public static FormLink<IKeywordGetter> ArmorMaterialMS02Forsworn => Construct(0x9ba);
+            public static FormLink<IKeywordGetter> ArmorMaterialForsworn => Construct(0x9b9);
+            public static FormLink<IKeywordGetter> ImmuneDragonPairedKill => Construct(0x9a2);
+            public static FormLink<IKeywordGetter> WEDL06Letrush => Construct(0x99f);
+            public static FormLink<IKeywordGetter> DA15WabbajackExcludedKeyword => Construct(0x997);
         }
     }
 }

@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class MehrunesRazor
@@ -5,10 +7,11 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class LoadScreen
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCMehrunesRazor.esp");
-            public static FormKey DL9VillageLoadDoor => ModKey.MakeFormKey(0x1b8d);
-            public static FormKey DL9extLoadDoor => ModKey.MakeFormKey(0x1567);
-            public static FormKey DL9MinesLoadDoor => ModKey.MakeFormKey(0x1b87);
-            public static FormKey DL9CommuneLoadDoor => ModKey.MakeFormKey(0x1b88);
+            private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ILoadScreenGetter> DL9VillageLoadDoor => Construct(0x1b8d);
+            public static FormLink<ILoadScreenGetter> DL9extLoadDoor => Construct(0x1567);
+            public static FormLink<ILoadScreenGetter> DL9MinesLoadDoor => Construct(0x1b87);
+            public static FormLink<ILoadScreenGetter> DL9CommuneLoadDoor => Construct(0x1b88);
         }
     }
 }

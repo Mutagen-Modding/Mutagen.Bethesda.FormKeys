@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Knights
@@ -5,23 +7,24 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Container
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Knights.esp");
-            public static FormKey TestQAKnights => ModKey.MakeFormKey(0xee0);
-            public static FormKey NDChestVendorBooks => ModKey.MakeFormKey(0xee1);
-            public static FormKey NDPrioryUndercroftBossChest => ModKey.MakeFormKey(0xee2);
-            public static FormKey NDPrioryUndercroftChest01 => ModKey.MakeFormKey(0xee3);
-            public static FormKey ND05MainTestChestNew => ModKey.MakeFormKey(0xee4);
-            public static FormKey NDPrioryArmoryChest => ModKey.MakeFormKey(0xee5);
-            public static FormKey ND05MainTestChestKurt => ModKey.MakeFormKey(0xee6);
-            public static FormKey ND08Tomb => ModKey.MakeFormKey(0xee7);
-            public static FormKey ND05StoneChest => ModKey.MakeFormKey(0xee8);
-            public static FormKey ND05GemChest => ModKey.MakeFormKey(0xee9);
-            public static FormKey ND05HammerChest => ModKey.MakeFormKey(0xeea);
-            public static FormKey ND05GobletChest => ModKey.MakeFormKey(0xeeb);
-            public static FormKey ND05BookChest => ModKey.MakeFormKey(0xeec);
-            public static FormKey ND05SkullChest => ModKey.MakeFormKey(0xeed);
-            public static FormKey ND05HelmChest => ModKey.MakeFormKey(0xeee);
-            public static FormKey ND05SwordChest => ModKey.MakeFormKey(0xeef);
-            public static FormKey ND05MainTestChest => ModKey.MakeFormKey(0xef0);
+            private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IContainerGetter> TestQAKnights => Construct(0xee0);
+            public static FormLink<IContainerGetter> NDChestVendorBooks => Construct(0xee1);
+            public static FormLink<IContainerGetter> NDPrioryUndercroftBossChest => Construct(0xee2);
+            public static FormLink<IContainerGetter> NDPrioryUndercroftChest01 => Construct(0xee3);
+            public static FormLink<IContainerGetter> ND05MainTestChestNew => Construct(0xee4);
+            public static FormLink<IContainerGetter> NDPrioryArmoryChest => Construct(0xee5);
+            public static FormLink<IContainerGetter> ND05MainTestChestKurt => Construct(0xee6);
+            public static FormLink<IContainerGetter> ND08Tomb => Construct(0xee7);
+            public static FormLink<IContainerGetter> ND05StoneChest => Construct(0xee8);
+            public static FormLink<IContainerGetter> ND05GemChest => Construct(0xee9);
+            public static FormLink<IContainerGetter> ND05HammerChest => Construct(0xeea);
+            public static FormLink<IContainerGetter> ND05GobletChest => Construct(0xeeb);
+            public static FormLink<IContainerGetter> ND05BookChest => Construct(0xeec);
+            public static FormLink<IContainerGetter> ND05SkullChest => Construct(0xeed);
+            public static FormLink<IContainerGetter> ND05HelmChest => Construct(0xeee);
+            public static FormLink<IContainerGetter> ND05SwordChest => Construct(0xeef);
+            public static FormLink<IContainerGetter> ND05MainTestChest => Construct(0xef0);
         }
     }
 }

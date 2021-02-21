@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Knights
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class Weather
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Knights.esp");
-            public static FormKey NDSkyBattleWeatherNEW => ModKey.MakeFormKey(0xfd3);
-            public static FormKey NDSkyBattleWeatherOLD => ModKey.MakeFormKey(0xfd4);
-            public static FormKey ND08Fog => ModKey.MakeFormKey(0xfd5);
+            private static FormLink<IWeatherGetter> Construct(uint id) => new FormLink<IWeatherGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IWeatherGetter> NDSkyBattleWeatherNEW => Construct(0xfd3);
+            public static FormLink<IWeatherGetter> NDSkyBattleWeatherOLD => Construct(0xfd4);
+            public static FormLink<IWeatherGetter> ND08Fog => Construct(0xfd5);
         }
     }
 }

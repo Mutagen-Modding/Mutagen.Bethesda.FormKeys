@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class Update
@@ -5,11 +7,12 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class ConstructibleObject
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-            public static FormKey RecipeArmorImperialShieldLight => ModKey.MakeFormKey(0x9d3);
-            public static FormKey RecipeArmorImperialHelmetLight => ModKey.MakeFormKey(0x9d2);
-            public static FormKey RecipeArmorImperialGauntletsLight => ModKey.MakeFormKey(0x9d1);
-            public static FormKey RecipeArmorImperialBootsLight => ModKey.MakeFormKey(0x9d0);
-            public static FormKey RecipeArmorImperialCuirassLight => ModKey.MakeFormKey(0x9cf);
+            private static FormLink<IConstructibleObjectGetter> Construct(uint id) => new FormLink<IConstructibleObjectGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IConstructibleObjectGetter> RecipeArmorImperialShieldLight => Construct(0x9d3);
+            public static FormLink<IConstructibleObjectGetter> RecipeArmorImperialHelmetLight => Construct(0x9d2);
+            public static FormLink<IConstructibleObjectGetter> RecipeArmorImperialGauntletsLight => Construct(0x9d1);
+            public static FormLink<IConstructibleObjectGetter> RecipeArmorImperialBootsLight => Construct(0x9d0);
+            public static FormLink<IConstructibleObjectGetter> RecipeArmorImperialCuirassLight => Construct(0x9cf);
         }
     }
 }

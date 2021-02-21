@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Dawnguard
@@ -5,41 +7,42 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class Projectile
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-            public static FormKey DLC1BatsDmgProjectile => ModKey.MakeFormKey(0x12fec);
-            public static FormKey DLC1HarkonFXBloodDropProjectile => ModKey.MakeFormKey(0x11e3d);
-            public static FormKey DLC1BoltSteelProjectileShock => ModKey.MakeFormKey(0x10d8f);
-            public static FormKey DLC1BoltSteelProjectileIce => ModKey.MakeFormKey(0x10d8e);
-            public static FormKey DLC1ReflectingShieldProjectile03 => ModKey.MakeFormKey(0xd959);
-            public static FormKey DLC1ReflectingShieldProjectile02 => ModKey.MakeFormKey(0xd956);
-            public static FormKey DLC1ReflectingShieldProjectile01 => ModKey.MakeFormKey(0xd953);
-            public static FormKey DLC1DrainVitalityProjectile03 => ModKey.MakeFormKey(0x28df);
-            public static FormKey DLC1DrainVitalityProjectile02 => ModKey.MakeFormKey(0x28d7);
-            public static FormKey DLC1DrainVitalityProjectile01 => ModKey.MakeFormKey(0x28d6);
-            public static FormKey DLC1SoulRendPushProjectile02 => ModKey.MakeFormKey(0x1aa32);
-            public static FormKey DLC1AurielsBloodDippedProjectile => ModKey.MakeFormKey(0x1a8df);
-            public static FormKey DLC1VampireAbsorbProjectile => ModKey.MakeFormKey(0x1a30c);
-            public static FormKey DCL1ArrowElvenBloodProjectile => ModKey.MakeFormKey(0x18c59);
-            public static FormKey ArrowDragonboneProjectile => ModKey.MakeFormKey(0x176f3);
-            public static FormKey DLC1SoulRendPushProjectile01 => ModKey.MakeFormKey(0x16122);
-            public static FormKey DLC1ArrowAurielProjectile => ModKey.MakeFormKey(0x15fef);
-            public static FormKey DLC1ArrowElvenProjectileExplode => ModKey.MakeFormKey(0x15717);
-            public static FormKey testSuperMageLightSpellProjectile => ModKey.MakeFormKey(0x1540f);
-            public static FormKey DLC1VampireDrainSpray01 => ModKey.MakeFormKey(0x14d71);
-            public static FormKey DLC1SC_ShockBoltAimStorm => ModKey.MakeFormKey(0x14323);
-            public static FormKey DLC1LD_AetherialStaffProjectile => ModKey.MakeFormKey(0x142b7);
-            public static FormKey SprigganEarthMotherConcProjectile => ModKey.MakeFormKey(0x13b80);
-            public static FormKey DLC1SunLightSpellProjectile => ModKey.MakeFormKey(0xf649);
-            public static FormKey DLC1BoltSteelProjectileFire => ModKey.MakeFormKey(0xf1ba);
-            public static FormKey DLC1BoltDwarvenProjectileExplodingShock => ModKey.MakeFormKey(0xf1b8);
-            public static FormKey DLC1BoltDwarvenProjectileExplodingIce => ModKey.MakeFormKey(0xf1b6);
-            public static FormKey DLC1BoltDwarvenProjectileExplodingFire => ModKey.MakeFormKey(0xf1b0);
-            public static FormKey DLC1BoltDwarvenProjectile => ModKey.MakeFormKey(0xd09a);
-            public static FormKey DLC1AurielsSunBeamProjectile => ModKey.MakeFormKey(0xc610);
-            public static FormKey DLC1VoiceMarkedDeathProjectile => ModKey.MakeFormKey(0x8447);
-            public static FormKey DLC01SoulRendProjectile => ModKey.MakeFormKey(0x7cbb);
-            public static FormKey TrapSpotLightProjectileCone => ModKey.MakeFormKey(0x37fc);
-            public static FormKey TrapSpotLightProjectile => ModKey.MakeFormKey(0x37f9);
-            public static FormKey DLC1BoltSteelProjectile => ModKey.MakeFormKey(0xbb4);
+            private static FormLink<IProjectileGetter> Construct(uint id) => new FormLink<IProjectileGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IProjectileGetter> DLC1BatsDmgProjectile => Construct(0x12fec);
+            public static FormLink<IProjectileGetter> DLC1HarkonFXBloodDropProjectile => Construct(0x11e3d);
+            public static FormLink<IProjectileGetter> DLC1BoltSteelProjectileShock => Construct(0x10d8f);
+            public static FormLink<IProjectileGetter> DLC1BoltSteelProjectileIce => Construct(0x10d8e);
+            public static FormLink<IProjectileGetter> DLC1ReflectingShieldProjectile03 => Construct(0xd959);
+            public static FormLink<IProjectileGetter> DLC1ReflectingShieldProjectile02 => Construct(0xd956);
+            public static FormLink<IProjectileGetter> DLC1ReflectingShieldProjectile01 => Construct(0xd953);
+            public static FormLink<IProjectileGetter> DLC1DrainVitalityProjectile03 => Construct(0x28df);
+            public static FormLink<IProjectileGetter> DLC1DrainVitalityProjectile02 => Construct(0x28d7);
+            public static FormLink<IProjectileGetter> DLC1DrainVitalityProjectile01 => Construct(0x28d6);
+            public static FormLink<IProjectileGetter> DLC1SoulRendPushProjectile02 => Construct(0x1aa32);
+            public static FormLink<IProjectileGetter> DLC1AurielsBloodDippedProjectile => Construct(0x1a8df);
+            public static FormLink<IProjectileGetter> DLC1VampireAbsorbProjectile => Construct(0x1a30c);
+            public static FormLink<IProjectileGetter> DCL1ArrowElvenBloodProjectile => Construct(0x18c59);
+            public static FormLink<IProjectileGetter> ArrowDragonboneProjectile => Construct(0x176f3);
+            public static FormLink<IProjectileGetter> DLC1SoulRendPushProjectile01 => Construct(0x16122);
+            public static FormLink<IProjectileGetter> DLC1ArrowAurielProjectile => Construct(0x15fef);
+            public static FormLink<IProjectileGetter> DLC1ArrowElvenProjectileExplode => Construct(0x15717);
+            public static FormLink<IProjectileGetter> testSuperMageLightSpellProjectile => Construct(0x1540f);
+            public static FormLink<IProjectileGetter> DLC1VampireDrainSpray01 => Construct(0x14d71);
+            public static FormLink<IProjectileGetter> DLC1SC_ShockBoltAimStorm => Construct(0x14323);
+            public static FormLink<IProjectileGetter> DLC1LD_AetherialStaffProjectile => Construct(0x142b7);
+            public static FormLink<IProjectileGetter> SprigganEarthMotherConcProjectile => Construct(0x13b80);
+            public static FormLink<IProjectileGetter> DLC1SunLightSpellProjectile => Construct(0xf649);
+            public static FormLink<IProjectileGetter> DLC1BoltSteelProjectileFire => Construct(0xf1ba);
+            public static FormLink<IProjectileGetter> DLC1BoltDwarvenProjectileExplodingShock => Construct(0xf1b8);
+            public static FormLink<IProjectileGetter> DLC1BoltDwarvenProjectileExplodingIce => Construct(0xf1b6);
+            public static FormLink<IProjectileGetter> DLC1BoltDwarvenProjectileExplodingFire => Construct(0xf1b0);
+            public static FormLink<IProjectileGetter> DLC1BoltDwarvenProjectile => Construct(0xd09a);
+            public static FormLink<IProjectileGetter> DLC1AurielsSunBeamProjectile => Construct(0xc610);
+            public static FormLink<IProjectileGetter> DLC1VoiceMarkedDeathProjectile => Construct(0x8447);
+            public static FormLink<IProjectileGetter> DLC01SoulRendProjectile => Construct(0x7cbb);
+            public static FormLink<IProjectileGetter> TrapSpotLightProjectileCone => Construct(0x37fc);
+            public static FormLink<IProjectileGetter> TrapSpotLightProjectile => Construct(0x37f9);
+            public static FormLink<IProjectileGetter> DLC1BoltSteelProjectile => Construct(0xbb4);
         }
     }
 }

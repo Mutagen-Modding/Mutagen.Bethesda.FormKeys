@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,13 +7,14 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Cell
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHHouseUtilityCell => ModKey.MakeFormKey(0x2fe4);
-            public static FormKey BYOHHouse2Hjaalmarch => ModKey.MakeFormKey(0x11cb3);
-            public static FormKey BYOHHouse1FalkreathBasement => ModKey.MakeFormKey(0x4849);
-            public static FormKey BYOHHouse2HjaalmarchBasement => ModKey.MakeFormKey(0x15154);
-            public static FormKey BYOHHouse3PaleBasement => ModKey.MakeFormKey(0x16a55);
-            public static FormKey BYOHHouse3Pale => ModKey.MakeFormKey(0x16a56);
-            public static FormKey BYOHHouse1Falkreath => ModKey.MakeFormKey(0x2fec);
+            private static FormLink<ICellGetter> Construct(uint id) => new FormLink<ICellGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ICellGetter> BYOHHouseUtilityCell => Construct(0x2fe4);
+            public static FormLink<ICellGetter> BYOHHouse2Hjaalmarch => Construct(0x11cb3);
+            public static FormLink<ICellGetter> BYOHHouse1FalkreathBasement => Construct(0x4849);
+            public static FormLink<ICellGetter> BYOHHouse2HjaalmarchBasement => Construct(0x15154);
+            public static FormLink<ICellGetter> BYOHHouse3PaleBasement => Construct(0x16a55);
+            public static FormLink<ICellGetter> BYOHHouse3Pale => Construct(0x16a56);
+            public static FormLink<ICellGetter> BYOHHouse1Falkreath => Construct(0x2fec);
         }
     }
 }

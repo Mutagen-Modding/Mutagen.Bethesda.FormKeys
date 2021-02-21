@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimSE
 {
     public static partial class HearthFires
@@ -5,9 +7,10 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Relationship
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
-            public static FormKey BYOHHousecarlPalePlayerRelationship => ModKey.MakeFormKey(0x5227);
-            public static FormKey BYOHHousecarlHjaalmarchPlayerRelationship => ModKey.MakeFormKey(0x5226);
-            public static FormKey BYOHHousecarlFalkreathPlayerRelationship => ModKey.MakeFormKey(0x5225);
+            private static FormLink<IRelationshipGetter> Construct(uint id) => new FormLink<IRelationshipGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IRelationshipGetter> BYOHHousecarlPalePlayerRelationship => Construct(0x5227);
+            public static FormLink<IRelationshipGetter> BYOHHousecarlHjaalmarchPlayerRelationship => Construct(0x5226);
+            public static FormLink<IRelationshipGetter> BYOHHousecarlFalkreathPlayerRelationship => Construct(0x5225);
         }
     }
 }

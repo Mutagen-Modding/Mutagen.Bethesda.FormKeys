@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Skyrim;
+
 namespace Mutagen.Bethesda.FormKeys.SkyrimLE
 {
     public static partial class Skyrim
@@ -5,8 +7,9 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
         public static class DualCastData
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
-            public static FormKey doomSerpentDualCastData => ModKey.MakeFormKey(0xe5f62);
-            public static FormKey FrostStormDualCastData => ModKey.MakeFormKey(0x201f3);
+            private static FormLink<IDualCastDataGetter> Construct(uint id) => new FormLink<IDualCastDataGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IDualCastDataGetter> doomSerpentDualCastData => Construct(0xe5f62);
+            public static FormLink<IDualCastDataGetter> FrostStormDualCastData => Construct(0x201f3);
         }
     }
 }

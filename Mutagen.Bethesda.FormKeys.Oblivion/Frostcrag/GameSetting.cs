@@ -1,3 +1,5 @@
+using Mutagen.Bethesda.Oblivion;
+
 namespace Mutagen.Bethesda.FormKeys.Oblivion
 {
     public static partial class Frostcrag
@@ -5,7 +7,8 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
         public static class GameSetting
         {
             private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCFrostcrag.esp");
-            public static FormKey fPathMinimalUseDoorPenalty => ModKey.MakeFormKey(0xa468);
+            private static FormLink<IGameSettingGetter> Construct(uint id) => new FormLink<IGameSettingGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IGameSettingGetter> fPathMinimalUseDoorPenalty => Construct(0xa468);
         }
     }
 }
