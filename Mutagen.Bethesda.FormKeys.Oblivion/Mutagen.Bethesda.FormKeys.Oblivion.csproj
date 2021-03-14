@@ -17,8 +17,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mutagen.Bethesda.Core" Version="0.27.1-prerelease3" />
-    <PackageReference Include="Mutagen.Bethesda.Oblivion" Version="0.27.1-prerelease3" />
+    <PackageReference Include="Mutagen.Bethesda.Core" Version="0.27.1-prerelease5" />
+    <PackageReference Include="Mutagen.Bethesda.Oblivion" Version="0.27.1-prerelease5" />
     <PackageReference Include="GitInfo" Version="2.1.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
