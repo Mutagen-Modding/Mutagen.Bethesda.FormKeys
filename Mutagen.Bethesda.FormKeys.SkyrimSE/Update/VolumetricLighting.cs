@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class VolumetricLighting
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IVolumetricLightingGetter> Construct(uint id) => new FormLink<IVolumetricLightingGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IVolumetricLightingGetter> VLBloatedMansGrotto => Construct(0x2713);
             public static FormLink<IVolumetricLightingGetter> VLSovngardeFog => Construct(0x1bdc);

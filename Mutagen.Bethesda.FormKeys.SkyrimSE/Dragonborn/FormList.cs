@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class FormList
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFormListGetter> DLC2ApoWaterDamageLocationsList => Construct(0x1dc06);
             public static FormLink<IFormListGetter> DLC2dunTT2IldariHoldPositionList => Construct(0x3d503);

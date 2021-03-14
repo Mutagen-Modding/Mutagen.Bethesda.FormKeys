@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class TextureSet
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ITextureSetGetter> DLC1SeranaHumanEyes => Construct(0x14c9b);
             public static FormLink<ITextureSetGetter> DLC1TextureSetVQ07WayShrinePortalTemple => Construct(0x11bf4);

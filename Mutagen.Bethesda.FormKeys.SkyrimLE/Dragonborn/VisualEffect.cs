@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class VisualEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IVisualEffectGetter> Construct(uint id) => new FormLink<IVisualEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IVisualEffectGetter> DLC2MiraakAbsorbManE => Construct(0x3d30a);
             public static FormLink<IVisualEffectGetter> DLC2MiraakAbsorbE => Construct(0x3d309);

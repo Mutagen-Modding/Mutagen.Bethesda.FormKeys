@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Light
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
             private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILightGetter> LairVileCustomSithisFaceLight => Construct(0x26c0);
             public static FormLink<ILightGetter> LairVileSithisDaylight => Construct(0x26c1);

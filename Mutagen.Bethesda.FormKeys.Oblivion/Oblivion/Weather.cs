@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Weather
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IWeatherGetter> Construct(uint id) => new FormLink<IWeatherGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWeatherGetter> SEClearTrans => Construct(0x8ef42);
             public static FormLink<IWeatherGetter> SE13JiggyWeather => Construct(0x825a6);

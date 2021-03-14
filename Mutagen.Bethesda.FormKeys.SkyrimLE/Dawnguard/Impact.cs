@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Impact
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IImpactGetter> Construct(uint id) => new FormLink<IImpactGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IImpactGetter> NPCVampireLordFootRunImpact => Construct(0x13775);
             public static FormLink<IImpactGetter> NPCVampireLordFootWalkImpact => Construct(0x13774);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class LeveledItem
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ILeveledItemGetter> Construct(uint id) => new FormLink<ILeveledItemGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILeveledItemGetter> DLC2LItemFoodLeek75 => Construct(0x1e1b4);
             public static FormLink<ILeveledItemGetter> DLC2ChitinHeavyHelmet50 => Construct(0x1e1ac);

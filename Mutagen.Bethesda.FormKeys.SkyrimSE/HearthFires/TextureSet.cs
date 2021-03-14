@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class TextureSet
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ITextureSetGetter> BYOHTextureSetClayDepositRiverMud01 => Construct(0xa13);
             public static FormLink<ITextureSetGetter> BYOHTextureSetClayDepositReachDirt01 => Construct(0x9f1);

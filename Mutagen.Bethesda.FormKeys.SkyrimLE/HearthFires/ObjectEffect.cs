@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ObjectEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IObjectEffectGetter> BYOHHousePart187ShrineBaseEnch => Construct(0xf3cf);
             public static FormLink<IObjectEffectGetter> BYOHHousePartEnchantingTableEnch => Construct(0xf3c0);

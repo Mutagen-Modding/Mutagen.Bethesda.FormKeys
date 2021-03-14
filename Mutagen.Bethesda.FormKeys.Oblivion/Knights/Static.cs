@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Static
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Knights.esp");
             private static FormLink<IStaticGetter> Construct(uint id) => new FormLink<IStaticGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IStaticGetter> NDBarrierSmallCrypt => Construct(0xf0b);
             public static FormLink<IStaticGetter> NDCryptEntrance01 => Construct(0xf0c);

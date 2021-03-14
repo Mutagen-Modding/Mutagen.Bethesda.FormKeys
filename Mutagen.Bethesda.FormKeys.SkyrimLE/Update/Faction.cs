@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Faction
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFactionGetter> CR08ExclusionFaction => Construct(0x944);
         }

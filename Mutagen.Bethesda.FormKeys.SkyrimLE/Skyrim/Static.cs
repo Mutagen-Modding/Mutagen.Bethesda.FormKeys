@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Static
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IStaticGetter> Construct(uint id) => new FormLink<IStaticGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IStaticGetter> LoadScreenMRaltar01 => Construct(0xe87);
             public static FormLink<IStaticGetter> LoadScreenDSRitual01 => Construct(0xde9);

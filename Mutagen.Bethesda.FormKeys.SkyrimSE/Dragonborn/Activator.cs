@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Activator
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IActivatorGetter> Construct(uint id) => new FormLink<IActivatorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IActivatorGetter> DLC2WaterApocrypha1024Small_Movable => Construct(0x1e2b6);
             public static FormLink<IActivatorGetter> ApoHeadScone03ACT => Construct(0x3d442);

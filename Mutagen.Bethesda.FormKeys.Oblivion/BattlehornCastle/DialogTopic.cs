@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class DialogTopic
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCBattlehornCastle.esp");
             private static FormLink<IDialogTopicGetter> Construct(uint id) => new FormLink<IDialogTopicGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogTopicGetter> BattlehornWineTopic => Construct(0xb61e);
             public static FormLink<IDialogTopicGetter> BattlehornWineA => Construct(0xb620);

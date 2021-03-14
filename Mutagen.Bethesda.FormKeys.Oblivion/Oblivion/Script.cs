@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Script
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IScriptGetter> Construct(uint id) => new FormLink<IScriptGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IScriptGetter> SE09RootGateMania02SCRIPT => Construct(0x9764c);
             public static FormLink<IScriptGetter> SE03RuinsGATEclosedSCRIPT => Construct(0x9764a);

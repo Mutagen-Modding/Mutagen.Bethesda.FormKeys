@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Light
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILightGetter> DLC1VCCourtyardNightLight => Construct(0x14c52);
             public static FormLink<ILightGetter> DLC1ForbearsBarrierLight => Construct(0x12d71);

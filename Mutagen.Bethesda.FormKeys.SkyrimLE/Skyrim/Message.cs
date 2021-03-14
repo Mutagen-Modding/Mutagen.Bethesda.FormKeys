@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Message
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IMessageGetter> Construct(uint id) => new FormLink<IMessageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMessageGetter> HelpSprintLong => Construct(0x170ef);
             public static FormLink<IMessageGetter> HelpFavoritesPCShort => Construct(0x10fe3e);

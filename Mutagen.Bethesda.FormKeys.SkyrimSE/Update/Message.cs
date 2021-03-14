@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Message
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IMessageGetter> Construct(uint id) => new FormLink<IMessageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMessageGetter> PetFramework_PetMaxReachedMessage => Construct(0x2f2b);
             public static FormLink<IMessageGetter> PetFramework_PetDismissMessage => Construct(0x2f26);

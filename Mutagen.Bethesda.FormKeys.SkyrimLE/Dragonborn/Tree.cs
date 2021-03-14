@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Tree
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ITreeGetter> Construct(uint id) => new FormLink<ITreeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ITreeGetter> DLC2TreeFloraAshYam01 => Construct(0x206e8);
             public static FormLink<ITreeGetter> DLC2TreeFloraHangingMoss03 => Construct(0x1ff66);

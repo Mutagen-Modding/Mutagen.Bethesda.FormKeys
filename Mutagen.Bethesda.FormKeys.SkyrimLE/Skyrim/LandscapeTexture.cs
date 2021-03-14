@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LandscapeTexture
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ILandscapeTextureGetter> Construct(uint id) => new FormLink<ILandscapeTextureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILandscapeTextureGetter> LSnowRocks01wGrass => Construct(0xf871f);
             public static FormLink<ILandscapeTextureGetter> LMineFloorDirt01 => Construct(0x4c0fa);

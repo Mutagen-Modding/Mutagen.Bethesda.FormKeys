@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class MovementType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IMovementTypeGetter> Construct(uint id) => new FormLink<IMovementTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMovementTypeGetter> Falmer_1HM_Run => Construct(0x103273);
             public static FormLink<IMovementTypeGetter> Falmer_1HM_Walk => Construct(0x103272);

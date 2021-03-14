@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Relationship
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IRelationshipGetter> Construct(uint id) => new FormLink<IRelationshipGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IRelationshipGetter> IngeAtAfAlan => Construct(0x107db1);
             public static FormLink<IRelationshipGetter> LisetteAtAfAlan => Construct(0x107db0);

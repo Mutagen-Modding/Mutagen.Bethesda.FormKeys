@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MusicTrack
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IMusicTrackGetter> Construct(uint id) => new FormLink<IMusicTrackGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMusicTrackGetter> MUSCombatBossDLC1_03 => Construct(0x126a3);
             public static FormLink<IMusicTrackGetter> MUSCombatBossDLC1_02 => Construct(0x126a2);

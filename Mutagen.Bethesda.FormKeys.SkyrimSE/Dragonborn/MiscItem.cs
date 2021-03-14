@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class MiscItem
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IMiscItemGetter> Construct(uint id) => new FormLink<IMiscItemGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMiscItemGetter> DLC2InvFirewood01 => Construct(0x3cf16);
             public static FormLink<IMiscItemGetter> DLC2TGGemSapphire => Construct(0x39e4e);

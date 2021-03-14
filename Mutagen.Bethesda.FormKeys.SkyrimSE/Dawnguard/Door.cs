@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Door
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDoorGetter> SERuinsDoorLoadPhantom01 => Construct(0x144f2);
             public static FormLink<IDoorGetter> SERuinsDoorTemple02 => Construct(0x13df5);

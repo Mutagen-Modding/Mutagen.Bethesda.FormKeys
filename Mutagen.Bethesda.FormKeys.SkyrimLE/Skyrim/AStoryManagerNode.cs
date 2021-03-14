@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class AStoryManagerNode
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAStoryManagerNodeGetter> SkyHavenTempleScenesNode => Construct(0x1092de);
             public static FormLink<IAStoryManagerNodeGetter> MQSovngardeBranch => Construct(0x108426);

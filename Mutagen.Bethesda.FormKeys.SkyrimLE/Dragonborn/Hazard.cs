@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Hazard
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IHazardGetter> Construct(uint id) => new FormLink<IHazardGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IHazardGetter> DLC2MorasGraspHazardLargeDrop => Construct(0x3d54c);
             public static FormLink<IHazardGetter> DLC2MorasGraspHazardDrop => Construct(0x3a3d1);

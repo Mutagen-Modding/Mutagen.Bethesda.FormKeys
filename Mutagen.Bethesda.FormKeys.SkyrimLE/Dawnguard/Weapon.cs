@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Weapon
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IWeaponGetter> Construct(uint id) => new FormLink<IWeaponGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWeaponGetter> DLC1WrathmanBattleaxe => Construct(0x14ca0);
             public static FormLink<IWeaponGetter> DLC1WrathmanGreatsword => Construct(0x14c9f);

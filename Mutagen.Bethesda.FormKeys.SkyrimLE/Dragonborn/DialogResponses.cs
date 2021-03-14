@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class DialogResponses
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IDialogResponsesGetter> Construct(uint id) => new FormLink<IDialogResponsesGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogResponsesGetter> DLC2MQ04NelothHMTopic => Construct(0x2506c);
             public static FormLink<IDialogResponsesGetter> DLC2MQ04NelothBlackBooksIntro => Construct(0x19ac8);

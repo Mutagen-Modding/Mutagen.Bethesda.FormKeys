@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Faction
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFactionGetter> BYOHHouseBanditAttackFriendFaction => Construct(0x8c9);
             public static FormLink<IFactionGetter> BYOHCarriageDriverFaction => Construct(0x7890);

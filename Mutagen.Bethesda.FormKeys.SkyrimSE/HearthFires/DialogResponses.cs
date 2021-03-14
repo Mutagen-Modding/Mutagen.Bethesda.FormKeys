@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class DialogResponses
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IDialogResponsesGetter> Construct(uint id) => new FormLink<IDialogResponsesGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveNord => Construct(0x2f4c);
             public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveOrc => Construct(0x2f4d);

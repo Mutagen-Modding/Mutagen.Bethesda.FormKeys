@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class VoiceType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IVoiceTypeGetter> Construct(uint id) => new FormLink<IVoiceTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IVoiceTypeGetter> CrFoxVoice => Construct(0x10f677);
             public static FormLink<IVoiceTypeGetter> CrChickenVoice => Construct(0x10aa5f);

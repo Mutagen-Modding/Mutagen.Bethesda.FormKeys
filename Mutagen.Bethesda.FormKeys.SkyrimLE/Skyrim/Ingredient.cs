@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Ingredient
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIngredientGetter> CritterPondFish01Ingredient => Construct(0x106e1c);
             public static FormLink<IIngredientGetter> CritterPondFish02Ingredient => Construct(0x106e1b);

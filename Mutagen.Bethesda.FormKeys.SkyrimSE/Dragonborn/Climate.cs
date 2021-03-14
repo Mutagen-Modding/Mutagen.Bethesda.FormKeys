@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Climate
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IClimateGetter> Construct(uint id) => new FormLink<IClimateGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IClimateGetter> DLC2ApocryphaClimateNew => Construct(0x34cfc);
             public static FormLink<IClimateGetter> DLC2ApocryphaClimate => Construct(0x1c48e);

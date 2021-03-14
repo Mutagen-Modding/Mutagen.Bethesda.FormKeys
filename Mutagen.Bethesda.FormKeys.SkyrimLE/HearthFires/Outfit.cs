@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Outfit
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IOutfitGetter> Construct(uint id) => new FormLink<IOutfitGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IOutfitGetter> ChildOutfit05 => Construct(0xc4d);
             public static FormLink<IOutfitGetter> ChildOutfit04 => Construct(0xc4c);

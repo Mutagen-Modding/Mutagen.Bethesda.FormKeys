@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Quest
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IQuestGetter> Patch1_9_UpdateQuest => Construct(0x9a3);
             public static FormLink<IQuestGetter> Patch1_6_UpdateQuest => Construct(0x97f);

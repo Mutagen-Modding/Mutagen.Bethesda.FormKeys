@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class EffectShader
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IEffectShaderGetter> Construct(uint id) => new FormLink<IEffectShaderGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IEffectShaderGetter> InvisFXShaderNightingale => Construct(0xe5c);
             public static FormLink<IEffectShaderGetter> SteamFXShader => Construct(0x10fdf9);

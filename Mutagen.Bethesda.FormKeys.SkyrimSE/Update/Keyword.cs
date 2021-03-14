@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Keyword
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IKeywordGetter> Construct(uint id) => new FormLink<IKeywordGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IKeywordGetter> ccBGS_ActorTypeCustomPetResponse07_FollowfromWait => Construct(0x3099);
             public static FormLink<IKeywordGetter> ccBGS_ActorTypeCustomPetResponse06_Wait => Construct(0x3098);

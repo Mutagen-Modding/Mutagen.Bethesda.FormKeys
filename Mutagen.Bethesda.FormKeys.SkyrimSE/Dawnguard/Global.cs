@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Global
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGlobalGetter> DLC1ReflexesCount => Construct(0x14cf2);
             public static FormLink<IGlobalGetter> DLC1RH07NextAllowed => Construct(0x14ce8);

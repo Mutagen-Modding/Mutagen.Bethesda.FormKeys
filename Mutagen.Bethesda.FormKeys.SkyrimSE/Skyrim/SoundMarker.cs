@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class SoundMarker
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ISoundMarkerGetter> Construct(uint id) => new FormLink<ISoundMarkerGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISoundMarkerGetter> OBJWindmillSolitudeLP => Construct(0xf59);
             public static FormLink<ISoundMarkerGetter> TRPImpactImpalex => Construct(0xe5f);

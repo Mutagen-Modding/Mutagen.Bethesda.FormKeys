@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class LoadScreen
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILoadScreenGetter> ChargenLoadScreen => Construct(0xe8a);
             public static FormLink<ILoadScreenGetter> xCityRiften03b => Construct(0x10e732);

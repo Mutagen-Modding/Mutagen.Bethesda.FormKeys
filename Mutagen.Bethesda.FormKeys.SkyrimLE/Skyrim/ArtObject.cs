@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ArtObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IArtObjectGetter> Construct(uint id) => new FormLink<IArtObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IArtObjectGetter> FXDragonsBaneSwordStreakObject => Construct(0x10fe5c);
             public static FormLink<IArtObjectGetter> ReanimateRitualCastBodyFX => Construct(0x10f7a2);

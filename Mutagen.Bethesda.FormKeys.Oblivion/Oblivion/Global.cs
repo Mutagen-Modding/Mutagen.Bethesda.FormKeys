@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Global
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGlobalGetter> SEKnightSpawnTime => Construct(0x8d9da);
             public static FormLink<IGlobalGetter> SESwordDuskfangEquip => Construct(0x7d7ef);

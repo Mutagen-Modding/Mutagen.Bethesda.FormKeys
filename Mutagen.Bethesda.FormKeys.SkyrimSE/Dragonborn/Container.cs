@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Container
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IContainerGetter> DLC2dunBloodskalTreasChestLure => Construct(0x3d2a1);
             public static FormLink<IContainerGetter> DLC2fcTernGO => Construct(0x3cd8d);

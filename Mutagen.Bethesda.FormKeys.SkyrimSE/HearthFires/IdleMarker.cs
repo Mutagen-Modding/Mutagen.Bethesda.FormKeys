@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class IdleMarker
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IIdleMarkerGetter> Construct(uint id) => new FormLink<IIdleMarkerGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIdleMarkerGetter> IdleChildPlayDirtMarker => Construct(0xd835);
             public static FormLink<IIdleMarkerGetter> IdleChildPlayDollMarker => Construct(0xd82d);

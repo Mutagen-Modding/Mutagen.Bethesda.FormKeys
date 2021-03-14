@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Flora
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFloraGetter> DeadFXSalmon02 => Construct(0x10c3b5);
             public static FormLink<IFloraGetter> DeadFXSalmon01 => Construct(0x10c3b4);

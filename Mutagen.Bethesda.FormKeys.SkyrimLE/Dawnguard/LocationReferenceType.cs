@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LocationReferenceType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ILocationReferenceTypeGetter> Construct(uint id) => new FormLink<ILocationReferenceTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILocationReferenceTypeGetter> DLC1HoundPatrol => Construct(0x10f63);
             public static FormLink<ILocationReferenceTypeGetter> DLC1SpawnQuestStarter => Construct(0xe684);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class FormList
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFormListGetter> BYOHHouse3RoomsStartedFlags => Construct(0xc02);
             public static FormLink<IFormListGetter> BYOHHouse2RoomsStartedFlags => Construct(0xc01);

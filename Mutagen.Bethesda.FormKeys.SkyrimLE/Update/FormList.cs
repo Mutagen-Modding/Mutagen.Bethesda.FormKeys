@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class FormList
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFormListGetter> RidableWorldSpaces => Construct(0x99b);
             public static FormLink<IFormListGetter> SunAffectingExceptionWorldSpaces => Construct(0x99a);

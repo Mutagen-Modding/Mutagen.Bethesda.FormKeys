@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Shout
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IShoutGetter> Construct(uint id) => new FormLink<IShoutGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IShoutGetter> DLC1DragonUndeadSummonShout => Construct(0x1a165);
             public static FormLink<IShoutGetter> DLC1DragonDrainVitalityShout02 => Construct(0x18244);

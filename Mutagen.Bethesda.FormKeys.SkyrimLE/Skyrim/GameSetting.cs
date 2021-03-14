@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class GameSetting
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IGameSettingGetter> Construct(uint id) => new FormLink<IGameSettingGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGameSettingGetter> fBribeSpeechcraftMult => Construct(0xe64);
             public static FormLink<IGameSettingGetter> fBribeScale => Construct(0xe63);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Npc
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<INpcGetter> Construct(uint id) => new FormLink<INpcGetter>(ModKey.MakeFormKey(id));
             public static FormLink<INpcGetter> dunTransmogrifyDremora => Construct(0xeb4);
             public static FormLink<INpcGetter> dunTransmogrifyHare => Construct(0xeb3);

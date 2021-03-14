@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MagicEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IMagicEffectGetter> Construct(uint id) => new FormLink<IMagicEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMagicEffectGetter> MS12WhitePhialEffect => Construct(0x9d6);
             public static FormLink<IMagicEffectGetter> EnchSummonStormThrall => Construct(0x845);

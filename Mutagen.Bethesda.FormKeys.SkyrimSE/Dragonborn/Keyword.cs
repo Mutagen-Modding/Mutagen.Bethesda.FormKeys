@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Keyword
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IKeywordGetter> Construct(uint id) => new FormLink<IKeywordGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IKeywordGetter> DLC2DremoraButlerKeyword => Construct(0x1e1ae);
             public static FormLink<IKeywordGetter> DLC2MorasGraspExcludedKeyword => Construct(0x3d2f9);

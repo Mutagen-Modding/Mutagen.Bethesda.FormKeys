@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class DialogTopic
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IDialogTopicGetter> Construct(uint id) => new FormLink<IDialogTopicGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogTopicGetter> DLC2ExpSpiderQuestTRESSPASS => Construct(0x1793b);
             public static FormLink<IDialogTopicGetter> DLC2ExpSpiderQuestASSAULT => Construct(0x1793c);

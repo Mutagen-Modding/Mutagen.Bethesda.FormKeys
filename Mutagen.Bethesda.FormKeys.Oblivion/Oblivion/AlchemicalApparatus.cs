@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class AlchemicalApparatus
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IAlchemicalApparatusGetter> Construct(uint id) => new FormLink<IAlchemicalApparatusGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAlchemicalApparatusGetter> SE38MuseumItem8 => Construct(0x81e6f);
             public static FormLink<IAlchemicalApparatusGetter> SE38Item8 => Construct(0x81e6e);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Place
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IPlaceGetter> Construct(uint id) => new FormLink<IPlaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlaceGetter> XPAichan01 => Construct(0x10360);
             public static FormLink<IPlaceGetter> XPSwampgasHole03 => Construct(0x10a68);

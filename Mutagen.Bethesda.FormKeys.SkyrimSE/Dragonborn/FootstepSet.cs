@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class FootstepSet
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IFootstepSetGetter> Construct(uint id) => new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFootstepSetGetter> FSTArmorSkaalFootstepSet => Construct(0x3d377);
             public static FormLink<IFootstepSetGetter> NPCDwarvenBallistaFootWalkFootstepSet => Construct(0x3cf92);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class LeveledCreature
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCMehrunesRazor.esp");
             private static FormLink<ILeveledCreatureGetter> Construct(uint id) => new FormLink<ILeveledCreatureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILeveledCreatureGetter> DL9LLVeteran100 => Construct(0xd8e);
             public static FormLink<ILeveledCreatureGetter> DL9LLSoldier100 => Construct(0x1afc);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Water
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IWaterGetter> Construct(uint id) => new FormLink<IWaterGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWaterGetter> DLC1FrostreachWaterNoFlow => Construct(0x19c98);
             public static FormLink<IWaterGetter> LavaSettingsDUPLICATE001 => Construct(0x14b88);

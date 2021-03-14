@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class SoulGem
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ISoulGemGetter> Construct(uint id) => new FormLink<ISoulGemGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISoulGemGetter> FFRiften14SoulGem => Construct(0x43e26);
             public static FormLink<ISoulGemGetter> WhiterunSoulGem => Construct(0x94e40);

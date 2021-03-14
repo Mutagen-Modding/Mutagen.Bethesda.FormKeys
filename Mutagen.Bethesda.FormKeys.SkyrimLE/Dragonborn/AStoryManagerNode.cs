@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class AStoryManagerNode
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAStoryManagerNodeGetter> DLC2RRMineNode => Construct(0x3332d);
             public static FormLink<IAStoryManagerNodeGetter> DLC2SkaalVillageScenes => Construct(0x2075c);

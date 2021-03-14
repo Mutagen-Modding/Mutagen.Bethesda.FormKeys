@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Outfit
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IOutfitGetter> Construct(uint id) => new FormLink<IOutfitGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IOutfitGetter> MQ101MagePrisonerOutfit => Construct(0x1703a);
             public static FormLink<IOutfitGetter> DremoraWarlockOutfit => Construct(0x16ffd);

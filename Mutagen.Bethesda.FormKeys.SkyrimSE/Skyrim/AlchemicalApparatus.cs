@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class AlchemicalApparatus
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IAlchemicalApparatusGetter> Construct(uint id) => new FormLink<IAlchemicalApparatusGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAlchemicalApparatusGetter> Grimoire05Master => Construct(0x332bf);
             public static FormLink<IAlchemicalApparatusGetter> Grimoire04Expert => Construct(0x332be);

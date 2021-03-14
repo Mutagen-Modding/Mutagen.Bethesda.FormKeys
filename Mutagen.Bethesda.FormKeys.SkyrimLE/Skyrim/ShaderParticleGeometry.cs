@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ShaderParticleGeometry
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IShaderParticleGeometryGetter> Construct(uint id) => new FormLink<IShaderParticleGeometryGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IShaderParticleGeometryGetter> SovngardeStardust => Construct(0x10fdc4);
             public static FormLink<IShaderParticleGeometryGetter> RainStormParticles => Construct(0x10780f);

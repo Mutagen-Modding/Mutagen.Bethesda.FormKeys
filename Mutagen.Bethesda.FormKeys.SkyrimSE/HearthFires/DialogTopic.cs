@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class DialogTopic
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IDialogTopicGetter> Construct(uint id) => new FormLink<IDialogTopicGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogTopicGetter> PetFramework_SendPetCCHouse20 => Construct(0x840);
             public static FormLink<IDialogTopicGetter> PetFramework_SendPetCCHouse19 => Construct(0x841);

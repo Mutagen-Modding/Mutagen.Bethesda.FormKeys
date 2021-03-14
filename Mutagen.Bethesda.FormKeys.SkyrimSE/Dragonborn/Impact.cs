@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Impact
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IImpactGetter> Construct(uint id) => new FormLink<IImpactGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IImpactGetter> WPNBlade1HandMiraakVsMetalSkinImpact => Construct(0x1e29c);
             public static FormLink<IImpactGetter> WPNBlade1HandMiraakVsFleshDraugrImpact => Construct(0x1e29b);

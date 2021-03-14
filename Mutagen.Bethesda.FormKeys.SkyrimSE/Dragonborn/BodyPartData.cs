@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class BodyPartData
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IBodyPartDataGetter> Construct(uint id) => new FormLink<IBodyPartDataGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IBodyPartDataGetter> DLC2MountedRieklingBodyPartData => Construct(0x1e2a3);
             public static FormLink<IBodyPartDataGetter> DwarvenBallistaCenturionBodyPartData => Construct(0x2b018);

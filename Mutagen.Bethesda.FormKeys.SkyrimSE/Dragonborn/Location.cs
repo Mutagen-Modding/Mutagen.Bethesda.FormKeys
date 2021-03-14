@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Location
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ILocationGetter> Construct(uint id) => new FormLink<ILocationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILocationGetter> DLC2HoldingCellBardLocation => Construct(0x3a4a1);
             public static FormLink<ILocationGetter> DLC2ColdcinderCaveLocation => Construct(0x3a42f);

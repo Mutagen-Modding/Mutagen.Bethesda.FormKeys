@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class AssociationType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IAssociationTypeGetter> Construct(uint id) => new FormLink<IAssociationTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAssociationTypeGetter> FavorTarget => Construct(0x3f4da);
             public static FormLink<IAssociationTypeGetter> Conspirators => Construct(0x806d9);

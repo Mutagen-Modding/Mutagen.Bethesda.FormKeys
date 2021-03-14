@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class EncounterZone
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IEncounterZoneGetter> Construct(uint id) => new FormLink<IEncounterZoneGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IEncounterZoneGetter> DLC2ThirskExteriorZone => Construct(0x1e284);
             public static FormLink<IEncounterZoneGetter> DLC2ThirskInteriorZone => Construct(0x1e11d);

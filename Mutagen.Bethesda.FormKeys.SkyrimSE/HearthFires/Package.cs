@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Package
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IPackageGetter> Construct(uint id) => new FormLink<IPackageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPackageGetter> MarriageSpouseCCHouse20_Package5_23x8 => Construct(0xea3);
             public static FormLink<IPackageGetter> MarriageSpouseCCHouse19_Package5_23x8 => Construct(0xea2);

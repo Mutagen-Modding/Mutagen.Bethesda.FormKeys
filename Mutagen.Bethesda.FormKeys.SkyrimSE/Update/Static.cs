@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Static
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IStaticGetter> Construct(uint id) => new FormLink<IStaticGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IStaticGetter> ccBGS_RootClusterLarge02 => Construct(0x30a5);
             public static FormLink<IStaticGetter> ccBGS_RootClusterLarge01 => Construct(0x30a4);

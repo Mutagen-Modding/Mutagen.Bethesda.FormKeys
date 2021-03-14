@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Race
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IRaceGetter> Construct(uint id) => new FormLink<IRaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IRaceGetter> Sheogorath => Construct(0x5308e);
             public static FormLink<IRaceGetter> GoldenSaint => Construct(0x1208f);

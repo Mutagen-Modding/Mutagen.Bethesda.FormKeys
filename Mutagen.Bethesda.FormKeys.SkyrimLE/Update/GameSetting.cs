@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class GameSetting
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IGameSettingGetter> Construct(uint id) => new FormLink<IGameSettingGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGameSettingGetter> sLegendaryResetConfirm => Construct(0x9d9);
             public static FormLink<IGameSettingGetter> sLegendaryResetSecondConfirm => Construct(0x9d8);

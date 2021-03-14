@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Activator
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IActivatorGetter> Construct(uint id) => new FormLink<IActivatorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IActivatorGetter> DLC1VampireLordBlocker => Construct(0x14760);
             public static FormLink<IActivatorGetter> DLC1DurnehviirDisallowFlyingTRIG => Construct(0x145c9);

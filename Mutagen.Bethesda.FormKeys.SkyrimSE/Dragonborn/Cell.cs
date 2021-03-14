@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Cell
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ICellGetter> Construct(uint id) => new FormLink<ICellGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICellGetter> DLC2HrothmundsBarrow01 => Construct(0x17b6a);
             public static FormLink<ICellGetter> DLC2TelMithrynKitchen => Construct(0x17728);

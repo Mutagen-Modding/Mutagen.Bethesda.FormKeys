@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Region
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IRegionGetter> Construct(uint id) => new FormLink<IRegionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IRegionGetter> TheFringeRegion => Construct(0x8dd84);
             public static FormLink<IRegionGetter> SENSSouthweather => Construct(0x78fd6);

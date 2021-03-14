@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Climate
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IClimateGetter> Construct(uint id) => new FormLink<IClimateGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IClimateGetter> KarthspireClimate => Construct(0xf91);
             public static FormLink<IClimateGetter> BloatedMansClimate => Construct(0xe7c4e);

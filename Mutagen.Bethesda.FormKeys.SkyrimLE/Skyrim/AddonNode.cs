@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class AddonNode
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IAddonNodeGetter> Construct(uint id) => new FormLink<IAddonNodeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAddonNodeGetter> MPSFrostMistSpiral => Construct(0x10fbef);
             public static FormLink<IAddonNodeGetter> MPSClearSkyFogOverHead => Construct(0x10e43f);

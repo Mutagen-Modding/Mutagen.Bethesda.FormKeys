@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Faction
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Knights.esp");
             private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFactionGetter> NDOriginalKnightsFaction => Construct(0xce8);
             public static FormLink<IFactionGetter> NDGarlasMalatarVeterans => Construct(0xce9);

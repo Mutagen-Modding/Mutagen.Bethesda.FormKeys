@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class GameSetting
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IGameSettingGetter> Construct(uint id) => new FormLink<IGameSettingGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGameSettingGetter> sMiscSEBounty => Construct(0x45d2f);
             public static FormLink<IGameSettingGetter> fDialogSpeachDelay => Construct(0x181a5);

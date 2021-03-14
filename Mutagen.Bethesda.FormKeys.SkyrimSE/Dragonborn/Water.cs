@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Water
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IWaterGetter> Construct(uint id) => new FormLink<IWaterGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWaterGetter> DLC2StandingStoneWater => Construct(0x3805d);
             public static FormLink<IWaterGetter> DLC2ApocryphaWaterSmall => Construct(0x3731a);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class DialogBranch
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IDialogBranchGetter> Construct(uint id) => new FormLink<IDialogBranchGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogBranchGetter> BYOHHouseBanditAttack2Bandit => Construct(0x8b2);
             public static FormLink<IDialogBranchGetter> BYOHHouseBanditAttack2Spouse => Construct(0x8b1);

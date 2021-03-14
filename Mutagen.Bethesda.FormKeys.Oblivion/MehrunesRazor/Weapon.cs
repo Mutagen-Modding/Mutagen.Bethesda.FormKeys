@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Weapon
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCMehrunesRazor.esp");
             private static FormLink<IWeaponGetter> Construct(uint id) => new FormLink<IWeaponGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWeaponGetter> DL9ChampAxe02 => Construct(0x272b);
             public static FormLink<IWeaponGetter> DL9ChampAxe03 => Construct(0x272f);

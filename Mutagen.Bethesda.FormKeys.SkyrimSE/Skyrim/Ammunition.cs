@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Ammunition
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IAmmunitionGetter> Construct(uint id) => new FormLink<IAmmunitionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAmmunitionGetter> DwarvenSphereBolt02 => Construct(0x10ec8c);
             public static FormLink<IAmmunitionGetter> FollowerIronArrow => Construct(0x10e2de);

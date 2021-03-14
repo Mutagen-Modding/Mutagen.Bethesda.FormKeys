@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Grass
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IGrassGetter> Construct(uint id) => new FormLink<IGrassGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGrassGetter> FieldGrass02 => Construct(0x1098ca);
             public static FormLink<IGrassGetter> RockGrassSnow01 => Construct(0xf871e);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Quest
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IQuestGetter> DLC1VampireFeedBystander => Construct(0x14cb9);
             public static FormLink<IQuestGetter> DLC1DialogueDexionLore => Construct(0x13768);

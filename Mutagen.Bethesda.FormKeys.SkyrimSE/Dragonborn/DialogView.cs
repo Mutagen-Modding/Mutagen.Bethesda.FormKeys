@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class DialogView
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IDialogViewGetter> Construct(uint id) => new FormLink<IDialogViewGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogViewGetter> DLC2TelMithrynNelothIntro => Construct(0x3ca74);
             public static FormLink<IDialogViewGetter> DLC2DialogueSkaalVillageBaldorView => Construct(0x3a4a9);

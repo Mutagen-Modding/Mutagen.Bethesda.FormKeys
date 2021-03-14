@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class PlacedObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCFrostcrag.esp");
             private static FormLink<IPlacedObjectGetter> Construct(uint id) => new FormLink<IPlacedObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlacedObjectGetter> FrostcragRingBox => Construct(0xf0b1);
             public static FormLink<IPlacedObjectGetter> FrostCragAlchBuffRef => Construct(0xf0b7);

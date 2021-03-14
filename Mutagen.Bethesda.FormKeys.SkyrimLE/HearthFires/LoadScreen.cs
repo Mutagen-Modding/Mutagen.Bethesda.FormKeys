@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LoadScreen
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILoadScreenGetter> BYOHAdoption03 => Construct(0x15fba);
             public static FormLink<ILoadScreenGetter> BYOHAdoption02 => Construct(0x15fb9);

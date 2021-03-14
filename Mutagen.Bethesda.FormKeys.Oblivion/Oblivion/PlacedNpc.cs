@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class PlacedNpc
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IPlacedNpcGetter> Construct(uint id) => new FormLink<IPlacedNpcGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlacedNpcGetter> TestNPC1 => Construct(0x2a2a9);
             public static FormLink<IPlacedNpcGetter> TestNPC2 => Construct(0x2a2a8);

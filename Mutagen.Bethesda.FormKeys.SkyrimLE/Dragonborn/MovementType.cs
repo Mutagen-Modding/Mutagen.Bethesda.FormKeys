@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MovementType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IMovementTypeGetter> Construct(uint id) => new FormLink<IMovementTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMovementTypeGetter> BenthicLurkerCombatRun_MT => Construct(0x35e11);
             public static FormLink<IMovementTypeGetter> DwarvenBallista_Default_MT => Construct(0x2b015);

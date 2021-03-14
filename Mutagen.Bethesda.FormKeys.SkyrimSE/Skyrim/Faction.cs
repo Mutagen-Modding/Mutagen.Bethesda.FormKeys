@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Faction
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFactionGetter> WinterholdJailFaction => Construct(0xea8);
             public static FormLink<IFactionGetter> WindhelmPalaceDoorFaction => Construct(0xea5);

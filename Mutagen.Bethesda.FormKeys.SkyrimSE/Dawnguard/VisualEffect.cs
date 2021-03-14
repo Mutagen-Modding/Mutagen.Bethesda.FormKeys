@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class VisualEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IVisualEffectGetter> Construct(uint id) => new FormLink<IVisualEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IVisualEffectGetter> DLC1SEBossGlowingVFX => Construct(0x1391a);
             public static FormLink<IVisualEffectGetter> DLC1SEBossBlastBackVFX => Construct(0x138ed);

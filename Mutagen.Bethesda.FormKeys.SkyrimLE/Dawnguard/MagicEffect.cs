@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MagicEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IMagicEffectGetter> Construct(uint id) => new FormLink<IMagicEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMagicEffectGetter> DLC1DetectLifeScriptEffect => Construct(0x14ce7);
             public static FormLink<IMagicEffectGetter> DLC1FrostSlowFFAimed => Construct(0x14cc7);

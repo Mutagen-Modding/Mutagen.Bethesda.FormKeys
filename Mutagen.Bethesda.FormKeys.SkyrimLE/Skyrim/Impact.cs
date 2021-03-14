@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Impact
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IImpactGetter> Construct(uint id) => new FormLink<IImpactGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IImpactGetter> MAGPowerSerpentStoneImpactImpact => Construct(0xe01);
             public static FormLink<IImpactGetter> NPCDragonFlightRoarPaarthurnaxImpact => Construct(0x172a6);

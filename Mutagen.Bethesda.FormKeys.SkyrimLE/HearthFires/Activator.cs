@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Activator
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IActivatorGetter> Construct(uint id) => new FormLink<IActivatorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IActivatorGetter> BYOHMineClay01RiverMud01 => Construct(0xa14);
             public static FormLink<IActivatorGetter> BYOHMineClay01ReachDirt01 => Construct(0x9f3);

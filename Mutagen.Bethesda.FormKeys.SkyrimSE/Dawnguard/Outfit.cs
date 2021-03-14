@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Outfit
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IOutfitGetter> Construct(uint id) => new FormLink<IOutfitGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IOutfitGetter> DLC1VampireClotheOnly => Construct(0x12240);
             public static FormLink<IOutfitGetter> DLC1HarkonDummyOutfit => Construct(0x11be4);

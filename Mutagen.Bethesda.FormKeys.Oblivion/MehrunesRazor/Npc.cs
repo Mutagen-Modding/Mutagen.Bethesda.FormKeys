@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Npc
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCMehrunesRazor.esp");
             private static FormLink<INpcGetter> Construct(uint id) => new FormLink<INpcGetter>(ModKey.MakeFormKey(id));
             public static FormLink<INpcGetter> DL9MoragTongAssassin => Construct(0x1aad);
             public static FormLink<INpcGetter> DL9FrathenDrothan => Construct(0x218e);

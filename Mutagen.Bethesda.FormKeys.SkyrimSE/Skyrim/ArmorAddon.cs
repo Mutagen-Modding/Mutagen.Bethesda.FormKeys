@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ArmorAddon
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IArmorAddonGetter> Construct(uint id) => new FormLink<IArmorAddonGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IArmorAddonGetter> BoneCrownKhajiitAA => Construct(0x10fce4);
             public static FormLink<IArmorAddonGetter> BoneCrownArgonianAA => Construct(0x10fce3);

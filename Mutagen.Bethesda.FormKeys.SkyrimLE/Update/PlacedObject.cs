@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class PlacedObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IPlacedObjectGetter> Construct(uint id) => new FormLink<IPlacedObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlacedObjectGetter> TGCrown15MoveToMarker => Construct(0x811);
             public static FormLink<IPlacedObjectGetter> WindhelmPalaceUp2PatrolA1 => Construct(0x9b7);

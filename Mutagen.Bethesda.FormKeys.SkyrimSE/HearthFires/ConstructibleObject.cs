@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ConstructibleObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IConstructibleObjectGetter> Construct(uint id) => new FormLink<IConstructibleObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IConstructibleObjectGetter> BYOHHouseRecipe187Room11ARoof_3 => Construct(0xc1a);
             public static FormLink<IConstructibleObjectGetter> BYOHHouseRecipe187Room11ARoof_2 => Construct(0xc19);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class MagicEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IMagicEffectGetter> Construct(uint id) => new FormLink<IMagicEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMagicEffectGetter> BanishDmgHealthFFTargetActor => Construct(0x173dc);
             public static FormLink<IMagicEffectGetter> shieldChargeDamageStamina => Construct(0x17331);

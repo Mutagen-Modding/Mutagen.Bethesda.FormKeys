@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MiscItem
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IMiscItemGetter> Construct(uint id) => new FormLink<IMiscItemGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMiscItemGetter> BYOHHouseInteriorPart196PracticeDummyChild01 => Construct(0x18088);
             public static FormLink<IMiscItemGetter> BYOHHouseTrophyPart17Goat => Construct(0x15bea);

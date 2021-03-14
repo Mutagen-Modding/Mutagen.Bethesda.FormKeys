@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Region
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IRegionGetter> Construct(uint id) => new FormLink<IRegionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IRegionGetter> SovngardeIntWeather => Construct(0x10ff20);
             public static FormLink<IRegionGetter> WeatherCoastFog => Construct(0x10fe79);

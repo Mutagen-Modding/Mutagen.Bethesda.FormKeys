@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class DialogResponses
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IDialogResponsesGetter> Construct(uint id) => new FormLink<IDialogResponsesGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogResponsesGetter> FFRiften10SharedTopic01 => Construct(0x1362a);
             public static FormLink<IDialogResponsesGetter> DialogueCarriageStopAlongTheWay => Construct(0x17ef6);

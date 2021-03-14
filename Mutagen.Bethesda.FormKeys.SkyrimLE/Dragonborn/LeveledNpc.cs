@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LeveledNpc
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ILeveledNpcGetter> Construct(uint id) => new FormLink<ILeveledNpcGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILeveledNpcGetter> DLC2LCharAnimalMountainSnowPredator => Construct(0x1e1c6);
             public static FormLink<ILeveledNpcGetter> DLC2LCharAnimalForestPredator => Construct(0x1e1c5);

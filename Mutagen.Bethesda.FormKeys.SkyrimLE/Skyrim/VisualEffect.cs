@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class VisualEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IVisualEffectGetter> Construct(uint id) => new FormLink<IVisualEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IVisualEffectGetter> MGTeleportOutEffectNoRefraction => Construct(0x1733c);
             public static FormLink<IVisualEffectGetter> NightingaleStrifeAbsorbTargetVFX => Construct(0x10f506);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Faction
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFactionGetter> DLC1VampireFeedNoCrimeFaction => Construct(0x14cbd);
             public static FormLink<IFactionGetter> DLC1MothPriestCrimeFaction => Construct(0x14b5b);

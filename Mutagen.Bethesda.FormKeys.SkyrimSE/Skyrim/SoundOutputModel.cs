@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class SoundOutputModel
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ISoundOutputModelGetter> Construct(uint id) => new FormLink<ISoundOutputModelGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISoundOutputModelGetter> SOMDialogue3D4000BARDS => Construct(0xf86);
             public static FormLink<ISoundOutputModelGetter> SOMStereoRad09000_verbSHOUTS => Construct(0xec7);

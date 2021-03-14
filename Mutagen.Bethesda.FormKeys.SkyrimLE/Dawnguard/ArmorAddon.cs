@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ArmorAddon
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IArmorAddonGetter> Construct(uint id) => new FormLink<IArmorAddonGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IArmorAddonGetter> DLC1GargoyleAlbinoAA => Construct(0x14ccc);
             public static FormLink<IArmorAddonGetter> ShellbugHelmetAA => Construct(0x12e89);

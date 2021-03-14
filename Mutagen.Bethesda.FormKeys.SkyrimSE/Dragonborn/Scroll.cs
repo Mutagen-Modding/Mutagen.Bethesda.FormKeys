@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Scroll
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IScrollGetter> Construct(uint id) => new FormLink<IScrollGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IScrollGetter> DLC2ExpSpiderEmptyScroll05 => Construct(0x331a1);
             public static FormLink<IScrollGetter> DLC2ExpSpiderEmptyScroll04 => Construct(0x331a0);

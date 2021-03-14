@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Tree
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<ITreeGetter> Construct(uint id) => new FormLink<ITreeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ITreeGetter> BYOHHouseIngrdWheat01 => Construct(0x110cd);
             public static FormLink<ITreeGetter> BYOHHouseIngrdThistle01 => Construct(0x110cc);

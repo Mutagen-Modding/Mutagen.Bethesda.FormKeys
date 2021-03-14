@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class WordOfPower
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IWordOfPowerGetter> Construct(uint id) => new FormLink<IWordOfPowerGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWordOfPowerGetter> DLC1UndeadSummon3 => Construct(0x1a164);
             public static FormLink<IWordOfPowerGetter> DLC1UndeadSummon2 => Construct(0x1a163);

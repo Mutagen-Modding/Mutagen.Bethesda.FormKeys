@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Perk
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IPerkGetter> Construct(uint id) => new FormLink<IPerkGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPerkGetter> TGWellFitted => Construct(0x1711e);
             public static FormLink<IPerkGetter> DBWellFitted => Construct(0x1711c);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ObjectEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IObjectEffectGetter> DLC2EnchArmorDragonAbsorbBoost => Construct(0x1e288);
             public static FormLink<IObjectEffectGetter> DLC2EnchArmorDragonAbsorb => Construct(0x1e287);

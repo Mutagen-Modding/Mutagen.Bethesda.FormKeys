@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Location
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ILocationGetter> Construct(uint id) => new FormLink<ILocationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILocationGetter> RiftenMercerHouseInteriorLocation => Construct(0x1706e);
             public static FormLink<ILocationGetter> WhiterunUnderforgeInteriorLocation => Construct(0x1706d);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Eye
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IEyeGetter> Construct(uint id) => new FormLink<IEyeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IEyeGetter> eyeOrdered => Construct(0x5fa43);
             public static FormLink<IEyeGetter> EyeGoldenSaint => Construct(0x54bba);

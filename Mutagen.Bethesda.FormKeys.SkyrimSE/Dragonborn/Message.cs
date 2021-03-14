@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Message
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IMessageGetter> Construct(uint id) => new FormLink<IMessageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMessageGetter> DLC2ApoFontDepletedMSG => Construct(0x3d43b);
             public static FormLink<IMessageGetter> DLC2LearnDragonRidingMsg => Construct(0x3d24d);

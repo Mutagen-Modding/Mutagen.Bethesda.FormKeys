@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Armor
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
             private static FormLink<IArmorGetter> Construct(uint id) => new FormLink<IArmorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IArmorGetter> LairVileCrimsonScarRaiment05 => Construct(0xbe66);
             public static FormLink<IArmorGetter> LairVileCrimsonScarRaiment10 => Construct(0xbe67);

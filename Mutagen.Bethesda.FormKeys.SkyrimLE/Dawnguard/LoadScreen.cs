@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LoadScreen
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILoadScreenGetter> DLC1Vampires => Construct(0x29e4);
             public static FormLink<ILoadScreenGetter> DLC1WeaponFletching => Construct(0x19adb);

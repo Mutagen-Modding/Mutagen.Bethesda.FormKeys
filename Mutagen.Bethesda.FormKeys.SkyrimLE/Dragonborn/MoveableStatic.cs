@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MoveableStatic
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IMoveableStaticGetter> Construct(uint id) => new FormLink<IMoveableStaticGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMoveableStaticGetter> DLC2TelMithrynTeleportFXActivate => Construct(0x3ca86);
             public static FormLink<IMoveableStaticGetter> DLC2TelMithrynTeleportFXActivateBeam => Construct(0x3ca84);

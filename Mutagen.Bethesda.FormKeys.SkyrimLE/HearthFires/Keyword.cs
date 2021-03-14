@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Keyword
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IKeywordGetter> Construct(uint id) => new FormLink<IKeywordGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IKeywordGetter> BYOHBuildingInteriorPart206ShrineDibella => Construct(0xb59);
             public static FormLink<IKeywordGetter> BYOHBuildingInteriorPart205TableNight01 => Construct(0xb28);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class HeadPart
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IHeadPartGetter> Construct(uint id) => new FormLink<IHeadPartGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IHeadPartGetter> HairFemaleImperial1 => Construct(0x10f79e);
             public static FormLink<IHeadPartGetter> HairHornsMaleDremora02 => Construct(0x109dfe);

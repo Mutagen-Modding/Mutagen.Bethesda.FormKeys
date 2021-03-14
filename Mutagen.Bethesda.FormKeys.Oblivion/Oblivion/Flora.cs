@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Flora
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFloraGetter> SE38Poddim02 => Construct(0x81eae);
             public static FormLink<IFloraGetter> SE38Poddim01 => Construct(0x81ead);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Book
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IBookGetter> Construct(uint id) => new FormLink<IBookGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IBookGetter> BYOHHouseBanditAttack2Note => Construct(0x8ae);
             public static FormLink<IBookGetter> BYOHHouseJarlIntroLetter => Construct(0x16130);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ConstructibleObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IConstructibleObjectGetter> Construct(uint id) => new FormLink<IConstructibleObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IConstructibleObjectGetter> RecipeArmorImperialShieldLight => Construct(0x9d3);
             public static FormLink<IConstructibleObjectGetter> RecipeArmorImperialHelmetLight => Construct(0x9d2);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class DialogTopic
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCThievesDen.esp");
             private static FormLink<IDialogTopicGetter> Construct(uint id) => new FormLink<IDialogTopicGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogTopicGetter> DLC06FletcherTopic01 => Construct(0x6fd9);
             public static FormLink<IDialogTopicGetter> DLC06PirateTopic01 => Construct(0x6fda);

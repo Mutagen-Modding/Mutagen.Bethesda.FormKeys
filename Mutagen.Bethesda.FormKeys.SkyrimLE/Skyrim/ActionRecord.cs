@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ActionRecord
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IActionRecordGetter> Construct(uint id) => new FormLink<IActionRecordGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IActionRecordGetter> ActionRagdollInstant => Construct(0x9bb4e);
             public static FormLink<IActionRecordGetter> ActionIdleStopInstant => Construct(0x7f8e3);

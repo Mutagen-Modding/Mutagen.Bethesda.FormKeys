@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class VoiceType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IVoiceTypeGetter> Construct(uint id) => new FormLink<IVoiceTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IVoiceTypeGetter> CrSeekerVoice => Construct(0x3d47e);
             public static FormLink<IVoiceTypeGetter> DLC2UniqueBardInstruments => Construct(0x3a4a0);

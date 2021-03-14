@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LeveledNpc
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ILeveledNpcGetter> Construct(uint id) => new FormLink<ILeveledNpcGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILeveledNpcGetter> LCharDwarvenCenturion => Construct(0x10fce5);
             public static FormLink<ILeveledNpcGetter> LCharDwarvenSpider => Construct(0x10ec90);

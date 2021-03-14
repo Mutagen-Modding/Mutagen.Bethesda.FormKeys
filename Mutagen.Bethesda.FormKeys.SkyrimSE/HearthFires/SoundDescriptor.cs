@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class SoundDescriptor
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<ISoundDescriptorGetter> Construct(uint id) => new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISoundDescriptorGetter> OBJMineClaySD => Construct(0xba3);
             public static FormLink<ISoundDescriptorGetter> NPCHumanWorkbenchHammerDistant => Construct(0x17ecc);

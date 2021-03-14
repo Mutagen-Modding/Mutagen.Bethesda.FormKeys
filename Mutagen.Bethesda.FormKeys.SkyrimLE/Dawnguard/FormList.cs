@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class FormList
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFormListGetter> DLC1BloodPointsProhibitedRaces => Construct(0x13ecd);
             public static FormLink<IFormListGetter> DLC1VQ08VNamasurStormTheCastleOverrideStack => Construct(0x123d2);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class LightingTemplate
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ILightingTemplateGetter> Construct(uint id) => new FormLink<ILightingTemplateGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILightingTemplateGetter> DarklightTowerTemplateFar => Construct(0x3d563);
             public static FormLink<ILightingTemplateGetter> DLC2SkallVillageLT => Construct(0x35560);

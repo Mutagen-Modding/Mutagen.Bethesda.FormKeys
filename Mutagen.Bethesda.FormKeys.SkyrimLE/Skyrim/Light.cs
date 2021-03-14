@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Light
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILightGetter> MagicVoiceDismay03 => Construct(0x10fda1);
             public static FormLink<ILightGetter> MagicVoiceDismay02 => Construct(0x10fda0);

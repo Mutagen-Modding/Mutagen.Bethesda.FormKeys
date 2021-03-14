@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Global
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGlobalGetter> DLC2DragonAbsorbChance => Construct(0x1e286);
             public static FormLink<IGlobalGetter> DLC2Book01TakenBookInPartA => Construct(0x1e1a0);

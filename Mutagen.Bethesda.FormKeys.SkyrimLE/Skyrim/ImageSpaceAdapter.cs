@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ImageSpaceAdapter
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IImageSpaceAdapterGetter> Construct(uint id) => new FormLink<IImageSpaceAdapterGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IImageSpaceAdapterGetter> ChargenImod => Construct(0x10fde4);
             public static FormLink<IImageSpaceAdapterGetter> MAGFrostCastImod => Construct(0x10fbf1);

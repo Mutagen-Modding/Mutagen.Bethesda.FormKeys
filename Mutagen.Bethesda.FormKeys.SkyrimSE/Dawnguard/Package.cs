@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Package
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IPackageGetter> Construct(uint id) => new FormLink<IPackageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPackageGetter> DLC1VampireBaseIntroStalfHoldinRedwater => Construct(0x1463c);
             public static FormLink<IPackageGetter> DLC1VampireBaseIntroSaloniaHoldinRedwater => Construct(0x1463b);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Race
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IRaceGetter> Construct(uint id) => new FormLink<IRaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IRaceGetter> DLC2RigidSkeletonRace => Construct(0x3cecb);
             public static FormLink<IRaceGetter> DLC2MiraakRace => Construct(0x3ca97);

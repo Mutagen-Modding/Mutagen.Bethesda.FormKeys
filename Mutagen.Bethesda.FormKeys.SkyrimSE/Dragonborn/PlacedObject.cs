@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class PlacedObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IPlacedObjectGetter> Construct(uint id) => new FormLink<IPlacedObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlacedObjectGetter> DLC2MH01HrothmundInYourHeadMARKER => Construct(0x1d995);
             public static FormLink<IPlacedObjectGetter> DLC2KolbjornBlackBookEnableMarker => Construct(0x3a3dd);

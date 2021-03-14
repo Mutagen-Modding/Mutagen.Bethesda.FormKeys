@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ActorValueInformation
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IActorValueInformationGetter> Construct(uint id) => new FormLink<IActorValueInformationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IActorValueInformationGetter> AVDragonSouls => Construct(0x62c);
             public static FormLink<IActorValueInformationGetter> AVVariable01 => Construct(0x5eb);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class SoundMarker
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ISoundMarkerGetter> Construct(uint id) => new FormLink<ISoundMarkerGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISoundMarkerGetter> AMBDLC1WaterfallMediumLP => Construct(0x14c5b);
             public static FormLink<ISoundMarkerGetter> NPCDurnehviirDeath => Construct(0x14b61);

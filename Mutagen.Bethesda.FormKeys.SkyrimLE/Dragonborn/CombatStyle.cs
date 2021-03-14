@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class CombatStyle
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ICombatStyleGetter> Construct(uint id) => new FormLink<ICombatStyleGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICombatStyleGetter> DLC2TameDragonCSPlayerRiding => Construct(0x3cd43);
             public static FormLink<ICombatStyleGetter> DLC2csSeeker => Construct(0x3c6a5);

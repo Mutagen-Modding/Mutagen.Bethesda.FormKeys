@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class PlacedNpc
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IPlacedNpcGetter> Construct(uint id) => new FormLink<IPlacedNpcGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlacedNpcGetter> DA09DragonPriestRef => Construct(0x29d87);
             public static FormLink<IPlacedNpcGetter> ClintonLylvieveREF => Construct(0x19a2d);

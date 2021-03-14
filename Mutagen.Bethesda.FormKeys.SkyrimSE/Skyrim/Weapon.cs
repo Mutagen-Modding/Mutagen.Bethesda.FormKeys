@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Weapon
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IWeaponGetter> Construct(uint id) => new FormLink<IWeaponGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWeaponGetter> DA14DremoraGreatswordFire03 => Construct(0x17288);
             public static FormLink<IWeaponGetter> EnchDaedricGreatswordDremoraFire06 => Construct(0x17009);

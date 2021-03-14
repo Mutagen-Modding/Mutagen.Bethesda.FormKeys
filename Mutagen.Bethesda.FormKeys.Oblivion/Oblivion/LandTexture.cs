@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class LandTexture
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<ILandTextureGetter> Construct(uint id) => new FormLink<ILandTextureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILandTextureGetter> DementiaMoss01NoGrass => Construct(0x45981);
             public static FormLink<ILandTextureGetter> OrderedRock01 => Construct(0x4594a);

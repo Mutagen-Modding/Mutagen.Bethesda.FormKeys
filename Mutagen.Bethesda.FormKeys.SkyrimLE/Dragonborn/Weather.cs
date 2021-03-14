@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Weather
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IWeatherGetter> Construct(uint id) => new FormLink<IWeatherGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWeatherGetter> DLC02VolcanicAshTundra01_A => Construct(0x374ba);
             public static FormLink<IWeatherGetter> DLC02VolcanicAsh02_A => Construct(0x374b9);

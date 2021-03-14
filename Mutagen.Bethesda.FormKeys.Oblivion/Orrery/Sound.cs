@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Sound
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCOrrery.esp");
             private static FormLink<ISoundGetter> Construct(uint id) => new FormLink<ISoundGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISoundGetter> AMBOrreryRoomLP => Construct(0x126b26);
             public static FormLink<ISoundGetter> AMBOrreryButtonPush => Construct(0x126b27);

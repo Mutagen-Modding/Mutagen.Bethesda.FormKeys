@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class BodyPartData
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IBodyPartDataGetter> Construct(uint id) => new FormLink<IBodyPartDataGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IBodyPartDataGetter> ChickenBodyPartData => Construct(0xa919e);
             public static FormLink<IBodyPartDataGetter> HareBodyPartData => Construct(0x6dc9c);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class CollisionLayer
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ICollisionLayerGetter> Construct(uint id) => new FormLink<ICollisionLayerGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICollisionLayerGetter> L_TRAP_TRIGGER => Construct(0x10fb43);
             public static FormLink<ICollisionLayerGetter> L_DETECTION => Construct(0x10aa40);

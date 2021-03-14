@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class PlacedObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCOrrery.esp");
             private static FormLink<IPlacedObjectGetter> Construct(uint id) => new FormLink<IPlacedObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlacedObjectGetter> DLCOrreryACTSoundGearsSmallRef => Construct(0x12d236);
             public static FormLink<IPlacedObjectGetter> DLCOrreryACTSoundStartupRef => Construct(0x12d233);

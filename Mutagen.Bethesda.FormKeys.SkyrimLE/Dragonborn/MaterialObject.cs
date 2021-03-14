@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MaterialObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IMaterialObjectGetter> Construct(uint id) => new FormLink<IMaterialObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMaterialObjectGetter> DLC02IceShader01 => Construct(0x3b396);
             public static FormLink<IMaterialObjectGetter> DLC2AshMaterialDusting1P => Construct(0x3a11d);

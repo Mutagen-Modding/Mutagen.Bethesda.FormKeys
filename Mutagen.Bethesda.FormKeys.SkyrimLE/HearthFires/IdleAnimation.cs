@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class IdleAnimation
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IIdleAnimationGetter> Construct(uint id) => new FormLink<IIdleAnimationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIdleAnimationGetter> IdleChildCryingEnd => Construct(0x18300);
             public static FormLink<IIdleAnimationGetter> IdleChildCryingStart => Construct(0x182ff);

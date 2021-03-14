@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class LandscapeTexture
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ILandscapeTextureGetter> Construct(uint id) => new FormLink<ILandscapeTextureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILandscapeTextureGetter> LDLC01SoulCairnBones01 => Construct(0x1182c);
             public static FormLink<ILandscapeTextureGetter> LDLC01SoulCairnRock01 => Construct(0xcde8);

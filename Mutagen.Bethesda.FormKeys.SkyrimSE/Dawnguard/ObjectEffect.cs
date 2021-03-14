@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ObjectEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IObjectEffectGetter> DLC1DawnguardRuneHammerEnchant => Construct(0x14556);
             public static FormLink<IObjectEffectGetter> DLC1HarkonsSwordAbsorbHMS => Construct(0x11ee9);

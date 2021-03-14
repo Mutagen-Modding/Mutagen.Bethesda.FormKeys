@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class LoadScreen
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILoadScreenGetter> DLC2Solstheim5 => Construct(0x3b04f);
             public static FormLink<ILoadScreenGetter> DLC2RavenRock3 => Construct(0x3abca);

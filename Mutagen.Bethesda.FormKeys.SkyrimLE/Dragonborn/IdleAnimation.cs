@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class IdleAnimation
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IIdleAnimationGetter> Construct(uint id) => new FormLink<IIdleAnimationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIdleAnimationGetter> BenthicLurkerLeftReleaseSonicSpray => Construct(0x3d550);
             public static FormLink<IIdleAnimationGetter> BenthicLurkerLeftReleaseSpray => Construct(0x3d54f);

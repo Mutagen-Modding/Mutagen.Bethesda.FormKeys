@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Script
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCMehrunesRazor.esp");
             private static FormLink<IScriptGetter> Construct(uint id) => new FormLink<IScriptGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IScriptGetter> DL9BezoarPedestal01SCRIPT => Construct(0x2522);
             public static FormLink<IScriptGetter> DL9BezoarPostSCRIPT => Construct(0x2525);

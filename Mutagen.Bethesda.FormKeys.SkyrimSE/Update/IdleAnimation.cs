@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class IdleAnimation
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IIdleAnimationGetter> Construct(uint id) => new FormLink<IIdleAnimationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIdleAnimationGetter> MC_NoForceEquip => Construct(0x996);
             public static FormLink<IIdleAnimationGetter> Mounted_NoDraw => Construct(0x995);

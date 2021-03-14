@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ImageSpace
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IImageSpaceGetter> Construct(uint id) => new FormLink<IImageSpaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IImageSpaceGetter> ISKarthspireFogNIGHT => Construct(0x1bd1);
             public static FormLink<IImageSpaceGetter> ISKarthspireFogDUSK => Construct(0x1bd0);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class AIPackage
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Knights.esp");
             private static FormLink<IAIPackageGetter> Construct(uint id) => new FormLink<IAIPackageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAIPackageGetter> NDKnight8WaitforPlayer => Construct(0x2d5d);
             public static FormLink<IAIPackageGetter> NDKnight8FollowPlayer => Construct(0x2d5e);

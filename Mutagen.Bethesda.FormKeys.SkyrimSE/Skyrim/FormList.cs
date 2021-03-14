@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class FormList
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFormListGetter> CWMission07StewardVoiceTypes => Construct(0x17334);
             public static FormLink<IFormListGetter> MagicStormCallNoWorkHereList => Construct(0x1717c);

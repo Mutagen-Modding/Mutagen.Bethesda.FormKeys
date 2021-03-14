@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class AnimatedObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IAnimatedObjectGetter> Construct(uint id) => new FormLink<IAnimatedObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAnimatedObjectGetter> SE14JugglingBalls => Construct(0x96231);
             public static FormLink<IAnimatedObjectGetter> SEHaleHalionWritesPen => Construct(0x93842);

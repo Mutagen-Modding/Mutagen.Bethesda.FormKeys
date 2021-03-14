@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Outfit
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IOutfitGetter> Construct(uint id) => new FormLink<IOutfitGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IOutfitGetter> DLC2TT2SkeletonInvisible => Construct(0x3cf36);
             public static FormLink<IOutfitGetter> DLC2DarkElfTempleOutfitNoHood => Construct(0x3ceee);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class SoundMarker
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ISoundMarkerGetter> Construct(uint id) => new FormLink<ISoundMarkerGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISoundMarkerGetter> QSTGrotestTransformationVomit => Construct(0x1e2a8);
             public static FormLink<ISoundMarkerGetter> MAGAshShellFreeze => Construct(0x1e2a1);

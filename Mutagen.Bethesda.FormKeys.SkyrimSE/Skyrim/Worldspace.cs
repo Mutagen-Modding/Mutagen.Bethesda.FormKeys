@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Worldspace
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IWorldspaceGetter> Construct(uint id) => new FormLink<IWorldspaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWorldspaceGetter> Tamriel => Construct(0x3c);
             public static FormLink<IWorldspaceGetter> WindhelmWorld => Construct(0x1691d);

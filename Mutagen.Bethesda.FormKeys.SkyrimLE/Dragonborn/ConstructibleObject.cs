@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ConstructibleObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IConstructibleObjectGetter> Construct(uint id) => new FormLink<IConstructibleObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IConstructibleObjectGetter> DLC2TemperWeaponMiraakSword3 => Construct(0x1e111);
             public static FormLink<IConstructibleObjectGetter> DLC2TemperWeaponMiraakSword2 => Construct(0x1e110);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Quest
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IQuestGetter> BYOHHouseGiantAttack => Construct(0xc3e);
             public static FormLink<IQuestGetter> BYOHHouseWolfAttack => Construct(0xc39);

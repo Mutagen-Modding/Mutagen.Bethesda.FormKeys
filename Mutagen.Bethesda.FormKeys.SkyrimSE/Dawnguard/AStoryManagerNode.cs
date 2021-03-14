@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class AStoryManagerNode
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAStoryManagerNodeGetter> DLC1LD_AetherialItemsNode => Construct(0xd00e);
             public static FormLink<IAStoryManagerNodeGetter> DLC1VampireBaseScenes => Construct(0x4e26);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Light
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILightGetter> DLC2BulwarkCaveLight02 => Construct(0x3d4ab);
             public static FormLink<ILightGetter> DLC2BulwarkCaveLight => Construct(0x3d4a8);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MoveableStatic
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IMoveableStaticGetter> Construct(uint id) => new FormLink<IMoveableStaticGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMoveableStaticGetter> DLC1FXAncestorGladeGroundCircle => Construct(0x1459b);
             public static FormLink<IMoveableStaticGetter> DLC1GlowFillBlack => Construct(0x144f4);

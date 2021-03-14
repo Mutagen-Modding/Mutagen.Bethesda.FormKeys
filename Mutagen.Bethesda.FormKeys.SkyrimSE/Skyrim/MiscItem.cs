@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class MiscItem
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IMiscItemGetter> Construct(uint id) => new FormLink<IMiscItemGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMiscItemGetter> MGRArniel04SoulGem => Construct(0x10e44b);
             public static FormLink<IMiscItemGetter> TG01HaelgaStatuePost => Construct(0x10cc6a);

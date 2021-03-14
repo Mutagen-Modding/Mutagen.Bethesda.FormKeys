@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Race
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IRaceGetter> Construct(uint id) => new FormLink<IRaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IRaceGetter> DLC1HuskyBareCompanionRace => Construct(0x122b7);
             public static FormLink<IRaceGetter> DLC1GargoyleVariantBossRace => Construct(0x10d00);

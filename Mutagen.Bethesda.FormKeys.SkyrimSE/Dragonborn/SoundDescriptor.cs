@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class SoundDescriptor
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ISoundDescriptorGetter> Construct(uint id) => new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISoundDescriptorGetter> QSTStornDeathExit => Construct(0x1e2b4);
             public static FormLink<ISoundDescriptorGetter> QSTStornDeathLP => Construct(0x1e2b3);

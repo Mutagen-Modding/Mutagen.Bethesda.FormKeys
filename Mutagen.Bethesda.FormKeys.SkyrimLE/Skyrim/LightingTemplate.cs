@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LightingTemplate
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ILightingTemplateGetter> Construct(uint id) => new FormLink<ILightingTemplateGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILightingTemplateGetter> GreenCaveCloseDark => Construct(0x10acd3);
             public static FormLink<ILightingTemplateGetter> GreenCaveSuperFarDark => Construct(0x10acd2);

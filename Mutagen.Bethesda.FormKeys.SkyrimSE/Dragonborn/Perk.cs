@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Perk
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IPerkGetter> Construct(uint id) => new FormLink<IPerkGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPerkGetter> DLC2MQ06MiraakExtraDamageDragonsPerk => Construct(0x3d5cd);
             public static FormLink<IPerkGetter> DLC2MQ06DragonNerfDamageMiraakPerk => Construct(0x3d5b4);

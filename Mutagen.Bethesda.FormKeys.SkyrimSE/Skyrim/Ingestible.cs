@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Ingestible
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IIngestibleGetter> Construct(uint id) => new FormLink<IIngestibleGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIngestibleGetter> FoodGourd => Construct(0x10d666);
             public static FormLink<IIngestibleGetter> MQ101JuniperMead => Construct(0x107a8a);

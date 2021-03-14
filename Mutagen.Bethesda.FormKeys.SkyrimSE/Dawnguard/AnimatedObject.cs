@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class AnimatedObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IAnimatedObjectGetter> Construct(uint id) => new FormLink<IAnimatedObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAnimatedObjectGetter> AnimObjectWoodScrap => Construct(0x13795);
             public static FormLink<IAnimatedObjectGetter> AnimObjectDrawBlade => Construct(0x13794);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Perk
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IPerkGetter> Construct(uint id) => new FormLink<IPerkGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPerkGetter> DLC1HarkonTurningImmunity => Construct(0x14cce);
             public static FormLink<IPerkGetter> DLC1VampireSeductionBoost => Construct(0x1459d);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Location
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<ILocationGetter> Construct(uint id) => new FormLink<ILocationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILocationGetter> BYOHHouse3LocationInterior => Construct(0xbe1d);
             public static FormLink<ILocationGetter> BYOHHouse2LocationInterior => Construct(0xbe0a);

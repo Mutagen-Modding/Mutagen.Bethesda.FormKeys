@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LeveledSpell
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ILeveledSpellGetter> Construct(uint id) => new FormLink<ILeveledSpellGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILeveledSpellGetter> LSpellDragonFrostBreath => Construct(0x10fe1c);
             public static FormLink<ILeveledSpellGetter> TrapLSpellDiseases => Construct(0x10a249);

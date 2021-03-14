@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Quest
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IQuestGetter> CreatureDialogueSeeker => Construct(0x3d47c);
             public static FormLink<IQuestGetter> DLC2DialogueGenericHunter => Construct(0x3a4cb);

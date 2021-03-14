@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Scene
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISceneGetter> DLC2dunTT2_IldariScene02 => Construct(0x3d598);
             public static FormLink<ISceneGetter> DLC2TTR5CastSpellScene => Construct(0x3d301);

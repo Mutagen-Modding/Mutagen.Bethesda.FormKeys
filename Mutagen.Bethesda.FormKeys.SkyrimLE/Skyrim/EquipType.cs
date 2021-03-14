@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class EquipType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IEquipTypeGetter> Construct(uint id) => new FormLink<IEquipTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IEquipTypeGetter> Potion => Construct(0x35698);
             public static FormLink<IEquipTypeGetter> Voice => Construct(0x25bee);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class TextureSet
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ITextureSetGetter> LandscapeMountainSlab02Mask => Construct(0x2e34);
             public static FormLink<ITextureSetGetter> LandscapeMountainSlab01Mask => Construct(0x2e33);

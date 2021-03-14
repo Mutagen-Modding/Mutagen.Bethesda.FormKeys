@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Ingredient
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIngredientGetter> DLC2TernFeathers => Construct(0x3cd8e);
             public static FormLink<IIngredientGetter> DLC2HangingMoss => Construct(0x1ff75);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Explosion
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IExplosionGetter> Construct(uint id) => new FormLink<IExplosionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IExplosionGetter> PowerSerpentStoneExplosion => Construct(0xe04);
             public static FormLink<IExplosionGetter> TG01BersiDwemerUrnExplosion => Construct(0x10ff9a);

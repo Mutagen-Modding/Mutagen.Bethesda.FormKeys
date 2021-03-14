@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Spell
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCThievesDen.esp");
             private static FormLink<ISpellGetter> Construct(uint id) => new FormLink<ISpellGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISpellGetter> DLC06FortifySkillSecurity2Apprentice => Construct(0xba56);
             public static FormLink<ISpellGetter> DLC06FortifySkillSecurity3Journeyman => Construct(0xba58);

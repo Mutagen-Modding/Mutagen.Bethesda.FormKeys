@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class SoundDescriptor
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ISoundDescriptorGetter> Construct(uint id) => new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISoundDescriptorGetter> VOCShoutFXThrowVoice => Construct(0xf8b);
             public static FormLink<ISoundDescriptorGetter> VOCShoutFXDismayC => Construct(0xf8a);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Tree
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<ITreeGetter> Construct(uint id) => new FormLink<ITreeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ITreeGetter> Mbush16 => Construct(0x1f392);
             public static FormLink<ITreeGetter> Dbush15 => Construct(0x1f390);

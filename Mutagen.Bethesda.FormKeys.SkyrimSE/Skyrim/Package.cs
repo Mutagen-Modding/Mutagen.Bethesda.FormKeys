@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Package
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IPackageGetter> Construct(uint id) => new FormLink<IPackageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPackageGetter> ThievesGuildSapphireSandboxMultiPackage0x0 => Construct(0xf8d);
             public static FormLink<IPackageGetter> MQ303OdahviingWaitToFlyAlias => Construct(0xeb9);

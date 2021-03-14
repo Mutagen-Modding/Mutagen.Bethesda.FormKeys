@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Keyword
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IKeywordGetter> Construct(uint id) => new FormLink<IKeywordGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IKeywordGetter> PowerAttackBash => Construct(0xf54);
             public static FormLink<IKeywordGetter> MagicNoDistintegrate => Construct(0xedf);

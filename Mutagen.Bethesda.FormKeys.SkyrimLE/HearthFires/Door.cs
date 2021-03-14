@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Door
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDoorGetter> BYOHWRDoorLoad01 => Construct(0xb5e);
             public static FormLink<IDoorGetter> BYOHBYOHWRtowerRTrapDoor02 => Construct(0x3b70);

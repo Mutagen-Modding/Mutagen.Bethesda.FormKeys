@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Global
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGlobalGetter> DecapitationChance => Construct(0xeca);
             public static FormLink<IGlobalGetter> CrimeArrestOnSightNonViolentThreshold => Construct(0xe9d);

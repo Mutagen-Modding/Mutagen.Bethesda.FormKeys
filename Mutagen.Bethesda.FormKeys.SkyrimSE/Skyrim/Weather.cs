@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Weather
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IWeatherGetter> Construct(uint id) => new FormLink<IWeatherGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWeatherGetter> SovngardeDark => Construct(0x10fef8);
             public static FormLink<IWeatherGetter> RiftenOvercastFog => Construct(0x10fe7e);

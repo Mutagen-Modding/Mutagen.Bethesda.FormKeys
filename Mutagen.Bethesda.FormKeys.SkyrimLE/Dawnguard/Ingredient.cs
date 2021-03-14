@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Ingredient
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIngredientGetter> DLC1MountainFlower01Yellow => Construct(0x2a78);
             public static FormLink<IIngredientGetter> DLC01PoisonBloom => Construct(0x185fb);

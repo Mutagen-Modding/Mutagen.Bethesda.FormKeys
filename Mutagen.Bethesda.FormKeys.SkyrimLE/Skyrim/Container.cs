@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Container
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IContainerGetter> MerchantWhiterunEorlundChest => Construct(0x10fde6);
             public static FormLink<IContainerGetter> MS12bBriarHeartStorage => Construct(0x10fbf6);

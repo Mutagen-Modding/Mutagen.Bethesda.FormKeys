@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class DialogBranch
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IDialogBranchGetter> Construct(uint id) => new FormLink<IDialogBranchGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogBranchGetter> DLC1VQ05ValericaTLReturnBranch => Construct(0x145db);
             public static FormLink<IDialogBranchGetter> DLC1NPCMentalModelMarriageAddressal => Construct(0x13793);

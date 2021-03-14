@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class IdleAnimation
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Knights.esp");
             private static FormLink<IIdleAnimationGetter> Construct(uint id) => new FormLink<IIdleAnimationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIdleAnimationGetter> NDAnims => Construct(0x2d43);
             public static FormLink<IIdleAnimationGetter> ND10FINCheer03 => Construct(0x2d44);

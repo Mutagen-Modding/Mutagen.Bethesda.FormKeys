@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MusicType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IMusicTypeGetter> Construct(uint id) => new FormLink<IMusicTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMusicTypeGetter> DLC2MUSExploreMountain => Construct(0x3d4a4);
             public static FormLink<IMusicTypeGetter> DLC2MUSExploreSnow => Construct(0x3d4a3);

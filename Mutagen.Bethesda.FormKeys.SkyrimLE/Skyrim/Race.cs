@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Race
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IRaceGetter> Construct(uint id) => new FormLink<IRaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IRaceGetter> FoxRace => Construct(0x109c7c);
             public static FormLink<IRaceGetter> BretonRaceChildVampire => Construct(0x108272);

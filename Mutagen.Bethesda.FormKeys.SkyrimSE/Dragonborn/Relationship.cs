@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Relationship
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IRelationshipGetter> Construct(uint id) => new FormLink<IRelationshipGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IRelationshipGetter> DLC2NelothDrelas => Construct(0x1f8eb);
             public static FormLink<IRelationshipGetter> DLC2NelothUlves => Construct(0x1f8ea);

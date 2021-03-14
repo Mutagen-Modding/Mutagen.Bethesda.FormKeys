@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Scene
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISceneGetter> RelationshipAdoption_SceneNameCalling01 => Construct(0x1652e);
             public static FormLink<ISceneGetter> RelationshipAdoption_SceneNameCalling02 => Construct(0x1652d);

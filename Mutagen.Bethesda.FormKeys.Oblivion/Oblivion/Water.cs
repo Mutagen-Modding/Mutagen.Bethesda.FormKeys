@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Water
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IWaterGetter> Construct(uint id) => new FormLink<IWaterGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWaterGetter> SEBrellachWater => Construct(0x8fa32);
             public static FormLink<IWaterGetter> SEPinnacleRockWater => Construct(0x8fa31);

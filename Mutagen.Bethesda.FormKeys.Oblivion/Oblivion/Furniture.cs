@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Furniture
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFurnitureGetter> SE11DyusThrone => Construct(0x81c2c);
             public static FormLink<IFurnitureGetter> SESylThrone => Construct(0x81c2b);

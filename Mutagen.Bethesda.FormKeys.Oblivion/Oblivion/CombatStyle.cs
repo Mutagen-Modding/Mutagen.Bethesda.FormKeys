@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class CombatStyle
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<ICombatStyleGetter> Construct(uint id) => new FormLink<ICombatStyleGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICombatStyleGetter> SE11DopplegangerCombatStyle => Construct(0x97608);
             public static FormLink<ICombatStyleGetter> SE11RakheranStyle => Construct(0x8f192);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class DialogView
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IDialogViewGetter> Construct(uint id) => new FormLink<IDialogViewGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogViewGetter> PetFramework_DialogView => Construct(0x2f24);
         }

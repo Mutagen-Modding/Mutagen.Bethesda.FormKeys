@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MiscItem
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IMiscItemGetter> Construct(uint id) => new FormLink<IMiscItemGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMiscItemGetter> PortalGemWhiteKey => Construct(0x12fc3);
             public static FormLink<IMiscItemGetter> PortalGemPurpleKey => Construct(0x12f97);

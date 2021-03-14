@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Region
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IRegionGetter> Construct(uint id) => new FormLink<IRegionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IRegionGetter> AudioExtFalmerValleyBossChapel => Construct(0x14c60);
             public static FormLink<IRegionGetter> MeganSoulCairn02 => Construct(0x13ece);

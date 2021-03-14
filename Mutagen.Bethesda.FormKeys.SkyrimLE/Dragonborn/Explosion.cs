@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Explosion
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IExplosionGetter> Construct(uint id) => new FormLink<IExplosionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IExplosionGetter> DLC2ConstellationExplosion => Construct(0x3d5ce);
             public static FormLink<IExplosionGetter> DLC2MiraakCycloneStaggerExplosion => Construct(0x3d3b5);

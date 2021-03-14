@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Cell
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<ICellGetter> Construct(uint id) => new FormLink<ICellGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICellGetter> BYOHHouseUtilityCell => Construct(0x2fe4);
             public static FormLink<ICellGetter> BYOHHouse2Hjaalmarch => Construct(0x11cb3);

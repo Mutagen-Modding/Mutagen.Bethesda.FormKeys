@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Flora
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFloraGetter> DLC2HorkerDead01 => Construct(0x38a83);
             public static FormLink<IFloraGetter> DLC2HorkerMeat01 => Construct(0x38a7a);

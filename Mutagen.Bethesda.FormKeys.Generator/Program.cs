@@ -100,9 +100,11 @@ namespace Mutagen.Bethesda.FormKeys.Generator
             var importStr = $"Mutagen.Bethesda.{gen.Release.ToCategory()}";
             var modName = mod.ModKey.Name.TrimStart("DLC");
 
+            FileGeneration fg;
+            string path;
             foreach (var regis in list.GroupBy(x => x.Regis))
             {
-                FileGeneration fg = new FileGeneration();
+                fg = new FileGeneration();
                 fg.AppendLine($"using {importStr};");
                 fg.AppendLine();
 
@@ -121,7 +123,6 @@ namespace Mutagen.Bethesda.FormKeys.Generator
                         }
                         using (new BraceWrapper(fg))
                         {
-                            fg.AppendLine($"private readonly static ModKey ModKey = ModKey.{nameof(ModKey.FromNameAndExtension)}(\"{mod.ModKey}\");");
                             fg.AppendLine($"private static FormLink<{regis.Key.GetterType.Name}> Construct(uint id) => new FormLink<{regis.Key.GetterType.Name}>(ModKey.{nameof(ModKeyExt.MakeFormKey)}(id));");
                             foreach (var rec in regis)
                             {
@@ -131,10 +132,28 @@ namespace Mutagen.Bethesda.FormKeys.Generator
                     }
                 }
 
-                var path = Path.Combine("Output", gen.Release.ToString(), modName, $"{regis.Key.Name}.cs");
+                path = Path.Combine("Output", gen.Release.ToString(), modName, $"{regis.Key.Name}.cs");
                 fg.Generate(path);
                 System.Console.WriteLine($"Exported: {path}");
             }
+
+            // Generate ModKey partial class
+            fg = new FileGeneration();
+            using (new NamespaceWrapper(fg, namespaceStr))
+            {
+                using (var c = new ClassWrapper(fg, modName))
+                {
+                    c.Static = true;
+                    c.Partial = true;
+                }
+                using (new BraceWrapper(fg))
+                {
+                    fg.AppendLine($"public readonly static ModKey ModKey = ModKey.{nameof(ModKey.FromNameAndExtension)}(\"{mod.ModKey}\");");
+                }
+            }
+            path = Path.Combine("Output", gen.Release.ToString(), modName, $"ModKey.cs");
+            fg.Generate(path);
+            System.Console.WriteLine($"Exported: {path}");
         }
     }
 }

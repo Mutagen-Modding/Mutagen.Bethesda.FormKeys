@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Footstep
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IFootstepGetter> Construct(uint id) => new FormLink<IFootstepGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFootstepGetter> NPCVampireLordFootRunRFootstep => Construct(0x1377b);
             public static FormLink<IFootstepGetter> NPCVampireLordFootRunLFootstep => Construct(0x1377a);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Key
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IKeyGetter> Construct(uint id) => new FormLink<IKeyGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IKeyGetter> DLC2TelMithrynStaffEnchanterKey => Construct(0x3d23f);
             public static FormLink<IKeyGetter> DLC2PlayerHouseKey => Construct(0x3bd09);

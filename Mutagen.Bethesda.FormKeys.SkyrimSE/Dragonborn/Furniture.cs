@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Furniture
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFurnitureGetter> DLC2MQ02Meditate => Construct(0x3d5dc);
             public static FormLink<IFurnitureGetter> DLC2FreaCrouchedMarker => Construct(0x3d2bc);

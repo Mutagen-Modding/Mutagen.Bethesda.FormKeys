@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Package
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IPackageGetter> Construct(uint id) => new FormLink<IPackageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPackageGetter> BYOHHouseGiantAttackSandboxHouseExterior => Construct(0xc41);
             public static FormLink<IPackageGetter> BYOHHouseGiantAttackToCow => Construct(0xc40);

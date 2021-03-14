@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class MusicType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IMusicTypeGetter> Construct(uint id) => new FormLink<IMusicTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMusicTypeGetter> MUSExploreSovngardeChantExterior => Construct(0xf74);
             public static FormLink<IMusicTypeGetter> MUSSpecialWordOfPower => Construct(0x17415);

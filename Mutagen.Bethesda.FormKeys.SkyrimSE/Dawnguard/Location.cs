@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Location
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ILocationGetter> Construct(uint id) => new FormLink<ILocationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILocationGetter> DLC1FalmerValleyTempleLocation => Construct(0x1379f);
             public static FormLink<ILocationGetter> DLC1HunterHQLocationInterior => Construct(0x128fe);

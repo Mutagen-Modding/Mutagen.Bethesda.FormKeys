@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class GameSetting
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IGameSettingGetter> Construct(uint id) => new FormLink<IGameSettingGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGameSettingGetter> sGenericCraftKeywordName10 => Construct(0x8bd4);
             public static FormLink<IGameSettingGetter> sGenericCraftKeywordName09 => Construct(0x8bd3);

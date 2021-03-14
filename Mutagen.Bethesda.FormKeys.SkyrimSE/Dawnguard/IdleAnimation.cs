@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class IdleAnimation
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IIdleAnimationGetter> Construct(uint id) => new FormLink<IIdleAnimationGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IIdleAnimationGetter> DLC1PairEnd => Construct(0x14cf5);
             public static FormLink<IIdleAnimationGetter> VampLord_InterruptVoice => Construct(0x14cbf);

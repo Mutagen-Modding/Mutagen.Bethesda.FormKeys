@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class DialogTopic
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IDialogTopicGetter> Construct(uint id) => new FormLink<IDialogTopicGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogTopicGetter> PetFramework_BranchWaitResumeTopic => Construct(0x2eea);
             public static FormLink<IDialogTopicGetter> PetFramework_BranchHomeCurrLocTopic => Construct(0x2eeb);

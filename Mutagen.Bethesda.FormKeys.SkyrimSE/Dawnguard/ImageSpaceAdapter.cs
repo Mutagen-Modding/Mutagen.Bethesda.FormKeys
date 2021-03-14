@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ImageSpaceAdapter
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IImageSpaceAdapterGetter> Construct(uint id) => new FormLink<IImageSpaceAdapterGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IImageSpaceAdapterGetter> DLC1HarkonShieldBurstImod => Construct(0x11d39);
             public static FormLink<IImageSpaceAdapterGetter> DLC1HarkonBiteFadeToBlackImod => Construct(0xe911);

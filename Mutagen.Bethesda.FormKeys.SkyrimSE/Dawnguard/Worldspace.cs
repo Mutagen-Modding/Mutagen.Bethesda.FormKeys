@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Worldspace
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IWorldspaceGetter> Construct(uint id) => new FormLink<IWorldspaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWorldspaceGetter> DLC01FalmerValley => Construct(0xbb5);
             public static FormLink<IWorldspaceGetter> DLC01SoulCairn => Construct(0x1408);

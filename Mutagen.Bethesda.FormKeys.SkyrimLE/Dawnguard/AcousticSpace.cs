@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class AcousticSpace
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IAcousticSpaceGetter> Construct(uint id) => new FormLink<IAcousticSpaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAcousticSpaceGetter> DLC1IntFalmerValleyLargeStoneBossChapel => Construct(0x14c61);
             public static FormLink<IAcousticSpaceGetter> IntVampireCastleGuildhall => Construct(0xf695);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Package
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IPackageGetter> Construct(uint id) => new FormLink<IPackageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPackageGetter> DLC2MQ01NelothSandboxHome => Construct(0x1e2b5);
             public static FormLink<IPackageGetter> DLC2TT1VaronaWalkToDeath => Construct(0x1e1b3);

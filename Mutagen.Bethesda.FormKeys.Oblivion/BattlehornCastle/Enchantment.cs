@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Enchantment
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCBattlehornCastle.esp");
             private static FormLink<IEnchantmentGetter> Construct(uint id) => new FormLink<IEnchantmentGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IEnchantmentGetter> DLCBattlehornShieldRewardEnch25 => Construct(0x11f29);
             public static FormLink<IEnchantmentGetter> DLCBattlehornShieldRewardEnch30 => Construct(0x11f2b);

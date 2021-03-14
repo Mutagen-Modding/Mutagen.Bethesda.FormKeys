@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Global
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IGlobalGetter> BYOHLastAttack => Construct(0xc38);
             public static FormLink<IGlobalGetter> BYOHHouse3Room12Started => Construct(0xc00);

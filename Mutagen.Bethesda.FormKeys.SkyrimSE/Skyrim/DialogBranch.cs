@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class DialogBranch
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IDialogBranchGetter> Construct(uint id) => new FormLink<IDialogBranchGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogBranchGetter> WIAddItem03SayBranch => Construct(0x10fe02);
             public static FormLink<IDialogBranchGetter> MS11RobesQuestionBranch => Construct(0x10ec96);

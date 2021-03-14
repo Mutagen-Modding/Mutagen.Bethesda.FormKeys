@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Debris
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IDebrisGetter> Construct(uint id) => new FormLink<IDebrisGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDebrisGetter> IceFormDebris14 => Construct(0xdedc9);
             public static FormLink<IDebrisGetter> IceFormDebris => Construct(0xdc20b);

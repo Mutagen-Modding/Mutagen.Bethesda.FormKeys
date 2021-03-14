@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Scene
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISceneGetter> DLC1_BF_DunTempleQSTSCENEShiftBack => Construct(0x13f86);
             public static FormLink<ISceneGetter> DLC1WEJS02VampRunningScene => Construct(0x13e21);

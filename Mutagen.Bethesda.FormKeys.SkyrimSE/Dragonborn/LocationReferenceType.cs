@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class LocationReferenceType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ILocationReferenceTypeGetter> Construct(uint id) => new FormLink<ILocationReferenceTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILocationReferenceTypeGetter> DLC2RRF03AshSpawnLRT01b => Construct(0x3cfcf);
             public static FormLink<ILocationReferenceTypeGetter> DLC2RRF03AshSpawnLRT03 => Construct(0x3cfce);

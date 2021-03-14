@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class EffectShader
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IEffectShaderGetter> Construct(uint id) => new FormLink<IEffectShaderGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IEffectShaderGetter> Dlc1DeathHound01 => Construct(0x12d08);
             public static FormLink<IEffectShaderGetter> DeathHoundDeathFXShader => Construct(0x12d07);

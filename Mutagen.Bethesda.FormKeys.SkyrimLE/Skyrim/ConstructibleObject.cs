@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ConstructibleObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IConstructibleObjectGetter> Construct(uint id) => new FormLink<IConstructibleObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IConstructibleObjectGetter> TemperWeaponSkyforgeSteelWarAxe => Construct(0xf61);
             public static FormLink<IConstructibleObjectGetter> TemperWeaponSkyforgeSteelSword => Construct(0xf60);

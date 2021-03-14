@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Projectile
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IProjectileGetter> Construct(uint id) => new FormLink<IProjectileGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IProjectileGetter> DLC2AshBreathProjectile => Construct(0x1e283);
             public static FormLink<IProjectileGetter> DLC2IllusionMayhemProjectile => Construct(0x3d2a0);

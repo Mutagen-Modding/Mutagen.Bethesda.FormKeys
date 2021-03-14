@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class DialogView
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IDialogViewGetter> Construct(uint id) => new FormLink<IDialogViewGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogViewGetter> DLC1DialogueDexionLoreView => Construct(0x13769);
             public static FormLink<IDialogViewGetter> DLC1VQ08PostDexionView => Construct(0x12db8);

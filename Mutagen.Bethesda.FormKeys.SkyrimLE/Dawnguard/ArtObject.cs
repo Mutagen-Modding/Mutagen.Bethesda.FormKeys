@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ArtObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IArtObjectGetter> Construct(uint id) => new FormLink<IArtObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IArtObjectGetter> DLC1SEBossGlowingFX => Construct(0x138fd);
             public static FormLink<IArtObjectGetter> DLC1SEBossBlastBackFXArtObject => Construct(0x138e8);

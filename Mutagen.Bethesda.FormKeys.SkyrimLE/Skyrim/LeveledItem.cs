@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LeveledItem
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ILeveledItemGetter> Construct(uint id) => new FormLink<ILeveledItemGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILeveledItemGetter> SublistEnchArmorShield06Dragonscale05 => Construct(0xf53);
             public static FormLink<ILeveledItemGetter> SublistEnchArmorShield05Dragonscale05 => Construct(0xf52);

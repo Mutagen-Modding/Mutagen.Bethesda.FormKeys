@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class AIPackage
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
             private static FormLink<IAIPackageGetter> Construct(uint id) => new FormLink<IAIPackageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAIPackageGetter> LairVileTarisServicesPackage => Construct(0x328a);
             public static FormLink<IAIPackageGetter> LairVileMinionReturnHomeSuccess => Construct(0x7e62);

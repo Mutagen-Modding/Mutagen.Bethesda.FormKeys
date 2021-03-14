@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MagicEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IMagicEffectGetter> Construct(uint id) => new FormLink<IMagicEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMagicEffectGetter> BYOHVampireSleepRestedEffect => Construct(0xc34);
             public static FormLink<IMagicEffectGetter> BYOHHousePart187ShrineBaseEffect => Construct(0xf3ce);

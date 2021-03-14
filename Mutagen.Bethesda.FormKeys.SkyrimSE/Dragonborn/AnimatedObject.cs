@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class AnimatedObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IAnimatedObjectGetter> Construct(uint id) => new FormLink<IAnimatedObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectPickAxeWall => Construct(0x3a330);
             public static FormLink<IAnimatedObjectGetter> DLC02AnimObjectBoat => Construct(0x39ba6);

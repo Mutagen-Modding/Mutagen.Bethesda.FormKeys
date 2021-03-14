@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class PlacedNpc
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IPlacedNpcGetter> Construct(uint id) => new FormLink<IPlacedNpcGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlacedNpcGetter> BYOHHouse2FishHatcheryNPC001 => Construct(0x90e);
             public static FormLink<IPlacedNpcGetter> BYOHHouse3PlanterNPCInterior018 => Construct(0x83f);

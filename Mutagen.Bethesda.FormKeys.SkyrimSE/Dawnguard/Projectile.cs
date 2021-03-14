@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Projectile
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IProjectileGetter> Construct(uint id) => new FormLink<IProjectileGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IProjectileGetter> DLC1BatsDmgProjectile => Construct(0x12fec);
             public static FormLink<IProjectileGetter> DLC1HarkonFXBloodDropProjectile => Construct(0x11e3d);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Miscellaneous
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Knights.esp");
             private static FormLink<IMiscellaneousGetter> Construct(uint id) => new FormLink<IMiscellaneousGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMiscellaneousGetter> ND05MiscStone => Construct(0xf03);
             public static FormLink<IMiscellaneousGetter> ND05MiscGem => Construct(0xf04);

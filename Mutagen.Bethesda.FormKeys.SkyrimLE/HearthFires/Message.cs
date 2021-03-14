@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Message
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IMessageGetter> Construct(uint id) => new FormLink<IMessageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMessageGetter> BYOHVampireSleepMsg => Construct(0xc33);
             public static FormLink<IMessageGetter> BYOHFishHatcheryOnlyOneItemMESSAGE => Construct(0xa09);

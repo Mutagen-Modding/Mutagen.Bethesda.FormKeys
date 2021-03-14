@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class LocationReferenceType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<ILocationReferenceTypeGetter> Construct(uint id) => new FormLink<ILocationReferenceTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILocationReferenceTypeGetter> BYOHHouseChicken => Construct(0xc3c);
             public static FormLink<ILocationReferenceTypeGetter> BYOHHouseCow => Construct(0xc3b);

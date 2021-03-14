@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Furniture
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFurnitureGetter> dlc1LeverPushAnimatingNoPlayeR => Construct(0x11ed4);
             public static FormLink<IFurnitureGetter> DLC01LeverAnimating => Construct(0xf671);

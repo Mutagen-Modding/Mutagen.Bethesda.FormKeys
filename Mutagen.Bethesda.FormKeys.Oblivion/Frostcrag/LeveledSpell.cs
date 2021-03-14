@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class LeveledSpell
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCFrostcrag.esp");
             private static FormLink<ILeveledSpellGetter> Construct(uint id) => new FormLink<ILeveledSpellGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILeveledSpellGetter> FrostcragAtronachShockBoltLvl => Construct(0x1771);
             public static FormLink<ILeveledSpellGetter> FrostcragAtronachShockTouchLvl => Construct(0x1772);

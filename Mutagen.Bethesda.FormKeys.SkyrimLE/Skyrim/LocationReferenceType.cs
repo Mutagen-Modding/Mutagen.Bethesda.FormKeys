@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class LocationReferenceType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ILocationReferenceTypeGetter> Construct(uint id) => new FormLink<ILocationReferenceTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILocationReferenceTypeGetter> MapMarkerRefType => Construct(0x10f63c);
             public static FormLink<ILocationReferenceTypeGetter> CWResolutionJarlGuardMarker6 => Construct(0x10eaab);

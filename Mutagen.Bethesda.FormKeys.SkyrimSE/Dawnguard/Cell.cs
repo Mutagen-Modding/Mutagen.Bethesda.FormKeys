@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Cell
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ICellGetter> Construct(uint id) => new FormLink<ICellGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICellGetter> XTestRyanInt => Construct(0x477c);
             public static FormLink<ICellGetter> DLC1VQHoldingCell => Construct(0x15054);

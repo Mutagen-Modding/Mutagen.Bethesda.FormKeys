@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class AnimatedObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IAnimatedObjectGetter> Construct(uint id) => new FormLink<IAnimatedObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAnimatedObjectGetter> AnimObjectDoll => Construct(0x16a4f);
             public static FormLink<IAnimatedObjectGetter> AnimObjectWoodScrap => Construct(0x14352);

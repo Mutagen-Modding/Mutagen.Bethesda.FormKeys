@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Script
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCSpellTomes.esp");
             private static FormLink<IScriptGetter> Construct(uint id) => new FormLink<IScriptGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IScriptGetter> DLCTomeSCRIPTStandardAbsorbMagicka1Novice => Construct(0xce7);
             public static FormLink<IScriptGetter> DLCTomeSCRIPTDLCTomeAbsorbLife => Construct(0xceb);

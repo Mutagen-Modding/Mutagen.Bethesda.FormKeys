@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Hair
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IHairGetter> Construct(uint id) => new FormLink<IHairGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IHairGetter> KhajiitWisps => Construct(0xc4821);
             public static FormLink<IHairGetter> KhajiitEarrings => Construct(0xc4820);

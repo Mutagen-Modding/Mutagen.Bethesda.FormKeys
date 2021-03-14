@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class CameraShot
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ICameraShotGetter> Construct(uint id) => new FormLink<ICameraShotGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICameraShotGetter> DS04aDragonKillCamA01L => Construct(0x10fdad);
             public static FormLink<ICameraShotGetter> DS03aDragonKillCamA01R => Construct(0x10fdac);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class CameraShot
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<ICameraShotGetter> Construct(uint id) => new FormLink<ICameraShotGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICameraShotGetter> F18cRangeLSideTurnToLook01 => Construct(0x935);
             public static FormLink<ICameraShotGetter> F18bRangeLSideTurnToLook01 => Construct(0x934);

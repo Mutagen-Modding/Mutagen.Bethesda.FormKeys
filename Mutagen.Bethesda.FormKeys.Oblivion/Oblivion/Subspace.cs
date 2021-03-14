@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Subspace
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<ISubspaceGetter> Construct(uint id) => new FormLink<ISubspaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISubspaceGetter> SubSpace800x500x200 => Construct(0x8e83f);
             public static FormLink<ISubspaceGetter> SubSpace800x600x200 => Construct(0x8e82a);

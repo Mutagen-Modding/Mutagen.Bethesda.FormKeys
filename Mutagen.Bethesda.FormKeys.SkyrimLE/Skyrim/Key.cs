@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Key
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IKeyGetter> Construct(uint id) => new FormLink<IKeyGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IKeyGetter> RiftenConfiscatedGoodsChestKey => Construct(0x10e7e6);
             public static FormLink<IKeyGetter> MzinchaleftKey01 => Construct(0x10beff);

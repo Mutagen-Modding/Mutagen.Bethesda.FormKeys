@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class LandscapeTexture
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ILandscapeTextureGetter> Construct(uint id) => new FormLink<ILandscapeTextureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILandscapeTextureGetter> LVolcanicAshTundra04 => Construct(0x1eecd);
             public static FormLink<ILandscapeTextureGetter> LVolcanicAshTundra03 => Construct(0x1bd21);

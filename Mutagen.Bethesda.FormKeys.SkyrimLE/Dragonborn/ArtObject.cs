@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ArtObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IArtObjectGetter> Construct(uint id) => new FormLink<IArtObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IArtObjectGetter> DLC2DragonAspectBurst => Construct(0x3d58e);
             public static FormLink<IArtObjectGetter> DLC2ApocryphaHealTargetFX => Construct(0x3d3bd);

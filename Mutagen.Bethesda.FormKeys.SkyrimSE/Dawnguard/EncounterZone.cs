@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class EncounterZone
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IEncounterZoneGetter> Construct(uint id) => new FormLink<IEncounterZoneGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IEncounterZoneGetter> DLC1FalmerValleyTempleZone => Construct(0x1379d);
             public static FormLink<IEncounterZoneGetter> DLC1FalmerValleyZone => Construct(0x12f42);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class PlacedObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IPlacedObjectGetter> Construct(uint id) => new FormLink<IPlacedObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlacedObjectGetter> DLC1VQ07InitiatesEwerRef => Construct(0x15080);
             public static FormLink<IPlacedObjectGetter> DLC1VQ03St90SeranaMoveTo => Construct(0x13ecc);

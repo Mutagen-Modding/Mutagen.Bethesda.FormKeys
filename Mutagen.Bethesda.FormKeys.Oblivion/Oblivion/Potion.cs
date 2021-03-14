@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Potion
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<IPotionGetter> Construct(uint id) => new FormLink<IPotionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPotionGetter> SEDrinkWine3Better => Construct(0x8e490);
             public static FormLink<IPotionGetter> SEDrinkWine2Good => Construct(0x8e48f);

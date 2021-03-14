@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class EffectShader
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IEffectShaderGetter> Construct(uint id) => new FormLink<IEffectShaderGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IEffectShaderGetter> DLC2ApoWaterDamageFXShader => Construct(0x1e147);
             public static FormLink<IEffectShaderGetter> DLC2LurkerEmerge => Construct(0x3d5d1);

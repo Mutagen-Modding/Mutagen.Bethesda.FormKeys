@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class DialogView
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IDialogViewGetter> Construct(uint id) => new FormLink<IDialogViewGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogViewGetter> BYOHHouseBanditAttack2View => Construct(0x8b0);
             public static FormLink<IDialogViewGetter> RelationshipAdoption_RehirePets => Construct(0x192d4);

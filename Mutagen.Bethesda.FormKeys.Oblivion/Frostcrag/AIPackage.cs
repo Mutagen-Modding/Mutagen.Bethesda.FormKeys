@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class AIPackage
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCFrostcrag.esp");
             private static FormLink<IAIPackageGetter> Construct(uint id) => new FormLink<IAIPackageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAIPackageGetter> DLCFrostcragAurelinwaeOfferServices => Construct(0x1247);
             public static FormLink<IAIPackageGetter> DLCFrostcragAurelinwaeWanderstheICArbDistrict => Construct(0x1253);

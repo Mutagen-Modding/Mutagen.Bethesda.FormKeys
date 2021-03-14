@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class PlacedCreature
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCHorseArmor.esp");
             private static FormLink<IPlacedCreatureGetter> Construct(uint id) => new FormLink<IPlacedCreatureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IPlacedCreatureGetter> HorsePCArmoredElvenPaintWeynonRef => Construct(0x2123);
             public static FormLink<IPlacedCreatureGetter> HorsePCArmoredElvenWhiteAnvilRef => Construct(0x2121);

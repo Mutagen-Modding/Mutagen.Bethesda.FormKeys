@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Weather
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IWeatherGetter> Construct(uint id) => new FormLink<IWeatherGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IWeatherGetter> SoulCairnAmb01_Rain => Construct(0x14551);
             public static FormLink<IWeatherGetter> DLC1_SkyrimClearFV_A => Construct(0x10e10);

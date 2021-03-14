@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class DialogTopic
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IDialogTopicGetter> Construct(uint id) => new FormLink<IDialogTopicGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDialogTopicGetter> DLC1VQ08IsranOutsideCastleBranchTopic => Construct(0x28aa);
             public static FormLink<IDialogTopicGetter> DLC1VQ08PostIsranForceGreetBranchTopic => Construct(0x2999);

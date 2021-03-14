@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ColorRecord
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IColorRecordGetter> Construct(uint id) => new FormLink<IColorRecordGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IColorRecordGetter> WoodElfSkinFemale05 => Construct(0x10ab5c);
             public static FormLink<IColorRecordGetter> WoodElfSkinFemale04 => Construct(0x10ab5b);

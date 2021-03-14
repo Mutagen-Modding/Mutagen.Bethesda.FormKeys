@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Hazard
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IHazardGetter> Construct(uint id) => new FormLink<IHazardGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IHazardGetter> TrapFirePlateFXHaz06 => Construct(0x109ce5);
             public static FormLink<IHazardGetter> TrapFirePlateFXHaz05 => Construct(0x109ce4);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Class
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IClassGetter> Construct(uint id) => new FormLink<IClassGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IClassGetter> EncClassDremoraMelee => Construct(0x17008);
             public static FormLink<IClassGetter> TrainerMarksmanJourneyman => Construct(0x10fc39);

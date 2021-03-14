@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Message
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IMessageGetter> Construct(uint id) => new FormLink<IMessageGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMessageGetter> DLC1ReflexesReadyMessage => Construct(0x14cf4);
             public static FormLink<IMessageGetter> DLC1ReflexesWaitMessage => Construct(0x14cf3);

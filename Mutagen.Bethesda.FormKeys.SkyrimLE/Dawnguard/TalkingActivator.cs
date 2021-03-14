@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class TalkingActivator
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ITalkingActivatorGetter> Construct(uint id) => new FormLink<ITalkingActivatorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ITalkingActivatorGetter> DLC01VampireThrallFeedTA02 => Construct(0x11dfc);
             public static FormLink<ITalkingActivatorGetter> DLC01VampireThrallFeedTA01 => Construct(0x11dfb);

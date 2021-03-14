@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Creature
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<ICreatureGetter> Construct(uint id) => new FormLink<ICreatureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICreatureGetter> SEUncleLeo => Construct(0x9661a);
             public static FormLink<ICreatureGetter> SECreatureAtronachFlesh5Boss => Construct(0x94c2b);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class ImageSpace
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IImageSpaceGetter> Construct(uint id) => new FormLink<IImageSpaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IImageSpaceGetter> DLC02VolcanicAsh01NIGHT_A => Construct(0x374bb);
             public static FormLink<IImageSpaceGetter> DLC2ISApocryphaWorld => Construct(0x34cfa);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class AStoryManagerNode
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("HearthFires.esm");
             private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAStoryManagerNodeGetter> BYOHHouseNode => Construct(0x10a49);
             public static FormLink<IAStoryManagerNodeGetter> BYOHHouseBanditPacifierNode => Construct(0x8c5);

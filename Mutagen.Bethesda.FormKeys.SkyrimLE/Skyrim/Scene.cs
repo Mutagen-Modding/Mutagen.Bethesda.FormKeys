@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Scene
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISceneGetter> MQSovngardeConv2SceneStarter => Construct(0x17043);
             public static FormLink<ISceneGetter> DA08MephalaGrats => Construct(0x10faf2);

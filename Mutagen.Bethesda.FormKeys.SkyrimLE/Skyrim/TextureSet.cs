@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class TextureSet
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ITextureSetGetter> VaerminaRobes => Construct(0x10faf8);
             public static FormLink<ITextureSetGetter> DecalFrostNoGlowBlast01 => Construct(0x10f8b1);

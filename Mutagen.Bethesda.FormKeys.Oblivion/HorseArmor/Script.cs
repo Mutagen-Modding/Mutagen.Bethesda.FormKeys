@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Script
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCHorseArmor.esp");
             private static FormLink<IScriptGetter> Construct(uint id) => new FormLink<IScriptGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IScriptGetter> HorsePCOldNagScript => Construct(0x3e9b);
             public static FormLink<IScriptGetter> DLCHorseArmorScriptSnakGraBura => Construct(0x4382);

@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class LeveledItem
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCSpellTomes.esp");
             private static FormLink<ILeveledItemGetter> Construct(uint id) => new FormLink<ILeveledItemGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILeveledItemGetter> LL0DLCSpellTomes3Journeyman100 => Construct(0x11dd);
             public static FormLink<ILeveledItemGetter> LL0DLCSpellTomes4Expert100 => Construct(0x11de);

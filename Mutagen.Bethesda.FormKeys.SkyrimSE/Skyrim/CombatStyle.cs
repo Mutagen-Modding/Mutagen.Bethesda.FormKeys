@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class CombatStyle
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<ICombatStyleGetter> Construct(uint id) => new FormLink<ICombatStyleGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ICombatStyleGetter> DefaultCombatstyle => Construct(0x3d);
             public static FormLink<ICombatStyleGetter> csPaarthurnax => Construct(0x1711b);

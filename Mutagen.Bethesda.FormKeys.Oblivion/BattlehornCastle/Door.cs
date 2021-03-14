@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class Door
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCBattlehornCastle.esp");
             private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IDoorGetter> BattlehornCastleFortAgedNDoor01WineCeller => Construct(0x4334);
             public static FormLink<IDoorGetter> BattlehornCastleDoor01Tax => Construct(0x432b);

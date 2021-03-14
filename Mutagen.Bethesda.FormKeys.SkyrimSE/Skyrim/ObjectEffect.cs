@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class ObjectEffect
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IObjectEffectGetter> MGArchMageRobeHoodedEnchant => Construct(0x17362);
             public static FormLink<IObjectEffectGetter> EnchDragonPriestMaskMoonstone => Construct(0x1729e);

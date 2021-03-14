@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Furniture
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IFurnitureGetter> InvisibleChairMarkerFChild => Construct(0x17041);
             public static FormLink<IFurnitureGetter> WindhelmThrone => Construct(0x10f636);

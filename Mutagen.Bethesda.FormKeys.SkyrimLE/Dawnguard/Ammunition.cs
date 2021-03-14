@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Ammunition
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IAmmunitionGetter> Construct(uint id) => new FormLink<IAmmunitionGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAmmunitionGetter> DLC1SoulCairnKeeperArrow => Construct(0xff03);
             public static FormLink<IAmmunitionGetter> DLC1ElderScrollBack => Construct(0x1a958);

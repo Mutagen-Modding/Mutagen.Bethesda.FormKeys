@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class MusicTrack
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
             private static FormLink<IMusicTrackGetter> Construct(uint id) => new FormLink<IMusicTrackGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMusicTrackGetter> ccMUSDungeonOblivion05 => Construct(0x3052);
             public static FormLink<IMusicTrackGetter> ccMUSDungeonOblivion04 => Construct(0x3051);

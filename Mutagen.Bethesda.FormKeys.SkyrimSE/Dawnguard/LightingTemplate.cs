@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class LightingTemplate
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<ILightingTemplateGetter> Construct(uint id) => new FormLink<ILightingTemplateGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILightingTemplateGetter> DLC1VCCourtyardLightingTemplate => Construct(0x14646);
             public static FormLink<ILightingTemplateGetter> RuunvaldLightingTemplateDarkClose => Construct(0x14517);

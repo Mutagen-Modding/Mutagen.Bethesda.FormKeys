@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Scroll
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IScrollGetter> Construct(uint id) => new FormLink<IScrollGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IScrollGetter> MGR21ScrollMagicka => Construct(0x1076ec);
             public static FormLink<IScrollGetter> MGR21ScrollConjuration => Construct(0x1076eb);

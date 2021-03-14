@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class Spell
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<ISpellGetter> Construct(uint id) => new FormLink<ISpellGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ISpellGetter> DLC2AshGuardianPowerAttackExplosion => Construct(0x1e2a6);
             public static FormLink<ISpellGetter> DLC2crAshGuadianMeleeAttack => Construct(0x1e2a4);

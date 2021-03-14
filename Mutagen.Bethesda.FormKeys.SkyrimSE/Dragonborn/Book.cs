@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class Book
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
             private static FormLink<IBookGetter> Construct(uint id) => new FormLink<IBookGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IBookGetter> DLC2SpellTomeConjureAshSpawn => Construct(0x1e2b1);
             public static FormLink<IBookGetter> DLC2dunFahlbtharzJournal02 => Construct(0x3b53e);

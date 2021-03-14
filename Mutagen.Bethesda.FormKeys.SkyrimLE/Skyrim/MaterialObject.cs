@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class MaterialObject
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IMaterialObjectGetter> Construct(uint id) => new FormLink<IMaterialObjectGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IMaterialObjectGetter> SnowMaterialWinterhold => Construct(0x108a84);
             public static FormLink<IMaterialObjectGetter> BurningTest => Construct(0xd61c3);

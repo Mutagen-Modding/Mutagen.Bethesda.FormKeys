@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
     {
         public static class AcousticSpace
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
             private static FormLink<IAcousticSpaceGetter> Construct(uint id) => new FormLink<IAcousticSpaceGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IAcousticSpaceGetter> ExtMQFlashbackInteriorAcousticSpace => Construct(0x10fe9e);
             public static FormLink<IAcousticSpaceGetter> IntRoomWoodLargeTempleOfKynarethAcousticSpace => Construct(0x10f90d);

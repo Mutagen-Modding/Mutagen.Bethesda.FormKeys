@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion
     {
         public static class LoadScreen
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
             private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
             public static FormLink<ILoadScreenGetter> SE11Load04 => Construct(0x552c8);
             public static FormLink<ILoadScreenGetter> SE11Load03 => Construct(0x552c7);

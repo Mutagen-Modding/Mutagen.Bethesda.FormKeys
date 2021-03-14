@@ -6,7 +6,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE
     {
         public static class VoiceType
         {
-            private readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
             private static FormLink<IVoiceTypeGetter> Construct(uint id) => new FormLink<IVoiceTypeGetter>(ModKey.MakeFormKey(id));
             public static FormLink<IVoiceTypeGetter> CrMistmanVoice => Construct(0x11cd6);
             public static FormLink<IVoiceTypeGetter> CrDogHusky => Construct(0x11687);
