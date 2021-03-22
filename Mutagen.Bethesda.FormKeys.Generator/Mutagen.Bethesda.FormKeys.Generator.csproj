@@ -14,12 +14,13 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <IsPackable>true</IsPackable>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.8.0" />
-    <PackageReference Include="Loqui.Generation" Version="2.8.2" />
-    <PackageReference Include="Mutagen.Bethesda" Version="0.27.1-prerelease6" />
+    <PackageReference Include="Loqui.Generation" Version="2.10.0" />
+    <PackageReference Include="Mutagen.Bethesda" Version="0.27.2" />
     <PackageReference Include="GitInfo" Version="2.1.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
