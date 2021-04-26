@@ -349,3 +349,5 @@ healthchecksdb
 MigrationBackup/
 
 Mutagen.Bethesda.FormKeys.Generator/Properties/launchSettings.json
+
+.idea/

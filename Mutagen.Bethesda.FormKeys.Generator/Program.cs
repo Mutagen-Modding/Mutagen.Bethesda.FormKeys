@@ -1,8 +1,8 @@
 using CommandLine;
 using Loqui;
 using Loqui.Generation;
-using Mutagen.Bethesda.Binary;
-using Mutagen.Bethesda.Internals;
+using Mutagen.Bethesda.Plugins;
+using Mutagen.Bethesda.Plugins.Records;
 using Noggog;
 using System;
 using System.Collections.Generic;
@@ -110,6 +110,7 @@ namespace Mutagen.Bethesda.FormKeys.Generator
                 fg.AppendLine(autoGenLine);
                 fg.AppendLine();
                 fg.AppendLine($"using {importStr};");
+                fg.AppendLine($"using Mutagen.Bethesda.Plugins;");
                 fg.AppendLine();
 
                 using (new NamespaceWrapper(fg, namespaceStr))
@@ -143,6 +144,10 @@ namespace Mutagen.Bethesda.FormKeys.Generator
 
             // Generate ModKey partial class
             fg = new FileGeneration();
+            fg.AppendLine(autoGenLine);
+            fg.AppendLine();
+            fg.AppendLine($"using Mutagen.Bethesda.Plugins;");
+            fg.AppendLine();
             using (new NamespaceWrapper(fg, namespaceStr))
             {
                 using (var c = new ClassWrapper(fg, modName))
