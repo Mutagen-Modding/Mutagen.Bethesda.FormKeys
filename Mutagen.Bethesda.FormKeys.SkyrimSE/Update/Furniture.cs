@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class Furniture
     {
-        public static class Furniture
-        {
-            private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IFurnitureGetter> ccBGS_AyleidBench01 => Construct(0x3161);
-        }
+        private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IFurnitureGetter> ccBGS_AyleidBench01 => Construct(0x3161);
     }
 }

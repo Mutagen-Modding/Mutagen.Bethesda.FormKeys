@@ -3,15 +3,14 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class HearthFires
 {
-    public static partial class HearthFires
+    public static class Ingredient
     {
-        public static class Ingredient
-        {
-            private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IIngredientGetter> BYOHHawkEgg01 => Construct(0xf1cc);
-            public static FormLink<IIngredientGetter> BYOHSalmonRoe01 => Construct(0x3545);
-        }
+        private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IIngredientGetter> BYOHHawkEgg01 => Construct(0xf1cc);
+        public static FormLink<IIngredientGetter> BYOHSalmonRoe01 => Construct(0x3545);
     }
 }

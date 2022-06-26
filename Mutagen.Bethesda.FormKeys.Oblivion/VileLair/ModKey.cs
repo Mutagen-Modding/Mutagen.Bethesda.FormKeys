@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class VileLair
 {
-    public static partial class VileLair
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCVileLair.esp");
 }

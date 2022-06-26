@@ -3,20 +3,19 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class FormList
     {
-        public static class FormList
-        {
-            private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IFormListGetter> RidableWorldSpaces => Construct(0x99b);
-            public static FormLink<IFormListGetter> SunAffectingExceptionWorldSpaces => Construct(0x99a);
-            public static FormLink<IFormListGetter> OversizedSummoningExceptionWorldSpaces => Construct(0x999);
-            public static FormLink<IFormListGetter> WeatherExceptionList => Construct(0x998);
-            public static FormLink<IFormListGetter> SunDamageExceptionWorldSpaces => Construct(0x969);
-            public static FormLink<IFormListGetter> HelpManualKinect => Construct(0x94a);
-            public static FormLink<IFormListGetter> VATSLargeRaceList => Construct(0x8f4);
-        }
+        private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IFormListGetter> RidableWorldSpaces => Construct(0x99b);
+        public static FormLink<IFormListGetter> SunAffectingExceptionWorldSpaces => Construct(0x99a);
+        public static FormLink<IFormListGetter> OversizedSummoningExceptionWorldSpaces => Construct(0x999);
+        public static FormLink<IFormListGetter> WeatherExceptionList => Construct(0x998);
+        public static FormLink<IFormListGetter> SunDamageExceptionWorldSpaces => Construct(0x969);
+        public static FormLink<IFormListGetter> HelpManualKinect => Construct(0x94a);
+        public static FormLink<IFormListGetter> VATSLargeRaceList => Construct(0x8f4);
     }
 }

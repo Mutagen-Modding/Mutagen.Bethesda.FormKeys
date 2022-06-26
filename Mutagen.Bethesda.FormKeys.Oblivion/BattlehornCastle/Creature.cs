@@ -3,16 +3,15 @@
 using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class BattlehornCastle
 {
-    public static partial class BattlehornCastle
+    public static class Creature
     {
-        public static class Creature
-        {
-            private static FormLink<ICreatureGetter> Construct(uint id) => new FormLink<ICreatureGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<ICreatureGetter> DogBattlehorn => Construct(0xc513);
-            public static FormLink<ICreatureGetter> DLCBattlehornSkeleton => Construct(0xe824);
-            public static FormLink<ICreatureGetter> DLCBattlehornLich => Construct(0xe337);
-        }
+        private static FormLink<ICreatureGetter> Construct(uint id) => new FormLink<ICreatureGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<ICreatureGetter> DogBattlehorn => Construct(0xc513);
+        public static FormLink<ICreatureGetter> DLCBattlehornSkeleton => Construct(0xe824);
+        public static FormLink<ICreatureGetter> DLCBattlehornLich => Construct(0xe337);
     }
 }

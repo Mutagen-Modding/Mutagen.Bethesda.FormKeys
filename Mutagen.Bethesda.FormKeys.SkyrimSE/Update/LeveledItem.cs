@@ -3,18 +3,17 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class LeveledItem
     {
-        public static class LeveledItem
-        {
-            private static FormLink<ILeveledItemGetter> Construct(uint id) => new FormLink<ILeveledItemGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<ILeveledItemGetter> CCLItemSpellTomes100Phinis => Construct(0x3149);
-            public static FormLink<ILeveledItemGetter> CCLItemSpellVendorTomes50Phinis => Construct(0x3148);
-            public static FormLink<ILeveledItemGetter> ccFFBSSE002_LItemCrossbows => Construct(0x3055);
-            public static FormLink<ILeveledItemGetter> cc_ShiveringIsleIngredients => Construct(0x2fda);
-            public static FormLink<ILeveledItemGetter> LLI_Vendor_SpecialItems => Construct(0x2f94);
-        }
+        private static FormLink<ILeveledItemGetter> Construct(uint id) => new FormLink<ILeveledItemGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<ILeveledItemGetter> CCLItemSpellTomes100Phinis => Construct(0x3149);
+        public static FormLink<ILeveledItemGetter> CCLItemSpellVendorTomes50Phinis => Construct(0x3148);
+        public static FormLink<ILeveledItemGetter> ccFFBSSE002_LItemCrossbows => Construct(0x3055);
+        public static FormLink<ILeveledItemGetter> cc_ShiveringIsleIngredients => Construct(0x2fda);
+        public static FormLink<ILeveledItemGetter> LLI_Vendor_SpecialItems => Construct(0x2f94);
     }
 }

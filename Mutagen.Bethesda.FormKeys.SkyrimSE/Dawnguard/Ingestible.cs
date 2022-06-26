@@ -3,17 +3,16 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Dawnguard
 {
-    public static partial class Dawnguard
+    public static class Ingestible
     {
-        public static class Ingestible
-        {
-            private static FormLink<IIngestibleGetter> Construct(uint id) => new FormLink<IIngestibleGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IIngestibleGetter> DLC1BloodPotion => Construct(0x18ef3);
-            public static FormLink<IIngestibleGetter> DLC1FoodSoulHuskExtract => Construct(0x15a1e);
-            public static FormLink<IIngestibleGetter> DLC1FoodSoulHusk => Construct(0x14dc4);
-            public static FormLink<IIngestibleGetter> DLC1RedwaterDenSkooma => Construct(0x1391d);
-        }
+        private static FormLink<IIngestibleGetter> Construct(uint id) => new FormLink<IIngestibleGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IIngestibleGetter> DLC1BloodPotion => Construct(0x18ef3);
+        public static FormLink<IIngestibleGetter> DLC1FoodSoulHuskExtract => Construct(0x15a1e);
+        public static FormLink<IIngestibleGetter> DLC1FoodSoulHusk => Construct(0x14dc4);
+        public static FormLink<IIngestibleGetter> DLC1RedwaterDenSkooma => Construct(0x1391d);
     }
 }

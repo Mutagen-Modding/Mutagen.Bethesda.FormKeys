@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Skyrim
 {
-    public static partial class Skyrim
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Skyrim.esm");
 }

@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class LeveledNpc
     {
-        public static class LeveledNpc
-        {
-            private static FormLink<ILeveledNpcGetter> Construct(uint id) => new FormLink<ILeveledNpcGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<ILeveledNpcGetter> ccBGSSSE003_LCharUndeadList => Construct(0x3024);
-        }
+        private static FormLink<ILeveledNpcGetter> Construct(uint id) => new FormLink<ILeveledNpcGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<ILeveledNpcGetter> ccBGSSSE003_LCharUndeadList => Construct(0x3024);
     }
 }

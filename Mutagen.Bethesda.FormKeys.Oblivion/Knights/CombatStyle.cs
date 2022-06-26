@@ -3,15 +3,14 @@
 using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class Knights
 {
-    public static partial class Knights
+    public static class CombatStyle
     {
-        public static class CombatStyle
-        {
-            private static FormLink<ICombatStyleGetter> Construct(uint id) => new FormLink<ICombatStyleGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<ICombatStyleGetter> NDDefaultAuroran => Construct(0x2e62);
-            public static FormLink<ICombatStyleGetter> NDDefaultUmaril => Construct(0x2e61);
-        }
+        private static FormLink<ICombatStyleGetter> Construct(uint id) => new FormLink<ICombatStyleGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<ICombatStyleGetter> NDDefaultAuroran => Construct(0x2e62);
+        public static FormLink<ICombatStyleGetter> NDDefaultUmaril => Construct(0x2e61);
     }
 }

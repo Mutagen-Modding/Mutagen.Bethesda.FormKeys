@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Dawnguard
 {
-    public static partial class Dawnguard
+    public static class Relationship
     {
-        public static class Relationship
-        {
-            private static FormLink<IRelationshipGetter> Construct(uint id) => new FormLink<IRelationshipGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IRelationshipGetter> DLC1DurnehviirPlayer => Construct(0xc71b);
-        }
+        private static FormLink<IRelationshipGetter> Construct(uint id) => new FormLink<IRelationshipGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IRelationshipGetter> DLC1DurnehviirPlayer => Construct(0xc71b);
     }
 }

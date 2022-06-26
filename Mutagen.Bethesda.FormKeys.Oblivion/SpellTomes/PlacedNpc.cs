@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class SpellTomes
 {
-    public static partial class SpellTomes
+    public static class PlacedNpc
     {
-        public static class PlacedNpc
-        {
-            private static FormLink<IPlacedNpcGetter> Construct(uint id) => new FormLink<IPlacedNpcGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IPlacedNpcGetter> DLCTomeConjurerREF => Construct(0x45d6);
-        }
+        private static FormLink<IPlacedNpcGetter> Construct(uint id) => new FormLink<IPlacedNpcGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IPlacedNpcGetter> DLCTomeConjurerREF => Construct(0x45d6);
     }
 }

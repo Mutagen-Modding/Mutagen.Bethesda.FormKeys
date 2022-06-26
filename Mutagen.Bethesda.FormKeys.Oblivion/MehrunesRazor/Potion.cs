@@ -3,15 +3,14 @@
 using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class MehrunesRazor
 {
-    public static partial class MehrunesRazor
+    public static class Potion
     {
-        public static class Potion
-        {
-            private static FormLink<IPotionGetter> Construct(uint id) => new FormLink<IPotionGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IPotionGetter> DL9TrichoBezoarPotion => Construct(0x1493);
-            public static FormLink<IPotionGetter> DL9FortifBlade => Construct(0x5654);
-        }
+        private static FormLink<IPotionGetter> Construct(uint id) => new FormLink<IPotionGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IPotionGetter> DL9TrichoBezoarPotion => Construct(0x1493);
+        public static FormLink<IPotionGetter> DL9FortifBlade => Construct(0x5654);
     }
 }

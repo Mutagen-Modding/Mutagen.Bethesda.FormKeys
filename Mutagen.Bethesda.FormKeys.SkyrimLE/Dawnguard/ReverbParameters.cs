@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Dawnguard
 {
-    public static partial class Dawnguard
+    public static class ReverbParameters
     {
-        public static class ReverbParameters
-        {
-            private static FormLink<IReverbParametersGetter> Construct(uint id) => new FormLink<IReverbParametersGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IReverbParametersGetter> IntRoomStoneLargeReverb_Vyrthur => Construct(0x14cb4);
-        }
+        private static FormLink<IReverbParametersGetter> Construct(uint id) => new FormLink<IReverbParametersGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IReverbParametersGetter> IntRoomStoneLargeReverb_Vyrthur => Construct(0x14cb4);
     }
 }

@@ -119,7 +119,7 @@ namespace Mutagen.Bethesda.FormKeys.Generator
                 sb.AppendLine($"using Mutagen.Bethesda.Plugins;");
                 sb.AppendLine();
 
-                using (sb.Namespace(namespaceStr, fileScoped: false))
+                using (sb.Namespace(namespaceStr))
                 {
                     using (var c = sb.Class(modName))
                     {
@@ -154,7 +154,7 @@ namespace Mutagen.Bethesda.FormKeys.Generator
             sb.AppendLine();
             sb.AppendLine($"using Mutagen.Bethesda.Plugins;");
             sb.AppendLine();
-            using (sb.Namespace(namespaceStr, fileScoped: false))
+            using (sb.Namespace(namespaceStr))
             {
                 using (var c = sb.Class(modName))
                 {

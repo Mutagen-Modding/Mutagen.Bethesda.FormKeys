@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class MehrunesRazor
 {
-    public static partial class MehrunesRazor
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCMehrunesRazor.esp");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCMehrunesRazor.esp");
 }

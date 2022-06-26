@@ -3,15 +3,14 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class MiscItem
     {
-        public static class MiscItem
-        {
-            private static FormLink<IMiscItemGetter> Construct(uint id) => new FormLink<IMiscItemGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IMiscItemGetter> CCHorseArmorMiscArmorElven => Construct(0x30ca);
-            public static FormLink<IMiscItemGetter> CCHorseArmorMiscArmorSteel => Construct(0x30c9);
-        }
+        private static FormLink<IMiscItemGetter> Construct(uint id) => new FormLink<IMiscItemGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IMiscItemGetter> CCHorseArmorMiscArmorElven => Construct(0x30ca);
+        public static FormLink<IMiscItemGetter> CCHorseArmorMiscArmorSteel => Construct(0x30c9);
     }
 }

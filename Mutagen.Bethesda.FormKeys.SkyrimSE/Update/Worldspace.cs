@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class Worldspace
     {
-        public static class Worldspace
-        {
-            private static FormLink<IWorldspaceGetter> Construct(uint id) => new FormLink<IWorldspaceGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IWorldspaceGetter> TestSnow => Construct(0x293a);
-        }
+        private static FormLink<IWorldspaceGetter> Construct(uint id) => new FormLink<IWorldspaceGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IWorldspaceGetter> TestSnow => Construct(0x293a);
     }
 }

@@ -3,15 +3,14 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Dawnguard
 {
-    public static partial class Dawnguard
+    public static class ActionRecord
     {
-        public static class ActionRecord
-        {
-            private static FormLink<IActionRecordGetter> Construct(uint id) => new FormLink<IActionRecordGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IActionRecordGetter> ActionReload => Construct(0x590d);
-            public static FormLink<IActionRecordGetter> ActionWaterwalkStart => Construct(0x4344);
-        }
+        private static FormLink<IActionRecordGetter> Construct(uint id) => new FormLink<IActionRecordGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IActionRecordGetter> ActionReload => Construct(0x590d);
+        public static FormLink<IActionRecordGetter> ActionWaterwalkStart => Construct(0x4344);
     }
 }

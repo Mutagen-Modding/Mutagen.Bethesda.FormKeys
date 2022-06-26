@@ -3,17 +3,16 @@
 using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class Orrery
 {
-    public static partial class Orrery
+    public static class AIPackage
     {
-        public static class AIPackage
-        {
-            private static FormLink<IAIPackageGetter> Construct(uint id) => new FormLink<IAIPackageGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IAIPackageGetter> DLCOrreryBothielWaitforPlayer => Construct(0x123016);
-            public static FormLink<IAIPackageGetter> DLCBanditWanderCurrentLoc => Construct(0x129c49);
-            public static FormLink<IAIPackageGetter> DLCBothielRepairingOrrery => Construct(0x123019);
-            public static FormLink<IAIPackageGetter> DLCOrreryBothielWanderOrrery => Construct(0x12301a);
-        }
+        private static FormLink<IAIPackageGetter> Construct(uint id) => new FormLink<IAIPackageGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IAIPackageGetter> DLCOrreryBothielWaitforPlayer => Construct(0x123016);
+        public static FormLink<IAIPackageGetter> DLCBanditWanderCurrentLoc => Construct(0x129c49);
+        public static FormLink<IAIPackageGetter> DLCBothielRepairingOrrery => Construct(0x123019);
+        public static FormLink<IAIPackageGetter> DLCOrreryBothielWanderOrrery => Construct(0x12301a);
     }
 }

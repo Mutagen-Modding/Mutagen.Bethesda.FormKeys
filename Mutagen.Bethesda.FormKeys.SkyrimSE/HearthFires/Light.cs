@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class HearthFires
 {
-    public static partial class HearthFires
+    public static class Light
     {
-        public static class Light
-        {
-            private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<ILightGetter> BYOHHouseWarmLightNS => Construct(0xbc6);
-        }
+        private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<ILightGetter> BYOHHouseWarmLightNS => Construct(0xbc6);
     }
 }

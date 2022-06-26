@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class BattlehornCastle
 {
-    public static partial class BattlehornCastle
+    public static class IdleAnimation
     {
-        public static class IdleAnimation
-        {
-            private static FormLink<IIdleAnimationGetter> Construct(uint id) => new FormLink<IIdleAnimationGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IIdleAnimationGetter> DLCBattlehornOpenGate => Construct(0x13918);
-        }
+        private static FormLink<IIdleAnimationGetter> Construct(uint id) => new FormLink<IIdleAnimationGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IIdleAnimationGetter> DLCBattlehornOpenGate => Construct(0x13918);
     }
 }

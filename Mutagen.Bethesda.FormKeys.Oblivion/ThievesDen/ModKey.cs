@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class ThievesDen
 {
-    public static partial class ThievesDen
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCThievesDen.esp");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCThievesDen.esp");
 }

@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class SpellTomes
 {
-    public static partial class SpellTomes
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCSpellTomes.esp");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCSpellTomes.esp");
 }

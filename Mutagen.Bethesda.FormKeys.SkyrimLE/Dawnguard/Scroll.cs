@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Dawnguard
 {
-    public static partial class Dawnguard
+    public static class Scroll
     {
-        public static class Scroll
-        {
-            private static FormLink<IScrollGetter> Construct(uint id) => new FormLink<IScrollGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IScrollGetter> DLC1dunRedwaterDenTelekinesisScroll => Construct(0x14042);
-        }
+        private static FormLink<IScrollGetter> Construct(uint id) => new FormLink<IScrollGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IScrollGetter> DLC1dunRedwaterDenTelekinesisScroll => Construct(0x14042);
     }
 }

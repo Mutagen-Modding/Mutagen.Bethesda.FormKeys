@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class Orrery
 {
-    public static partial class Orrery
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCOrrery.esp");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("DLCOrrery.esp");
 }

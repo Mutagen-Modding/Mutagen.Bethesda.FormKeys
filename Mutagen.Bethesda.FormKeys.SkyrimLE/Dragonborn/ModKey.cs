@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Dragonborn
 {
-    public static partial class Dragonborn
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dragonborn.esm");
 }

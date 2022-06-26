@@ -3,15 +3,14 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class MusicType
     {
-        public static class MusicType
-        {
-            private static FormLink<IMusicTypeGetter> Construct(uint id) => new FormLink<IMusicTypeGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IMusicTypeGetter> ccMUSDungeonOblivion => Construct(0x3053);
-            public static FormLink<IMusicTypeGetter> MUSCombatBossUmbra => Construct(0x301e);
-        }
+        private static FormLink<IMusicTypeGetter> Construct(uint id) => new FormLink<IMusicTypeGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IMusicTypeGetter> ccMUSDungeonOblivion => Construct(0x3053);
+        public static FormLink<IMusicTypeGetter> MUSCombatBossUmbra => Construct(0x301e);
     }
 }

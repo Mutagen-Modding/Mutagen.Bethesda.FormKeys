@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Update
 {
-    public static partial class Update
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Update.esm");
 }

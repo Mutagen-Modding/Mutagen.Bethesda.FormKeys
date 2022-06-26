@@ -3,16 +3,15 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class HearthFires
 {
-    public static partial class HearthFires
+    public static class Scene
     {
-        public static class Scene
-        {
-            private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<ISceneGetter> RelationshipAdoption_SceneNameCalling01 => Construct(0x1652e);
-            public static FormLink<ISceneGetter> RelationshipAdoption_SceneNameCalling02 => Construct(0x1652d);
-            public static FormLink<ISceneGetter> BYOHHouseStewardOfferScene => Construct(0x3179);
-        }
+        private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<ISceneGetter> RelationshipAdoption_SceneNameCalling01 => Construct(0x1652e);
+        public static FormLink<ISceneGetter> RelationshipAdoption_SceneNameCalling02 => Construct(0x1652d);
+        public static FormLink<ISceneGetter> BYOHHouseStewardOfferScene => Construct(0x3179);
     }
 }

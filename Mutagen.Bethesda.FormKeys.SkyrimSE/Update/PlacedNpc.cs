@@ -3,21 +3,20 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class PlacedNpc
     {
-        public static class PlacedNpc
-        {
-            private static FormLink<IPlacedNpcGetter> Construct(uint id) => new FormLink<IPlacedNpcGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp1SonsA => Construct(0x9ac);
-            public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp1SonsB => Construct(0x9ab);
-            public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp2SonsA => Construct(0x9aa);
-            public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp2SonsB => Construct(0x9a9);
-            public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp1ImperialA => Construct(0x9a8);
-            public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp1ImperialB => Construct(0x9a7);
-            public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp2ImperialA => Construct(0x9a6);
-            public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp2ImperialB => Construct(0x9a5);
-        }
+        private static FormLink<IPlacedNpcGetter> Construct(uint id) => new FormLink<IPlacedNpcGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp1SonsA => Construct(0x9ac);
+        public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp1SonsB => Construct(0x9ab);
+        public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp2SonsA => Construct(0x9aa);
+        public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp2SonsB => Construct(0x9a9);
+        public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp1ImperialA => Construct(0x9a8);
+        public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp1ImperialB => Construct(0x9a7);
+        public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp2ImperialA => Construct(0x9a6);
+        public static FormLink<IPlacedNpcGetter> GuardWindhelmPalaceUp2ImperialB => Construct(0x9a5);
     }
 }

@@ -3,15 +3,14 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class HearthFires
 {
-    public static partial class HearthFires
+    public static class Armor
     {
-        public static class Armor
-        {
-            private static FormLink<IArmorGetter> Construct(uint id) => new FormLink<IArmorGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IArmorGetter> ClothesChild05 => Construct(0xc740);
-            public static FormLink<IArmorGetter> ClothesChild04 => Construct(0xc73e);
-        }
+        private static FormLink<IArmorGetter> Construct(uint id) => new FormLink<IArmorGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IArmorGetter> ClothesChild05 => Construct(0xc740);
+        public static FormLink<IArmorGetter> ClothesChild04 => Construct(0xc73e);
     }
 }

@@ -3,20 +3,19 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class ArmorAddon
     {
-        public static class ArmorAddon
-        {
-            private static FormLink<IArmorAddonGetter> Construct(uint id) => new FormLink<IArmorAddonGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IArmorAddonGetter> NakedHorseManeLightAA => Construct(0x30d1);
-            public static FormLink<IArmorAddonGetter> NakedHorseManeDarkAA => Construct(0x30d0);
-            public static FormLink<IArmorAddonGetter> CCHorseArmorElvenUnicornAA => Construct(0x30ce);
-            public static FormLink<IArmorAddonGetter> CCHorseArmorSteelUnicornAA => Construct(0x30cd);
-            public static FormLink<IArmorAddonGetter> CCHorseArmorSteelAA => Construct(0x30bf);
-            public static FormLink<IArmorAddonGetter> CCHorseArmorElvenAA => Construct(0x30be);
-            public static FormLink<IArmorAddonGetter> CCHorseArmorDummyAA => Construct(0x30bb);
-        }
+        private static FormLink<IArmorAddonGetter> Construct(uint id) => new FormLink<IArmorAddonGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IArmorAddonGetter> NakedHorseManeLightAA => Construct(0x30d1);
+        public static FormLink<IArmorAddonGetter> NakedHorseManeDarkAA => Construct(0x30d0);
+        public static FormLink<IArmorAddonGetter> CCHorseArmorElvenUnicornAA => Construct(0x30ce);
+        public static FormLink<IArmorAddonGetter> CCHorseArmorSteelUnicornAA => Construct(0x30cd);
+        public static FormLink<IArmorAddonGetter> CCHorseArmorSteelAA => Construct(0x30bf);
+        public static FormLink<IArmorAddonGetter> CCHorseArmorElvenAA => Construct(0x30be);
+        public static FormLink<IArmorAddonGetter> CCHorseArmorDummyAA => Construct(0x30bb);
     }
 }

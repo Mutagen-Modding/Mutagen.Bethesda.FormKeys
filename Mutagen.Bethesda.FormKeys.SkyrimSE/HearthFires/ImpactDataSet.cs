@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class HearthFires
 {
-    public static partial class HearthFires
+    public static class ImpactDataSet
     {
-        public static class ImpactDataSet
-        {
-            private static FormLink<IImpactDataSetGetter> Construct(uint id) => new FormLink<IImpactDataSetGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IImpactDataSetGetter> WPNzBlade1HandWoodSwordImpactSet => Construct(0x8993);
-        }
+        private static FormLink<IImpactDataSetGetter> Construct(uint id) => new FormLink<IImpactDataSetGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IImpactDataSetGetter> WPNzBlade1HandWoodSwordImpactSet => Construct(0x8993);
     }
 }

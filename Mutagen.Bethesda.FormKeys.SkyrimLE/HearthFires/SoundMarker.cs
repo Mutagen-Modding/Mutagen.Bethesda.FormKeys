@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class HearthFires
 {
-    public static partial class HearthFires
+    public static class SoundMarker
     {
-        public static class SoundMarker
-        {
-            private static FormLink<ISoundMarkerGetter> Construct(uint id) => new FormLink<ISoundMarkerGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<ISoundMarkerGetter> OBJMineClay => Construct(0xba4);
-        }
+        private static FormLink<ISoundMarkerGetter> Construct(uint id) => new FormLink<ISoundMarkerGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<ISoundMarkerGetter> OBJMineClay => Construct(0xba4);
     }
 }

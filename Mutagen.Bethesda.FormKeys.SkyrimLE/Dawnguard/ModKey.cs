@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Dawnguard
 {
-    public static partial class Dawnguard
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Dawnguard.esm");
 }

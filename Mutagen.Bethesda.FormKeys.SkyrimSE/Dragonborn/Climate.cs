@@ -3,15 +3,14 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Dragonborn
 {
-    public static partial class Dragonborn
+    public static class Climate
     {
-        public static class Climate
-        {
-            private static FormLink<IClimateGetter> Construct(uint id) => new FormLink<IClimateGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IClimateGetter> DLC2ApocryphaClimateNew => Construct(0x34cfc);
-            public static FormLink<IClimateGetter> DLC2ApocryphaClimate => Construct(0x1c48e);
-        }
+        private static FormLink<IClimateGetter> Construct(uint id) => new FormLink<IClimateGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IClimateGetter> DLC2ApocryphaClimateNew => Construct(0x34cfc);
+        public static FormLink<IClimateGetter> DLC2ApocryphaClimate => Construct(0x1c48e);
     }
 }

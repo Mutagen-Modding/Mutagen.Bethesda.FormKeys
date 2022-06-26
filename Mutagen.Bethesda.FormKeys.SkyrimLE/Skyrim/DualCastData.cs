@@ -3,15 +3,14 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Skyrim
 {
-    public static partial class Skyrim
+    public static class DualCastData
     {
-        public static class DualCastData
-        {
-            private static FormLink<IDualCastDataGetter> Construct(uint id) => new FormLink<IDualCastDataGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IDualCastDataGetter> doomSerpentDualCastData => Construct(0xe5f62);
-            public static FormLink<IDualCastDataGetter> FrostStormDualCastData => Construct(0x201f3);
-        }
+        private static FormLink<IDualCastDataGetter> Construct(uint id) => new FormLink<IDualCastDataGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IDualCastDataGetter> doomSerpentDualCastData => Construct(0xe5f62);
+        public static FormLink<IDualCastDataGetter> FrostStormDualCastData => Construct(0x201f3);
     }
 }

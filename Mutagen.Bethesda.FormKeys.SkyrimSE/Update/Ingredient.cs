@@ -3,16 +3,15 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class Ingredient
     {
-        public static class Ingredient
-        {
-            private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IIngredientGetter> ccBGS_RootThornHookIngredient => Construct(0x306f);
-            public static FormLink<IIngredientGetter> ccBGS_RootScreamingMawIngredient => Construct(0x306e);
-            public static FormLink<IIngredientGetter> ccBGS_RootRotScaleIngredient => Construct(0x306d);
-        }
+        private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IIngredientGetter> ccBGS_RootThornHookIngredient => Construct(0x306f);
+        public static FormLink<IIngredientGetter> ccBGS_RootScreamingMawIngredient => Construct(0x306e);
+        public static FormLink<IIngredientGetter> ccBGS_RootRotScaleIngredient => Construct(0x306d);
     }
 }

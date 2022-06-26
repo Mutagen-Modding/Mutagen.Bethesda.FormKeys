@@ -2,10 +2,9 @@
 
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class Oblivion
 {
-    public static partial class Oblivion
-    {
-        public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
-    }
+    public readonly static ModKey ModKey = ModKey.FromNameAndExtension("Oblivion.esm");
 }

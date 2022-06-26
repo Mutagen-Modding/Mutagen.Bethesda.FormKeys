@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class ThievesDen
 {
-    public static partial class ThievesDen
+    public static class LeveledCreature
     {
-        public static class LeveledCreature
-        {
-            private static FormLink<ILeveledCreatureGetter> Construct(uint id) => new FormLink<ILeveledCreatureGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<ILeveledCreatureGetter> DLC06UndeadPirate100 => Construct(0x11ae0);
-        }
+        private static FormLink<ILeveledCreatureGetter> Construct(uint id) => new FormLink<ILeveledCreatureGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<ILeveledCreatureGetter> DLC06UndeadPirate100 => Construct(0x11ae0);
     }
 }

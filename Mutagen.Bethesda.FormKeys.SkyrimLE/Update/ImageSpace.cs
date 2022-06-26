@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class ImageSpace
     {
-        public static class ImageSpace
-        {
-            private static FormLink<IImageSpaceGetter> Construct(uint id) => new FormLink<IImageSpaceGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IImageSpaceGetter> UnderwaterImageSpace => Construct(0x946);
-        }
+        private static FormLink<IImageSpaceGetter> Construct(uint id) => new FormLink<IImageSpaceGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IImageSpaceGetter> UnderwaterImageSpace => Construct(0x946);
     }
 }

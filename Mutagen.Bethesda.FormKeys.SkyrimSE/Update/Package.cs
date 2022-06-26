@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class Package
     {
-        public static class Package
-        {
-            private static FormLink<IPackageGetter> Construct(uint id) => new FormLink<IPackageGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IPackageGetter> PetFramework_PetFollowPlayer => Construct(0x2f1a);
-        }
+        private static FormLink<IPackageGetter> Construct(uint id) => new FormLink<IPackageGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IPackageGetter> PetFramework_PetFollowPlayer => Construct(0x2f1a);
     }
 }

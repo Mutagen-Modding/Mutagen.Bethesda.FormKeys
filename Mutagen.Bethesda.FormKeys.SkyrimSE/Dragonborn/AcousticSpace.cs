@@ -3,16 +3,15 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Dragonborn
 {
-    public static partial class Dragonborn
+    public static class AcousticSpace
     {
-        public static class AcousticSpace
-        {
-            private static FormLink<IAcousticSpaceGetter> Construct(uint id) => new FormLink<IAcousticSpaceGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IAcousticSpaceGetter> IntDLC2ApocryphaBookPOI => Construct(0x39e50);
-            public static FormLink<IAcousticSpaceGetter> IntDLC2TelMithrynDry => Construct(0x39751);
-            public static FormLink<IAcousticSpaceGetter> IntDLC2TelMithryn => Construct(0x3974d);
-        }
+        private static FormLink<IAcousticSpaceGetter> Construct(uint id) => new FormLink<IAcousticSpaceGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IAcousticSpaceGetter> IntDLC2ApocryphaBookPOI => Construct(0x39e50);
+        public static FormLink<IAcousticSpaceGetter> IntDLC2TelMithrynDry => Construct(0x39751);
+        public static FormLink<IAcousticSpaceGetter> IntDLC2TelMithryn => Construct(0x3974d);
     }
 }

@@ -3,16 +3,15 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Dawnguard
 {
-    public static partial class Dawnguard
+    public static class Flora
     {
-        public static class Flora
-        {
-            private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IFloraGetter> DLC01SoulHusk02 => Construct(0x12dba);
-            public static FormLink<IFloraGetter> DLC01SoulHusk01 => Construct(0x12db9);
-            public static FormLink<IFloraGetter> DLC01Gleamblossom01 => Construct(0x10f37);
-        }
+        private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IFloraGetter> DLC01SoulHusk02 => Construct(0x12dba);
+        public static FormLink<IFloraGetter> DLC01SoulHusk01 => Construct(0x12db9);
+        public static FormLink<IFloraGetter> DLC01Gleamblossom01 => Construct(0x10f37);
     }
 }

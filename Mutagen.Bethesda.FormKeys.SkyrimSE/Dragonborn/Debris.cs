@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimSE
+namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
+
+public static partial class Dragonborn
 {
-    public static partial class Dragonborn
+    public static class Debris
     {
-        public static class Debris
-        {
-            private static FormLink<IDebrisGetter> Construct(uint id) => new FormLink<IDebrisGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IDebrisGetter> DLC2TentacleDebris => Construct(0x39e47);
-        }
+        private static FormLink<IDebrisGetter> Construct(uint id) => new FormLink<IDebrisGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IDebrisGetter> DLC2TentacleDebris => Construct(0x39e47);
     }
 }

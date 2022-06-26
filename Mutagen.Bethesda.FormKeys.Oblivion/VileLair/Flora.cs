@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class VileLair
 {
-    public static partial class VileLair
+    public static class Flora
     {
-        public static class Flora
-        {
-            private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IFloraGetter> LairVileEvilPlant => Construct(0x60a7);
-        }
+        private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IFloraGetter> LairVileEvilPlant => Construct(0x60a7);
     }
 }

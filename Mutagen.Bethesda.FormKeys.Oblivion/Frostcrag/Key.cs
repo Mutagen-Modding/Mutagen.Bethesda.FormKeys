@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Oblivion;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.Oblivion
+namespace Mutagen.Bethesda.FormKeys.Oblivion;
+
+public static partial class Frostcrag
 {
-    public static partial class Frostcrag
+    public static class Key
     {
-        public static class Key
-        {
-            private static FormLink<IKeyGetter> Construct(uint id) => new FormLink<IKeyGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<IKeyGetter> FrostcragSpireKey => Construct(0xd50);
-        }
+        private static FormLink<IKeyGetter> Construct(uint id) => new FormLink<IKeyGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IKeyGetter> FrostcragSpireKey => Construct(0xd50);
     }
 }

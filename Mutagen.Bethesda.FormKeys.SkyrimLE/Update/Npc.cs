@@ -3,14 +3,13 @@
 using Mutagen.Bethesda.Skyrim;
 using Mutagen.Bethesda.Plugins;
 
-namespace Mutagen.Bethesda.FormKeys.SkyrimLE
+namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
+
+public static partial class Update
 {
-    public static partial class Update
+    public static class Npc
     {
-        public static class Npc
-        {
-            private static FormLink<INpcGetter> Construct(uint id) => new FormLink<INpcGetter>(ModKey.MakeFormKey(id));
-            public static FormLink<INpcGetter> dunBluePalaceWingEncGoatDomestic => Construct(0x804);
-        }
+        private static FormLink<INpcGetter> Construct(uint id) => new FormLink<INpcGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<INpcGetter> dunBluePalaceWingEncGoatDomestic => Construct(0x804);
     }
 }
