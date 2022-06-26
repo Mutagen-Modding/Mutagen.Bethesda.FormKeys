@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Authors>Noggog</Authors>
     <Company>Mutagen</Company>
     <Product>Mutagen.FormKeys</Product>
@@ -18,14 +18,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommandLineParser" Version="2.8.0" />
-    <PackageReference Include="Loqui.Generation" Version="2.17.0" />
-    <PackageReference Include="Mutagen.Bethesda" Version="0.30.1" />
-    <PackageReference Include="GitInfo" Version="2.1.2">
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Loqui.Generation" Version="2.48.0" />
+    <PackageReference Include="Mutagen.Bethesda" Version="0.37.0" />
+    <PackageReference Include="GitInfo" Version="2.2.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="NuGetizer" Version="0.7">
+    <PackageReference Include="NuGetizer" Version="0.8.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
