@@ -991,6 +991,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
             public static FormLink<IDialogTopicGetter> DLC1VQ07RNPCBowTLBranchTopic02 => Construct(0x15421);
             public static FormLink<IDialogTopicGetter> DLC1VQ07RNPCBowTLBranchTopic01 => Construct(0x15422);
             public static FormLink<IDialogTopicGetter> DLC1VQ07RNPCBowTLBranchTopic => Construct(0x15423);
+            public static FormLink<IDialogTopicGetter> ccVSVSSE004_DialogueTrollBranchTopic => Construct(0x15488);
             public static FormLink<IDialogTopicGetter> DLC1VQ07RNPCVampireOnlyTLBranchTopic => Construct(0x156f2);
             public static FormLink<IDialogTopicGetter> DLC1VQ03HunterInnkeeperOtherTopic1 => Construct(0x156f5);
             public static FormLink<IDialogTopicGetter> DLC1VQ03VampireInnkeeperOtherTopic1 => Construct(0x156fa);

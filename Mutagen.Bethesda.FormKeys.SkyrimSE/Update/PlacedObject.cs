@@ -36,6 +36,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
             public static FormLink<IPlacedObjectGetter> ccBGSSSE040_EntranceBlocker => Construct(0x309d);
             public static FormLink<IPlacedObjectGetter> ccBGSSSE016_EntranceNavCut => Construct(0x304c);
             public static FormLink<IPlacedObjectGetter> ccBGSSSE016_EntranceBlocker => Construct(0x304a);
+            public static FormLink<IPlacedObjectGetter> ccBGSSSE067_EntranceBlockerMD => Construct(0x314c);
+            public static FormLink<IPlacedObjectGetter> ccBGSSSE067_NavCutMD => Construct(0x3155);
             public static FormLink<IPlacedObjectGetter> ccTWBSSE001_EntranceBlocker_NavCutVolume => Construct(0x2f71);
             public static FormLink<IPlacedObjectGetter> ccTWBSSE001_EntranceBlocker => Construct(0x2f70);
             public static FormLink<IPlacedObjectGetter> PetFramework_WindhelmMarker => Construct(0x2f2f);

@@ -34,6 +34,13 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
             public static FormLink<IDialogTopicGetter> PetFramework_BranchDismiss_HomeTopic => Construct(0x2eff);
             public static FormLink<IDialogTopicGetter> PetFramework_BranchDismiss_HoldTopic => Construct(0x2f00);
             public static FormLink<IDialogTopicGetter> PetFramework_BranchRecruitTopic => Construct(0x2f01);
+            public static FormLink<IDialogTopicGetter> CCHorseArmorDialogueQuestArmorSteelFREE => Construct(0x30a6);
+            public static FormLink<IDialogTopicGetter> CCHorseArmorDialogueQuestArmorElvenFREE => Construct(0x30a7);
+            public static FormLink<IDialogTopicGetter> CCHorseArmorDialogueQuestArmorCANCEL => Construct(0x30a8);
+            public static FormLink<IDialogTopicGetter> CCHorseArmorDialogueQuestArmorREMOVE => Construct(0x30a9);
+            public static FormLink<IDialogTopicGetter> CCHorseArmorDialogueQuestArmorELVEN => Construct(0x30aa);
+            public static FormLink<IDialogTopicGetter> CCHorseArmorDialogueQuestArmorSTEEL => Construct(0x30ab);
+            public static FormLink<IDialogTopicGetter> CCHorseArmorDialogueQuestArmorBranchTopic => Construct(0x30ac);
         }
     }
 }

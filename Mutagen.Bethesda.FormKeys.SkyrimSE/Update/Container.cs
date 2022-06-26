@@ -10,6 +10,11 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Container
         {
             private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IContainerGetter> BarrelEmpty01_NoRespawn => Construct(0x3165);
+            public static FormLink<IContainerGetter> ccBGS_ARChest02LootSpecial => Construct(0x315c);
+            public static FormLink<IContainerGetter> ccBGS_ARChest02Loot => Construct(0x315b);
+            public static FormLink<IContainerGetter> ccBGS_ARChest01Potions => Construct(0x315a);
+            public static FormLink<IContainerGetter> ccBGS_ARChest01Loot => Construct(0x3159);
             public static FormLink<IContainerGetter> ccBGS_RootHollowedStump => Construct(0x3079);
         }
     }

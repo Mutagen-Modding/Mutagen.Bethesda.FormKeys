@@ -10,6 +10,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class DialogBranch
         {
             private static FormLink<IDialogBranchGetter> Construct(uint id) => new FormLink<IDialogBranchGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IDialogBranchGetter> ccVSVSSE004_DialogueTrollBranch => Construct(0x154a6);
             public static FormLink<IDialogBranchGetter> DLC1VQ05ValericaTLReturnBranch => Construct(0x145db);
             public static FormLink<IDialogBranchGetter> DLC1NPCMentalModelMarriageAddressal => Construct(0x13793);
             public static FormLink<IDialogBranchGetter> DLC1DialogueDexionLoreBranch2 => Construct(0x1376b);

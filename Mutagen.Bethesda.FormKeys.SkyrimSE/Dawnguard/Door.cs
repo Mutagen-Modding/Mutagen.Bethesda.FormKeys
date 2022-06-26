@@ -10,6 +10,10 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Door
         {
             private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IDoorGetter> ccVSVSSE004_BunkerFarmhouseLDoor01 => Construct(0x15484);
+            public static FormLink<IDoorGetter> ccVSVSSE004_BalconyFarmhouseLDoor01 => Construct(0x1547b);
+            public static FormLink<IDoorGetter> ccVSVSSE004_MainFarmhouseLDoor01 => Construct(0x15479);
+            public static FormLink<IDoorGetter> ccKRTSSE001_ImpDoorExtHoleDoorLoad01 => Construct(0x153c1);
             public static FormLink<IDoorGetter> SERuinsDoorLoadPhantom01 => Construct(0x144f2);
             public static FormLink<IDoorGetter> SERuinsDoorTemple02 => Construct(0x13df5);
             public static FormLink<IDoorGetter> PortalGemDoorNOSOUND => Construct(0xf725);

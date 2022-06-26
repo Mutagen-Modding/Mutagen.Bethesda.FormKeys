@@ -640,6 +640,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
             public static FormLink<IPlacedObjectGetter> DLC2WindhelmPlayerMarker => Construct(0x16fe4);
             public static FormLink<IPlacedObjectGetter> DLC2WindhelmToSolstheim => Construct(0x16fe0);
             public static FormLink<IPlacedObjectGetter> ShipNorthwindREF001 => Construct(0x16fde);
+            public static FormLink<IPlacedObjectGetter> ccAFDSSE001_NavCut => Construct(0x1e35d);
+            public static FormLink<IPlacedObjectGetter> ccAFDSSE001_EntranceBlocker => Construct(0x1e34c);
             public static FormLink<IPlacedObjectGetter> DLC2PillarShoutTriggerWater => Construct(0x33658);
             public static FormLink<IPlacedObjectGetter> DLC2PillarShoutTriggerSun => Construct(0x33655);
             public static FormLink<IPlacedObjectGetter> DLC2PillarShoutTriggerBeast => Construct(0x33652);
@@ -928,6 +930,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
             public static FormLink<IPlacedObjectGetter> DLC2FrostmothMapMarkerRef => Construct(0x143c4);
             public static FormLink<IPlacedObjectGetter> DLC2RRShrineTriggerRef => Construct(0x2bf19);
             public static FormLink<IPlacedObjectGetter> DLC2RR03ExitTriggerRef => Construct(0x2b10f);
+            public static FormLink<IPlacedObjectGetter> ccASVSSE001_NavCutCave => Construct(0x1e34a);
             public static FormLink<IPlacedObjectGetter> DLC2dunHaknirTreasure006 => Construct(0x3263a);
             public static FormLink<IPlacedObjectGetter> DLC2RR01ToggleTriggerRef => Construct(0x1b90e);
             public static FormLink<IPlacedObjectGetter> DLC2TreeStoneCoverCleansedRef => Construct(0x36cb9);

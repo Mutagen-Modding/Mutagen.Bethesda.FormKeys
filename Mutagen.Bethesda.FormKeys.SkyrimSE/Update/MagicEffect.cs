@@ -10,6 +10,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class MagicEffect
         {
             private static FormLink<IMagicEffectGetter> Construct(uint id) => new FormLink<IMagicEffectGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IMagicEffectGetter> CCHorseArmorAbEssentialFlagEffect => Construct(0x30de);
+            public static FormLink<IMagicEffectGetter> CCHorseArmorEnchFortifyHealthConstantSelf => Construct(0x30c8);
             public static FormLink<IMagicEffectGetter> PetFramework_PetMuffle => Construct(0x2f20);
             public static FormLink<IMagicEffectGetter> Survival_FireCloakFreezingWaterDesc => Construct(0x2ee9);
             public static FormLink<IMagicEffectGetter> Survival_FoodFortifyWarmth => Construct(0x2ee6);

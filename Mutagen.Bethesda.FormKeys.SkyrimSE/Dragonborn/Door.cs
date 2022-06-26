@@ -10,6 +10,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Door
         {
             private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IDoorGetter> ccASVSSE001_FarmBTrapdoor02 => Construct(0x1e345);
             public static FormLink<IDoorGetter> RedoranLDoor01_MinUse => Construct(0x3cfcc);
             public static FormLink<IDoorGetter> DLC2TelMithrynDoor03 => Construct(0x3ca70);
             public static FormLink<IDoorGetter> DLC2RRMineDoorFrame01 => Construct(0x3c4aa);

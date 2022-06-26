@@ -10,6 +10,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Quest
         {
             private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IQuestGetter> ccVSVSSE004_DialogueTroll => Construct(0x154a5);
             public static FormLink<IQuestGetter> DLC1VampireFeedBystander => Construct(0x14cb9);
             public static FormLink<IQuestGetter> DLC1DialogueDexionLore => Construct(0x13768);
             public static FormLink<IQuestGetter> DLC1RadiantAttackGuardComments => Construct(0x132cc);

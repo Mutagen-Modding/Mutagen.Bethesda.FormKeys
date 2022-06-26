@@ -10,6 +10,13 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Message
         {
             private static FormLink<IMessageGetter> Construct(uint id) => new FormLink<IMessageGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IMessageGetter> ccBGS_GateOpenedElsewhereMessage => Construct(0x3162);
+            public static FormLink<IMessageGetter> CCHorseArmorMessageArmorAlreadyEquipped => Construct(0x30c5);
+            public static FormLink<IMessageGetter> CCHorseArmorMessageNotEnoughGold => Construct(0x30c4);
+            public static FormLink<IMessageGetter> CCHorseArmorMessageArmorCannotUse => Construct(0x30c3);
+            public static FormLink<IMessageGetter> CCHorseArmorMessageArmorRemoved => Construct(0x30c2);
+            public static FormLink<IMessageGetter> CCHorseArmorMessageArmorChanged => Construct(0x30c1);
+            public static FormLink<IMessageGetter> CCHorseArmorMessageNoHorsesOwned => Construct(0x30c0);
             public static FormLink<IMessageGetter> PetFramework_PetMaxReachedMessage => Construct(0x2f2b);
             public static FormLink<IMessageGetter> PetFramework_PetDismissMessage => Construct(0x2f26);
             public static FormLink<IMessageGetter> HelpMods => Construct(0x2ecb);

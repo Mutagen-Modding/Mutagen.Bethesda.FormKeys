@@ -10,6 +10,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Quest
         {
             private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IQuestGetter> CCHorseArmorDialogueQuest => Construct(0x30b5);
             public static FormLink<IQuestGetter> PetFramework_ParentQuest => Construct(0x2f1c);
             public static FormLink<IQuestGetter> Patch1_9_UpdateQuest => Construct(0x9a3);
             public static FormLink<IQuestGetter> Patch1_6_UpdateQuest => Construct(0x97f);

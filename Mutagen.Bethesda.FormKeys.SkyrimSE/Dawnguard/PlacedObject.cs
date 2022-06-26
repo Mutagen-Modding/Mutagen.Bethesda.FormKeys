@@ -560,6 +560,12 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
             public static FormLink<IPlacedObjectGetter> DLC01Cache02 => Construct(0x34fc);
             public static FormLink<IPlacedObjectGetter> DLC01Cache03 => Construct(0x34f9);
             public static FormLink<IPlacedObjectGetter> DLC1HallDestroyed => Construct(0x7ade);
+            public static FormLink<IPlacedObjectGetter> CCEEJSSE005_NavCut => Construct(0x1542c);
+            public static FormLink<IPlacedObjectGetter> CCEEJSSE005_EntranceBlocker => Construct(0x153c3);
+            public static FormLink<IPlacedObjectGetter> ccBGSSSE067_EntranceBlockerR => Construct(0x15550);
+            public static FormLink<IPlacedObjectGetter> ccBGSSSE067_NavCutR => Construct(0x154aa);
+            public static FormLink<IPlacedObjectGetter> ccBGSSSE005_NavCut => Construct(0x153b6);
+            public static FormLink<IPlacedObjectGetter> ccBGSSSE005_Blocker => Construct(0x153a7);
             public static FormLink<IPlacedObjectGetter> DLC1VQ03HunterWagonTrigger => Construct(0x7f50);
             public static FormLink<IPlacedObjectGetter> DLC1VQ03VampireWagonTrigger => Construct(0x7b85);
             public static FormLink<IPlacedObjectGetter> DLC1VQ03Stage60WagonTrigger => Construct(0x7221);

@@ -10,6 +10,8 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class TextureSet
         {
             private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ITextureSetGetter> ccBGS_TextureSwapRubble01 => Construct(0x3203);
+            public static FormLink<ITextureSetGetter> ccBGS_TextureSwapDirt02 => Construct(0x3202);
             public static FormLink<ITextureSetGetter> LandscapeMountainSlab02Mask => Construct(0x2e34);
             public static FormLink<ITextureSetGetter> LandscapeMountainSlab01Mask => Construct(0x2e33);
             public static FormLink<ITextureSetGetter> LandscapeDirtCliffs01Mask => Construct(0x2e32);

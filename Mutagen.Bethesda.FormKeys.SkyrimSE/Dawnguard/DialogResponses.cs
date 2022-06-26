@@ -52,13 +52,15 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
             public static FormLink<IDialogResponsesGetter> DLC1LD_KatriaDetectionLineB => Construct(0xcf8c);
             public static FormLink<IDialogResponsesGetter> DLC1LD_KatriaDetectionLineC => Construct(0x5744);
             public static FormLink<IDialogResponsesGetter> DLC1VQ03Urag1 => Construct(0x98c0);
-            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared4 => Construct(0x13722);
-            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared3 => Construct(0x13723);
-            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared2 => Construct(0x13763);
             public static FormLink<IDialogResponsesGetter> DLC1VQ03Urag2 => Construct(0x98c1);
             public static FormLink<IDialogResponsesGetter> DLC1VQ03Innkeeper1 => Construct(0x98c2);
             public static FormLink<IDialogResponsesGetter> DLC1VQ03Innkeeper2 => Construct(0x98c3);
             public static FormLink<IDialogResponsesGetter> DLC1VQ03Innkeeper3 => Construct(0x98c4);
+            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared5 => Construct(0x13721);
+            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared4 => Construct(0x13722);
+            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared3 => Construct(0x13723);
+            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared2 => Construct(0x13763);
+            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared6 => Construct(0x13709);
             public static FormLink<IDialogResponsesGetter> DLC1Serana1 => Construct(0x69ad);
             public static FormLink<IDialogResponsesGetter> DLC1Serana2 => Construct(0x98c5);
             public static FormLink<IDialogResponsesGetter> DLC1VQ03ScrollReading1 => Construct(0x8860);
@@ -79,8 +81,6 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
             public static FormLink<IDialogResponsesGetter> VQ03VampireCarriageDriversShared2 => Construct(0x175db);
             public static FormLink<IDialogResponsesGetter> VQ03VampireCarriageDriversShared1 => Construct(0x175dc);
             public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared1 => Construct(0x1329b);
-            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared6 => Construct(0x13709);
-            public static FormLink<IDialogResponsesGetter> DLC1DexionLoreShared5 => Construct(0x13721);
             public static FormLink<IDialogResponsesGetter> DLC1RadiantVampireTurnExplain => Construct(0xa294);
             public static FormLink<IDialogResponsesGetter> DLC1RadiantVampireTurnExplainPlayer => Construct(0xa295);
             public static FormLink<IDialogResponsesGetter> DLC1RadiantVampireTurnExplainMethodMale => Construct(0xa296);

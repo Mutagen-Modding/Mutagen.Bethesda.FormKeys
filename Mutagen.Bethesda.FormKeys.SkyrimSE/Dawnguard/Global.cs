@@ -10,6 +10,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Global
         {
             private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IGlobalGetter> ccVSVSSE004_TrollGlobal => Construct(0x154a7);
             public static FormLink<IGlobalGetter> DLC1ReflexesCount => Construct(0x14cf2);
             public static FormLink<IGlobalGetter> DLC1RH07NextAllowed => Construct(0x14ce8);
             public static FormLink<IGlobalGetter> DLC1VampireFeedStartTime => Construct(0x14cbc);

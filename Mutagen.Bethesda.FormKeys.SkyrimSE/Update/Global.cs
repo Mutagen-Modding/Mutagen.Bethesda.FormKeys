@@ -10,6 +10,12 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class Global
         {
             private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<IGlobalGetter> Survival_ModeEnabledShared => Construct(0x314a);
+            public static FormLink<IGlobalGetter> CCHorseArmorCostSwapOnly => Construct(0x30dc);
+            public static FormLink<IGlobalGetter> CCHorseArmorCost => Construct(0x30cf);
+            public static FormLink<IGlobalGetter> CCHorseArmorIsInstalled => Construct(0x30b9);
+            public static FormLink<IGlobalGetter> CCHorseArmorIsInstalledElven => Construct(0x30b8);
+            public static FormLink<IGlobalGetter> CCHorseArmorIsInstalledSteel => Construct(0x30b7);
             public static FormLink<IGlobalGetter> PetFramework_AllowPetInventory => Construct(0x2f29);
             public static FormLink<IGlobalGetter> PetFramework_AllowPetCombat => Construct(0x2f28);
             public static FormLink<IGlobalGetter> PetFramework_MaxPets => Construct(0x2f27);

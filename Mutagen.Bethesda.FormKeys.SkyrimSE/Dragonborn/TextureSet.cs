@@ -10,6 +10,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE
         public static class TextureSet
         {
             private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
+            public static FormLink<ITextureSetGetter> DLC2AshCreepClusterTextureSet => Construct(0x1e34b);
             public static FormLink<ITextureSetGetter> DLC2DecalRunePoison => Construct(0x3d5e6);
             public static FormLink<ITextureSetGetter> DLC2DecalRuneFrenzy => Construct(0x3d5e5);
             public static FormLink<ITextureSetGetter> DLC2TextureSetCabbageSoup => Construct(0x3d146);
