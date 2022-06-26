@@ -16,7 +16,7 @@ public static partial class Skyrim
         public static FormLink<ISoundCategoryGetter> AudioCategoryPausedDuringMenuLoad => Construct(0x10aa60);
         public static FormLink<ISoundCategoryGetter> AudioCategoryFST => Construct(0xf5ffc);
         public static FormLink<ISoundCategoryGetter> AudioCategoryMuteSubmerged => Construct(0xf23bb);
-        public static FormLink<ISoundCategoryGetter> __AudioCategoryMaster => Construct(0xeb803);
+        public static FormLink<ISoundCategoryGetter> _AudioCategoryMaster => Construct(0xeb803);
         public static FormLink<ISoundCategoryGetter> AudioCategoryNPCKillMove => Construct(0xea51f);
         public static FormLink<ISoundCategoryGetter> AudioCategoryPausedDuringMenu => Construct(0xdddc5);
         public static FormLink<ISoundCategoryGetter> AudioCategoryMAG => Construct(0x1a0bd);

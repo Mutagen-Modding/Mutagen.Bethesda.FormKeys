@@ -12,7 +12,7 @@ public static partial class Skyrim
         private static FormLink<IMusicTrackGetter> Construct(uint id) => new FormLink<IMusicTrackGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMusicTrackGetter> MUSCombatBoss03CG => Construct(0xf7e);
         public static FormLink<IMusicTrackGetter> MUSCombat04CG => Construct(0xf7d);
-        public static FormLink<IMusicTrackGetter> __MUSExploreSILENT15TypeSpacerNIGHT => Construct(0xea4);
+        public static FormLink<IMusicTrackGetter> _MUSExploreSILENT15TypeSpacerNIGHT => Construct(0xea4);
         public static FormLink<IMusicTrackGetter> MUSFailure07 => Construct(0xe14);
         public static FormLink<IMusicTrackGetter> MUSFailure06 => Construct(0xe13);
         public static FormLink<IMusicTrackGetter> MUSFailure05 => Construct(0xe12);
@@ -46,9 +46,9 @@ public static partial class Skyrim
         public static FormLink<IMusicTrackGetter> MUSDread01a => Construct(0xe8ed7);
         public static FormLink<IMusicTrackGetter> MUSExploreNight06 => Construct(0xe0c84);
         public static FormLink<IMusicTrackGetter> MUSExploreDay04 => Construct(0xe0c83);
-        public static FormLink<IMusicTrackGetter> __MUSExploreSILENT30TypeSpacer => Construct(0xc7027);
-        public static FormLink<IMusicTrackGetter> __MUSExploreSILENT15 => Construct(0xc7014);
-        public static FormLink<IMusicTrackGetter> __MUSExploreSILENT10 => Construct(0xbc112);
+        public static FormLink<IMusicTrackGetter> _MUSExploreSILENT30TypeSpacer => Construct(0xc7027);
+        public static FormLink<IMusicTrackGetter> _MUSExploreSILENT15 => Construct(0xc7014);
+        public static FormLink<IMusicTrackGetter> _MUSExploreSILENT10 => Construct(0xbc112);
         public static FormLink<IMusicTrackGetter> MUSExploreTundraDayPaletteC03 => Construct(0xbbd82);
         public static FormLink<IMusicTrackGetter> MUSExploreTundraDayPaletteC02 => Construct(0xbbd81);
         public static FormLink<IMusicTrackGetter> MUSExploreTundraDayPaletteC01 => Construct(0xbbd80);
@@ -266,7 +266,7 @@ public static partial class Skyrim
         public static FormLink<IMusicTrackGetter> MUSTownDay03 => Construct(0x2c3cd);
         public static FormLink<IMusicTrackGetter> MUSTownDay02 => Construct(0x2c3cc);
         public static FormLink<IMusicTrackGetter> MUSTownDay01 => Construct(0x2c3cb);
-        public static FormLink<IMusicTrackGetter> __MUSExploreSILENT30 => Construct(0x137fa);
+        public static FormLink<IMusicTrackGetter> _MUSExploreSILENT30 => Construct(0x137fa);
         public static FormLink<IMusicTrackGetter> MUSLevelUp01 => Construct(0x13687);
     }
 }

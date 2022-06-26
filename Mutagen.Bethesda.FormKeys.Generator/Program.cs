@@ -43,7 +43,7 @@ namespace Mutagen.Bethesda.FormKeys.Generator
         public static string CleanName(string name, string className)
         {
             if (string.IsNullOrWhiteSpace(name)) return name;
-            if (!char.IsLetter(name[0]))
+            if (!char.IsLetter(name[0]) && name[0] != '_')
             {
                 name = $"_{name}";
             }

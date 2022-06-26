@@ -648,7 +648,7 @@ public static partial class Skyrim
         public static FormLink<IStaticGetter> MountainTrim03ReachDirt01 => Construct(0xf5ec8);
         public static FormLink<IStaticGetter> RockPileS03FallForestLeaves01 => Construct(0xf5eb6);
         public static FormLink<IStaticGetter> WHstep1 => Construct(0xf5e7d);
-        public static FormLink<IStaticGetter> __testDeadGoat01 => Construct(0xf5e0b);
+        public static FormLink<IStaticGetter> _testDeadGoat01 => Construct(0xf5e0b);
         public static FormLink<IStaticGetter> RiftenRWRoomBMid01Ice => Construct(0xf5dba);
         public static FormLink<IStaticGetter> RockCliff05Ice => Construct(0xf5db8);
         public static FormLink<IStaticGetter> RockCliff03Ice => Construct(0xf5db0);

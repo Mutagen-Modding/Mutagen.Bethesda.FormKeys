@@ -56,7 +56,7 @@ public static partial class Skyrim
         public static FormLink<IMusicTypeGetter> MUSDread => Construct(0x4da92);
         public static FormLink<IMusicTypeGetter> MUSSpecialSuccess => Construct(0x3b565);
         public static FormLink<IMusicTypeGetter> MUSCombat => Construct(0x3418e);
-        public static FormLink<IMusicTypeGetter> __NONE => Construct(0x1ba72);
+        public static FormLink<IMusicTypeGetter> _NONE => Construct(0x1ba72);
         public static FormLink<IMusicTypeGetter> MUSDungeon => Construct(0x2d4c2);
         public static FormLink<IMusicTypeGetter> MUSTownTest => Construct(0x2c3ca);
         public static FormLink<IMusicTypeGetter> MUSSpecialDeath => Construct(0x13686);
