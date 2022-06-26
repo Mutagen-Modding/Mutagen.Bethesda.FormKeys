@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Noggog</Authors>
+        <Company>Mutagen</Company>
+        <Product>Mutagen</Product>
+        <Description>A registry of FormKeys from common Fallout4 base game files.</Description>
+        <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/Noggog/Mutagen.Bethesda.FormKeys</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Noggog/Mutagen.Bethesda.FormKeys</RepositoryUrl>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>none</DebugType>
+        <IsPackable>true</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Mutagen.Bethesda.Core" Version="0.37.0" />
+        <PackageReference Include="Mutagen.Bethesda.Fallout4" Version="0.37.0" />
+        <PackageReference Include="GitInfo" Version="2.2.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="NuGetizer" Version="0.8.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+        <Exec Command="RD /S /Q &quot;%25USERPROFILE%25\.nuget\packages\mutagen.bethesda.formkeys.fallout4&quot;" />
+    </Target>
+
+</Project>
