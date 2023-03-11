@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class ImpactDataSet
+    public static partial class ImpactDataSet
     {
         private static FormLink<IImpactDataSetGetter> Construct(uint id) => new FormLink<IImpactDataSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImpactDataSetGetter> MAGPowerSerpentStoneImpactImpactSet => Construct(0xe02);
