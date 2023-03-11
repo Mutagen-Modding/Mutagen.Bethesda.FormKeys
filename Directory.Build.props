@@ -1,11 +1,23 @@
 <Project>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GitInfo" >
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
   <!-- To be redefined by GitInfo after restore. -->
   <Target Name="GitVersion" />
 
   <Target Name="SetVersion"
-		  BeforeTargets="GetAssemblyVersion;GetPackageVersion"
-		  DependsOnTargets="GitVersion"
-		  Returns="$(PackageVersion)">
+          BeforeTargets="GetAssemblyVersion;GetPackageVersion"
+          DependsOnTargets="GitVersion"
+          Returns="$(PackageVersion)">
     <PropertyGroup>
       <DevLabel Condition="$(GitCommits) != '0'">.1-dev</DevLabel>
       <DevLabel Condition="$(GitCommits) == '0' And $(GitSemVerDashLabel) != ''">$(GitSemVerDashLabel)</DevLabel>
@@ -16,5 +28,4 @@
       <InformationalVersion>$(PackageVersion)</InformationalVersion>
     </PropertyGroup>
   </Target>
-  
 </Project>
