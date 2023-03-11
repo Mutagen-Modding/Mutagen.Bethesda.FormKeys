@@ -160,6 +160,7 @@ namespace Mutagen.Bethesda.FormKeys.Generator
                         using (var c = sb.Class(regis.Key.Name))
                         {
                             c.Static = true;
+                            c.Partial = true;
                         }
                         using (sb.CurlyBrace())
                         {
