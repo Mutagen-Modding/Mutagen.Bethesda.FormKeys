@@ -4,7 +4,7 @@
     <PackageVersion Include="Loqui.Generation" Version="2.48.0" />
     <PackageVersion Include="Mutagen.Bethesda" Version="0.37.0" />
     <PackageVersion Include="GitInfo">
-      <Version>2.2.0</Version>
+      <Version>3.0.4</Version>
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageVersion>
@@ -12,6 +12,6 @@
     <PackageVersion Include="Mutagen.Bethesda.Fallout4" Version="0.37.0" />
     <PackageVersion Include="Mutagen.Bethesda.Oblivion" Version="0.37.0" />
     <PackageVersion Include="Mutagen.Bethesda.Skyrim" Version="0.37.0" />
-    <PackageVersion Include="NuGetizer" Version="0.8.0" />
+    <PackageVersion Include="NuGetizer" Version="0.9.5" />
   </ItemGroup>
 </Project>
