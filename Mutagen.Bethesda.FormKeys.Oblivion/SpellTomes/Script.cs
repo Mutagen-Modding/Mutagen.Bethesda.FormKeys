@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class SpellTomes
 {
-    public static class Script
+    public static partial class Script
     {
         private static FormLink<IScriptGetter> Construct(uint id) => new FormLink<IScriptGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IScriptGetter> DLCTomeSCRIPTStandardAbsorbMagicka1Novice => Construct(0xce7);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class Cell
+    public static partial class Cell
     {
         private static FormLink<ICellGetter> Construct(uint id) => new FormLink<ICellGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ICellGetter> BYOHHouseUtilityCell => Construct(0x2fe4);

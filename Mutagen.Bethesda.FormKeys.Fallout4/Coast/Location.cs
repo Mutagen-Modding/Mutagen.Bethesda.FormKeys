@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Location
+    public static partial class Location
     {
         private static FormLink<ILocationGetter> Construct(uint id) => new FormLink<ILocationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILocationGetter> DLC03POI45Location => Construct(0x567bc);

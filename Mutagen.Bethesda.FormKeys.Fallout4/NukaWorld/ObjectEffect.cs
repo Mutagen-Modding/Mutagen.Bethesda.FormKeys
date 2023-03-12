@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class ObjectEffect
+    public static partial class ObjectEffect
     {
         private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IObjectEffectGetter> DLC04EnchBot_FortifyDamageResist_Head_Protectron_Space => Construct(0x560ef);

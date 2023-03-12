@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class MusicTrack
+    public static partial class MusicTrack
     {
         private static FormLink<IMusicTrackGetter> Construct(uint id) => new FormLink<IMusicTrackGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMusicTrackGetter> VRWorkshopShared_MUSExploreSILENT01 => Construct(0x24a3e1);

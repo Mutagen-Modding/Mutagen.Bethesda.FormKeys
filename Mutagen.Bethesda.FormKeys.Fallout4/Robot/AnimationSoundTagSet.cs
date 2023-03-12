@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class AnimationSoundTagSet
+    public static partial class AnimationSoundTagSet
     {
         private static FormLink<IAnimationSoundTagSetGetter> Construct(uint id) => new FormLink<IAnimationSoundTagSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAnimationSoundTagSetGetter> DLC01NPCRobobrainATS => Construct(0x880d);

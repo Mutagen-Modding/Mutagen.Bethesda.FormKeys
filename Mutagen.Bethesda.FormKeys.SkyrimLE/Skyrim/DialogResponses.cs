@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class DialogResponses
+    public static partial class DialogResponses
     {
         private static FormLink<IDialogResponsesGetter> Construct(uint id) => new FormLink<IDialogResponsesGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogResponsesGetter> FFRiften10SharedTopic01 => Construct(0x1362a);

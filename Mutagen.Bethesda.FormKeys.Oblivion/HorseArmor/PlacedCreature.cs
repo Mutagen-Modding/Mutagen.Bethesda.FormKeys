@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class HorseArmor
 {
-    public static class PlacedCreature
+    public static partial class PlacedCreature
     {
         private static FormLink<IPlacedCreatureGetter> Construct(uint id) => new FormLink<IPlacedCreatureGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPlacedCreatureGetter> HorsePCArmoredElvenPaintWeynonRef => Construct(0x2123);

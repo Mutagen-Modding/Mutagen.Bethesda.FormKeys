@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Keyword
+    public static partial class Keyword
     {
         private static FormLink<IKeywordGetter> Construct(uint id) => new FormLink<IKeywordGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IKeywordGetter> LinkTerminalVRWorkshopPod => Construct(0x24a352);

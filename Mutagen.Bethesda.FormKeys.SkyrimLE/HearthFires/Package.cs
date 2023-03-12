@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class HearthFires
 {
-    public static class Package
+    public static partial class Package
     {
         private static FormLink<IPackageGetter> Construct(uint id) => new FormLink<IPackageGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPackageGetter> BYOHHouseGiantAttackSandboxHouseExterior => Construct(0xc41);

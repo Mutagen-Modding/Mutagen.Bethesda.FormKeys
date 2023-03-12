@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Location
+    public static partial class Location
     {
         private static FormLink<ILocationGetter> Construct(uint id) => new FormLink<ILocationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILocationGetter> DLC2HoldingCellBardLocation => Construct(0x3a4a1);

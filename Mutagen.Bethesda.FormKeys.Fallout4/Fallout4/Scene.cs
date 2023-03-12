@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Scene
+    public static partial class Scene
     {
         private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISceneGetter> ArturoGreetScene => Construct(0x4e1e);

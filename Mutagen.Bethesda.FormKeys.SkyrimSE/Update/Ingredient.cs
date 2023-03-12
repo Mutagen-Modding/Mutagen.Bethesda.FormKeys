@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class Ingredient
+    public static partial class Ingredient
     {
         private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIngredientGetter> ccBGS_RootThornHookIngredient => Construct(0x306f);

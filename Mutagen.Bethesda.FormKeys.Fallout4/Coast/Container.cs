@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Container
+    public static partial class Container
     {
         private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IContainerGetter> DLC03MQPostQuest_Container => Construct(0x5d43a);

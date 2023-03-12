@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Frostcrag
 {
-    public static class Sound
+    public static partial class Sound
     {
         private static FormLink<ISoundGetter> Construct(uint id) => new FormLink<ISoundGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundGetter> AMBTowerGardenLP01 => Construct(0x680a);

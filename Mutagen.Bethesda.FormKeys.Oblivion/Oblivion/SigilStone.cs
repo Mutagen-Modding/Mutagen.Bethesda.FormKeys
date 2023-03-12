@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class SigilStone
+    public static partial class SigilStone
     {
         private static FormLink<ISigilStoneGetter> Construct(uint id) => new FormLink<ISigilStoneGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISigilStoneGetter> SSTurnUnDetLife4 => Construct(0x4209f);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class AttractionRule
+    public static partial class AttractionRule
     {
         private static FormLink<IAttractionRuleGetter> Construct(uint id) => new FormLink<IAttractionRuleGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAttractionRuleGetter> DLC03VRObjectRule => Construct(0x385b);

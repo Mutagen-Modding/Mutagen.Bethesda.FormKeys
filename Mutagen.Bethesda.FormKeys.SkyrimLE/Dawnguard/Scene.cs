@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class Scene
+    public static partial class Scene
     {
         private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISceneGetter> DLC1_BF_DunTempleQSTSCENEShiftBack => Construct(0x13f86);

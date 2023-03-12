@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class GodRays
+    public static partial class GodRays
     {
         private static FormLink<IGodRaysGetter> Construct(uint id) => new FormLink<IGodRaysGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGodRaysGetter> DLC03_MistyNightRays => Construct(0x4e06d);

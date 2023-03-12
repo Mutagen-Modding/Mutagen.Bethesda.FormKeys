@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class Quest
+    public static partial class Quest
     {
         private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IQuestGetter> DLC02WorkshopAttackStarter => Construct(0x822);

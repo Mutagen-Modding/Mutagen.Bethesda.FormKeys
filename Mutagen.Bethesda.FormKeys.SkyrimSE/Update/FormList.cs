@@ -7,9 +7,11 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class FormList
+    public static partial class FormList
     {
         private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
+        public static FormLink<IFormListGetter> HelpManualInstalledContentAE => Construct(0x3275);
+        public static FormLink<IFormListGetter> HelpManualInstalledContent => Construct(0x3271);
         public static FormLink<IFormListGetter> CCHorseArmorList => Construct(0x30b4);
         public static FormLink<IFormListGetter> HelpManualMods => Construct(0x2ecc);
         public static FormLink<IFormListGetter> RidableWorldSpaces => Construct(0x99b);

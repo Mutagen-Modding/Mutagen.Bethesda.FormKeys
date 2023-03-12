@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class SoulGem
+    public static partial class SoulGem
     {
         private static FormLink<ISoulGemGetter> Construct(uint id) => new FormLink<ISoulGemGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoulGemGetter> FFRiften14SoulGem => Construct(0x43e26);

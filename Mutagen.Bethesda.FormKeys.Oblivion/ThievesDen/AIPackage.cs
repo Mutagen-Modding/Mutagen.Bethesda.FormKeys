@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class ThievesDen
 {
-    public static class AIPackage
+    public static partial class AIPackage
     {
         private static FormLink<IAIPackageGetter> Construct(uint id) => new FormLink<IAIPackageGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAIPackageGetter> DLC06SecurityTrainerSleep20x10 => Construct(0x3ec3);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Key
+    public static partial class Key
     {
         private static FormLink<IKeyGetter> Construct(uint id) => new FormLink<IKeyGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IKeyGetter> DLC2TelMithrynStaffEnchanterKey => Construct(0x3d23f);

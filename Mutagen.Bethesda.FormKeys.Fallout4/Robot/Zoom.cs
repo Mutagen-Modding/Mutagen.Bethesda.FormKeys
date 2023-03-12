@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class Zoom
+    public static partial class Zoom
     {
         private static FormLink<IZoomGetter> Construct(uint id) => new FormLink<IZoomGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IZoomGetter> DLC01ZM_AssaultronHead => Construct(0xe9fd);

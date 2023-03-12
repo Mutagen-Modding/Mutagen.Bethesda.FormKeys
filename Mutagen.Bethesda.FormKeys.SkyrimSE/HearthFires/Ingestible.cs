@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class Ingestible
+    public static partial class Ingestible
     {
         private static FormLink<IIngestibleGetter> Construct(uint id) => new FormLink<IIngestibleGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIngestibleGetter> BYOHFoodGarlicBread01 => Construct(0x9dc);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class MagicEffect
+    public static partial class MagicEffect
     {
         private static FormLink<IMagicEffectGetter> Construct(uint id) => new FormLink<IMagicEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMagicEffectGetter> DLC1DetectLifeScriptEffect => Construct(0x14ce7);

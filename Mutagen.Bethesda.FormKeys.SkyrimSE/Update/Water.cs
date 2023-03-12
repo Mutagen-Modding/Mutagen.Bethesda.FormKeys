@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class Water
+    public static partial class Water
     {
         private static FormLink<IWaterGetter> Construct(uint id) => new FormLink<IWaterGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWaterGetter> DefaultWaterFlowBlend => Construct(0x1235);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Key
+    public static partial class Key
     {
         private static FormLink<IKeyGetter> Construct(uint id) => new FormLink<IKeyGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IKeyGetter> PrydwenArmoryKey => Construct(0x23e372);

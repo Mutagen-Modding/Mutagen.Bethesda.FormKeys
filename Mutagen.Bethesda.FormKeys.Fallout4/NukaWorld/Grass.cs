@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Grass
+    public static partial class Grass
     {
         private static FormLink<IGrassGetter> Construct(uint id) => new FormLink<IGrassGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGrassGetter> NF_Grass01Obj01_Sparse => Construct(0xb8fe);

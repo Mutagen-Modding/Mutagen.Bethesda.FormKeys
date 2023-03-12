@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class Cell
+    public static partial class Cell
     {
         private static FormLink<ICellGetter> Construct(uint id) => new FormLink<ICellGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ICellGetter> KilkreathRuins03 => Construct(0x27d1c);

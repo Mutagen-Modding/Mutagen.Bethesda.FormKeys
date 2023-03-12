@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class ShaderParticleGeometry
+    public static partial class ShaderParticleGeometry
     {
         private static FormLink<IShaderParticleGeometryGetter> Construct(uint id) => new FormLink<IShaderParticleGeometryGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IShaderParticleGeometryGetter> DLC04lRain => Construct(0x10f16);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Npc
+    public static partial class Npc
     {
         private static FormLink<INpcGetter> Construct(uint id) => new FormLink<INpcGetter>(ModKey.MakeFormKey(id));
         public static FormLink<INpcGetter> DLC03AudioTemplateWolf => Construct(0x5d758);

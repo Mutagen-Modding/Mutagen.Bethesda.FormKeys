@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class AttractionRule
+    public static partial class AttractionRule
     {
         private static FormLink<IAttractionRuleGetter> Construct(uint id) => new FormLink<IAttractionRuleGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAttractionRuleGetter> AO_BoS_ScribeCollectDataRule => Construct(0x22cd85);

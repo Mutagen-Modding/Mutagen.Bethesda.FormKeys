@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class SceneCollection
+    public static partial class SceneCollection
     {
         private static FormLink<ISceneCollectionGetter> Construct(uint id) => new FormLink<ISceneCollectionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISceneCollectionGetter> DLC03WorkshopRadiantOwned05Radio => Construct(0x5d646);

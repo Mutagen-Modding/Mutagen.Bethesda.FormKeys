@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class ColorRecord
+    public static partial class ColorRecord
     {
         private static FormLink<IColorRecordGetter> Construct(uint id) => new FormLink<IColorRecordGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IColorRecordGetter> HairColor32_DLC04Pink => Construct(0x24a058);

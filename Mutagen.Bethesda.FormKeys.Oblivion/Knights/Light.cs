@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Knights
 {
-    public static class Light
+    public static partial class Light
     {
         private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILightGetter> NDGarlasDaylight450 => Construct(0xef9);

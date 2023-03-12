@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Scene
+    public static partial class Scene
     {
         private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISceneGetter> DLC2dunTT2_IldariScene02 => Construct(0x3d598);

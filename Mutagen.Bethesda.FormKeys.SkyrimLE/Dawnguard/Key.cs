@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class Key
+    public static partial class Key
     {
         private static FormLink<IKeyGetter> Construct(uint id) => new FormLink<IKeyGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IKeyGetter> DLC1RuunvaldKey01 => Construct(0x13833);

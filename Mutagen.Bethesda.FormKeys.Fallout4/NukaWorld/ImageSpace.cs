@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class ImageSpace
+    public static partial class ImageSpace
     {
         private static FormLink<IImageSpaceGetter> Construct(uint id) => new FormLink<IImageSpaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImageSpaceGetter> DLC04_ClearDAWN_L => Construct(0x4f579);

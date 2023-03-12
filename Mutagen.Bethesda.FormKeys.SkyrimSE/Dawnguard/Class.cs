@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class Class
+    public static partial class Class
     {
         private static FormLink<IClassGetter> Construct(uint id) => new FormLink<IClassGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IClassGetter> DLC1EncClassDeathhound => Construct(0x145dc);

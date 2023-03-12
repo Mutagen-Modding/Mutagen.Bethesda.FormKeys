@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Region
+    public static partial class Region
     {
         private static FormLink<IRegionGetter> Construct(uint id) => new FormLink<IRegionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRegionGetter> AudioExtCoastalAUDIO => Construct(0x23f1fe);

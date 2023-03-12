@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class LeveledNpc
+    public static partial class LeveledNpc
     {
         private static FormLink<ILeveledNpcGetter> Construct(uint id) => new FormLink<ILeveledNpcGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILeveledNpcGetter> DLC03MQ06_LCharGulper => Construct(0x5727d);

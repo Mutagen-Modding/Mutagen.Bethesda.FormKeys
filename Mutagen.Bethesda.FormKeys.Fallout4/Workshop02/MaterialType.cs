@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class MaterialType
+    public static partial class MaterialType
     {
         private static FormLink<IMaterialTypeGetter> Construct(uint id) => new FormLink<IMaterialTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialTypeGetter> DLC05MaterialBallTrackMetalFunnel => Construct(0xe18);

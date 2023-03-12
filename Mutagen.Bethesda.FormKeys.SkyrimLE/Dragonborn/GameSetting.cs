@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class GameSetting
+    public static partial class GameSetting
     {
         private static FormLink<IGameSettingGetter> Construct(uint id) => new FormLink<IGameSettingGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGameSettingGetter> sTESVDLC2FlyingMountLandingMessage => Construct(0x1e2bb);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class TalkingActivator
+    public static partial class TalkingActivator
     {
         private static FormLink<ITalkingActivatorGetter> Construct(uint id) => new FormLink<ITalkingActivatorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITalkingActivatorGetter> DLC01VampireThrallFeedTA02 => Construct(0x11dfc);

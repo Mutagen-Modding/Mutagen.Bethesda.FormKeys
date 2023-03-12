@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class AlchemicalApparatus
+    public static partial class AlchemicalApparatus
     {
         private static FormLink<IAlchemicalApparatusGetter> Construct(uint id) => new FormLink<IAlchemicalApparatusGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAlchemicalApparatusGetter> Grimoire05Master => Construct(0x332bf);

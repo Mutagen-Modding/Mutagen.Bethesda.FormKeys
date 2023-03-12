@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class ArmorAddon
+    public static partial class ArmorAddon
     {
         private static FormLink<IArmorAddonGetter> Construct(uint id) => new FormLink<IArmorAddonGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IArmorAddonGetter> DLC2MiraakSkinHiderAA => Construct(0x3d5d7);

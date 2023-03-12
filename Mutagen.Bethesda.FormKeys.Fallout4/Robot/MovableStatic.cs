@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class MovableStatic
+    public static partial class MovableStatic
     {
         private static FormLink<IMovableStaticGetter> Construct(uint id) => new FormLink<IMovableStaticGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMovableStaticGetter> DLC01MistFX512Lighting => Construct(0x10a69);

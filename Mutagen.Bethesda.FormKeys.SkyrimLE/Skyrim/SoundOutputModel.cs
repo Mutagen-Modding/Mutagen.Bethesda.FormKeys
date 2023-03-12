@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class SoundOutputModel
+    public static partial class SoundOutputModel
     {
         private static FormLink<ISoundOutputModelGetter> Construct(uint id) => new FormLink<ISoundOutputModelGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundOutputModelGetter> SOMDialogue3D4000BARDS => Construct(0xf86);

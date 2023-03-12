@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class ADamageType
+    public static partial class ADamageType
     {
         private static FormLink<IADamageTypeGetter> Construct(uint id) => new FormLink<IADamageTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IADamageTypeGetter> dtPhysical => Construct(0x60a87);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class MaterialObject
+    public static partial class MaterialObject
     {
         private static FormLink<IMaterialObjectGetter> Construct(uint id) => new FormLink<IMaterialObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialObjectGetter> SnowMaterialObjectCustom01_1P => Construct(0x2ee83);

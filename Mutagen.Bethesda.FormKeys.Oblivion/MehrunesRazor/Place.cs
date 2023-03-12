@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class MehrunesRazor
 {
-    public static class Place
+    public static partial class Place
     {
         private static FormLink<IPlaceGetter> Construct(uint id) => new FormLink<IPlaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPlaceGetter> DL9jbrowneAyleid => Construct(0x2db4);

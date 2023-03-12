@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class BodyPartData
+    public static partial class BodyPartData
     {
         private static FormLink<IBodyPartDataGetter> Construct(uint id) => new FormLink<IBodyPartDataGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IBodyPartDataGetter> RaiderDogBodyPartData => Construct(0x1a94c5);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class Projectile
+    public static partial class Projectile
     {
         private static FormLink<IProjectileGetter> Construct(uint id) => new FormLink<IProjectileGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IProjectileGetter> VoiceDismayProjectile03 => Construct(0x10fd9e);

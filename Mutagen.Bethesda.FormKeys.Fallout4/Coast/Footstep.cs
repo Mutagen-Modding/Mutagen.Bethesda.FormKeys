@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Footstep
+    public static partial class Footstep
     {
         private static FormLink<IFootstepGetter> Construct(uint id) => new FormLink<IFootstepGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFootstepGetter> DLC03NPCFogCrawlerFootRunRFootstep => Construct(0x5d9f2);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Grass
+    public static partial class Grass
     {
         private static FormLink<IGrassGetter> Construct(uint id) => new FormLink<IGrassGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGrassGetter> DLC03DebrisGroundOystersGrass04 => Construct(0xd821);

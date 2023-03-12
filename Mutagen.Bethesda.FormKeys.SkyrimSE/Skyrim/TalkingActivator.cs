@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class TalkingActivator
+    public static partial class TalkingActivator
     {
         private static FormLink<ITalkingActivatorGetter> Construct(uint id) => new FormLink<ITalkingActivatorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITalkingActivatorGetter> MGAugurTalkingActivator => Construct(0x1093d0);

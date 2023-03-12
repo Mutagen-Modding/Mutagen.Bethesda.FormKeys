@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class InstanceNamingRules
+    public static partial class InstanceNamingRules
     {
         private static FormLink<IInstanceNamingRulesGetter> Construct(uint id) => new FormLink<IInstanceNamingRulesGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IInstanceNamingRulesGetter> DLC01dn_LightningGun => Construct(0xf5a5);

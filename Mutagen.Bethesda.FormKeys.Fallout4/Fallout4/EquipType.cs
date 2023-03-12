@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class EquipType
+    public static partial class EquipType
     {
         private static FormLink<IEquipTypeGetter> Construct(uint id) => new FormLink<IEquipTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IEquipTypeGetter> LeftHandOther => Construct(0x23e486);

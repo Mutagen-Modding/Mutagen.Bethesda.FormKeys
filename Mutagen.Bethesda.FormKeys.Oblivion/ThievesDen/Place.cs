@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class ThievesDen
 {
-    public static class Place
+    public static partial class Place
     {
         private static FormLink<IPlaceGetter> Construct(uint id) => new FormLink<IPlaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPlaceGetter> xDL06CaptainsQuarters => Construct(0x139d);

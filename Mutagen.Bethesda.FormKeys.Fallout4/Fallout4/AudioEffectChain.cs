@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class AudioEffectChain
+    public static partial class AudioEffectChain
     {
         private static FormLink<IAudioEffectChainGetter> Construct(uint id) => new FormLink<IAudioEffectChainGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAudioEffectChainGetter> AudioEffectChainOcclusionPrydwenBlazeLPF => Construct(0x249e0d);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class HearthFires
 {
-    public static class SoundDescriptor
+    public static partial class SoundDescriptor
     {
         private static FormLink<ISoundDescriptorGetter> Construct(uint id) => new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundDescriptorGetter> OBJMineClaySD => Construct(0xba3);

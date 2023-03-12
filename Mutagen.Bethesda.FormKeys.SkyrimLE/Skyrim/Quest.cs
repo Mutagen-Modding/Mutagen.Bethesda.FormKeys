@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class Quest
+    public static partial class Quest
     {
         private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IQuestGetter> CreatureDialogueWerewolf => Construct(0xe46);

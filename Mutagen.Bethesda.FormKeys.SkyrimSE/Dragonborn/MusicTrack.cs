@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class MusicTrack
+    public static partial class MusicTrack
     {
         private static FormLink<IMusicTrackGetter> Construct(uint id) => new FormLink<IMusicTrackGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMusicTrackGetter> DLC2MUSExploreSolstheim11 => Construct(0x3d553);

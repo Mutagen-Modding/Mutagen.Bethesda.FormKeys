@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class MagicEffect
+    public static partial class MagicEffect
     {
         private static FormLink<IMagicEffectGetter> Construct(uint id) => new FormLink<IMagicEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMagicEffectGetter> BW08 => Construct(0x94008);

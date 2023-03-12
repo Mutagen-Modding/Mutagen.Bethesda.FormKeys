@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class LeveledNpc
+    public static partial class LeveledNpc
     {
         private static FormLink<ILeveledNpcGetter> Construct(uint id) => new FormLink<ILeveledNpcGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILeveledNpcGetter> DLC1LCharVampireMaleNordM => Construct(0x1223d);

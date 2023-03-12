@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class MusicTrack
+    public static partial class MusicTrack
     {
         private static FormLink<IMusicTrackGetter> Construct(uint id) => new FormLink<IMusicTrackGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMusicTrackGetter> DLC01MUSDungeonMechanistLair02 => Construct(0x10bff);

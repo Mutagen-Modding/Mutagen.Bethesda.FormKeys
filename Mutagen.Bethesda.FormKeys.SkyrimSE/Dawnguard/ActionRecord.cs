@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class ActionRecord
+    public static partial class ActionRecord
     {
         private static FormLink<IActionRecordGetter> Construct(uint id) => new FormLink<IActionRecordGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IActionRecordGetter> ActionReload => Construct(0x590d);

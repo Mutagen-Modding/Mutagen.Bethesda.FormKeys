@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class ConstructibleObject
+    public static partial class ConstructibleObject
     {
         private static FormLink<IConstructibleObjectGetter> Construct(uint id) => new FormLink<IConstructibleObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IConstructibleObjectGetter> co_DLC01Bot_Legs_MrHandy_Thruster_Armor1A => Construct(0x2eaa);

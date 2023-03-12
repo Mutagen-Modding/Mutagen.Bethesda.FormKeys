@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class ColorRecord
+    public static partial class ColorRecord
     {
         private static FormLink<IColorRecordGetter> Construct(uint id) => new FormLink<IColorRecordGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IColorRecordGetter> WoodElfSkinFemale05 => Construct(0x10ab5c);

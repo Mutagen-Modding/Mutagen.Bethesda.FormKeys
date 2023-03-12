@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class LeveledNpc
+    public static partial class LeveledNpc
     {
         private static FormLink<ILeveledNpcGetter> Construct(uint id) => new FormLink<ILeveledNpcGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILeveledNpcGetter> DLC04_LCharGangPackLegendary => Construct(0x56f51);

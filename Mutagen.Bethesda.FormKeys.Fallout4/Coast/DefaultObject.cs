@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class DefaultObject
+    public static partial class DefaultObject
     {
         private static FormLink<IDefaultObjectGetter> Construct(uint id) => new FormLink<IDefaultObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDefaultObjectGetter> NoPathFailureWarping_DO => Construct(0x5d898);

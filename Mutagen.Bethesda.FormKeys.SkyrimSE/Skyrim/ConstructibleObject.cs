@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class ConstructibleObject
+    public static partial class ConstructibleObject
     {
         private static FormLink<IConstructibleObjectGetter> Construct(uint id) => new FormLink<IConstructibleObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IConstructibleObjectGetter> TemperWeaponSkyforgeSteelWarAxe => Construct(0xf61);

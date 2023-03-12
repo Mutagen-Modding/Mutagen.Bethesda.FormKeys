@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Faction
+    public static partial class Faction
     {
         private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFactionGetter> DLC03Vault118_TurretFaction => Construct(0x5d948);

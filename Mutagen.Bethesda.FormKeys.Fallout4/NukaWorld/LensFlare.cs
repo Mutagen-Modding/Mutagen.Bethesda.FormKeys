@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class LensFlare
+    public static partial class LensFlare
     {
         private static FormLink<ILensFlareGetter> Construct(uint id) => new FormLink<ILensFlareGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILensFlareGetter> DLC04WepPaddleBallQuantumLensFlare => Construct(0x56b8a);

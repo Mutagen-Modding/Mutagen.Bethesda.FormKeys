@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Perk
+    public static partial class Perk
     {
         private static FormLink<IPerkGetter> Construct(uint id) => new FormLink<IPerkGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPerkGetter> DLC03_FortifyAccuracyFoodPerk => Construct(0x566b0);

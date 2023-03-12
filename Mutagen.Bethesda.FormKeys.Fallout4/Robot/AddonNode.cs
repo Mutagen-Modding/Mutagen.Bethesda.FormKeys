@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class AddonNode
+    public static partial class AddonNode
     {
         private static FormLink<IAddonNodeGetter> Construct(uint id) => new FormLink<IAddonNodeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAddonNodeGetter> DLC01FXLightMechDoorControl01Green => Construct(0x1132c);

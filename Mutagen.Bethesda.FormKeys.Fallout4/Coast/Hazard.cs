@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Hazard
+    public static partial class Hazard
     {
         private static FormLink<IHazardGetter> Construct(uint id) => new FormLink<IHazardGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IHazardGetter> DLC03FogRadHazardFX512 => Construct(0x4e08d);

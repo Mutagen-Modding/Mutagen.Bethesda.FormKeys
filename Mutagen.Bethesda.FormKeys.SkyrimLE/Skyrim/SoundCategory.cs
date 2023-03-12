@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class SoundCategory
+    public static partial class SoundCategory
     {
         private static FormLink<ISoundCategoryGetter> Construct(uint id) => new FormLink<ISoundCategoryGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundCategoryGetter> AudioCategoryFSTnpc => Construct(0xf72);

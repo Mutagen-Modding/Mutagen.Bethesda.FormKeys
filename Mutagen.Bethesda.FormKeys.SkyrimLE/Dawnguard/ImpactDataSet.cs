@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class ImpactDataSet
+    public static partial class ImpactDataSet
     {
         private static FormLink<IImpactDataSetGetter> Construct(uint id) => new FormLink<IImpactDataSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImpactDataSetGetter> NPCVampireLordFootWalkImpactSet => Construct(0x13777);

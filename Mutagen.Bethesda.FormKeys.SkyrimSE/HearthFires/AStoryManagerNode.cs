@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class AStoryManagerNode
+    public static partial class AStoryManagerNode
     {
         private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAStoryManagerNodeGetter> BYOHHouseNode => Construct(0x10a49);

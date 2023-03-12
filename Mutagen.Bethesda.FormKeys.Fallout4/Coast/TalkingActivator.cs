@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class TalkingActivator
+    public static partial class TalkingActivator
     {
         private static FormLink<ITalkingActivatorGetter> Construct(uint id) => new FormLink<ITalkingActivatorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITalkingActivatorGetter> DLC03MQ02Fight_GulperTalkingActivator => Construct(0x48a9d);

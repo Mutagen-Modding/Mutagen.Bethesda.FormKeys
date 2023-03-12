@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class Class
+    public static partial class Class
     {
         private static FormLink<IClassGetter> Construct(uint id) => new FormLink<IClassGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IClassGetter> EncClassDremoraMelee => Construct(0x17008);

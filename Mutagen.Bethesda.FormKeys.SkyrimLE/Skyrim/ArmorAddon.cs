@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class ArmorAddon
+    public static partial class ArmorAddon
     {
         private static FormLink<IArmorAddonGetter> Construct(uint id) => new FormLink<IArmorAddonGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IArmorAddonGetter> BoneCrownKhajiitAA => Construct(0x10fce4);

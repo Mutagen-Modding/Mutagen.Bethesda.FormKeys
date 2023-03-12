@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class LandscapeTexture
+    public static partial class LandscapeTexture
     {
         private static FormLink<ILandscapeTextureGetter> Construct(uint id) => new FormLink<ILandscapeTextureGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILandscapeTextureGetter> LVolcanicAshTundra04 => Construct(0x1eecd);

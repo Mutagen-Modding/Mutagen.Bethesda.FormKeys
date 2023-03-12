@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class AssociationType
+    public static partial class AssociationType
     {
         private static FormLink<IAssociationTypeGetter> Construct(uint id) => new FormLink<IAssociationTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAssociationTypeGetter> FavorTarget => Construct(0x3f4da);

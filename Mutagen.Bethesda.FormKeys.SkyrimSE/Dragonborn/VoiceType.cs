@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class VoiceType
+    public static partial class VoiceType
     {
         private static FormLink<IVoiceTypeGetter> Construct(uint id) => new FormLink<IVoiceTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IVoiceTypeGetter> CrSeekerVoice => Construct(0x3d47e);

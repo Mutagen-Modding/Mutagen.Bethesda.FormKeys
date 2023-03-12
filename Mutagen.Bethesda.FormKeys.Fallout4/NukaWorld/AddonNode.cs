@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class AddonNode
+    public static partial class AddonNode
     {
         private static FormLink<IAddonNodeGetter> Construct(uint id) => new FormLink<IAddonNodeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAddonNodeGetter> DLC04LightNodeWorkshopStreetLamp02 => Construct(0x53e7c);

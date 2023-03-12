@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Zoom
+    public static partial class Zoom
     {
         private static FormLink<IZoomGetter> Construct(uint id) => new FormLink<IZoomGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IZoomGetter> ZM_Recon_Scope_x4 => Construct(0x247a25);

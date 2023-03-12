@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class HearthFires
 {
-    public static class Tree
+    public static partial class Tree
     {
         private static FormLink<ITreeGetter> Construct(uint id) => new FormLink<ITreeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITreeGetter> BYOHHouseIngrdWheat01 => Construct(0x110cd);

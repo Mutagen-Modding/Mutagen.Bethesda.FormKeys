@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Holotape
+    public static partial class Holotape
     {
         private static FormLink<IHolotapeGetter> Construct(uint id) => new FormLink<IHolotapeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IHolotapeGetter> DN150_HolotapeBonnie => Construct(0x225d7b);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class ReverbParameters
+    public static partial class ReverbParameters
     {
         private static FormLink<IReverbParametersGetter> Construct(uint id) => new FormLink<IReverbParametersGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IReverbParametersGetter> IntHighTechReverbLarge => Construct(0x23ab4d);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class MovableStatic
+    public static partial class MovableStatic
     {
         private static FormLink<IMovableStaticGetter> Construct(uint id) => new FormLink<IMovableStaticGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMovableStaticGetter> DLC03DiMAMemoryBanks04NoSGON => Construct(0x4dc91);

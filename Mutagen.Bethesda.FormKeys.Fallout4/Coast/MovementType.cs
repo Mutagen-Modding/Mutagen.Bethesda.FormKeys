@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class MovementType
+    public static partial class MovementType
     {
         private static FormLink<IMovementTypeGetter> Construct(uint id) => new FormLink<IMovementTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMovementTypeGetter> DLC03RadChicken_Default_MT => Construct(0x43328);

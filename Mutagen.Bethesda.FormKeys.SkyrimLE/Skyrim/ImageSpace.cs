@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class ImageSpace
+    public static partial class ImageSpace
     {
         private static FormLink<IImageSpaceGetter> Construct(uint id) => new FormLink<IImageSpaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImageSpaceGetter> ISSovngardeDark => Construct(0x10fef7);

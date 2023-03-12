@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class AStoryManagerNode
+    public static partial class AStoryManagerNode
     {
         private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAStoryManagerNodeGetter> DLC1LD_AetherialItemsNode => Construct(0xd00e);

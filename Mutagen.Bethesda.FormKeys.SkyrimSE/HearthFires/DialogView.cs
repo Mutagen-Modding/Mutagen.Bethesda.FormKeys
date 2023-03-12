@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class DialogView
+    public static partial class DialogView
     {
         private static FormLink<IDialogViewGetter> Construct(uint id) => new FormLink<IDialogViewGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogViewGetter> BYOHHouseBanditAttack2View => Construct(0x8b0);

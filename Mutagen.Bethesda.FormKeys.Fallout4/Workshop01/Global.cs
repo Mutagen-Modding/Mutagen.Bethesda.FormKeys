@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class Global
+    public static partial class Global
     {
         private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGlobalGetter> DLCworkshop01Loaded => Construct(0x800);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class SkillRecord
+    public static partial class SkillRecord
     {
         private static FormLink<ISkillRecordGetter> Construct(uint id) => new FormLink<ISkillRecordGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISkillRecordGetter> SkillAlchemy => Construct(0x44);

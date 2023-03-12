@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class ActorValueInformation
+    public static partial class ActorValueInformation
     {
         private static FormLink<IActorValueInformationGetter> Construct(uint id) => new FormLink<IActorValueInformationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IActorValueInformationGetter> DLC06WorkshopReadyToKill => Construct(0x1f01);

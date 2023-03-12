@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class PackIn
+    public static partial class PackIn
     {
         private static FormLink<IPackInGetter> Construct(uint id) => new FormLink<IPackInGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPackInGetter> DLC06HoodedLamp => Construct(0x22a6);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class MaterialSwap
+    public static partial class MaterialSwap
     {
         private static FormLink<IMaterialSwapGetter> Construct(uint id) => new FormLink<IMaterialSwapGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialSwapGetter> DLC03_ClothesFishermanSwap05 => Construct(0x570d6);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class DefaultObject
+    public static partial class DefaultObject
     {
         private static FormLink<IDefaultObjectGetter> Construct(uint id) => new FormLink<IDefaultObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDefaultObjectGetter> WorkshopArmorRackKeyword_DO => Construct(0xf35);

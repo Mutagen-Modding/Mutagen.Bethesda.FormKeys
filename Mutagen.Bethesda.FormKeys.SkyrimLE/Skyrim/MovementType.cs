@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class MovementType
+    public static partial class MovementType
     {
         private static FormLink<IMovementTypeGetter> Construct(uint id) => new FormLink<IMovementTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMovementTypeGetter> Falmer_1HM_Run => Construct(0x103273);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class Grass
+    public static partial class Grass
     {
         private static FormLink<IGrassGetter> Construct(uint id) => new FormLink<IGrassGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGrassGetter> DLC01SoulCairnGrass01 => Construct(0x78ae);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Orrery
 {
-    public static class Miscellaneous
+    public static partial class Miscellaneous
     {
         private static FormLink<IMiscellaneousGetter> Construct(uint id) => new FormLink<IMiscellaneousGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMiscellaneousGetter> DLCOrreryDwarvenCoherer => Construct(0x11bee5);

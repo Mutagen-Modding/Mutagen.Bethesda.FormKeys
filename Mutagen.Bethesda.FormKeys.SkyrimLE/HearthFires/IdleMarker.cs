@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class HearthFires
 {
-    public static class IdleMarker
+    public static partial class IdleMarker
     {
         private static FormLink<IIdleMarkerGetter> Construct(uint id) => new FormLink<IIdleMarkerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIdleMarkerGetter> IdleChildPlayDirtMarker => Construct(0xd835);

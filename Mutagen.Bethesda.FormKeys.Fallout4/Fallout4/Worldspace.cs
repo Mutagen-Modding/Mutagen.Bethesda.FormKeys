@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Worldspace
+    public static partial class Worldspace
     {
         private static FormLink<IWorldspaceGetter> Construct(uint id) => new FormLink<IWorldspaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWorldspaceGetter> Commonwealth => Construct(0x3c);

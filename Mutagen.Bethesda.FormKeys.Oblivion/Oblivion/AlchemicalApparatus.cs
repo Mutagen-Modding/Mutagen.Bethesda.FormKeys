@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class AlchemicalApparatus
+    public static partial class AlchemicalApparatus
     {
         private static FormLink<IAlchemicalApparatusGetter> Construct(uint id) => new FormLink<IAlchemicalApparatusGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAlchemicalApparatusGetter> SE38MuseumItem8 => Construct(0x81e6f);

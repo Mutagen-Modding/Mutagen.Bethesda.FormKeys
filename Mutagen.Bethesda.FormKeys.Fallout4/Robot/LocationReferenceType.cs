@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class LocationReferenceType
+    public static partial class LocationReferenceType
     {
         private static FormLink<ILocationReferenceTypeGetter> Construct(uint id) => new FormLink<ILocationReferenceTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILocationReferenceTypeGetter> DLC01Lair_DungeonWorkbenchRefType => Construct(0x10c9a);

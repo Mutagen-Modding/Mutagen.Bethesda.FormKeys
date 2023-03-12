@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class AObjectModification
+    public static partial class AObjectModification
     {
         private static FormLink<IAObjectModificationGetter> Construct(uint id) => new FormLink<IAObjectModificationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAObjectModificationGetter> DLC05_PA_Material_SugarBombs => Construct(0xb7a);

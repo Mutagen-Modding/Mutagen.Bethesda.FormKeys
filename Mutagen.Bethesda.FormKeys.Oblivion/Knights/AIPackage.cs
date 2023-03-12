@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Knights
 {
-    public static class AIPackage
+    public static partial class AIPackage
     {
         private static FormLink<IAIPackageGetter> Construct(uint id) => new FormLink<IAIPackageGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAIPackageGetter> NDKnight8WaitforPlayer => Construct(0x2d5d);

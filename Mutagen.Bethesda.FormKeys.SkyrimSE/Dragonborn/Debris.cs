@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Debris
+    public static partial class Debris
     {
         private static FormLink<IDebrisGetter> Construct(uint id) => new FormLink<IDebrisGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDebrisGetter> DLC2TentacleDebris => Construct(0x39e47);

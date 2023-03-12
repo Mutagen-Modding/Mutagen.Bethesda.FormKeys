@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class Cell
+    public static partial class Cell
     {
         private static FormLink<ICellGetter> Construct(uint id) => new FormLink<ICellGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ICellGetter> ccPlaceholder16Interior01 => Construct(0x30e8);

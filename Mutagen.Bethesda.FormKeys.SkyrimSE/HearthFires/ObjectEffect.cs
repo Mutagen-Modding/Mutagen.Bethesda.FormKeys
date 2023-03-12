@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class ObjectEffect
+    public static partial class ObjectEffect
     {
         private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IObjectEffectGetter> BYOHHousePart187ShrineBaseEnch => Construct(0xf3cf);

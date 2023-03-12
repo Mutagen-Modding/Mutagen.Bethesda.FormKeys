@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class ImageSpaceAdapter
+    public static partial class ImageSpaceAdapter
     {
         private static FormLink<IImageSpaceAdapterGetter> Construct(uint id) => new FormLink<IImageSpaceAdapterGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImageSpaceAdapterGetter> DLC05ExplosionWeatherRainImod => Construct(0xf2e);

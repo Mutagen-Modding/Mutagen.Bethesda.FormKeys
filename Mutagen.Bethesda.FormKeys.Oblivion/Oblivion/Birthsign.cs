@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class Birthsign
+    public static partial class Birthsign
     {
         private static FormLink<IBirthsignGetter> Construct(uint id) => new FormLink<IBirthsignGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IBirthsignGetter> BirthSignWarrior => Construct(0x1fd9d);

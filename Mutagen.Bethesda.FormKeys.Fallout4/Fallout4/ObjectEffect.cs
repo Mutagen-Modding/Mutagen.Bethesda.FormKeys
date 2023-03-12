@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class ObjectEffect
+    public static partial class ObjectEffect
     {
         private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IObjectEffectGetter> VRWorkshopShared_ench_mod_LegendaryNerfPerk => Construct(0x24a337);

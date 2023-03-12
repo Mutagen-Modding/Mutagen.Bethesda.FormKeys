@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class MusicType
+    public static partial class MusicType
     {
         private static FormLink<IMusicTypeGetter> Construct(uint id) => new FormLink<IMusicTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMusicTypeGetter> DLC03MUSFactionChildrenOfAtomdelete => Construct(0x5d13e);

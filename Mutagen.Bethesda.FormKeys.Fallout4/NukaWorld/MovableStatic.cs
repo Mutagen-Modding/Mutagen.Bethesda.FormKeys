@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class MovableStatic
+    public static partial class MovableStatic
     {
         private static FormLink<IMovableStaticGetter> Construct(uint id) => new FormLink<IMovableStaticGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMovableStaticGetter> NukaColaMachineCommercialFxDLC04 => Construct(0x55a4d);

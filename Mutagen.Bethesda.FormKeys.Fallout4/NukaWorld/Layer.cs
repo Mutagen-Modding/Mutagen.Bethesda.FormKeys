@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Layer
+    public static partial class Layer
     {
         private static FormLink<ILayerGetter> Construct(uint id) => new FormLink<ILayerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILayerGetter> PowerPlantPowerOffLights => Construct(0x56d91);

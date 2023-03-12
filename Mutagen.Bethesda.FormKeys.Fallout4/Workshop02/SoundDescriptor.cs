@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class SoundDescriptor
+    public static partial class SoundDescriptor
     {
         private static FormLink<ISoundDescriptorGetter> Construct(uint id) => new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundDescriptorGetter> DLC05FXExplosionWorkshopFireworksCLAYERE => Construct(0xf2a);

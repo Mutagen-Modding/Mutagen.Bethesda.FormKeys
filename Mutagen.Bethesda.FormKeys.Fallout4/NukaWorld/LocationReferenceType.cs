@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class LocationReferenceType
+    public static partial class LocationReferenceType
     {
         private static FormLink<ILocationReferenceTypeGetter> Construct(uint id) => new FormLink<ILocationReferenceTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILocationReferenceTypeGetter> DLC04_KK_MistTriggerType => Construct(0x55a0d);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class IdleMarker
+    public static partial class IdleMarker
     {
         private static FormLink<IIdleMarkerGetter> Construct(uint id) => new FormLink<IIdleMarkerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIdleMarkerGetter> DLC03KasumiThinkIdleMarker => Construct(0x25b1c);

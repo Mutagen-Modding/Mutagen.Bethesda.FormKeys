@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class MaterialSwap
+    public static partial class MaterialSwap
     {
         private static FormLink<IMaterialSwapGetter> Construct(uint id) => new FormLink<IMaterialSwapGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialSwapGetter> StationWagon_Postwar_Cheap04_Swap => Construct(0x249a4e);

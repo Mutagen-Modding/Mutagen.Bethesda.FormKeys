@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class TextureSet
+    public static partial class TextureSet
     {
         private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITextureSetGetter> DLC2DecalRunePoison => Construct(0x3d5e6);

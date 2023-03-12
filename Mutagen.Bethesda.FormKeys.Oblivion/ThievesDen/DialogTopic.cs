@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class ThievesDen
 {
-    public static class DialogTopic
+    public static partial class DialogTopic
     {
         private static FormLink<IDialogTopicGetter> Construct(uint id) => new FormLink<IDialogTopicGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogTopicGetter> DLC06FletcherTopic01 => Construct(0x6fd9);

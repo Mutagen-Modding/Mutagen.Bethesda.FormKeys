@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Debris
+    public static partial class Debris
     {
         private static FormLink<IDebrisGetter> Construct(uint id) => new FormLink<IDebrisGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDebrisGetter> RobotDebrisMed => Construct(0xc1c14);

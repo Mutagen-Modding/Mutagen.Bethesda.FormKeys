@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class WordOfPower
+    public static partial class WordOfPower
     {
         private static FormLink<IWordOfPowerGetter> Construct(uint id) => new FormLink<IWordOfPowerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWordOfPowerGetter> DLC2MKMiraakMaskShoutWord => Construct(0x39d29);

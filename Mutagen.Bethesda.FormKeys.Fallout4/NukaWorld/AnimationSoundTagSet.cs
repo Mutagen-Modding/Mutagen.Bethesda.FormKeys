@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class AnimationSoundTagSet
+    public static partial class AnimationSoundTagSet
     {
         private static FormLink<IAnimationSoundTagSetGetter> Construct(uint id) => new FormLink<IAnimationSoundTagSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAnimationSoundTagSetGetter> DLC04NPCRadratATS => Construct(0x40d1a);

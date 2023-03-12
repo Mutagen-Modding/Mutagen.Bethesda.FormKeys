@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class LandscapeTexture
+    public static partial class LandscapeTexture
     {
         private static FormLink<ILandscapeTextureGetter> Construct(uint id) => new FormLink<ILandscapeTextureGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILandscapeTextureGetter> LDLC04HillGrass01NoGrass => Construct(0xd371);

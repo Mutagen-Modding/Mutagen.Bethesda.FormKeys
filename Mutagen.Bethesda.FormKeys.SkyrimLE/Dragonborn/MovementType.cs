@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class MovementType
+    public static partial class MovementType
     {
         private static FormLink<IMovementTypeGetter> Construct(uint id) => new FormLink<IMovementTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMovementTypeGetter> BenthicLurkerCombatRun_MT => Construct(0x35e11);

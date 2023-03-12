@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class AudioEffectChain
+    public static partial class AudioEffectChain
     {
         private static FormLink<IAudioEffectChainGetter> Construct(uint id) => new FormLink<IAudioEffectChainGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAudioEffectChainGetter> DLC04AudioEffectChainPAOswald => Construct(0x56eaf);

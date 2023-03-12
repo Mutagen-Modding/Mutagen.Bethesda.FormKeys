@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class Layer
+    public static partial class Layer
     {
         private static FormLink<ILayerGetter> Construct(uint id) => new FormLink<ILayerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILayerGetter> DLC06_LightBoxes => Construct(0x1e0f);

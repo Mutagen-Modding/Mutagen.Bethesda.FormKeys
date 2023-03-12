@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class DialogTopic
+    public static partial class DialogTopic
     {
         private static FormLink<IDialogTopicGetter> Construct(uint id) => new FormLink<IDialogTopicGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogTopicGetter> TG01BersiQuestPreBrokenBranchTopic => Construct(0x1360e);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Terminal
+    public static partial class Terminal
     {
         private static FormLink<ITerminalGetter> Construct(uint id) => new FormLink<ITerminalGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITerminalGetter> VRWorkshopShared_VRTerminalMusicSubMenu => Construct(0x24a3cc);

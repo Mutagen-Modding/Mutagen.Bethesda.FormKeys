@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class Global
+    public static partial class Global
     {
         private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGlobalGetter> ccVSVSSE004_TrollGlobal => Construct(0x154a7);

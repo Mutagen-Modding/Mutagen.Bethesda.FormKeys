@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class Location
+    public static partial class Location
     {
         private static FormLink<ILocationGetter> Construct(uint id) => new FormLink<ILocationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILocationGetter> RiftenMercerHouseInteriorLocation => Construct(0x1706e);

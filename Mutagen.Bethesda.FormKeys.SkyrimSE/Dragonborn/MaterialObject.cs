@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class MaterialObject
+    public static partial class MaterialObject
     {
         private static FormLink<IMaterialObjectGetter> Construct(uint id) => new FormLink<IMaterialObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialObjectGetter> DLC02IceShader01 => Construct(0x3b396);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class WordOfPower
+    public static partial class WordOfPower
     {
         private static FormLink<IWordOfPowerGetter> Construct(uint id) => new FormLink<IWordOfPowerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWordOfPowerGetter> DLC1UndeadSummon3 => Construct(0x1a164);

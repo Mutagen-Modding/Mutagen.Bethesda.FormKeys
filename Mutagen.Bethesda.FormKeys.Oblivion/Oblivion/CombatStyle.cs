@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class CombatStyle
+    public static partial class CombatStyle
     {
         private static FormLink<ICombatStyleGetter> Construct(uint id) => new FormLink<ICombatStyleGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ICombatStyleGetter> SE11DopplegangerCombatStyle => Construct(0x97608);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class HeadPart
+    public static partial class HeadPart
     {
         private static FormLink<IHeadPartGetter> Construct(uint id) => new FormLink<IHeadPartGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IHeadPartGetter> DLC04MaleHeadGhoulRearGlowing => Construct(0x383ab);

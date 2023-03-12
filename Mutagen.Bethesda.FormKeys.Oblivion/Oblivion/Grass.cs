@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class Grass
+    public static partial class Grass
     {
         private static FormLink<IGrassGetter> Construct(uint id) => new FormLink<IGrassGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGrassGetter> DGrass03 => Construct(0x50aa0);

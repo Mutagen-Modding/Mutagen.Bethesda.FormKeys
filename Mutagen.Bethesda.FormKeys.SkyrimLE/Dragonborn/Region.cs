@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class Region
+    public static partial class Region
     {
         private static FormLink<IRegionGetter> Construct(uint id) => new FormLink<IRegionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRegionGetter> AudioExtApocryphaGeneral => Construct(0x39e2f);

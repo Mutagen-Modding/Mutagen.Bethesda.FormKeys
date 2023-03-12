@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class SoundDescriptor
+    public static partial class SoundDescriptor
     {
         private static FormLink<ISoundDescriptorGetter> Construct(uint id) => new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundDescriptorGetter> AMBDLC1WaterfallMediumLPSD => Construct(0x14c54);

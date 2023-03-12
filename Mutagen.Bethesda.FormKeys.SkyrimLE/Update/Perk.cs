@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Update
 {
-    public static class Perk
+    public static partial class Perk
     {
         private static FormLink<IPerkGetter> Construct(uint id) => new FormLink<IPerkGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPerkGetter> MS04AncientKnowledge => Construct(0x9d4);

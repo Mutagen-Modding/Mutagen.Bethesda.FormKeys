@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Holotape
+    public static partial class Holotape
     {
         private static FormLink<IHolotapeGetter> Construct(uint id) => new FormLink<IHolotapeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IHolotapeGetter> DLC04MS01HiddenCappyCluesHolotape => Construct(0x56a01);

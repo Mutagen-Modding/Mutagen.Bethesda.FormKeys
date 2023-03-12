@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class MaterialType
+    public static partial class MaterialType
     {
         private static FormLink<IMaterialTypeGetter> Construct(uint id) => new FormLink<IMaterialTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialTypeGetter> DLC04_Material_RubberBasketBall => Construct(0x4f08a);

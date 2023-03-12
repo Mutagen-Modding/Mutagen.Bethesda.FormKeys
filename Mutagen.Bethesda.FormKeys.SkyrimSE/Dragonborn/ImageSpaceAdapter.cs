@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class ImageSpaceAdapter
+    public static partial class ImageSpaceAdapter
     {
         private static FormLink<IImageSpaceAdapterGetter> Construct(uint id) => new FormLink<IImageSpaceAdapterGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImageSpaceAdapterGetter> DLC2ConstellationExplosionImod => Construct(0x3d5cf);

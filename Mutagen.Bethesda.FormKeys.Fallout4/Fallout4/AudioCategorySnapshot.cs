@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class AudioCategorySnapshot
+    public static partial class AudioCategorySnapshot
     {
         private static FormLink<IAudioCategorySnapshotGetter> Construct(uint id) => new FormLink<IAudioCategorySnapshotGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAudioCategorySnapshotGetter> CSMQ101Cryopod => Construct(0x19ee91);

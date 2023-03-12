@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class ImageSpace
+    public static partial class ImageSpace
     {
         private static FormLink<IImageSpaceGetter> Construct(uint id) => new FormLink<IImageSpaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImageSpaceGetter> DLC03_Nucleus => Construct(0x501cb);

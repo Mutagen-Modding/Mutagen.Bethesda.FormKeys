@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class BodyPartData
+    public static partial class BodyPartData
     {
         private static FormLink<IBodyPartDataGetter> Construct(uint id) => new FormLink<IBodyPartDataGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IBodyPartDataGetter> DLC2MountedRieklingBodyPartData => Construct(0x1e2a3);
