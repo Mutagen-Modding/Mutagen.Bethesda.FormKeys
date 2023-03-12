@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class Weather
+    public static partial class Weather
     {
         private static FormLink<IWeatherGetter> Construct(uint id) => new FormLink<IWeatherGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWeatherGetter> SoulCairnAmb01_Rain => Construct(0x14551);

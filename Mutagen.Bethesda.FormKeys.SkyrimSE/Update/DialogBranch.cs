@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class DialogBranch
+    public static partial class DialogBranch
     {
         private static FormLink<IDialogBranchGetter> Construct(uint id) => new FormLink<IDialogBranchGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogBranchGetter> CCHorseArmorDialogueQuestArmorBranch => Construct(0x30b6);

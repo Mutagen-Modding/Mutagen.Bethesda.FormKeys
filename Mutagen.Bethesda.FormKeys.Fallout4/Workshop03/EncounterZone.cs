@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class EncounterZone
+    public static partial class EncounterZone
     {
         private static FormLink<IEncounterZoneGetter> Construct(uint id) => new FormLink<IEncounterZoneGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IEncounterZoneGetter> Vault88Zone => Construct(0x3de0);

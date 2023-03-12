@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class Spell
+    public static partial class Spell
     {
         private static FormLink<ISpellGetter> Construct(uint id) => new FormLink<ISpellGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISpellGetter> DLC02WorkshopDetectLifeAbility => Construct(0xcb5);

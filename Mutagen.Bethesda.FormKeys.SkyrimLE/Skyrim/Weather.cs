@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class Weather
+    public static partial class Weather
     {
         private static FormLink<IWeatherGetter> Construct(uint id) => new FormLink<IWeatherGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWeatherGetter> SovngardeDark => Construct(0x10fef8);

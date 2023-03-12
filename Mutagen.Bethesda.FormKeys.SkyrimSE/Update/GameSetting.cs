@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class GameSetting
+    public static partial class GameSetting
     {
         private static FormLink<IGameSettingGetter> Construct(uint id) => new FormLink<IGameSettingGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGameSettingGetter> sConfirmNewMods_Orbis => Construct(0x2ece);

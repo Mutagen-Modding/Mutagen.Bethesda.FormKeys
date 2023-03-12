@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class LoadScreen
+    public static partial class LoadScreen
     {
         private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILoadScreenGetter> ChargenLoadScreen => Construct(0xe8a);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class AnimationSoundTagSet
+    public static partial class AnimationSoundTagSet
     {
         private static FormLink<IAnimationSoundTagSetGetter> Construct(uint id) => new FormLink<IAnimationSoundTagSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAnimationSoundTagSetGetter> NPCDogRaiderATS => Construct(0x247454);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class MiscItem
+    public static partial class MiscItem
     {
         private static FormLink<IMiscItemGetter> Construct(uint id) => new FormLink<IMiscItemGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMiscItemGetter> DLC06Typewriter => Construct(0x1be5);

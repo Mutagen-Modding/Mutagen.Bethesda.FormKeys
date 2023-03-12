@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class MehrunesRazor
 {
-    public static class Weapon
+    public static partial class Weapon
     {
         private static FormLink<IWeaponGetter> Construct(uint id) => new FormLink<IWeaponGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWeaponGetter> DL9ChampAxe02 => Construct(0x272b);

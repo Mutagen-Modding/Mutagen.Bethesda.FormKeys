@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Perk
+    public static partial class Perk
     {
         private static FormLink<IPerkGetter> Construct(uint id) => new FormLink<IPerkGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPerkGetter> DLC04PackFightsReduceDamage => Construct(0x56318);

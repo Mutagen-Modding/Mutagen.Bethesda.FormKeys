@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class Faction
+    public static partial class Faction
     {
         private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFactionGetter> WinterholdJailFaction => Construct(0xea8);

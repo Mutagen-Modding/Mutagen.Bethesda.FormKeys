@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class HearthFires
 {
-    public static class Outfit
+    public static partial class Outfit
     {
         private static FormLink<IOutfitGetter> Construct(uint id) => new FormLink<IOutfitGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IOutfitGetter> ChildOutfit05 => Construct(0xc4d);

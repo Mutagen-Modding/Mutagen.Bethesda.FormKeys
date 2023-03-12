@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Faction
+    public static partial class Faction
     {
         private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFactionGetter> VRWorkshopShared_AlienFaction => Construct(0x24a3e8);

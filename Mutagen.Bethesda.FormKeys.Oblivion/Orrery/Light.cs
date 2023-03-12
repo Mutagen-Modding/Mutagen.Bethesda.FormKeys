@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Orrery
 {
-    public static class Light
+    public static partial class Light
     {
         private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILightGetter> DLCOrreryDomeBaseLight => Construct(0x1243b3);

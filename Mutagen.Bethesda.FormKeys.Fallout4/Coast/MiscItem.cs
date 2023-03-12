@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class MiscItem
+    public static partial class MiscItem
     {
         private static FormLink<IMiscItemGetter> Construct(uint id) => new FormLink<IMiscItemGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMiscItemGetter> DLC03_miscmod_mod_armor_Marine_Torso_Material_1B => Construct(0x56f70);

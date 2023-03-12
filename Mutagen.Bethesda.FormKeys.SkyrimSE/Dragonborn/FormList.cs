@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class FormList
+    public static partial class FormList
     {
         private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFormListGetter> DLC2ApoWaterDamageLocationsList => Construct(0x1dc06);

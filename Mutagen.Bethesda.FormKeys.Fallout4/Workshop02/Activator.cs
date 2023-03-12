@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class Activator
+    public static partial class Activator
     {
         private static FormLink<IActivatorGetter> Construct(uint id) => new FormLink<IActivatorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IActivatorGetter> DLC05ElevatorNavCut => Construct(0xf2f);

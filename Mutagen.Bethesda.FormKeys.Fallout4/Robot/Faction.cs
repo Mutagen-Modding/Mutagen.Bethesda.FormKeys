@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class Faction
+    public static partial class Faction
     {
         private static FormLink<IFactionGetter> Construct(uint id) => new FormLink<IFactionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFactionGetter> DLC01REAssaultSC05_FactionSpeakerFaction => Construct(0x109c6);

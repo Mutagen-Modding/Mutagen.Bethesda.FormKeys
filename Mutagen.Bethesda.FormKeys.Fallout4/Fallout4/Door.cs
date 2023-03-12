@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Door
+    public static partial class Door
     {
         private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDoorGetter> ccTOSFO4002_IndMetalDbDoorLoad01 => Construct(0x24a1bd);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class GodRays
+    public static partial class GodRays
     {
         private static FormLink<IGodRaysGetter> Construct(uint id) => new FormLink<IGodRaysGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGodRaysGetter> DefaultWhiteGodrays01Bright => Construct(0x228e0d);

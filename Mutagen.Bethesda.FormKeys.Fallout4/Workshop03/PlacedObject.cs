@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class PlacedObject
+    public static partial class PlacedObject
     {
         private static FormLink<IPlacedObjectGetter> Construct(uint id) => new FormLink<IPlacedObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPlacedObjectGetter> DLC06VaultWorkshopEdgeMarkerGearDoor001 => Construct(0x2517);

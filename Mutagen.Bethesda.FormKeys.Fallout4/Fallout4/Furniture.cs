@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Furniture
+    public static partial class Furniture
     {
         private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFurnitureGetter> VRWorkshopShared_VRPod_Workshop => Construct(0x24a33a);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Outfit
+    public static partial class Outfit
     {
         private static FormLink<IOutfitGetter> Construct(uint id) => new FormLink<IOutfitGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IOutfitGetter> DLC04RandomRadGorillaOutfit => Construct(0x51b7e);

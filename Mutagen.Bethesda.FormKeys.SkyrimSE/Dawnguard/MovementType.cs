@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class MovementType
+    public static partial class MovementType
     {
         private static FormLink<IMovementTypeGetter> Construct(uint id) => new FormLink<IMovementTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMovementTypeGetter> GargoyleDefault_MT => Construct(0xd036);

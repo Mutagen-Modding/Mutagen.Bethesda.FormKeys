@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Spell
+    public static partial class Spell
     {
         private static FormLink<ISpellGetter> Construct(uint id) => new FormLink<ISpellGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISpellGetter> VRWorkshopShared_AbWaterBreathingSpell => Construct(0x24a3e7);

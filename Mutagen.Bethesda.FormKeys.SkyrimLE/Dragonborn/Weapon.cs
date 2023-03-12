@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class Weapon
+    public static partial class Weapon
     {
         private static FormLink<IWeaponGetter> Construct(uint id) => new FormLink<IWeaponGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWeaponGetter> DLC2RieklingSpearCharge => Construct(0x3c337);

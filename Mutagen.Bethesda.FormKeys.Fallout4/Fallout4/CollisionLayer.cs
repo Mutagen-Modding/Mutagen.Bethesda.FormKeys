@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class CollisionLayer
+    public static partial class CollisionLayer
     {
         private static FormLink<ICollisionLayerGetter> Construct(uint id) => new FormLink<ICollisionLayerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ICollisionLayerGetter> L_CHARBUMPER => Construct(0xd8121);

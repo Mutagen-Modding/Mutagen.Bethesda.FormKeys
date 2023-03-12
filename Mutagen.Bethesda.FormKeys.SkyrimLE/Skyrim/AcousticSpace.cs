@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class AcousticSpace
+    public static partial class AcousticSpace
     {
         private static FormLink<IAcousticSpaceGetter> Construct(uint id) => new FormLink<IAcousticSpaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAcousticSpaceGetter> ExtMQFlashbackInteriorAcousticSpace => Construct(0x10fe9e);

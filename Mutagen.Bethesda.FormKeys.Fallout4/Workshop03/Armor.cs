@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class Armor
+    public static partial class Armor
     {
         private static FormLink<IArmorGetter> Construct(uint id) => new FormLink<IArmorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IArmorGetter> DLC06Armor_Vault88_Underwear_Legendary => Construct(0x1afd);

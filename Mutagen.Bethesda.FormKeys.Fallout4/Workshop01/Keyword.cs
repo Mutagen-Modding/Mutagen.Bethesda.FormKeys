@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class Keyword
+    public static partial class Keyword
     {
         private static FormLink<IKeywordGetter> Construct(uint id) => new FormLink<IKeywordGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IKeywordGetter> DLC02WorkshopRecipeFilterResource02Power03NeonLights04Signs => Construct(0xbd8);

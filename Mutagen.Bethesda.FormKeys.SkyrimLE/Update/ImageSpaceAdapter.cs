@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Update
 {
-    public static class ImageSpaceAdapter
+    public static partial class ImageSpaceAdapter
     {
         private static FormLink<IImageSpaceAdapterGetter> Construct(uint id) => new FormLink<IImageSpaceAdapterGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImageSpaceAdapterGetter> VATSImodDOFFAR => Construct(0x931);

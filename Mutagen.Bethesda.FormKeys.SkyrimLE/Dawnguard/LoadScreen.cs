@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class LoadScreen
+    public static partial class LoadScreen
     {
         private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILoadScreenGetter> DLC1Vampires => Construct(0x29e4);

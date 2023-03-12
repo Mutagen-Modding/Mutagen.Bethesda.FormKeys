@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class SoundOutputModel
+    public static partial class SoundOutputModel
     {
         private static FormLink<ISoundOutputModelGetter> Construct(uint id) => new FormLink<ISoundOutputModelGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundOutputModelGetter> DLC03SOMMonoBartender02500_verb => Construct(0x5d9ea);

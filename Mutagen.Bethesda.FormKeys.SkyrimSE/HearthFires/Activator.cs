@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class Activator
+    public static partial class Activator
     {
         private static FormLink<IActivatorGetter> Construct(uint id) => new FormLink<IActivatorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IActivatorGetter> BYOHMineClay01RiverMud01 => Construct(0xa14);

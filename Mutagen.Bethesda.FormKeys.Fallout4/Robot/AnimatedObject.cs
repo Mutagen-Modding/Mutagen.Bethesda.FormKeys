@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class AnimatedObject
+    public static partial class AnimatedObject
     {
         private static FormLink<IAnimatedObjectGetter> Construct(uint id) => new FormLink<IAnimatedObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAnimatedObjectGetter> DLC01AnimObjectRepairKit => Construct(0xf65c);

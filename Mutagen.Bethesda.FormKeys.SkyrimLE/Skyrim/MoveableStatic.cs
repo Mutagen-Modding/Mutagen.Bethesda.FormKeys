@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class MoveableStatic
+    public static partial class MoveableStatic
     {
         private static FormLink<IMoveableStaticGetter> Construct(uint id) => new FormLink<IMoveableStaticGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMoveableStaticGetter> GallusFXBody01 => Construct(0x10f7ea);

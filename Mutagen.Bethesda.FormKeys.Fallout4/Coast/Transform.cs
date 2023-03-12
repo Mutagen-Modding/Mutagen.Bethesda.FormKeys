@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Transform
+    public static partial class Transform
     {
         private static FormLink<ITransformGetter> Construct(uint id) => new FormLink<ITransformGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITransformGetter> DLC03_workshop_BarnPost02 => Construct(0x5d70d);

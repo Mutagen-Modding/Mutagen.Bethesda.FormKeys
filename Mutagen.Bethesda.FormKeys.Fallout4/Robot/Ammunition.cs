@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class Ammunition
+    public static partial class Ammunition
     {
         private static FormLink<IAmmunitionGetter> Construct(uint id) => new FormLink<IAmmunitionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAmmunitionGetter> DLC01BotAmmoFatManMiniNuke => Construct(0xa36);

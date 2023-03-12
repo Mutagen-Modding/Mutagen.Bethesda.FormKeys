@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class Spell
+    public static partial class Spell
     {
         private static FormLink<ISpellGetter> Construct(uint id) => new FormLink<ISpellGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISpellGetter> DLC01SmokeBombHazardSpell => Construct(0x2d63);

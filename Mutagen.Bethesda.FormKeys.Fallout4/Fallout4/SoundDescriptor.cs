@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class SoundDescriptor
+    public static partial class SoundDescriptor
     {
         private static FormLink<ISoundDescriptorGetter> Construct(uint id) => new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundDescriptorGetter> VRWorkshopShared_ErrorFX => Construct(0x24a39c);

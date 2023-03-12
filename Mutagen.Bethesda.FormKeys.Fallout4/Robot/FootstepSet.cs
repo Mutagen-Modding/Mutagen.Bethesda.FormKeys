@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class FootstepSet
+    public static partial class FootstepSet
     {
         private static FormLink<IFootstepSetGetter> Construct(uint id) => new FormLink<IFootstepSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFootstepSetGetter> FSTArmorMechanistFootstepSet => Construct(0xe2e9);

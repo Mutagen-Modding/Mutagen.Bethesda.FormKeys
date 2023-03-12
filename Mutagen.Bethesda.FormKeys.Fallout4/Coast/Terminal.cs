@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Terminal
+    public static partial class Terminal
     {
         private static FormLink<ITerminalGetter> Construct(uint id) => new FormLink<ITerminalGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITerminalGetter> ADV08_Vim_Terminal_RD_SubLogs => Construct(0x54270);

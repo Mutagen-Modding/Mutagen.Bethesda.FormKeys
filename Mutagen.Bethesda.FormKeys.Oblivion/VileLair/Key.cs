@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class VileLair
 {
-    public static class Key
+    public static partial class Key
     {
         private static FormLink<IKeyGetter> Construct(uint id) => new FormLink<IKeyGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IKeyGetter> LairVileCellKey => Construct(0x1380);

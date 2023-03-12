@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class Scene
+    public static partial class Scene
     {
         private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISceneGetter> DLC06WorkshopGenericBarberSurgeryScene => Construct(0x2564);

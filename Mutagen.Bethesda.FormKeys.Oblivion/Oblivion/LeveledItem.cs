@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class LeveledItem
+    public static partial class LeveledItem
     {
         private static FormLink<ILeveledItemGetter> Construct(uint id) => new FormLink<ILeveledItemGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILeveledItemGetter> SE11LLCiirtaRobe => Construct(0x97607);

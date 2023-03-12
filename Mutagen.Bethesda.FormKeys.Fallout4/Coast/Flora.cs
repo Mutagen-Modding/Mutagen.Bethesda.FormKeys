@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Flora
+    public static partial class Flora
     {
         private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFloraGetter> FloraDLC03SapBucket01 => Construct(0x4dcb5);

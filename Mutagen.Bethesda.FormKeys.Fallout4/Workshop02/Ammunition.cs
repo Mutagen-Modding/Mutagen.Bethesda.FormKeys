@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class Ammunition
+    public static partial class Ammunition
     {
         private static FormLink<IAmmunitionGetter> Construct(uint id) => new FormLink<IAmmunitionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAmmunitionGetter> DLC05AmmoPaintballYellow => Construct(0xda0);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class Ingredient
+    public static partial class Ingredient
     {
         private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIngredientGetter> SEMFlameStalkBruscusDannus => Construct(0x97613);

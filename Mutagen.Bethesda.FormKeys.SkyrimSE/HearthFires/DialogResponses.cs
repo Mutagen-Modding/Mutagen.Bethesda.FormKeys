@@ -7,14 +7,14 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class DialogResponses
+    public static partial class DialogResponses
     {
         private static FormLink<IDialogResponsesGetter> Construct(uint id) => new FormLink<IDialogResponsesGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveNord => Construct(0x2f4c);
         public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveOrc => Construct(0x2f4d);
         public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveArgonian => Construct(0x2f4e);
-        public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveNeutral => Construct(0x2f47);
         public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveDrunk => Construct(0x2f4f);
+        public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveNeutral => Construct(0x2f47);
         public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveArrogant => Construct(0x2f50);
         public static FormLink<IDialogResponsesGetter> RelationshipMarriageFIN_MoveRough => Construct(0x2f51);
         public static FormLink<IDialogResponsesGetter> BYOHHouseBanditAttack2NoMoney => Construct(0x88c);
@@ -23,10 +23,9 @@ public static partial class HearthFires
         public static FormLink<IDialogResponsesGetter> BYOHHousePaleAvailableForPurchase => Construct(0xc37);
         public static FormLink<IDialogResponsesGetter> BYOHHouseHjaalmarchLandAvailable => Construct(0xc51);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoption_YesMom => Construct(0x3ed2);
-        public static FormLink<IDialogResponsesGetter> RelationshipAdoption_Greet2 => Construct(0x3ecb);
+        public static FormLink<IDialogResponsesGetter> RelationshipAdoption_ThanksMom => Construct(0x3ed3);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoption_Greet3 => Construct(0x3ecc);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoption_Greet4 => Construct(0x3ecd);
-        public static FormLink<IDialogResponsesGetter> RelationshipAdoption_ThanksMom => Construct(0x3ed3);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoption_Moving_Boy => Construct(0x3ece);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoption_MovingGirl => Construct(0x3ecf);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoption_NameCallingIntro1 => Construct(0x192ca);
@@ -94,6 +93,7 @@ public static partial class HearthFires
         public static FormLink<IDialogResponsesGetter> RelationshipAdoption_KeepPet2 => Construct(0x13ee7);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoption_KeepPet1 => Construct(0x13ee8);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoption_Greet1 => Construct(0x3eca);
+        public static FormLink<IDialogResponsesGetter> RelationshipAdoption_Greet2 => Construct(0x3ecb);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoptable_Intro_GirlBoth => Construct(0x3e43);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoptable_Intro_GirlMotherOnly => Construct(0x3e44);
         public static FormLink<IDialogResponsesGetter> RelationshipAdoptable_Intro_GirlFatherOnly => Construct(0x3e45);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class SoundKeywordMapping
+    public static partial class SoundKeywordMapping
     {
         private static FormLink<ISoundKeywordMappingGetter> Construct(uint id) => new FormLink<ISoundKeywordMappingGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundKeywordMappingGetter> DLC04PaddleBallSemiShockNPC => Construct(0x56fb0);

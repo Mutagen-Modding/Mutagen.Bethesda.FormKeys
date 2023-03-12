@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class Spell
+    public static partial class Spell
     {
         private static FormLink<ISpellGetter> Construct(uint id) => new FormLink<ISpellGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISpellGetter> DLC2AshGuardianPowerAttackExplosion => Construct(0x1e2a6);

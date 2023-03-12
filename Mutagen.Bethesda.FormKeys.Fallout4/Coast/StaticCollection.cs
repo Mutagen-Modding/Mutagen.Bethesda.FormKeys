@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class StaticCollection
+    public static partial class StaticCollection
     {
         private static FormLink<IStaticCollectionGetter> Construct(uint id) => new FormLink<IStaticCollectionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IStaticCollectionGetter> DLC03FarHarborWindows02 => Construct(0x57127);

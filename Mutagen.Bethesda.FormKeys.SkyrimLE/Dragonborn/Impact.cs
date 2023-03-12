@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class Impact
+    public static partial class Impact
     {
         private static FormLink<IImpactGetter> Construct(uint id) => new FormLink<IImpactGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImpactGetter> WPNBlade1HandMiraakVsMetalSkinImpact => Construct(0x1e29c);

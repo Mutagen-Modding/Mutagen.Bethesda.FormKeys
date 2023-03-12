@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class MaterialObject
+    public static partial class MaterialObject
     {
         private static FormLink<IMaterialObjectGetter> Construct(uint id) => new FormLink<IMaterialObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialObjectGetter> SnowMaterialWinterhold => Construct(0x108a84);

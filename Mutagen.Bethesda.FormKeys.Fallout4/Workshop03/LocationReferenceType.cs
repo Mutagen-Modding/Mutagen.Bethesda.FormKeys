@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class LocationReferenceType
+    public static partial class LocationReferenceType
     {
         private static FormLink<ILocationReferenceTypeGetter> Construct(uint id) => new FormLink<ILocationReferenceTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILocationReferenceTypeGetter> DLC06RubblePile => Construct(0x12ba);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class IdleMarker
+    public static partial class IdleMarker
     {
         private static FormLink<IIdleMarkerGetter> Construct(uint id) => new FormLink<IIdleMarkerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIdleMarkerGetter> SodaDispenserNPCMarker => Construct(0x1197);

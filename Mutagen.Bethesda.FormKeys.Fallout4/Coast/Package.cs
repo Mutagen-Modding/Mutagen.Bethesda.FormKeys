@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Package
+    public static partial class Package
     {
         private static FormLink<IPackageGetter> Construct(uint id) => new FormLink<IPackageGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPackageGetter> DLC03_V118_PearlHoldInBasementTravel => Construct(0x5d7ad);

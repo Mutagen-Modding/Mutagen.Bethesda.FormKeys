@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Outfit
+    public static partial class Outfit
     {
         private static FormLink<IOutfitGetter> Construct(uint id) => new FormLink<IOutfitGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IOutfitGetter> DLC03_RainGear05_Outfit => Construct(0x576e4);

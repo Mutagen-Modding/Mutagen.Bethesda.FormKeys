@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Furniture
+    public static partial class Furniture
     {
         private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFurnitureGetter> DLC2MQ02Meditate => Construct(0x3d5dc);

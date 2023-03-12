@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class SpellTomes
 {
-    public static class Spell
+    public static partial class Spell
     {
         private static FormLink<ISpellGetter> Construct(uint id) => new FormLink<ISpellGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISpellGetter> DLCTomeSpellAllDamageTarget3Journeyman => Construct(0x121e);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Knights
 {
-    public static class IdleAnimation
+    public static partial class IdleAnimation
     {
         private static FormLink<IIdleAnimationGetter> Construct(uint id) => new FormLink<IIdleAnimationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIdleAnimationGetter> NDAnims => Construct(0x2d43);

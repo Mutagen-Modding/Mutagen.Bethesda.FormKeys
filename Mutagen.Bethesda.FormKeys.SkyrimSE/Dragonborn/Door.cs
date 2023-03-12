@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Door
+    public static partial class Door
     {
         private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDoorGetter> ccASVSSE001_FarmBTrapdoor02 => Construct(0x1e345);

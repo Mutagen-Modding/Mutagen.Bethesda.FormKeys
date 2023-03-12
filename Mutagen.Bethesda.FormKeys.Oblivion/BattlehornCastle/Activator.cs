@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class BattlehornCastle
 {
-    public static class Activator
+    public static partial class Activator
     {
         private static FormLink<IActivatorGetter> Construct(uint id) => new FormLink<IActivatorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IActivatorGetter> BattlehornWineBarrelE => Construct(0xb60e);

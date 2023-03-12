@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class ReverbParameters
+    public static partial class ReverbParameters
     {
         private static FormLink<IReverbParametersGetter> Construct(uint id) => new FormLink<IReverbParametersGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IReverbParametersGetter> IntRoomStoneLargeExtraReverb => Construct(0x1079e9);

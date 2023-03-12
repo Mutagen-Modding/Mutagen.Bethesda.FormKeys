@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class ArtObject
+    public static partial class ArtObject
     {
         private static FormLink<IArtObjectGetter> Construct(uint id) => new FormLink<IArtObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IArtObjectGetter> DLC03WorkshopStructuresBarnMiscIcon => Construct(0x5d71b);

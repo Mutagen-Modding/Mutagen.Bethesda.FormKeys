@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class HorseArmor
 {
-    public static class PlacedObject
+    public static partial class PlacedObject
     {
         private static FormLink<IPlacedObjectGetter> Construct(uint id) => new FormLink<IPlacedObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPlacedObjectGetter> DLCHorseArmorMoveToMarker => Construct(0xaf52);

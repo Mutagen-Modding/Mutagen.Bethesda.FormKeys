@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class MovableStatic
+    public static partial class MovableStatic
     {
         private static FormLink<IMovableStaticGetter> Construct(uint id) => new FormLink<IMovableStaticGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMovableStaticGetter> SplineSparks02 => Construct(0x249fe1);

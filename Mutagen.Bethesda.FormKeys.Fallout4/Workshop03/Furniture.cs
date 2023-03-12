@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class Furniture
+    public static partial class Furniture
     {
         private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFurnitureGetter> DLC06WorkshopGuardBarricade => Construct(0x11e6);

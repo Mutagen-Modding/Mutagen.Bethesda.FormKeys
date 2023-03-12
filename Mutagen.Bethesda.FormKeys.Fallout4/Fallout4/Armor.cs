@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Armor
+    public static partial class Armor
     {
         private static FormLink<IArmorGetter> Construct(uint id) => new FormLink<IArmorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IArmorGetter> Armor_Power_X01_Torso_Danse => Construct(0x249854);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Global
+    public static partial class Global
     {
         private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGlobalGetter> DLC04_CanCraftAcidSoakerAmmo => Construct(0x56cc5);

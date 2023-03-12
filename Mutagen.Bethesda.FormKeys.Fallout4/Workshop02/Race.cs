@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class Race
+    public static partial class Race
     {
         private static FormLink<IRaceGetter> Construct(uint id) => new FormLink<IRaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRaceGetter> DLC05HumanRaceAdditiveSubgraphData => Construct(0xac9);

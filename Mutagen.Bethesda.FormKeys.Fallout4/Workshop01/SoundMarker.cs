@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class SoundMarker
+    public static partial class SoundMarker
     {
         private static FormLink<ISoundMarkerGetter> Construct(uint id) => new FormLink<ISoundMarkerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundMarkerGetter> DLC02VOCArenaCrowdCheerLPmarker => Construct(0xd32);

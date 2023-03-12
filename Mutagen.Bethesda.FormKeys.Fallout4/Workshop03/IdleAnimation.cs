@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class IdleAnimation
+    public static partial class IdleAnimation
     {
         private static FormLink<IIdleAnimationGetter> Construct(uint id) => new FormLink<IIdleAnimationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIdleAnimationGetter> DLC06_SlotMachineDisappointedIdle => Construct(0x256a);

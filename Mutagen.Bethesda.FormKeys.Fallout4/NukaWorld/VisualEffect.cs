@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class VisualEffect
+    public static partial class VisualEffect
     {
         private static FormLink<IVisualEffectGetter> Construct(uint id) => new FormLink<IVisualEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IVisualEffectGetter> DLC04CameraAttachFogRad => Construct(0x485ea);

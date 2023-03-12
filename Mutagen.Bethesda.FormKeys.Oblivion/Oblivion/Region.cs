@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class Region
+    public static partial class Region
     {
         private static FormLink<IRegionGetter> Construct(uint id) => new FormLink<IRegionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRegionGetter> TheFringeRegion => Construct(0x8dd84);

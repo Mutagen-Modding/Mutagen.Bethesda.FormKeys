@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Armor
+    public static partial class Armor
     {
         private static FormLink<IArmorGetter> Construct(uint id) => new FormLink<IArmorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IArmorGetter> DLC04_SkinCatBrownTabby => Construct(0x5271f);

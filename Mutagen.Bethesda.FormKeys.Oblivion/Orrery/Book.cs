@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Orrery
 {
-    public static class Book
+    public static partial class Book
     {
         private static FormLink<IBookGetter> Construct(uint id) => new FormLink<IBookGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IBookGetter> DLCOrreryBanditNote => Construct(0x11c3d2);

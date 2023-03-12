@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class SoundCategory
+    public static partial class SoundCategory
     {
         private static FormLink<ISoundCategoryGetter> Construct(uint id) => new FormLink<ISoundCategoryGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundCategoryGetter> AudioCategoryZSPECIALMysteriousStrangerGunshot => Construct(0x249dce);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class DefaultObject
+    public static partial class DefaultObject
     {
         private static FormLink<IDefaultObjectGetter> Construct(uint id) => new FormLink<IDefaultObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDefaultObjectGetter> ActorTypeCreatureNukaWorld_DO => Construct(0x52930);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class Ammunition
+    public static partial class Ammunition
     {
         private static FormLink<IAmmunitionGetter> Construct(uint id) => new FormLink<IAmmunitionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAmmunitionGetter> DLC2DwarvenBallistaBolt => Construct(0x339a1);

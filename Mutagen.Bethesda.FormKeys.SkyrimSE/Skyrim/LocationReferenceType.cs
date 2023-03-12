@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class LocationReferenceType
+    public static partial class LocationReferenceType
     {
         private static FormLink<ILocationReferenceTypeGetter> Construct(uint id) => new FormLink<ILocationReferenceTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILocationReferenceTypeGetter> MapMarkerRefType => Construct(0x10f63c);

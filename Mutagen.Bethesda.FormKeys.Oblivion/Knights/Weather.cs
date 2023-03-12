@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Knights
 {
-    public static class Weather
+    public static partial class Weather
     {
         private static FormLink<IWeatherGetter> Construct(uint id) => new FormLink<IWeatherGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWeatherGetter> NDSkyBattleWeatherNEW => Construct(0xfd3);

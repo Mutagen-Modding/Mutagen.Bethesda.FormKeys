@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class ImageSpace
+    public static partial class ImageSpace
     {
         private static FormLink<IImageSpaceGetter> Construct(uint id) => new FormLink<IImageSpaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImageSpaceGetter> DLC1_ISSkyrimCloudyNIGHT_FV_A => Construct(0x10e0c);

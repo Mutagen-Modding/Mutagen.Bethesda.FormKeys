@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class TextureSet
+    public static partial class TextureSet
     {
         private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITextureSetGetter> Decal_Leaves01 => Construct(0x247abe);

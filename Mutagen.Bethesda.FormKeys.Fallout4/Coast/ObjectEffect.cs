@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class ObjectEffect
+    public static partial class ObjectEffect
     {
         private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IObjectEffectGetter> DLC03_CaltropDiseaseHit => Construct(0x56f35);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Weapon
+    public static partial class Weapon
     {
         private static FormLink<IWeaponGetter> Construct(uint id) => new FormLink<IWeaponGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWeaponGetter> VRWorkshopShared_10mm_NonPlayable => Construct(0x24a3b2);

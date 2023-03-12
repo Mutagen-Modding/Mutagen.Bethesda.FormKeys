@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Relationship
+    public static partial class Relationship
     {
         private static FormLink<IRelationshipGetter> Construct(uint id) => new FormLink<IRelationshipGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRelationshipGetter> DLC03MrNakanoKasumiNakano => Construct(0x3ecf);

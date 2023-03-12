@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Component
+    public static partial class Component
     {
         private static FormLink<IComponentGetter> Construct(uint id) => new FormLink<IComponentGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IComponentGetter> c_Cloth => Construct(0x1223c7);

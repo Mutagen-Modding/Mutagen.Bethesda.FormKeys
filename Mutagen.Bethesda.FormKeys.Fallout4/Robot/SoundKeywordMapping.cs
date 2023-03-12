@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class SoundKeywordMapping
+    public static partial class SoundKeywordMapping
     {
         private static FormLink<ISoundKeywordMappingGetter> Construct(uint id) => new FormLink<ISoundKeywordMappingGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundKeywordMappingGetter> DLC01PistolGammaNPC => Construct(0x2d6a);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class MaterialSwap
+    public static partial class MaterialSwap
     {
         private static FormLink<IMaterialSwapGetter> Construct(uint id) => new FormLink<IMaterialSwapGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialSwapGetter> CustomMaterialSwap0105710A => Construct(0x5710c);

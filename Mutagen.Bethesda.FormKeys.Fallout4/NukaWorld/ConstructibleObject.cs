@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class ConstructibleObject
+    public static partial class ConstructibleObject
     {
         private static FormLink<IConstructibleObjectGetter> Construct(uint id) => new FormLink<IConstructibleObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IConstructibleObjectGetter> DLC04workshop_co_FlagpoleBoS => Construct(0x570fc);

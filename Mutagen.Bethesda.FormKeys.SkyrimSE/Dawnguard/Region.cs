@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class Region
+    public static partial class Region
     {
         private static FormLink<IRegionGetter> Construct(uint id) => new FormLink<IRegionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRegionGetter> AudioExtFalmerValleyBossChapel => Construct(0x14c60);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class SpellTomes
 {
-    public static class Book
+    public static partial class Book
     {
         private static FormLink<IBookGetter> Construct(uint id) => new FormLink<IBookGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IBookGetter> DLCTomeDrainHealth4Expert => Construct(0x12ad);

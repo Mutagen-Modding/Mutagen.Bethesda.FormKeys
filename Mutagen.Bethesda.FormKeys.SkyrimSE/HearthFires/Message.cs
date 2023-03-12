@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class Message
+    public static partial class Message
     {
         private static FormLink<IMessageGetter> Construct(uint id) => new FormLink<IMessageGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMessageGetter> BYOHVampireSleepMsg => Construct(0xc33);

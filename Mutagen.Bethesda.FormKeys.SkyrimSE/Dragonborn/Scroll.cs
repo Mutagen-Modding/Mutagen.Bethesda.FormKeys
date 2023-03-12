@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Scroll
+    public static partial class Scroll
     {
         private static FormLink<IScrollGetter> Construct(uint id) => new FormLink<IScrollGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IScrollGetter> DLC2ExpSpiderEmptyScroll05 => Construct(0x331a1);

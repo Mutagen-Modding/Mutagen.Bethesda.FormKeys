@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Knights
 {
-    public static class PlacedCreature
+    public static partial class PlacedCreature
     {
         private static FormLink<IPlacedCreatureGetter> Construct(uint id) => new FormLink<IPlacedCreatureGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPlacedCreatureGetter> ND08Wraith1REF => Construct(0x120e);

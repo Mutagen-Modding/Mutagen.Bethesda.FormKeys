@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class WordOfPower
+    public static partial class WordOfPower
     {
         private static FormLink<IWordOfPowerGetter> Construct(uint id) => new FormLink<IWordOfPowerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWordOfPowerGetter> DragonFakeWord => Construct(0x106acb);

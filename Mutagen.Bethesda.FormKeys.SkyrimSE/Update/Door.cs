@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class Door
+    public static partial class Door
     {
         private static FormLink<IDoorGetter> Construct(uint id) => new FormLink<IDoorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDoorGetter> ccBGS_ARGateDoor01 => Construct(0x3160);

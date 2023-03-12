@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class ArmorAddon
+    public static partial class ArmorAddon
     {
         private static FormLink<IArmorAddonGetter> Construct(uint id) => new FormLink<IArmorAddonGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IArmorAddonGetter> DLC01_TurretSpotlightWorkshopLightLongAA => Construct(0x10a5e);

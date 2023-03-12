@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class MagicEffect
+    public static partial class MagicEffect
     {
         private static FormLink<IMagicEffectGetter> Construct(uint id) => new FormLink<IMagicEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMagicEffectGetter> DLC02WorkshopDetectLifeIdle => Construct(0xcb7);

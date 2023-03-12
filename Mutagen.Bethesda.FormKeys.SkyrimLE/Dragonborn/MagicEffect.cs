@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class MagicEffect
+    public static partial class MagicEffect
     {
         private static FormLink<IMagicEffectGetter> Construct(uint id) => new FormLink<IMagicEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMagicEffectGetter> DLC2FireDamageAreaFFContact => Construct(0x1e2a5);

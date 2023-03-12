@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class HearthFires
 {
-    public static class Furniture
+    public static partial class Furniture
     {
         private static FormLink<IFurnitureGetter> Construct(uint id) => new FormLink<IFurnitureGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFurnitureGetter> BYOHVampireCoffinVert01 => Construct(0x801);

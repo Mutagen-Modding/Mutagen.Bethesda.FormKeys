@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class AimModel
+    public static partial class AimModel
     {
         private static FormLink<IAimModelGetter> Construct(uint id) => new FormLink<IAimModelGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAimModelGetter> DLC05PaintballGun_AM => Construct(0xda1);

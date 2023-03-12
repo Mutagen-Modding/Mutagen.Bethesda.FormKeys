@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class Water
+    public static partial class Water
     {
         private static FormLink<IWaterGetter> Construct(uint id) => new FormLink<IWaterGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWaterGetter> DefaultWaterKatariahWorld => Construct(0x10cc8e);

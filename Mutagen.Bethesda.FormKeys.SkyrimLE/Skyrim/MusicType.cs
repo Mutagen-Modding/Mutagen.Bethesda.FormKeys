@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class MusicType
+    public static partial class MusicType
     {
         private static FormLink<IMusicTypeGetter> Construct(uint id) => new FormLink<IMusicTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMusicTypeGetter> MUSExploreSovngardeChantExterior => Construct(0xf74);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class TextureSet
+    public static partial class TextureSet
     {
         private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITextureSetGetter> BYOHTextureSetClayDepositRiverMud01 => Construct(0xa13);

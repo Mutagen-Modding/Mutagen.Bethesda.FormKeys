@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class VoiceType
+    public static partial class VoiceType
     {
         private static FormLink<IVoiceTypeGetter> Construct(uint id) => new FormLink<IVoiceTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IVoiceTypeGetter> HolotapeCommonGroundskeeper => Construct(0x21c985);

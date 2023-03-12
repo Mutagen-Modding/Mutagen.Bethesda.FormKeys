@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Orrery
 {
-    public static class Script
+    public static partial class Script
     {
         private static FormLink<IScriptGetter> Construct(uint id) => new FormLink<IScriptGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IScriptGetter> DLCOrreryDwarvenCog1Script => Construct(0x11e63f);

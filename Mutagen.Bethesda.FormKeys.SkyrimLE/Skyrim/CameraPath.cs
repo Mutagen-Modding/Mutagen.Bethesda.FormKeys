@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class CameraPath
+    public static partial class CameraPath
     {
         private static FormLink<ICameraPathGetter> Construct(uint id) => new FormLink<ICameraPathGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ICameraPathGetter> DragonKillCam02Lmid => Construct(0x10fdab);

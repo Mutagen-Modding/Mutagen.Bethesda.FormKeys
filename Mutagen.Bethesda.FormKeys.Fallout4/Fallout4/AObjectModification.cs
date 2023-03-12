@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class AObjectModification
+    public static partial class AObjectModification
     {
         private static FormLink<IAObjectModificationGetter> Construct(uint id) => new FormLink<IAObjectModificationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAObjectModificationGetter> VRWorkshops_mod_Legendary_Weapon_NERF => Construct(0x24a382);

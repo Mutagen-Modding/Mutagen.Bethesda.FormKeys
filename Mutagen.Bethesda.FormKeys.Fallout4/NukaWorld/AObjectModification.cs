@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class AObjectModification
+    public static partial class AObjectModification
     {
         private static FormLink<IAObjectModificationGetter> Construct(uint id) => new FormLink<IAObjectModificationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAObjectModificationGetter> DLC04_mod_melee_DLC04_CommieWhacker_BladesLarge => Construct(0x56ac7);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class CombatStyle
+    public static partial class CombatStyle
     {
         private static FormLink<ICombatStyleGetter> Construct(uint id) => new FormLink<ICombatStyleGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ICombatStyleGetter> DefaultCombatStyle => Construct(0x334d);

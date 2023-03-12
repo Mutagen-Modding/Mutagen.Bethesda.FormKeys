@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Water
+    public static partial class Water
     {
         private static FormLink<IWaterGetter> Construct(uint id) => new FormLink<IWaterGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWaterGetter> ExtLakeQuannapowittWater => Construct(0x204c42);

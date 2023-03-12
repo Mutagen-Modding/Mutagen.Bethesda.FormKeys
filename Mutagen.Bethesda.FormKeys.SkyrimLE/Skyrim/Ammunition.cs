@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class Ammunition
+    public static partial class Ammunition
     {
         private static FormLink<IAmmunitionGetter> Construct(uint id) => new FormLink<IAmmunitionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAmmunitionGetter> DwarvenSphereBolt02 => Construct(0x10ec8c);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Light
+    public static partial class Light
     {
         private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILightGetter> KlaxonLightGlowNS_NoGlowMesh => Construct(0x24a1a0);

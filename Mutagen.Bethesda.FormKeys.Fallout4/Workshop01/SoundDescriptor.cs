@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class SoundDescriptor
+    public static partial class SoundDescriptor
     {
         private static FormLink<ISoundDescriptorGetter> Construct(uint id) => new FormLink<ISoundDescriptorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundDescriptorGetter> DLC02AMBLightNixieTubeWorkshopOn => Construct(0xe9a);

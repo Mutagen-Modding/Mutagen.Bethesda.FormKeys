@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class ArtObject
+    public static partial class ArtObject
     {
         private static FormLink<IArtObjectGetter> Construct(uint id) => new FormLink<IArtObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IArtObjectGetter> DLC2DragonAspectBurst => Construct(0x3d58e);

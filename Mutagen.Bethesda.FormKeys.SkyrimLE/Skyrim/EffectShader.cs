@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class EffectShader
+    public static partial class EffectShader
     {
         private static FormLink<IEffectShaderGetter> Construct(uint id) => new FormLink<IEffectShaderGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IEffectShaderGetter> InvisFXShaderNightingale => Construct(0xe5c);

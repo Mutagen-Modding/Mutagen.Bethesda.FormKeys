@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Shout
+    public static partial class Shout
     {
         private static FormLink<IShoutGetter> Construct(uint id) => new FormLink<IShoutGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IShoutGetter> dlc2MKMiraakMaskShoutShout => Construct(0x39d28);

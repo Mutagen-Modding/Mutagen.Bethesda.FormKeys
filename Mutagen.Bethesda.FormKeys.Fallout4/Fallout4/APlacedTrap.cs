@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class APlacedTrap
+    public static partial class APlacedTrap
     {
         private static FormLink<IAPlacedTrapGetter> Construct(uint id) => new FormLink<IAPlacedTrapGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAPlacedTrapGetter> DN084_MassFusionReactorRadiationRef => Construct(0xfa50a);

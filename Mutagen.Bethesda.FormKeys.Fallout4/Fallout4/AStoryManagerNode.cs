@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class AStoryManagerNode
+    public static partial class AStoryManagerNode
     {
         private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAStoryManagerNodeGetter> REBranchNormalTriggers => Construct(0x246be6);

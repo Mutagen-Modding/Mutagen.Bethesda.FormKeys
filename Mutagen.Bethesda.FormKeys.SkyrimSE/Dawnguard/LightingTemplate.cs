@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class LightingTemplate
+    public static partial class LightingTemplate
     {
         private static FormLink<ILightingTemplateGetter> Construct(uint id) => new FormLink<ILightingTemplateGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILightingTemplateGetter> DLC1VCCourtyardLightingTemplate => Construct(0x14646);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class ImpactDataSet
+    public static partial class ImpactDataSet
     {
         private static FormLink<IImpactDataSetGetter> Construct(uint id) => new FormLink<IImpactDataSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImpactDataSetGetter> NPCHorseIdleTailImpactSet => Construct(0x2f88);

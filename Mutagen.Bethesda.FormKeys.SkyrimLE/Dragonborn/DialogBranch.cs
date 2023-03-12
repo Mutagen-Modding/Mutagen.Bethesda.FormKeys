@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class DialogBranch
+    public static partial class DialogBranch
     {
         private static FormLink<IDialogBranchGetter> Construct(uint id) => new FormLink<IDialogBranchGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogBranchGetter> DLC2DialogueSkaalVillageBaldorBranch => Construct(0x3a4aa);

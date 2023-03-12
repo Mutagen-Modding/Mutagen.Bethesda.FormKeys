@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class DialogView
+    public static partial class DialogView
     {
         private static FormLink<IDialogViewGetter> Construct(uint id) => new FormLink<IDialogViewGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogViewGetter> FollowersSayTopicsView => Construct(0x2ae5b);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class AStoryManagerNode
+    public static partial class AStoryManagerNode
     {
         private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAStoryManagerNodeGetter> DLC02WorkshopCageAttacks => Construct(0xd16);

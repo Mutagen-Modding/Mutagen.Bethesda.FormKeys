@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class HearthFires
 {
-    public static class Relationship
+    public static partial class Relationship
     {
         private static FormLink<IRelationshipGetter> Construct(uint id) => new FormLink<IRelationshipGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRelationshipGetter> BYOHHousecarlPalePlayerRelationship => Construct(0x5227);

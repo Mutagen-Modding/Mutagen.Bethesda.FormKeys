@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class Impact
+    public static partial class Impact
     {
         private static FormLink<IImpactGetter> Construct(uint id) => new FormLink<IImpactGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImpactGetter> NPCHorseIdleRearUpImpact => Construct(0x2f7e);

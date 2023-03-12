@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Footstep
+    public static partial class Footstep
     {
         private static FormLink<IFootstepGetter> Construct(uint id) => new FormLink<IFootstepGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFootstepGetter> NPCDogmeatFootFrontScuffFootstep => Construct(0x231fda);

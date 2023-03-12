@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class MiscItem
+    public static partial class MiscItem
     {
         private static FormLink<IMiscItemGetter> Construct(uint id) => new FormLink<IMiscItemGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMiscItemGetter> miscmod_DLC01Bot_Hand_MrHandy_Weap_LightningGun_Right => Construct(0x2e5e);

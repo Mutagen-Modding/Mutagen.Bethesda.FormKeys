@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Footstep
+    public static partial class Footstep
     {
         private static FormLink<IFootstepGetter> Construct(uint id) => new FormLink<IFootstepGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFootstepGetter> FSTSprintArmorSkaalRFootstep => Construct(0x3d376);

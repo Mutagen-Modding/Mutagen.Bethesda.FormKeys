@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class LeveledItem
+    public static partial class LeveledItem
     {
         private static FormLink<ILeveledItemGetter> Construct(uint id) => new FormLink<ILeveledItemGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILeveledItemGetter> DLC01LLI_Vendor_BotMods_Rare_Armor => Construct(0x2e25);

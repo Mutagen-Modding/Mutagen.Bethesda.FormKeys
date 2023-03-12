@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class Ingestible
+    public static partial class Ingestible
     {
         private static FormLink<IIngestibleGetter> Construct(uint id) => new FormLink<IIngestibleGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIngestibleGetter> DLC1BloodPotion => Construct(0x18ef3);

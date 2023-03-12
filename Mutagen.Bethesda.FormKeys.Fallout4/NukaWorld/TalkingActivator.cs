@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class TalkingActivator
+    public static partial class TalkingActivator
     {
         private static FormLink<ITalkingActivatorGetter> Construct(uint id) => new FormLink<ITalkingActivatorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITalkingActivatorGetter> DLC04KiddieKingdomSpeakerStage => Construct(0x417b1);

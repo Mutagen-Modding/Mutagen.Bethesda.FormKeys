@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class Keyword
+    public static partial class Keyword
     {
         private static FormLink<IKeywordGetter> Construct(uint id) => new FormLink<IKeywordGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IKeywordGetter> PowerAttackBash => Construct(0xf54);

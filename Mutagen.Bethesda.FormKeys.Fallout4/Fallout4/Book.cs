@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Book
+    public static partial class Book
     {
         private static FormLink<IBookGetter> Construct(uint id) => new FormLink<IBookGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IBookGetter> BoS302BIngramBackupNote => Construct(0x24800f);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Global
+    public static partial class Global
     {
         private static FormLink<IGlobalGetter> Construct(uint id) => new FormLink<IGlobalGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGlobalGetter> DLC2DragonAbsorbChance => Construct(0x1e286);

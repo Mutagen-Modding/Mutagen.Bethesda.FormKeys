@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class HeadPart
+    public static partial class HeadPart
     {
         private static FormLink<IHeadPartGetter> Construct(uint id) => new FormLink<IHeadPartGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IHeadPartGetter> DLC1HairFemaleSeranaHuman => Construct(0xe88c);

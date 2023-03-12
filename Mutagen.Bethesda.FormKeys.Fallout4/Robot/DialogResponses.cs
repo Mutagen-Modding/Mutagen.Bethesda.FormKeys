@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class DialogResponses
+    public static partial class DialogResponses
     {
         private static FormLink<IDialogResponsesGetter> Construct(uint id) => new FormLink<IDialogResponsesGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogResponsesGetter> DLC01MQ02CodsworthStage400 => Construct(0x2542);

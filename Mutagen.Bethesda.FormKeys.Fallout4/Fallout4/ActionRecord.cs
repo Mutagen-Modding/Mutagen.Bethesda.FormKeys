@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class ActionRecord
+    public static partial class ActionRecord
     {
         private static FormLink<IActionRecordGetter> Construct(uint id) => new FormLink<IActionRecordGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IActionRecordGetter> ActionTrick => Construct(0x20e952);

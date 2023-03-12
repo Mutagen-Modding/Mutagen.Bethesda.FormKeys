@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class ArtObject
+    public static partial class ArtObject
     {
         private static FormLink<IArtObjectGetter> Construct(uint id) => new FormLink<IArtObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IArtObjectGetter> DLC01_TurretWorkshopSpotlightEyeLong => Construct(0x10a5d);

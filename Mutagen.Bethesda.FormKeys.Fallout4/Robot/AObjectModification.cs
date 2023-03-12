@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class AObjectModification
+    public static partial class AObjectModification
     {
         private static FormLink<IAObjectModificationGetter> Construct(uint id) => new FormLink<IAObjectModificationGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAObjectModificationGetter> DLC01Bot_Torso_Sentry_Shoulder_Null_Right => Construct(0x2e18);

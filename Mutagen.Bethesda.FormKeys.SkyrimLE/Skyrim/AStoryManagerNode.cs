@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class AStoryManagerNode
+    public static partial class AStoryManagerNode
     {
         private static FormLink<IAStoryManagerNodeGetter> Construct(uint id) => new FormLink<IAStoryManagerNodeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAStoryManagerNodeGetter> SkyHavenTempleScenesNode => Construct(0x1092de);

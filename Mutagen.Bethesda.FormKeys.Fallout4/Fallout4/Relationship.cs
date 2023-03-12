@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Relationship
+    public static partial class Relationship
     {
         private static FormLink<IRelationshipGetter> Construct(uint id) => new FormLink<IRelationshipGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRelationshipGetter> DN079_Relationship => Construct(0x249c83);

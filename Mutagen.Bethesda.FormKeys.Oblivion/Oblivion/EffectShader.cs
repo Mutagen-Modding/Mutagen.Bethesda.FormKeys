@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class EffectShader
+    public static partial class EffectShader
     {
         private static FormLink<IEffectShaderGetter> Construct(uint id) => new FormLink<IEffectShaderGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IEffectShaderGetter> SE13FlyingKnightEffect => Construct(0x94cc1);

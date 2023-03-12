@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class BendableSpline
+    public static partial class BendableSpline
     {
         private static FormLink<IBendableSplineGetter> Construct(uint id) => new FormLink<IBendableSplineGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IBendableSplineGetter> RopeSpline01_Wind => Construct(0x240c29);

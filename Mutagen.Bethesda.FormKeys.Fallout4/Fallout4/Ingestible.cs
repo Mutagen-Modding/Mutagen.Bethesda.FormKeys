@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Ingestible
+    public static partial class Ingestible
     {
         private static FormLink<IIngestibleGetter> Construct(uint id) => new FormLink<IIngestibleGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIngestibleGetter> VRWorkshopShared_MutfruitFake => Construct(0x24a318);

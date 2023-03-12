@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop02
 {
-    public static class FormList
+    public static partial class FormList
     {
         private static FormLink<IFormListGetter> Construct(uint id) => new FormLink<IFormListGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFormListGetter> DLC05_HeadPartsMannequin => Construct(0xee9);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class Debris
+    public static partial class Debris
     {
         private static FormLink<IDebrisGetter> Construct(uint id) => new FormLink<IDebrisGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDebrisGetter> dlc1TestPhilIceFormDebris => Construct(0x10fef);

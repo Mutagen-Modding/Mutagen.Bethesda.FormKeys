@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class CombatStyle
+    public static partial class CombatStyle
     {
         private static FormLink<ICombatStyleGetter> Construct(uint id) => new FormLink<ICombatStyleGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ICombatStyleGetter> DLC03csRobobrainPaintball => Construct(0x5d0b2);

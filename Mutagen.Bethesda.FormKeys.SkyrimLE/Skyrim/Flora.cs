@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class Flora
+    public static partial class Flora
     {
         private static FormLink<IFloraGetter> Construct(uint id) => new FormLink<IFloraGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IFloraGetter> DeadFXSalmon02 => Construct(0x10c3b5);

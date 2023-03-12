@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class VileLair
 {
-    public static class PlacedObject
+    public static partial class PlacedObject
     {
         private static FormLink<IPlacedObjectGetter> Construct(uint id) => new FormLink<IPlacedObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPlacedObjectGetter> LairVileMinionPrayerMarker => Construct(0x5bb0);

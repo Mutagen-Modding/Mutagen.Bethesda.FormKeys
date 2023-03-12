@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Skyrim
 {
-    public static class AnimatedObject
+    public static partial class AnimatedObject
     {
         private static FormLink<IAnimatedObjectGetter> Construct(uint id) => new FormLink<IAnimatedObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAnimatedObjectGetter> AnimObjectIronSword => Construct(0x10fd00);

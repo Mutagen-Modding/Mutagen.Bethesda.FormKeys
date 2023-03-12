@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class ThievesDen
 {
-    public static class Clothing
+    public static partial class Clothing
     {
         private static FormLink<IClothingGetter> Construct(uint id) => new FormLink<IClothingGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IClothingGetter> DLC06Footpads01 => Construct(0x83af);

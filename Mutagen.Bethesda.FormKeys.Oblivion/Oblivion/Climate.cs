@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class Climate
+    public static partial class Climate
     {
         private static FormLink<IClimateGetter> Construct(uint id) => new FormLink<IClimateGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IClimateGetter> SEWaitingRoomClimate => Construct(0x7d13a);

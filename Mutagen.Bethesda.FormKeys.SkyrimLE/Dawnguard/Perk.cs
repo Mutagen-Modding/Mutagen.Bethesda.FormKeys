@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class Perk
+    public static partial class Perk
     {
         private static FormLink<IPerkGetter> Construct(uint id) => new FormLink<IPerkGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPerkGetter> DLC1HarkonTurningImmunity => Construct(0x14cce);

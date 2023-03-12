@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class MaterialObject
+    public static partial class MaterialObject
     {
         private static FormLink<IMaterialObjectGetter> Construct(uint id) => new FormLink<IMaterialObjectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialObjectGetter> DLC1SnowMaterialGlacierINT1P => Construct(0x13816);

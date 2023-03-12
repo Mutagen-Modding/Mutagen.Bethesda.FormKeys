@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Transform
+    public static partial class Transform
     {
         private static FormLink<ITransformGetter> Construct(uint id) => new FormLink<ITransformGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITransformGetter> DLC04_PaddleBallTransform => Construct(0x5706f);

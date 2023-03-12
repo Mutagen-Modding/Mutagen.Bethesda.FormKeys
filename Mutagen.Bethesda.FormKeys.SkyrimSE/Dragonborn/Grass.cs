@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Grass
+    public static partial class Grass
     {
         private static FormLink<IGrassGetter> Construct(uint id) => new FormLink<IGrassGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IGrassGetter> DLC02VolcanicAshGrass02 => Construct(0x1e341);

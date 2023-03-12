@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Climate
+    public static partial class Climate
     {
         private static FormLink<IClimateGetter> Construct(uint id) => new FormLink<IClimateGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IClimateGetter> DLC04DefaultClimate => Construct(0xab03);

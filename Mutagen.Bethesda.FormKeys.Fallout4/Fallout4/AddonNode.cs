@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class AddonNode
+    public static partial class AddonNode
     {
         private static FormLink<IAddonNodeGetter> Construct(uint id) => new FormLink<IAddonNodeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAddonNodeGetter> MPSFireSmall02 => Construct(0x24a1c7);

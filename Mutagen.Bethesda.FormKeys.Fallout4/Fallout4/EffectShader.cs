@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class EffectShader
+    public static partial class EffectShader
     {
         private static FormLink<IEffectShaderGetter> Construct(uint id) => new FormLink<IEffectShaderGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IEffectShaderGetter> VansActivateFXS => Construct(0x249733);

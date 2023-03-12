@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class StaticCollection
+    public static partial class StaticCollection
     {
         private static FormLink<IStaticCollectionGetter> Construct(uint id) => new FormLink<IStaticCollectionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IStaticCollectionGetter> CambridgeDecoInt01 => Construct(0x249df2);

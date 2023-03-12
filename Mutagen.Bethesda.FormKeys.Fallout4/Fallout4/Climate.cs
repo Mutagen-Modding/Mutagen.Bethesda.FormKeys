@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Climate
+    public static partial class Climate
     {
         private static FormLink<IClimateGetter> Construct(uint id) => new FormLink<IClimateGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IClimateGetter> ClearClimate => Construct(0x1cfdb5);

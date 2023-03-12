@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class Ingestible
+    public static partial class Ingestible
     {
         private static FormLink<IIngestibleGetter> Construct(uint id) => new FormLink<IIngestibleGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIngestibleGetter> DLC2FoodAshHopperLeg => Construct(0x3d125);

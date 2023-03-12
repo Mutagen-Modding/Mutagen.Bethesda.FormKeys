@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class Message
+    public static partial class Message
     {
         private static FormLink<IMessageGetter> Construct(uint id) => new FormLink<IMessageGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMessageGetter> DLC02WorkshopTutorialMessageArena => Construct(0xe86);

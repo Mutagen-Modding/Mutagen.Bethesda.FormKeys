@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class Container
+    public static partial class Container
     {
         private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IContainerGetter> DLC2dunBloodskalTreasChestLure => Construct(0x3d2a1);

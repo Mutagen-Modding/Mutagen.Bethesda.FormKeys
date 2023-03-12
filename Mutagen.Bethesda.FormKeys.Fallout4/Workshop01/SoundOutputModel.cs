@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class SoundOutputModel
+    public static partial class SoundOutputModel
     {
         private static FormLink<ISoundOutputModelGetter> Construct(uint id) => new FormLink<ISoundOutputModelGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoundOutputModelGetter> SOMCompound_DLC02VOCArenaCrowdCheer_Mono_01000x04500 => Construct(0xd33);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class Projectile
+    public static partial class Projectile
     {
         private static FormLink<IProjectileGetter> Construct(uint id) => new FormLink<IProjectileGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IProjectileGetter> DLC2AshBreathProjectile => Construct(0x1e283);

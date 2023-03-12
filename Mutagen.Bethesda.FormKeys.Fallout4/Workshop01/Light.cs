@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class Light
+    public static partial class Light
     {
         private static FormLink<ILightGetter> Construct(uint id) => new FormLink<ILightGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILightGetter> DLC02FXWorkshopNixieLight01 => Construct(0xe8d);

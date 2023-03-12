@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class Npc
+    public static partial class Npc
     {
         private static FormLink<INpcGetter> Construct(uint id) => new FormLink<INpcGetter>(ModKey.MakeFormKey(id));
         public static FormLink<INpcGetter> ccBGSSSE003_LvlBoneWolfZombie => Construct(0x3025);

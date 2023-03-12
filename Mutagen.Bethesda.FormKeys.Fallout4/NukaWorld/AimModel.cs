@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class AimModel
+    public static partial class AimModel
     {
         private static FormLink<IAimModelGetter> Construct(uint id) => new FormLink<IAimModelGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAimModelGetter> DLC04_PaddleBall_AM => Construct(0x2f42c);

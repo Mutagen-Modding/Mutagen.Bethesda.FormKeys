@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Oblivion
 {
-    public static class SoulGem
+    public static partial class SoulGem
     {
         private static FormLink<ISoulGemGetter> Construct(uint id) => new FormLink<ISoulGemGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISoulGemGetter> SE38MuseumItem7 => Construct(0x81e62);

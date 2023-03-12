@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class EncounterZone
+    public static partial class EncounterZone
     {
         private static FormLink<IEncounterZoneGetter> Construct(uint id) => new FormLink<IEncounterZoneGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IEncounterZoneGetter> TowerOfMzarkZone => Construct(0x10f67d);

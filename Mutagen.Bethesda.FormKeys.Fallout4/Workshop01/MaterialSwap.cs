@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop01
 {
-    public static class MaterialSwap
+    public static partial class MaterialSwap
     {
         private static FormLink<IMaterialSwapGetter> Construct(uint id) => new FormLink<IMaterialSwapGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialSwapGetter> DLC02WorkshopNeonLightNumber01_Yellow_9Swap => Construct(0xe71);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class AcousticSpace
+    public static partial class AcousticSpace
     {
         private static FormLink<IAcousticSpaceGetter> Construct(uint id) => new FormLink<IAcousticSpaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAcousticSpaceGetter> DLC06IntCave88Large => Construct(0x1432);

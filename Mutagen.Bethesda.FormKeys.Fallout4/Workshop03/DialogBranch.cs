@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class DialogBranch
+    public static partial class DialogBranch
     {
         private static FormLink<IDialogBranchGetter> Construct(uint id) => new FormLink<IDialogBranchGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IDialogBranchGetter> DLC06WorkshopParentBranch => Construct(0x24c7);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class ImpactDataSet
+    public static partial class ImpactDataSet
     {
         private static FormLink<IImpactDataSetGetter> Construct(uint id) => new FormLink<IImpactDataSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImpactDataSetGetter> WPNBlockGenericImpactSet => Construct(0x249e05);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Projectile
+    public static partial class Projectile
     {
         private static FormLink<IProjectileGetter> Construct(uint id) => new FormLink<IProjectileGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IProjectileGetter> DLC03_ThrowingBearTrapProjectileBleeding => Construct(0x540f8);

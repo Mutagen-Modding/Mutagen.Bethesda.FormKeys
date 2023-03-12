@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dawnguard
 {
-    public static class Explosion
+    public static partial class Explosion
     {
         private static FormLink<IExplosionGetter> Construct(uint id) => new FormLink<IExplosionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IExplosionGetter> DLC1SEBossBlastBackFX => Construct(0x138cc);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Robot
 {
-    public static class Impact
+    public static partial class Impact
     {
         private static FormLink<IImpactGetter> Construct(uint id) => new FormLink<IImpactGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IImpactGetter> DLC01WPNBladeBuzzVsWoodImpact => Construct(0x10be3);

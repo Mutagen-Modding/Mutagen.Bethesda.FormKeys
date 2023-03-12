@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class Class
+    public static partial class Class
     {
         private static FormLink<IClassGetter> Construct(uint id) => new FormLink<IClassGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IClassGetter> DLC2EncClassAshGuardian => Construct(0x3cf6a);

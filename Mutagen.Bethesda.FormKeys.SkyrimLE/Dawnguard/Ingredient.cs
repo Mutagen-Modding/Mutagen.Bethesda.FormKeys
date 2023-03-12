@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class Ingredient
+    public static partial class Ingredient
     {
         private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIngredientGetter> DLC1MountainFlower01Yellow => Construct(0x2a78);

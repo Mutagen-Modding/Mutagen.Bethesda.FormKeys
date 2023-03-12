@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class AcousticSpace
+    public static partial class AcousticSpace
     {
         private static FormLink<IAcousticSpaceGetter> Construct(uint id) => new FormLink<IAcousticSpaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAcousticSpaceGetter> IntDLC2ApocryphaBookPOI => Construct(0x39e50);

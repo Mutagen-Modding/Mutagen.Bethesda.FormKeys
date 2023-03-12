@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class LoadScreen
+    public static partial class LoadScreen
     {
         private static FormLink<ILoadScreenGetter> Construct(uint id) => new FormLink<ILoadScreenGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILoadScreenGetter> DLC06Vault06 => Construct(0x5e75);

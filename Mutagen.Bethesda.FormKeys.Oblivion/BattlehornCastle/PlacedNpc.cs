@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class BattlehornCastle
 {
-    public static class PlacedNpc
+    public static partial class PlacedNpc
     {
         private static FormLink<IPlacedNpcGetter> Construct(uint id) => new FormLink<IPlacedNpcGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IPlacedNpcGetter> DLCBhornKnightRef => Construct(0xca2c);

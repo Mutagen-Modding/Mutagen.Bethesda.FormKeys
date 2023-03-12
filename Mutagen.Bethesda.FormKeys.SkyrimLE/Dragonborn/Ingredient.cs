@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dragonborn
 {
-    public static class Ingredient
+    public static partial class Ingredient
     {
         private static FormLink<IIngredientGetter> Construct(uint id) => new FormLink<IIngredientGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IIngredientGetter> DLC2TernFeathers => Construct(0x3cd8e);

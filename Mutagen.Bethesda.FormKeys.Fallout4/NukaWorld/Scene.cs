@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Scene
+    public static partial class Scene
     {
         private static FormLink<ISceneGetter> Construct(uint id) => new FormLink<ISceneGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ISceneGetter> DLC04Min01PrestonBlockingScene => Construct(0x33835);

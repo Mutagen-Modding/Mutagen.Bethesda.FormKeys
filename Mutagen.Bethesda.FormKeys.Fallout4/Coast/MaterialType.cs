@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class MaterialType
+    public static partial class MaterialType
     {
         private static FormLink<IMaterialTypeGetter> Construct(uint id) => new FormLink<IMaterialTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMaterialTypeGetter> DLC03Material_VRFloor => Construct(0x5d43c);

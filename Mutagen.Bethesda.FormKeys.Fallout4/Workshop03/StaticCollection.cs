@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class StaticCollection
+    public static partial class StaticCollection
     {
         private static FormLink<IStaticCollectionGetter> Construct(uint id) => new FormLink<IStaticCollectionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IStaticCollectionGetter> DLC06ConstructionLight_Standing_2piece_On1 => Construct(0x207e);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class Outfit
+    public static partial class Outfit
     {
         private static FormLink<IOutfitGetter> Construct(uint id) => new FormLink<IOutfitGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IOutfitGetter> DLC06Vault88OutfitOverseer => Construct(0x42b3);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Coast
 {
-    public static class Race
+    public static partial class Race
     {
         private static FormLink<IRaceGetter> Construct(uint id) => new FormLink<IRaceGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRaceGetter> DLC03_GulperSmallRace => Construct(0x4e28e);

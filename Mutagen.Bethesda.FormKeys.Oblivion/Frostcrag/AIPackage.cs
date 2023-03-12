@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Oblivion;
 
 public static partial class Frostcrag
 {
-    public static class AIPackage
+    public static partial class AIPackage
     {
         private static FormLink<IAIPackageGetter> Construct(uint id) => new FormLink<IAIPackageGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAIPackageGetter> DLCFrostcragAurelinwaeOfferServices => Construct(0x1247);

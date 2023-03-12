@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class Static
+    public static partial class Static
     {
         private static FormLink<IStaticGetter> Construct(uint id) => new FormLink<IStaticGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IStaticGetter> ccBGS_ARStepSingle01 => Construct(0x3220);

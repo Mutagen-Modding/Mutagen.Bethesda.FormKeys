@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class Region
+    public static partial class Region
     {
         private static FormLink<IRegionGetter> Construct(uint id) => new FormLink<IRegionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IRegionGetter> SovngardeIntWeather => Construct(0x10ff20);

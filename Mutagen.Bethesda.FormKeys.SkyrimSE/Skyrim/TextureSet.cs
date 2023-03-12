@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class TextureSet
+    public static partial class TextureSet
     {
         private static FormLink<ITextureSetGetter> Construct(uint id) => new FormLink<ITextureSetGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ITextureSetGetter> VaerminaRobes => Construct(0x10faf8);

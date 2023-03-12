@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Npc
+    public static partial class Npc
     {
         private static FormLink<INpcGetter> Construct(uint id) => new FormLink<INpcGetter>(ModKey.MakeFormKey(id));
         public static FormLink<INpcGetter> DLC04_EncRaider09PackLegendary => Construct(0x56f4e);

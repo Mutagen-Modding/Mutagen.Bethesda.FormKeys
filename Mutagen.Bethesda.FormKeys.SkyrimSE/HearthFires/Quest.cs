@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class HearthFires
 {
-    public static class Quest
+    public static partial class Quest
     {
         private static FormLink<IQuestGetter> Construct(uint id) => new FormLink<IQuestGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IQuestGetter> CCHouseQuest => Construct(0xddb);

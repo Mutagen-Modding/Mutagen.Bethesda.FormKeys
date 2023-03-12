@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Update
 {
-    public static class Container
+    public static partial class Container
     {
         private static FormLink<IContainerGetter> Construct(uint id) => new FormLink<IContainerGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IContainerGetter> BarrelEmpty01_NoRespawn => Construct(0x3165);

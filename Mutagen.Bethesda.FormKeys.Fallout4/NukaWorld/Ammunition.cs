@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class NukaWorld
 {
-    public static class Ammunition
+    public static partial class Ammunition
     {
         private static FormLink<IAmmunitionGetter> Construct(uint id) => new FormLink<IAmmunitionGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IAmmunitionGetter> DLC04_Ammo_ThirstZapper_Water => Construct(0x4c0e4);

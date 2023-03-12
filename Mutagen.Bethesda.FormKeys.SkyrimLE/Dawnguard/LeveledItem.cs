@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class LeveledItem
+    public static partial class LeveledItem
     {
         private static FormLink<ILeveledItemGetter> Construct(uint id) => new FormLink<ILeveledItemGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ILeveledItemGetter> DLC1VendorGadgetsSorineJurardBoltsDwarvenGated75 => Construct(0x14cf7);

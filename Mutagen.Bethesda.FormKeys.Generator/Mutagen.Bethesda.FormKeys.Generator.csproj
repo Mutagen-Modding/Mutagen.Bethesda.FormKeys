@@ -18,17 +18,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommandLineParser" Version="2.9.1" />
-    <PackageReference Include="Loqui.Generation" Version="2.48.0" />
-    <PackageReference Include="Mutagen.Bethesda" Version="0.37.0" />
-    <PackageReference Include="GitInfo" Version="2.2.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="NuGetizer" Version="0.8.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="CommandLineParser" />
+    <PackageReference Include="Loqui.Generation" />
+	<PackageReference Include="Mutagen.Bethesda" />
   </ItemGroup>
 
 </Project>

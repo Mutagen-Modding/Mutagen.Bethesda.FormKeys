@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Skyrim
 {
-    public static class Eyes
+    public static partial class Eyes
     {
         private static FormLink<IEyesGetter> Construct(uint id) => new FormLink<IEyesGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IEyesGetter> EyeKhajiitMale => Construct(0x81ba6);

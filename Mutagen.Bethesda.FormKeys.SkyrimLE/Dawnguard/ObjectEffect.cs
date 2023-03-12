@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class ObjectEffect
+    public static partial class ObjectEffect
     {
         private static FormLink<IObjectEffectGetter> Construct(uint id) => new FormLink<IObjectEffectGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IObjectEffectGetter> DLC1DawnguardRuneHammerEnchant => Construct(0x14556);

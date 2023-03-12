@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Update
 {
-    public static class Activator
+    public static partial class Activator
     {
         private static FormLink<IActivatorGetter> Construct(uint id) => new FormLink<IActivatorGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IActivatorGetter> Patch1_8DLC1DoorFix => Construct(0x9a0);

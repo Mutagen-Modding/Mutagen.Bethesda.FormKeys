@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimLE;
 
 public static partial class Dawnguard
 {
-    public static class Message
+    public static partial class Message
     {
         private static FormLink<IMessageGetter> Construct(uint id) => new FormLink<IMessageGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IMessageGetter> DLC1ReflexesReadyMessage => Construct(0x14cf4);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.SkyrimSE;
 
 public static partial class Dragonborn
 {
-    public static class VolumetricLighting
+    public static partial class VolumetricLighting
     {
         private static FormLink<IVolumetricLightingGetter> Construct(uint id) => new FormLink<IVolumetricLightingGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IVolumetricLightingGetter> VLDLC2Apocrypha => Construct(0x1e2d1);

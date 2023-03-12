@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Workshop03
 {
-    public static class VoiceType
+    public static partial class VoiceType
     {
         private static FormLink<IVoiceTypeGetter> Construct(uint id) => new FormLink<IVoiceTypeGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IVoiceTypeGetter> DLC06MaleClem => Construct(0x49d8);

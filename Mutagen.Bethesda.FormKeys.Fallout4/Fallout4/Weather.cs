@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class Weather
+    public static partial class Weather
     {
         private static FormLink<IWeatherGetter> Construct(uint id) => new FormLink<IWeatherGetter>(ModKey.MakeFormKey(id));
         public static FormLink<IWeatherGetter> VRWorkshopShared_CommonwealthGSOvercastNoHazard => Construct(0x24a3c1);

@@ -7,7 +7,7 @@ namespace Mutagen.Bethesda.FormKeys.Fallout4;
 
 public static partial class Fallout4
 {
-    public static class CameraPath
+    public static partial class CameraPath
     {
         private static FormLink<ICameraPathGetter> Construct(uint id) => new FormLink<ICameraPathGetter>(ModKey.MakeFormKey(id));
         public static FormLink<ICameraPathGetter> FirstPersonCloseFilter => Construct(0x249482);
