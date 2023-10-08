@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Noggog</Authors>
+        <Company>Mutagen</Company>
+        <Product>Mutagen</Product>
+        <Description>A registry of FormKeys from common Starfield base game files.</Description>
+        <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/Noggog/Mutagen.Bethesda.FormKeys</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Noggog/Mutagen.Bethesda.FormKeys</RepositoryUrl>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>none</DebugType>
+        <IsPackable>true</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Mutagen.Bethesda.Core" />
+        <PackageReference Include="Mutagen.Bethesda.Starfield" />
+    </ItemGroup>
+
+    <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+        <Exec Command="RD /S /Q &quot;%25USERPROFILE%25\.nuget\packages\mutagen.bethesda.formkeys.starfield&quot;" />
+    </Target>
+
+</Project>

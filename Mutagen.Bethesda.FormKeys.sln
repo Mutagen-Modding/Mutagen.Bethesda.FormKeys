@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutagen.Bethesda.FormKeys.Fallout4", "Mutagen.Bethesda.FormKeys.Fallout4\Mutagen.Bethesda.FormKeys.Fallout4.csproj", "{12AA04F4-2BD0-489A-867C-A3F44A92A515}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutagen.Bethesda.FormKeys.Starfield", "Mutagen.Bethesda.FormKeys.Starfield\Mutagen.Bethesda.FormKeys.Starfield.csproj", "{3DE5A489-B7B3-4B7A-94E9-9314B8A9C849}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{12AA04F4-2BD0-489A-867C-A3F44A92A515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12AA04F4-2BD0-489A-867C-A3F44A92A515}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12AA04F4-2BD0-489A-867C-A3F44A92A515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE5A489-B7B3-4B7A-94E9-9314B8A9C849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE5A489-B7B3-4B7A-94E9-9314B8A9C849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE5A489-B7B3-4B7A-94E9-9314B8A9C849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE5A489-B7B3-4B7A-94E9-9314B8A9C849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
