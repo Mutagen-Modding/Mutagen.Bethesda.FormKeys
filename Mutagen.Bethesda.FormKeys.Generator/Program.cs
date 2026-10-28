@@ -79,7 +79,8 @@ class Program
                 return new GenerateFromMod()
                 {
                     Path = l.Substring(split + 1).TrimStart('\"').TrimEnd('\"'),
-                    Release = (GameRelease)Enum.Parse(typeof(GameRelease), l.Substring(0, split))
+                    Release = (GameRelease)Enum.Parse(typeof(GameRelease), l.Substring(0, split)),
+                    DataFolder = conf.DataFolder
                 };
             })
             .ForAll((g) => Generate(g));
@@ -125,7 +126,12 @@ class Program
         // ToDo
         // Eventually use generic read builder
         var modPath = new ModPath(gen.Path);
-        using var env = GameEnvironment.Typical.Construct(gen.Release);
+        var dataFolder = gen.DataFolder;
+        if (dataFolder.IsNullOrWhitespace())
+        {
+            using var env = GameEnvironment.Typical.Construct(gen.Release);
+            dataFolder = env.DataFolderPath;
+        }
         Cache<IModMasterStyledGetter, ModKey>? masterFlagsLookup = null;
         if (GameConstants.Get(gen.Release).SeparateMasterLoadOrders)
         {
@@ -133,7 +139,7 @@ class Program
             masterFlagsLookup = new Cache<IModMasterStyledGetter, ModKey>(x => x.ModKey);
             foreach (var master in header.Masters(gen.Path).Select(x => x.Master))
             {
-                var otherPath = Path.Combine(env.DataFolderPath, master.FileName);
+                var otherPath = Path.Combine(dataFolder, master.FileName);
                 var otherHeader = ModHeaderFrame.FromPath(otherPath, gen.Release);
                 masterFlagsLookup.Add(new KeyedMasterStyle(master, otherHeader.MasterStyle));
             }
